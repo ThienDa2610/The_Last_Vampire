@@ -19,6 +19,13 @@ public class Enemy : MonoBehaviour
         soundManager = GetComponent<EnemySoundManager>();
     }
 
+    void Update()
+    {
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
     // private void OnTriggerEnter2D(Collider2D collision)
     // {
     //     if (collision.gameObject.CompareTag("Player")) 
@@ -54,10 +61,6 @@ public class Enemy : MonoBehaviour
     {
         health -= damageAmount; 
         soundManager.PlayTakeDamage();
-        if (health <= 0)
-        {
-            Die();
-        }
     }
 
     private void Die()
