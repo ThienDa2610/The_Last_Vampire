@@ -56,7 +56,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
-            StartCoroutine("Dash");
+            StartCoroutine(Dash());
         }
     }
 
@@ -77,16 +77,19 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private IEnumerable Dash()
+    private IEnumerator Dash()
     {
         canDash = false;
+        HealthManager.Instance.isInvincible = true;
         isDashing = true;
         float oriGravity = rb.gravityScale;
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
+        SoundManager.PlaySound(SoundType.Dash);
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
+        HealthManager.Instance.isInvincible = false;
         rb.gravityScale = oriGravity;
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);

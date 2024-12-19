@@ -13,7 +13,6 @@ public class MeleeBaseState : State
     // Cached already struck objects of said attack to avoid overlapping attacks on same target
     private List<Collider2D> collidersDamaged;
     // Input buffer Timer
-    private float AttackPressedTimer = 0;
 
     public override void OnEnter(StateMachine _stateMachine)
     {
@@ -24,20 +23,13 @@ public class MeleeBaseState : State
     public override void OnUpdate()
     {
         base.OnUpdate();
-        AttackPressedTimer -= Time.deltaTime;
 
         if (StateMachine.animator.GetFloat("WeaponActive") > 0f)
         {
             Attack();
         }
 
-
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            AttackPressedTimer = 2;
-        }
-
-        if (StateMachine.animator.GetFloat("AttackWindowOpen") > 0f && AttackPressedTimer > 0)
+        if (StateMachine.animator.GetFloat("AttackWindowOpen") > 0f && Input.GetKeyDown(KeyCode.J))
         {
             shouldCombo = true;
         }
