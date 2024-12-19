@@ -15,7 +15,7 @@ D:/BaoDi/7/Game/The_Last_Vampire
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-25154
+50233
 Successfully changed project path to: D:/BaoDi/7/Game/The_Last_Vampire
 D:/BaoDi/7/Game/The_Last_Vampire
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/BaoDi/7/Game/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4696] Host "[IP] 10.0.228.219 [Port] 0 [Flags] 2 [Guid] 1964020017 [EditorId] 1964020017 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14964] Host "[IP] 10.0.142.234 [Port] 0 [Flags] 2 [Guid] 1340084605 [EditorId] 1340084605 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4696] Host "[IP] 10.0.228.219 [Port] 0 [Flags] 2 [Guid] 1964020017 [EditorId] 1964020017 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14964] Host "[IP] 10.0.142.234 [Port] 0 [Flags] 2 [Guid] 1340084605 [EditorId] 1340084605 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 52.28 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 22.24 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path D:/Unity/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -65,49 +65,3 @@ Direct3D:
     Vendor:   Intel
     VRAM:     1945 MB
     Driver:   27.20.100.9664
-Initialize mono
-Mono path[0] = 'D:/Unity/2022.3.3f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005350 seconds.
-- Loaded All Assemblies, in  7.453 seconds
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  6.499 seconds
-Domain Reload Profiling: 13993ms
-	BeginReloadAssembly (1925ms)
-		ExecutionOrderSort (99ms)
-		DisableScriptedObjects (0ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (5ms)
-	RebuildCommonClasses (313ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (392ms)
-	LoadAllAssembliesAndSetupDomain (4797ms)
-		LoadAssemblies (1746ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (4785ms)
-			TypeCache.Refresh (4751ms)
-				TypeCache.ScanAssembly (4463ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (34ms)
-	FinalizeReload (6540ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (5645ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (173ms)
-			SetLoadedEditorAssemblies (178ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (2187ms)
-			ProcessInitializeOnLoadMethodAttributes (3024ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (35ms)
-		ExecutionOrderSort2 (16ms)
-		AwakeInstancesAfterBackupRestoration (0ms)

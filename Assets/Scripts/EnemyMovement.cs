@@ -10,20 +10,29 @@ public class EnemyMovement : MonoBehaviour
     public Transform player;  
     public Animator animator;
 
+    private Rigidbody2D rb;
+    private bool isGrounded = false;
     private Vector3 startPosition;  
     private bool movingRight = true;  
     private bool isFollowingPlayer = false;
     private EnemySoundManager soundManager;
-
+    private Pounce pounce;
+    public LayerMask groundLayer; 
+    
 
     void Start()
     {
+        pounce = GetComponent<Pounce>();
+        rb = GetComponent<Rigidbody2D>();
         startPosition = transform.position;  
         soundManager = GetComponent<EnemySoundManager>();
     }
 
     void Update()
     {
+        CheckGround();
+        if(pounce.isPrepare())
+            return;
         float distanceToPlayer = Mathf.Abs(transform.position.x - player.position.x); 
 
         if (distanceToPlayer <= followDistance)
@@ -59,11 +68,13 @@ public class EnemyMovement : MonoBehaviour
         if (distanceToPlayer <= stopDistance)
         {
             animator.SetTrigger("Attack");
+            //player.TakeDamage();
+            rb.velocity = Vector2.zero;
             return;
         }
         animator.SetTrigger("Follow");
         float directionX = player.position.x > transform.position.x ? 1 : -1;
-        transform.Translate(Vector3.right * directionX * attackSpeed * Time.deltaTime);
+        rb.velocity = new Vector2(directionX * attackSpeed, rb.velocity.y);
 
         if (directionX > 0 && transform.localScale.x < 0 || directionX < 0 && transform.localScale.x > 0)
         {
@@ -74,24 +85,24 @@ public class EnemyMovement : MonoBehaviour
 
     void Patrol()
     {
-        if (movingRight)
+        float direction = movingRight ? 1 : -1;
+        rb.velocity = new Vector2(direction * speed, rb.velocity.y);
+
+        if (movingRight && transform.position.x >= startPosition.x + moveDistance)
         {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
-            if (transform.position.x >= startPosition.x + moveDistance)
-            {
-                movingRight = false;
-                Flip();
-            }
+            movingRight = false;
+            Flip();
         }
-        else
+        else if (!movingRight && transform.position.x <= startPosition.x - moveDistance)
         {
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
-            if (transform.position.x <= startPosition.x - moveDistance)
-            {
-                movingRight = true;
-                Flip();
-            }
+            movingRight = true;
+            Flip();
         }
+    }
+
+    void CheckGround()
+    {
+        isGrounded = Physics2D.OverlapCircle(transform.position, 0.1f, groundLayer);
     }
 
     void Flip()
