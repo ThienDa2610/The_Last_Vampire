@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -7,16 +8,25 @@ public class Movement : MonoBehaviour
     public Animator animator;
     private Rigidbody2D rb;
     private bool isGrounded;
+    public TrailRenderer tr;
+
+    bool canDash = true;
+    bool isDashing;
+    float dashingPower = 24f;
+    float dashingTime = 0.2f;
+    float dashingCooldown = 4f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        tr = GetComponent<TrailRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isDashing) return;
         float move = Input.GetAxis("Horizontal");
 
         if (move > 0)
@@ -43,6 +53,11 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine("Dash");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -60,5 +75,21 @@ public class Movement : MonoBehaviour
             isGrounded = false;
             animator.SetBool("isJumping", true);
         }
+    }
+
+    private IEnumerable Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float oriGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = oriGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }
