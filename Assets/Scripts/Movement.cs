@@ -14,7 +14,6 @@ public class Movement : MonoBehaviour
     bool isDashing;
     float dashingPower = 24f;
     float dashingTime = 0.2f;
-    float dashingCooldown = 4f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -54,7 +53,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && SkillCDManager.isOffCooldown(SkillType.Dash))
         {
             StartCoroutine(Dash());
         }
@@ -79,7 +78,7 @@ public class Movement : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        canDash = false;
+        SkillCDManager.IntoCooldown(SkillType.Dash);
         HealthManager.Instance.isInvincible = true;
         isDashing = true;
         float oriGravity = rb.gravityScale;
@@ -92,7 +91,5 @@ public class Movement : MonoBehaviour
         HealthManager.Instance.isInvincible = false;
         rb.gravityScale = oriGravity;
         isDashing = false;
-        yield return new WaitForSeconds(dashingCooldown);
-        canDash = true;
     }
 }
