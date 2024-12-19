@@ -7,9 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    private void Start()
+    {
+        MusicManager.Instance.PlayMusic("Menu");
+    }
     public void NewGame()
     {
-        SceneManager.LoadScene("Map1_Forest");
+        MapLoader.Instance.LoadMap("Map1_Forest");
+        MusicManager.Instance.PlayMusic("Menu");
     }
     public void Resume()
     {
