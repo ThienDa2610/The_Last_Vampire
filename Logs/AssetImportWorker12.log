@@ -9,13 +9,13 @@ D:\Unity\2022.3.3f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker26
+AssetImportWorker12
 -projectPath
 D:/BaoDi/7/Game/The_Last_Vampire
 -logFile
-Logs/AssetImportWorker26.log
+Logs/AssetImportWorker12.log
 -srvPort
-49613
+25154
 Successfully changed project path to: D:/BaoDi/7/Game/The_Last_Vampire
 D:/BaoDi/7/Game/The_Last_Vampire
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/BaoDi/7/Game/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22484] Host "[IP] 10.0.228.219 [Port] 0 [Flags] 2 [Guid] 4167758828 [EditorId] 4167758828 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11892] Host "[IP] 10.0.228.219 [Port] 0 [Flags] 2 [Guid] 817716887 [EditorId] 817716887 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [22484] Host "[IP] 10.0.228.219 [Port] 0 [Flags] 2 [Guid] 4167758828 [EditorId] 4167758828 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11892] Host "[IP] 10.0.228.219 [Port] 0 [Flags] 2 [Guid] 817716887 [EditorId] 817716887 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 75.41 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 262.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path D:/Unity/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,88 +69,48 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.107385 seconds.
-- Loaded All Assemblies, in  2.007 seconds
+Registered in 0.010586 seconds.
+- Loaded All Assemblies, in  1.906 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.951 seconds
-Domain Reload Profiling: 2958ms
-	BeginReloadAssembly (780ms)
-		ExecutionOrderSort (0ms)
+- Finished resetting the current domain, in  3.798 seconds
+Domain Reload Profiling: 5706ms
+	BeginReloadAssembly (432ms)
+		ExecutionOrderSort (1ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (261ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (469ms)
-	LoadAllAssembliesAndSetupDomain (484ms)
-		LoadAssemblies (806ms)
+		CreateAndSetChildDomain (10ms)
+	RebuildCommonClasses (287ms)
+	RebuildNativeTypeToScriptingClass (63ms)
+	initialDomainReloadingComplete (132ms)
+	LoadAllAssembliesAndSetupDomain (992ms)
+		LoadAssemblies (412ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (450ms)
-			TypeCache.Refresh (448ms)
-				TypeCache.ScanAssembly (422ms)
+		AnalyzeDomain (981ms)
+			TypeCache.Refresh (976ms)
+				TypeCache.ScanAssembly (929ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (952ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (3800ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (757ms)
+		SetupLoadedEditorAssemblies (3068ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (53ms)
-			SetLoadedEditorAssemblies (15ms)
+			InitializePlatformSupportModulesInManaged (235ms)
+			SetLoadedEditorAssemblies (65ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (613ms)
-			ProcessInitializeOnLoadMethodAttributes (71ms)
+			ProcessInitializeOnLoadAttributes (1787ms)
+			ProcessInitializeOnLoadMethodAttributes (975ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in 169.441 seconds
-Refreshing native plugins compatible for Editor in 145.39 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 38.802 seconds
-Domain Reload Profiling: 211645ms
-	BeginReloadAssembly (90051ms)
-		ExecutionOrderSort (389ms)
-		DisableScriptedObjects (1963ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (317ms)
-		CreateAndSetChildDomain (8601ms)
-	RebuildCommonClasses (5763ms)
-	RebuildNativeTypeToScriptingClass (242ms)
-	initialDomainReloadingComplete (2841ms)
-	LoadAllAssembliesAndSetupDomain (73172ms)
-		LoadAssemblies (32225ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (39787ms)
-			TypeCache.Refresh (38154ms)
-				TypeCache.ScanAssembly (32907ms)
-			ScanForSourceGeneratedMonoScriptInfo (896ms)
-			ResolveRequiredComponents (730ms)
-	FinalizeReload (39576ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (10200ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (102ms)
-			SetLoadedEditorAssemblies (87ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (453ms)
-			ProcessInitializeOnLoadAttributes (9239ms)
-			ProcessInitializeOnLoadMethodAttributes (308ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (5ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (30ms)

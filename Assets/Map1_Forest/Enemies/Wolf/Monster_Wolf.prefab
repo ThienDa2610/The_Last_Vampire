@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1493606698018646395}
   - component: {fileID: 1250156482819743168}
-  - component: {fileID: 920686083234402363}
+  - component: {fileID: 594352010637167597}
   - component: {fileID: 6602646990508997993}
   - component: {fileID: 4985941111088618640}
   - component: {fileID: 439501050220587347}
@@ -91,7 +91,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &920686083234402363
+--- !u!114 &594352010637167597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,6 +103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf9064ad897f13e428cc161fa70ece7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropItemPrefab: {fileID: 4451261994187638914, guid: 491c762327ec44d4190176ffdf0db467, type: 3}
+  dropPoint: {fileID: 1493606698018646395}
+  dropChance: 100
   health: 15
   damage: 20
   damageInterval: 5

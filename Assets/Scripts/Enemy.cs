@@ -5,6 +5,9 @@ public class Enemy : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
 
+    public GameObject dropItemPrefab;
+    public Transform dropPoint;
+    public int dropChance = 100;
     public float health = 15.0f;     
     public float damage = 20.0f;     
     public float damageInterval = 5.0f; 
@@ -68,5 +71,15 @@ public class Enemy : MonoBehaviour
         animator.SetTrigger("Enemy_die");
         soundManager.PlayDeathSound();
         Destroy(gameObject,0.5f); 
+        DropItem();
+    }
+
+    private void DropItem()
+    {
+        if (Random.Range(0, 100) <= dropChance)
+        {
+            Vector3 spawnPosition = dropPoint != null ? dropPoint.position : transform.position;
+            Instantiate(dropItemPrefab, spawnPosition, Quaternion.identity);
+        }
     }
 }

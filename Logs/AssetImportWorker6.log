@@ -1,0 +1,590 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.3f1 (7cdc2969a641) revision 8182825'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26120) 64bit Core' Language: 'en' Physical Memory: 3891 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2022.3.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+D:/BaoDi/7/Game/The_Last_Vampire
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+25154
+Successfully changed project path to: D:/BaoDi/7/Game/The_Last_Vampire
+D:/BaoDi/7/Game/The_Last_Vampire
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21448] Host "[IP] 10.0.228.219 [Port] 0 [Flags] 2 [Guid] 2994131239 [EditorId] 2994131239 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [21448] Host "[IP] 10.0.228.219 [Port] 0 [Flags] 2 [Guid] 2994131239 [EditorId] 2994131239 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 41.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.3f1 (7cdc2969a641)
+[Subsystems] Discovering subsystems at path D:/Unity/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/BaoDi/7/Game/The_Last_Vampire/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
+    Vendor:   Intel
+    VRAM:     1945 MB
+    Driver:   27.20.100.9664
+Initialize mono
+Mono path[0] = 'D:/Unity/2022.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012684 seconds.
+- Loaded All Assemblies, in  5.575 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.072 seconds
+Domain Reload Profiling: 8654ms
+	BeginReloadAssembly (2965ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (234ms)
+	RebuildNativeTypeToScriptingClass (204ms)
+	initialDomainReloadingComplete (253ms)
+	LoadAllAssembliesAndSetupDomain (1917ms)
+		LoadAssemblies (2910ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1905ms)
+			TypeCache.Refresh (1803ms)
+				TypeCache.ScanAssembly (1487ms)
+			ScanForSourceGeneratedMonoScriptInfo (36ms)
+			ResolveRequiredComponents (66ms)
+	FinalizeReload (3081ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2529ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (181ms)
+			SetLoadedEditorAssemblies (232ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (1431ms)
+			ProcessInitializeOnLoadMethodAttributes (635ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 13.553 seconds
+Refreshing native plugins compatible for Editor in 394.18 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 10.416 seconds
+Domain Reload Profiling: 24293ms
+	BeginReloadAssembly (1513ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (251ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (106ms)
+	RebuildCommonClasses (263ms)
+	RebuildNativeTypeToScriptingClass (107ms)
+	initialDomainReloadingComplete (410ms)
+	LoadAllAssembliesAndSetupDomain (11580ms)
+		LoadAssemblies (6057ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (5582ms)
+			TypeCache.Refresh (5321ms)
+				TypeCache.ScanAssembly (4757ms)
+			ScanForSourceGeneratedMonoScriptInfo (204ms)
+			ResolveRequiredComponents (57ms)
+	FinalizeReload (10420ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5575ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (394ms)
+			SetLoadedEditorAssemblies (80ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (821ms)
+			ProcessInitializeOnLoadAttributes (3443ms)
+			ProcessInitializeOnLoadMethodAttributes (787ms)
+			AfterProcessingInitializeOnLoad (42ms)
+			EditorAssembliesLoaded (9ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (59ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 2.58 seconds
+Refreshing native plugins compatible for Editor in 340.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4077 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 64 unused Assets / (60.6 KB). Loaded Objects now: 4543.
+Memory consumption went from 143.8 MB to 143.7 MB.
+Total: 279.641900 ms (FindLiveObjects: 46.114900 ms CreateObjectMapping: 98.122300 ms MarkObjects: 125.818600 ms  DeleteObjects: 9.582200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 80141.076132 seconds.
+  path: Assets/Map1_Forest/NPC1_Spirit/Dialogue.prefab
+  artifactKey: Guid(678b1bbe1f7ee19448644c639d39f7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/NPC1_Spirit/Dialogue.prefab using Guid(678b1bbe1f7ee19448644c639d39f7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fb4a97992a9a5f97487a291c0efcfe') in 2.480116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 10.664327 seconds.
+  path: Assets/Scripts/NPCAnimation.cs
+  artifactKey: Guid(858e2939d297cb649bc954752e0eb52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NPCAnimation.cs using Guid(858e2939d297cb649bc954752e0eb52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1deacb9468e0e6fef9b9d4031367fbe') in 0.001496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.330461 seconds.
+  path: Assets/Scripts/NPCDialogueTrigger.cs
+  artifactKey: Guid(87175ff5f0923b54aa5da006090e0c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NPCDialogueTrigger.cs using Guid(87175ff5f0923b54aa5da006090e0c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0522523cb6bbc8213dc38b5ec6c02f81') in 0.040711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 36.185 seconds
+Refreshing native plugins compatible for Editor in 31.89 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 21.647 seconds
+Domain Reload Profiling: 57978ms
+	BeginReloadAssembly (24952ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (870ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (7ms)
+		CreateAndSetChildDomain (13644ms)
+	RebuildCommonClasses (440ms)
+	RebuildNativeTypeToScriptingClass (820ms)
+	initialDomainReloadingComplete (3179ms)
+	LoadAllAssembliesAndSetupDomain (6934ms)
+		LoadAssemblies (3962ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (3411ms)
+			TypeCache.Refresh (3372ms)
+				TypeCache.ScanAssembly (2943ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (21653ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (10845ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (32ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3848ms)
+			ProcessInitializeOnLoadAttributes (6681ms)
+			ProcessInitializeOnLoadMethodAttributes (237ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
+Refreshing native plugins compatible for Editor in 479.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4050 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (36.5 KB). Loaded Objects now: 4547.
+Memory consumption went from 137.7 MB to 137.7 MB.
+Total: 105.699500 ms (FindLiveObjects: 7.021600 ms CreateObjectMapping: 0.479200 ms MarkObjects: 89.296200 ms  DeleteObjects: 8.897400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 45.934 seconds
+Refreshing native plugins compatible for Editor in 11.41 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 38.126 seconds
+Domain Reload Profiling: 84085ms
+	BeginReloadAssembly (10861ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (447ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (5673ms)
+	RebuildCommonClasses (398ms)
+	RebuildNativeTypeToScriptingClass (40ms)
+	initialDomainReloadingComplete (174ms)
+	LoadAllAssembliesAndSetupDomain (34482ms)
+		LoadAssemblies (16384ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22599ms)
+			TypeCache.Refresh (21721ms)
+				TypeCache.ScanAssembly (11986ms)
+			ScanForSourceGeneratedMonoScriptInfo (828ms)
+			ResolveRequiredComponents (50ms)
+	FinalizeReload (38130ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (11170ms)
+			LogAssemblyErrors (73ms)
+			InitializePlatformSupportModulesInManaged (468ms)
+			SetLoadedEditorAssemblies (84ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (877ms)
+			ProcessInitializeOnLoadAttributes (9513ms)
+			ProcessInitializeOnLoadMethodAttributes (132ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (5ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Refreshing native plugins compatible for Editor in 61.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4051 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (34.9 KB). Loaded Objects now: 4551.
+Memory consumption went from 138.0 MB to 138.0 MB.
+Total: 3350.363300 ms (FindLiveObjects: 6.413500 ms CreateObjectMapping: 0.622500 ms MarkObjects: 2831.242300 ms  DeleteObjects: 512.035600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 860.817190 seconds.
+  path: Assets/Map1_Forest/NPC1_Spirit/Dialogue.prefab
+  artifactKey: Guid(678b1bbe1f7ee19448644c639d39f7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/NPC1_Spirit/Dialogue.prefab using Guid(678b1bbe1f7ee19448644c639d39f7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093f2cc67cd9cb56c32f3a0d8087923f') in 6.449183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 8.921430 seconds.
+  path: Assets/Map1_Forest/NPC1_Spirit/Sprite.prefab
+  artifactKey: Guid(eb749160089bea64eb7e07bcd45612a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/NPC1_Spirit/Sprite.prefab using Guid(eb749160089bea64eb7e07bcd45612a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a8759d31ca510d4c3841b348602ee7') in 4.415837 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 465.735832 seconds.
+  path: Assets/Map1_Forest/NPC1_Spirit/DialogueCanvas.prefab
+  artifactKey: Guid(55f531b174bb05542a6ccc48c4c2e394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/NPC1_Spirit/DialogueCanvas.prefab using Guid(55f531b174bb05542a6ccc48c4c2e394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a4d366a6aa493723226e24e7d36202') in 1.001172 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 44.469 seconds
+Refreshing native plugins compatible for Editor in 96.98 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 21.925 seconds
+Domain Reload Profiling: 66530ms
+	BeginReloadAssembly (11475ms)
+		ExecutionOrderSort (2ms)
+		DisableScriptedObjects (1886ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (13ms)
+		CreateAndSetChildDomain (4736ms)
+	RebuildCommonClasses (292ms)
+	RebuildNativeTypeToScriptingClass (321ms)
+	initialDomainReloadingComplete (285ms)
+	LoadAllAssembliesAndSetupDomain (32124ms)
+		LoadAssemblies (13997ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21230ms)
+			TypeCache.Refresh (21190ms)
+				TypeCache.ScanAssembly (14787ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (38ms)
+	FinalizeReload (22033ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3762ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (83ms)
+			SetLoadedEditorAssemblies (50ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (210ms)
+			ProcessInitializeOnLoadAttributes (2648ms)
+			ProcessInitializeOnLoadMethodAttributes (757ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (4ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (202ms)
+Refreshing native plugins compatible for Editor in 23.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4050 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (35.8 KB). Loaded Objects now: 4562.
+Memory consumption went from 142.4 MB to 142.3 MB.
+Total: 29.418200 ms (FindLiveObjects: 1.832800 ms CreateObjectMapping: 0.384000 ms MarkObjects: 20.913800 ms  DeleteObjects: 6.284900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 22.683 seconds
+Refreshing native plugins compatible for Editor in 18.65 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 17.953 seconds
+Domain Reload Profiling: 40648ms
+	BeginReloadAssembly (12546ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (1546ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (15ms)
+		CreateAndSetChildDomain (8014ms)
+	RebuildCommonClasses (492ms)
+	RebuildNativeTypeToScriptingClass (256ms)
+	initialDomainReloadingComplete (319ms)
+	LoadAllAssembliesAndSetupDomain (9079ms)
+		LoadAssemblies (8273ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2587ms)
+			TypeCache.Refresh (2580ms)
+				TypeCache.ScanAssembly (1957ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (17956ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5514ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (27ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (504ms)
+			ProcessInitializeOnLoadAttributes (4665ms)
+			ProcessInitializeOnLoadMethodAttributes (290ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (39ms)
+Refreshing native plugins compatible for Editor in 45.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4051 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (34.9 KB). Loaded Objects now: 4566.
+Memory consumption went from 142.6 MB to 142.6 MB.
+Total: 27.559000 ms (FindLiveObjects: 1.989600 ms CreateObjectMapping: 0.503300 ms MarkObjects: 21.281700 ms  DeleteObjects: 3.781800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 497.216196 seconds.
+  path: Assets/Map1_Forest/NPC1_Spirit/Sprite.prefab
+  artifactKey: Guid(eb749160089bea64eb7e07bcd45612a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/NPC1_Spirit/Sprite.prefab using Guid(eb749160089bea64eb7e07bcd45612a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac703ab88fd49b44e58195ac2b396fb0') in 6.169742 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 19.778 seconds
+Refreshing native plugins compatible for Editor in 27.24 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 99.410 seconds
+Domain Reload Profiling: 119198ms
+	BeginReloadAssembly (2661ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (342ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (8ms)
+		CreateAndSetChildDomain (1573ms)
+	RebuildCommonClasses (209ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (596ms)
+	LoadAllAssembliesAndSetupDomain (16301ms)
+		LoadAssemblies (9515ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (7272ms)
+			TypeCache.Refresh (7234ms)
+				TypeCache.ScanAssembly (6608ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (99411ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3821ms)
+			LogAssemblyErrors (6ms)
+			InitializePlatformSupportModulesInManaged (131ms)
+			SetLoadedEditorAssemblies (121ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (663ms)
+			ProcessInitializeOnLoadAttributes (2535ms)
+			ProcessInitializeOnLoadMethodAttributes (347ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (9ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (78ms)
+Refreshing native plugins compatible for Editor in 68.06 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4050 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (34.9 KB). Loaded Objects now: 4570.
+Memory consumption went from 142.4 MB to 142.3 MB.
+Total: 3784.347600 ms (FindLiveObjects: 298.600800 ms CreateObjectMapping: 5.228500 ms MarkObjects: 3446.248300 ms  DeleteObjects: 34.200300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 108.301 seconds
+Refreshing native plugins compatible for Editor in 1928.33 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 51.485 seconds
+Domain Reload Profiling: 160716ms
+	BeginReloadAssembly (13546ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (2683ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (8ms)
+		CreateAndSetChildDomain (5256ms)
+	RebuildCommonClasses (3039ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (796ms)
+	LoadAllAssembliesAndSetupDomain (91796ms)
+		LoadAssemblies (55668ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (37882ms)
+			TypeCache.Refresh (37105ms)
+				TypeCache.ScanAssembly (32800ms)
+			ScanForSourceGeneratedMonoScriptInfo (63ms)
+			ResolveRequiredComponents (693ms)
+	FinalizeReload (51503ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (8130ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (83ms)
+			SetLoadedEditorAssemblies (223ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1708ms)
+			ProcessInitializeOnLoadAttributes (5594ms)
+			ProcessInitializeOnLoadMethodAttributes (509ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (6ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (226ms)
