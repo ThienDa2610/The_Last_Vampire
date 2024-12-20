@@ -17,7 +17,7 @@ public class DamageForPlayer : MonoBehaviour
     {
         if (isPlayerInTrigger && nextDame < Time.time)
         {
-            HealthManager.Instance.TakeDamage(dmg);
+            HealthManager.Instance.takeDamage(dmg);
 
             nextDame = Time.time + dameRate;
         }
