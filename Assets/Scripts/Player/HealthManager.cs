@@ -45,6 +45,7 @@ public class HealthManager : MonoBehaviour
     }
     private void Dead()
     {
+        sfxManager.Instance.PlaySound2D("Die");
         //Time.timeScale = 0;
         //gameOver.SetActive(true);
         MapLoader.Instance.LoadMap("GameOver");

@@ -13,7 +13,7 @@ public class MeleeFinishState : MeleeBaseState
         duration = 0.5f;
         damage = 18f;
         StateMachine.animator.SetTrigger("Melee" + attackIndex);
-        SoundManager.PlaySound(SoundType.Melee3);
+        sfxManager.Instance.PlaySound2D("VuotVampire_3");
     }
 
     public override void OnUpdate()

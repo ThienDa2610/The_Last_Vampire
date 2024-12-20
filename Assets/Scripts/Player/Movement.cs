@@ -84,7 +84,7 @@ public class Movement : MonoBehaviour
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
-        SoundManager.PlaySound(SoundType.Dash);
+        sfxManager.Instance.PlaySound2D("Dash");
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         HealthManager.Instance.isInvincible = false;

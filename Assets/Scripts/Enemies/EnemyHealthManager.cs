@@ -10,15 +10,12 @@ public class EnemyHealthManager : MonoBehaviour
     public int dropChance = 100;
     public float health = 15.0f;
     public Animator animator;
-    private EnemySoundManager soundManager;
     private bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        soundManager = GetComponent<EnemySoundManager>();
-
     }
     void Update()
     {
@@ -31,13 +28,12 @@ public class EnemyHealthManager : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
-        soundManager.PlayTakeDamage();
     }
 
     private void Die()
     {
         animator.SetTrigger("Enemy_die");
-        soundManager.PlayDeathSound();
+        sfxManager.Instance.PlaySound3D("Die", transform.position);
         isDead = true;
         DropItem();
         Destroy(gameObject, 0.5f);
@@ -45,7 +41,6 @@ public class EnemyHealthManager : MonoBehaviour
 
     private void DropItem()
     {
-        Debug.Log("Dropped");
         if (Random.Range(0, 100) <= dropChance)
         {
             Vector3 spawnPosition = dropPoint != null ? dropPoint.position : transform.position;

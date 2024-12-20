@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeComboState : MeleeBaseState
+public class MeleeEntryState : MeleeBaseState
 {
     public override void OnEnter(StateMachine _stateMachine)
     {
         base.OnEnter(_stateMachine);
 
         //Attack
-        attackIndex = 2;
+        attackIndex = 1;
         duration = 0.5f;
-        damage = 15f;
+        damage = 10f;
         StateMachine.animator.SetTrigger("Melee" + attackIndex);
-        SoundManager.PlaySound(SoundType.Melee2);
+        sfxManager.Instance.PlaySound2D("VuotVampire_1");
     }
 
     public override void OnUpdate()
@@ -24,7 +24,7 @@ public class MeleeComboState : MeleeBaseState
         {
             if (shouldCombo)
             {
-                stateMachine.SetNextState(new MeleeFinishState());
+                stateMachine.SetNextState(new MeleeComboState());
             }
             else
             {

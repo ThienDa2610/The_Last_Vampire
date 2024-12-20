@@ -18,7 +18,6 @@ public class EnemyMovement : MonoBehaviour
     private Vector3 startPosition;  
     private bool movingRight = true;  
     private bool isFollowingPlayer = false;
-    private EnemySoundManager soundManager;
     private Pounce pounce;
     public LayerMask groundLayer; 
     
@@ -28,7 +27,6 @@ public class EnemyMovement : MonoBehaviour
         pounce = GetComponent<Pounce>();
         rb = GetComponent<Rigidbody2D>();
         startPosition = transform.position;  
-        soundManager = GetComponent<EnemySoundManager>();
     }
 
     void Update()
@@ -40,18 +38,10 @@ public class EnemyMovement : MonoBehaviour
 
         if (distanceToPlayer <= followDistance)
         {
-            if (!isFollowingPlayer) 
-            {
-                soundManager.PlayAttackSound();
-            }
             isFollowingPlayer = true;
         }
         else
         {
-            if (isFollowingPlayer) 
-            {
-                soundManager.StopAttackSound();
-            }
             isFollowingPlayer = false;
         }
 
@@ -67,6 +57,7 @@ public class EnemyMovement : MonoBehaviour
         if (distanceToPlayer <= stopDistance && nextAttackTime < Time.time)
         {
             animator.SetTrigger("Attack");
+            sfxManager.Instance.PlaySound3D("Enemy_1", transform.position);
             HealthManager.Instance.takeDamage(attackDamage);
             nextAttackTime = Time.time + attackSpeed;
         }
