@@ -2,18 +2,17 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    public float value = 20; 
+    protected float value = 20;
+    protected virtual void TakeEffect(Collider2D collision)
+    {
 
-    // private void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     if (collision.CompareTag("Player")) 
-    //     {
-    //         PlayerController player = collision.GetComponent<PlayerController>();
-    //         if (player != null)
-    //         {
-    //             player.ChangeHealth(value); 
-    //         }
-    //         Destroy(gameObject);
-    //     }
-    // }
+    }
+    protected void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            TakeEffect(collision);
+            Destroy(gameObject);
+        }
+    }
 }

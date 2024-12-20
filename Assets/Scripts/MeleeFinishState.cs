@@ -11,6 +11,7 @@ public class MeleeFinishState : MeleeBaseState
         //Attack
         attackIndex = 3;
         duration = 0.5f;
+        damage = 18f;
         StateMachine.animator.SetTrigger("Melee" + attackIndex);
         SoundManager.PlaySound(SoundType.Melee3);
     }

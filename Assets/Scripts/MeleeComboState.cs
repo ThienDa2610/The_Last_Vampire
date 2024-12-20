@@ -11,6 +11,7 @@ public class MeleeComboState : MeleeBaseState
         //Attack
         attackIndex = 2;
         duration = 0.5f;
+        damage = 15f;
         StateMachine.animator.SetTrigger("Melee" + attackIndex);
         SoundManager.PlaySound(SoundType.Melee2);
     }

@@ -14,21 +14,31 @@ public class HealthManager : MonoBehaviour
     {
         Instance = this;
         currentHealth = maxHealth;
-        healthbarOverlay.fillAmount = 1;
+        UpdateHealthbar();
     }
     public void takeDamage(float damage)
     {
         if (isInvincible) return;
         currentHealth = (currentHealth - damage) < 0 ? 0 : (currentHealth - damage);
-        healthbarOverlay.fillAmount = currentHealth / maxHealth;
+        UpdateHealthbar();
         if (currentHealth == 0)
         {
             Dead();
         }
     }
+    public void Heal(float healAmount)
+    {
+        currentHealth += healAmount;
+        UpdateHealthbar();
+    }
     private void Dead()
     {
         //gameOver.SetActive(true);
         Time.timeScale = 0;
+    }
+    private void UpdateHealthbar()
+    {
+        healthbarOverlay.fillAmount = currentHealth / maxHealth;
+
     }
 }

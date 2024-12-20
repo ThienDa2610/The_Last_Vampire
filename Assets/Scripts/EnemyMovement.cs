@@ -3,12 +3,15 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     public float speed = 2.0f;  
-    public float attackSpeed = 4.0f;
+    public float followSpeed = 3.0f;
+    public float attackSpeed = 1.5f;
     public float moveDistance = 5.0f;  
     public float followDistance = 10.0f; 
-    public float stopDistance = 0.5f;    
+    public float stopDistance = 1f;    
     public Transform player;  
     public Animator animator;
+    [SerializeField] private float attackDamage = 20f;
+    [SerializeField] private float nextAttackTime = 0f;
 
     private Rigidbody2D rb;
     private bool isGrounded = false;
@@ -31,8 +34,8 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         CheckGround();
-        if(pounce.isPrepare())
-            return;
+        /*if(pounce.isPrepare())
+            return;*/
         float distanceToPlayer = Mathf.Abs(transform.position.x - player.position.x); 
 
         if (distanceToPlayer <= followDistance)
@@ -61,20 +64,20 @@ public class EnemyMovement : MonoBehaviour
             animator.SetTrigger("Walk");
             Patrol();
         }
+        if (distanceToPlayer <= stopDistance && nextAttackTime < Time.time)
+        {
+            animator.SetTrigger("Attack");
+            HealthManager.Instance.takeDamage(attackDamage);
+            nextAttackTime = Time.time + attackSpeed;
+        }
     }
 
     void FollowPlayer(float distanceToPlayer)
     {
-        if (distanceToPlayer <= stopDistance)
-        {
-            animator.SetTrigger("Attack");
-            //player.TakeDamage();
-            rb.velocity = Vector2.zero;
-            return;
-        }
+        if (distanceToPlayer <= stopDistance) return;
         animator.SetTrigger("Follow");
         float directionX = player.position.x > transform.position.x ? 1 : -1;
-        rb.velocity = new Vector2(directionX * attackSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(directionX * followSpeed, rb.velocity.y);
 
         if (directionX > 0 && transform.localScale.x < 0 || directionX < 0 && transform.localScale.x > 0)
         {

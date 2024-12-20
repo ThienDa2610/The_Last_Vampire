@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     public TrailRenderer tr;
 
     bool isDashing;
-    float dashingPower = 24f;
+    [SerializeField] float dashingPower = 12f;
     float dashingTime = 0.2f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -12,7 +12,7 @@ public class MeleeBaseState : State
     protected int attackIndex;
     // Cached already struck objects of said attack to avoid overlapping attacks on same target
     private List<Collider2D> collidersDamaged;
-    // Input buffer Timer
+    public float damage;
 
     public override void OnEnter(StateMachine _stateMachine)
     {
@@ -53,7 +53,7 @@ public class MeleeBaseState : State
             {
                 if (collidersToDamage[i].CompareTag("Enemy"))
                 {
-                    Debug.Log("Enemy Has Taken:" + attackIndex + "Damage");
+                    collidersToDamage[i].gameObject.GetComponent<EnemyHealthManager>().TakeDamage(damage);
                     collidersDamaged.Add(collidersToDamage[i]);
                 }
             }
