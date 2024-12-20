@@ -10,7 +10,6 @@ public class Movement : MonoBehaviour
     private bool isGrounded;
     public TrailRenderer tr;
 
-    bool canDash = true;
     bool isDashing;
     float dashingPower = 24f;
     float dashingTime = 0.2f;
