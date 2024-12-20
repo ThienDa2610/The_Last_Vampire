@@ -1,6 +1,10 @@
-using UnityEngine;
 using UnityEngine.UI;
-
+using System.Collections;
+using System.Collections.Generic;
+using System.Net;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 public class HealthManager : MonoBehaviour
 {
     static public HealthManager Instance { get; private set; }
@@ -9,7 +13,15 @@ public class HealthManager : MonoBehaviour
     public float currentHealth;
     public bool isInvincible = false;
     public Image healthbarOverlay;
+    public float fallLimit = -6f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Update()
+    {
+        if (transform.position.y < fallLimit)
+        {
+            Dead();
+        }
+    }
     void Awake()
     {
         Instance = this;
@@ -33,8 +45,10 @@ public class HealthManager : MonoBehaviour
     }
     private void Dead()
     {
+        //Time.timeScale = 0;
         //gameOver.SetActive(true);
-        Time.timeScale = 0;
+        MapLoader.Instance.LoadMap("GameOver");
+        MusicManager.Instance.PlayMusic("Menu");
     }
     private void UpdateHealthbar()
     {
