@@ -14,7 +14,7 @@ public class Menu : MonoBehaviour
     public void NewGame()
     {
         MapLoader.Instance.LoadMap("Map1_Forest");
-        MusicManager.Instance.PlayMusic("Menu");
+        MusicManager.Instance.PlayMusic("Level_1");
     }
     public void Resume()
     {
