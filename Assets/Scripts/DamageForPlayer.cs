@@ -17,11 +17,7 @@ public class DamageForPlayer : MonoBehaviour
     {
         if (isPlayerInTrigger && nextDame < Time.time)
         {
-            PlayerHealth thePlayerHealth = FindObjectOfType<PlayerHealth>();
-            if (thePlayerHealth != null)
-            {
-                thePlayerHealth.HasDamage(dmg);
-            }
+            HealthManager.Instance.TakeDamage(dmg);
 
             nextDame = Time.time + dameRate;
         }
