@@ -19,7 +19,7 @@ public class HowlSummon : MonoBehaviour
         EnemyMovement enemyMovement = GetComponent<EnemyMovement>();
         if (enemyMovement != null)
         {
-            player = enemyMovement.player;
+            //player = enemyMovement.player;
         }
     }
 

@@ -2,79 +2,46 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 2.0f;  
-    public float followSpeed = 3.0f;
-    public float attackSpeed = 1.5f;
-    public float moveDistance = 5.0f;  
-    public float followDistance = 10.0f; 
-    public float stopDistance = 1f;    
-    public Transform player;  
+    protected float speed;
+    protected float speedMultiplier;
     public Animator animator;
-    [SerializeField] private float attackDamage = 20f;
-    [SerializeField] private float nextAttackTime = 0f;
 
-    private Rigidbody2D rb;
-    private bool isGrounded = false;
-    private Vector3 startPosition;  
-    private bool movingRight = true;  
-    private bool isFollowingPlayer = false;
-    private Pounce pounce;
-    public LayerMask groundLayer; 
-    
+    protected Rigidbody2D rb;
+    protected bool movingRight;  
+    public LayerMask groundLayer;
+    [SerializeField] EnemyEyeSight eyeSight;
+    [SerializeField] EnemyAttack enemyAttack;
 
-    void Start()
+    protected virtual void Start()
     {
-        pounce = GetComponent<Pounce>();
         rb = GetComponent<Rigidbody2D>();
-        startPosition = transform.position;  
+        animator = GetComponent<Animator>();
+        eyeSight = GetComponentInChildren<EnemyEyeSight>();
+        enemyAttack = GetComponentInChildren<EnemyAttack>();
     }
-
-    void Update()
+    protected virtual void Update()
     {
-        CheckGround();
-        /*if(pounce.isPrepare())
-            return;*/
-        float distanceToPlayer = Mathf.Abs(transform.position.x - player.position.x); 
-
-        if (distanceToPlayer <= followDistance)
+        if (eyeSight.playerSpotted)
         {
-            isFollowingPlayer = true;
-        }
-        else
-        {
-            isFollowingPlayer = false;
-        }
-
-        if (isFollowingPlayer)
-        {
-            FollowPlayer(distanceToPlayer);
+            FollowPlayer();
         }
         else
         {
             animator.SetTrigger("Walk");
             Patrol();
         }
-        if (distanceToPlayer <= stopDistance && nextAttackTime < Time.time)
-        {
-            animator.SetTrigger("Attack");
-            sfxManager.Instance.PlaySound3D("Enemy_1", transform.position);
-            HealthManager.Instance.takeDamage(attackDamage);
-            nextAttackTime = Time.time + attackSpeed;
-        }
+        
     }
 
-    void FollowPlayer(float distanceToPlayer)
+    void FollowPlayer()
     {
-        if (distanceToPlayer <= stopDistance) return;
-        animator.SetTrigger("Follow");
-        float directionX = player.position.x > transform.position.x ? 1 : -1;
-        rb.velocity = new Vector2(directionX * followSpeed, rb.velocity.y);
-
-        if (directionX > 0 && transform.localScale.x < 0 || directionX < 0 && transform.localScale.x > 0)
+        if (isBlocked() || enemyAttack.isAttacking)
         {
-            Flip();
-            movingRight = !movingRight;
+            rb.velocity = Vector2.zero;
+            return;
         }
+        animator.SetTrigger("Follow");
+        rb.velocity = new Vector2(transform.localScale.x * speed * speedMultiplier, rb.velocity.y);
     }
 
     void Patrol()
@@ -82,21 +49,24 @@ public class EnemyMovement : MonoBehaviour
         float direction = movingRight ? 1 : -1;
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
 
-        if (movingRight && transform.position.x >= startPosition.x + moveDistance)
+        if (isBlocked())
         {
-            movingRight = false;
-            Flip();
-        }
-        else if (!movingRight && transform.position.x <= startPosition.x - moveDistance)
-        {
-            movingRight = true;
+            movingRight = !movingRight;
             Flip();
         }
     }
 
-    void CheckGround()
+    bool isBlocked()
     {
-        isGrounded = Physics2D.OverlapCircle(transform.position, 0.1f, groundLayer);
+        Transform pathChecker = transform.Find("PathChecker");
+        if (pathChecker != null)
+        {
+            RaycastHit2D wallHit = Physics2D.Raycast(pathChecker.position, (transform.localScale.x > 0) ? Vector2.right : Vector2.left, 0.3f, groundLayer);
+            RaycastHit2D groundHit = Physics2D.Raycast(pathChecker.position, Vector2.down, 10f, groundLayer);
+            if (wallHit || !groundHit)
+                return true;
+        }
+        return false;
     }
 
     void Flip()

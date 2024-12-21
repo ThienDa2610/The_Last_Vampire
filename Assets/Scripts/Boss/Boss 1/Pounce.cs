@@ -1,78 +1,51 @@
+using System.Collections;
 using UnityEngine;
 
-public class Pounce : MonoBehaviour
+public class Pounce : BossSkill
 {
     public Transform player; 
-    public float maxDistance = 30f;
-    public int damage = 30; 
-    public float cooldownTime = 10f; 
-    public float preparationTime = 1f; 
-    public float jumpForce = 8.0f;
+    [SerializeField] float maxDistance = 10f;
+    [SerializeField] float preparationTime = 1f;
+    [SerializeField] float pounceForce = 15f;
+    [SerializeField] float pounceDuration = 0.6f;
 
     private Animator animator; 
     private Rigidbody2D rb; 
-    private float cooldownTimer = 0f; 
-    private bool isPreparing = false; 
 
-    void Start()
+    void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    protected override void Start()
     {
-        if (cooldownTimer > 0)
-        {
-            cooldownTimer -= Time.deltaTime;
-            return;
-        }
-
-        if (player != null && Vector2.Distance(transform.position, player.position) <= maxDistance)
-        {
-            StartCoroutine(PerformSkill());
-        }
+        base.Start();
+        skillDamage = 30f;
+        maxCooldown = 10f;
+        skillRange = 10f;
+        skillCastDuration = 2f;
     }
-
-    private System.Collections.IEnumerator PerformSkill()
+    private IEnumerator Pouncing()
     {
-        isPreparing = true;
-        cooldownTimer = cooldownTime;
-
-        if (animator != null)
-        {
-            animator.SetTrigger("Prepare");
-        }
-
+        animator.SetTrigger("Prepare");
         yield return new WaitForSeconds(preparationTime);
 
-        if (player != null && Vector2.Distance(transform.position, player.position) <= maxDistance)
-        {
-            if (animator != null)
-            {
-                animator.SetTrigger("Pounce");
-            }
+        IntoCooldown();
 
-            Vector2 direction = (player.position - transform.position).normalized;
-            Vector2 jumpDirection = new Vector2 (direction.x * jumpForce, jumpForce/2 );
-            rb.AddForce(jumpDirection, ForceMode2D.Impulse);
+        Applier.skillDamage = skillDamage;
+        Applier.castingDamage = true;
 
-            //yield return new WaitForSeconds(0.5f); 
-            if (Vector2.Distance(transform.position, player.position) <= 1.5f) 
-            {
-                // PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-                // if (playerHealth != null)
-                // {
-                //     playerHealth.TakeDamage(damage);
-                // }
-            }
-        }
+        animator.SetTrigger("Pounce");
+        rb.velocity = new Vector2(transform.localScale.x * pounceForce, 0f);
+        yield return new WaitForSeconds(pounceDuration);
 
-        isPreparing = false;
+        Applier.castingDamage = false;
     }
-
-    public bool isPrepare()
+    public override void Play()
     {
-        return isPreparing;
+        base.Play();
+
+        StartCoroutine(Pouncing());
     }
 }

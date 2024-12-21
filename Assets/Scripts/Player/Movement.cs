@@ -7,8 +7,8 @@ public class Movement : MonoBehaviour
     public float jumpForce = 7f;
     public Animator animator;
     private Rigidbody2D rb;
-    private bool isGrounded;
     public TrailRenderer tr;
+    private PlayerGroundCheck groundCheck;
 
     bool isDashing;
     [SerializeField] float dashingPower = 12f;
@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         tr = GetComponent<TrailRenderer>();
+        groundCheck = GetComponentInChildren<PlayerGroundCheck>();
     }
 
     // Update is called once per frame
@@ -47,7 +48,7 @@ public class Movement : MonoBehaviour
 
         rb.velocity = new Vector2 (move * moveSpeed, rb.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && groundCheck.isOnTheGround())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
@@ -55,23 +56,6 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && SkillCDManager.isOffCooldown(SkillType.Dash))
         {
             StartCoroutine(Dash());
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-            animator.SetBool("isJumping", false);
-        }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-            animator.SetBool("isJumping", true);
         }
     }
 
