@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 
     public float damage = 10f;     
     public float damageInterval = 1f;
-    private bool isDamaging = false;
+    //private bool isDamaging = false;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,13 +21,13 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             StopAllCoroutines(); 
-            isDamaging = false;
+            //isDamaging = false;
         }
     }
 
     private IEnumerator ApplyDamageOverTime()
     {
-        isDamaging = true;
+        //isDamaging = true;
         while (true)
         {
             HealthManager.Instance.takeDamage(damage);

@@ -9,6 +9,10 @@ public class MusicManager : MonoBehaviour
 
     [SerializeField] private MusicLibrary musicLibrary;
     [SerializeField] private AudioSource musicSource;
+
+    private const string MusicVolumeKey = "MusicVolume";
+    private float volume = 1.0f;
+
     private void Awake()
     {
         if (Instance == null)
@@ -18,6 +22,22 @@ public class MusicManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        volume = PlayerPrefs.GetFloat(MusicVolumeKey, 1.0f);
+        ApplyVolume();
+    }
+
+    private void ApplyVolume()
+    {
+        musicSource.volume = volume;
+    }
+
+    public void SetVolume(float newVolume)
+    {
+        volume = newVolume;
+        ApplyVolume(); 
+        PlayerPrefs.SetFloat(MusicVolumeKey, volume);  
+        PlayerPrefs.Save(); 
     }
 
     public void PlayMusic(string name, float fadeDuration = 0.5f)

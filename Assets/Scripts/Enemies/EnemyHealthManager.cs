@@ -6,7 +6,7 @@ public class EnemyHealthManager : MonoBehaviour
 {
     public GameObject dropItemPrefab;
     public Transform dropPoint;
-    private bool isTakingDamage = false;
+    //private bool isTakingDamage = false;
     public int dropChance = 100;
     public float health = 15.0f;
     public Animator animator;

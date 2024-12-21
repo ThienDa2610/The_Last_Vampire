@@ -8,6 +8,10 @@ public class sfxManager : MonoBehaviour
 
     [SerializeField] private SoundLibrary sfxLibrary;
     [SerializeField] private AudioSource sfx2DSource;
+
+    private const string VolumeKey = "SFXVolume";
+    private float volume = 1.0f;
+
     private void Awake()
     {
         if (Instance != null)
@@ -17,8 +21,20 @@ public class sfxManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        volume = PlayerPrefs.GetFloat(VolumeKey, 1.0f);
+        ApplyVolume();
     }
-
+    private void ApplyVolume()
+    {
+        sfx2DSource.volume = volume;
+    }
+    public void SetVolume(float newVolume)
+    {
+        volume = newVolume;
+        ApplyVolume();
+        PlayerPrefs.SetFloat(VolumeKey, volume); 
+        PlayerPrefs.Save();
+    }
     public void PlaySound3D(AudioClip clip, Vector3 position)
     {
         if (clip != null)
