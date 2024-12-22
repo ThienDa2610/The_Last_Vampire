@@ -11,7 +11,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInParent<Animator>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

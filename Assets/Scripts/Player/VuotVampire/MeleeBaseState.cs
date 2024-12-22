@@ -53,6 +53,7 @@ public class MeleeBaseState : State
             {
                 if (collidersToDamage[i].CompareTag("Enemy"))
                 {
+                    //Debug.Log(collidersToDamage[i].gameObject.name);
                     collidersToDamage[i].gameObject.GetComponent<EnemyHealthManager>().TakeDamage(damage);
                     collidersDamaged.Add(collidersToDamage[i]);
                 }

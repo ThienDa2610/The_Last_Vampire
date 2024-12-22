@@ -6,7 +6,7 @@ public class BossSkill : MonoBehaviour
 {
     protected float skillDamage;
     [SerializeField] protected float maxCooldown;
-    [SerializeField] public float currentCooldown;
+    [SerializeField] protected float currentCooldown;
     public float skillRange;
     protected bool isFacingRight;
     public BossSkillManager skillManager;
