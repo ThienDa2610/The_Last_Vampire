@@ -19401,11 +19401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.6
+      value: 211.4
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20066,14 +20066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Wolf
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2079022930935855714, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5605397468543083774, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1599242735}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
 --- !u!4 &1289869296 stripped
 Transform:
@@ -21131,6 +21127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1369380018}
   - component: {fileID: 1369380017}
+  - component: {fileID: 1369380024}
   - component: {fileID: 1369380022}
   - component: {fileID: 1369380019}
   - component: {fileID: 1369380020}
@@ -21434,6 +21431,7 @@ MonoBehaviour:
   skillCastRate: 2
   castTimer: 0
   moveSpeed: 2
+  skillIndex: 0
   animator: {fileID: 0}
   rb: {fileID: 0}
   isCastingSkill: 0
@@ -21441,6 +21439,7 @@ MonoBehaviour:
   MoveSet:
   - {fileID: 1369380019}
   - {fileID: 1369380022}
+  - {fileID: 1369380024}
 --- !u!114 &1369380021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21492,6 +21491,26 @@ MonoBehaviour:
   health: 0
   animator: {fileID: 0}
   healthbarOverlay: {fileID: 1459984287}
+--- !u!114 &1369380024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369380009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde94e53d2e371e4b923c5bea7dbacd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCooldown: 0
+  currentCooldown: 0
+  skillRange: 0
+  skillManager: {fileID: 0}
+  wolfPrefab: {fileID: 3036051396600870886, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
+  numberOfWolves: 3
+  summonRadius: 5
+  howlDuration: 1
 --- !u!1 &1378290404
 GameObject:
   m_ObjectHideFlags: 0
@@ -23736,28 +23755,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
---- !u!1 &1599242731 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5605397468543083774, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
-  m_PrefabInstance: {fileID: 1289869295}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1599242735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599242731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9564f897e5110004ca7501a3e11759c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 0
-  attackRate: 0
-  attackDuration: 0
-  isAttacking: 0
-  animator: {fileID: 0}
 --- !u!1 &1612587395
 GameObject:
   m_ObjectHideFlags: 0

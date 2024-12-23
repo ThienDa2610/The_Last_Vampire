@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
     public Animator animator;
 
     protected Rigidbody2D rb;
-    protected bool movingRight;  
+    public bool movingRight;  
     public LayerMask groundLayer;
     [SerializeField] EnemyEyeSight eyeSight;
     [SerializeField] EnemyAttack enemyAttack;

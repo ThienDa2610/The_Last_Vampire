@@ -10,6 +10,7 @@ public class BossSkillManager : MonoBehaviour
     [SerializeField] private float skillCastRate;
     [SerializeField] private float castTimer;
     [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private int skillIndex;
     public Animator animator;
     public Rigidbody2D rb;
     public bool isCastingSkill;
@@ -44,7 +45,6 @@ public class BossSkillManager : MonoBehaviour
                 if (MoveSet[i].isReady())
                     availableSkill.Add(i);
             }
-            int skillIndex;
             if (availableSkill.Count > 0)
             {
                 skillIndex = availableSkill[Random.Range(0, availableSkill.Count)];
@@ -52,13 +52,17 @@ public class BossSkillManager : MonoBehaviour
             else
                 return;
             isCastingSkill = true;
+            castTimer = 0;
+        }
+        if (skillIndex >= 0)
+        {
             float distance = Mathf.Abs(player.position.x - transform.position.x);
             AdjustDirection(player);
             if (distance < MoveSet[skillIndex].skillRange)
             {
                 rb.velocity = new Vector2(0f, rb.velocity.y);
-                castTimer = 0;
                 MoveSet[skillIndex].Play(player);
+                skillIndex = -1;
             }
             else
             {
