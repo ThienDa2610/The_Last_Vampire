@@ -4,42 +4,37 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
 
-    public float attackDamage = 10f;     
-    public float damageRate = 1f;
+    public float attackDamage;     
+    public float attackRate;
+    public float attackDuration;
     public bool isAttacking;
     public Animator animator;
 
-    private void Awake()
+    protected virtual void Start()
     {
         animator = GetComponentInParent<Animator>();
+        isAttacking = false;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             isAttacking = true;
-            animator.SetBool("Attack", true);
-            StartCoroutine(ApplyDamageOverTime());
+            StartCoroutine(Attack());
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    protected void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             StopAllCoroutines(); 
             isAttacking = false;
-            animator.SetBool("Attack", false);
         }
     }
 
-    private IEnumerator ApplyDamageOverTime()
+    protected virtual IEnumerator Attack()
     {
-        isAttacking = true;
-        while (true)
-        {
-            HealthManager.Instance.takeDamage(attackDamage);
-            yield return new WaitForSeconds(damageRate);
-        }
+        return null;
     }
 }

@@ -19359,7 +19359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3036051396600870886, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6602646990508997993, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
       propertyPath: player
@@ -19401,11 +19401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 213.84
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.36
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20066,10 +20066,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Wolf
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2079022930935855714, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5605397468543083774, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1599242735}
   m_SourcePrefab: {fileID: 100100000, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
 --- !u!4 &1289869296 stripped
 Transform:
@@ -23732,6 +23736,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
+--- !u!1 &1599242731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5605397468543083774, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
+  m_PrefabInstance: {fileID: 1289869295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1599242735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599242731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9564f897e5110004ca7501a3e11759c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 0
+  attackRate: 0
+  attackDuration: 0
+  isAttacking: 0
+  animator: {fileID: 0}
 --- !u!1 &1612587395
 GameObject:
   m_ObjectHideFlags: 0
@@ -23886,7 +23912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3036051396600870886, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6602646990508997993, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
       propertyPath: player
@@ -24080,7 +24106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3036051396600870886, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6602646990508997993, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
       propertyPath: player
@@ -25135,7 +25161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2591999324812548738, guid: 0767d3e3effccfc42a787daf8a57ed3b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 22.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6186539267940654453, guid: 0767d3e3effccfc42a787daf8a57ed3b, type: 3}
       propertyPath: m_Name
@@ -25231,7 +25257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7724332194296111398, guid: 0767d3e3effccfc42a787daf8a57ed3b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9039147623467707516, guid: 0767d3e3effccfc42a787daf8a57ed3b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -25648,7 +25674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3036051396600870886, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6602646990508997993, guid: 79584e046080e11489dcfe03b28023a1, type: 3}
       propertyPath: player
