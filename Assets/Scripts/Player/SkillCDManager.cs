@@ -10,10 +10,14 @@ public enum SkillType
 }
 public class SkillCDManager : MonoBehaviour
 {
-    [SerializeField] private static Image[] cdOverlay;
-    [SerializeField] private static float[] skillCD;
-    public static float[] skillCurrentCD;
-
+    public static SkillCDManager instance;
+    [SerializeField] private Image[] cdOverlay;
+    [SerializeField] private float[] skillCD;
+    public float[] skillCurrentCD;
+    private void Start()
+    {
+        instance = this;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -29,12 +33,12 @@ public class SkillCDManager : MonoBehaviour
     }
     public static void IntoCooldown(SkillType skillType)
     {
-        skillCurrentCD[(int)skillType] = skillCD[(int)skillType];
-        cdOverlay[(int)skillType].fillAmount = 1;
+        instance.skillCurrentCD[(int)skillType] = instance.skillCD[(int)skillType];
+        instance.cdOverlay[(int)skillType].fillAmount = 1;
     }
     public static bool isOffCooldown(SkillType skillType)
     {
-        if (skillCurrentCD[(int)skillType] > 0)
+        if (instance.skillCurrentCD[(int)skillType] > 0)
             return false;
         return true;
     }
