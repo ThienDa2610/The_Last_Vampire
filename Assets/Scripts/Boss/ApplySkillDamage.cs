@@ -10,7 +10,7 @@ public class ApplySkillDamage : MonoBehaviour
     {
         if (collision.CompareTag("Player") && castingDamage)
         {
-            HealthManager.Instance.takeDamage(skillDamage);
+            HealthManager.Instance.takeDamage(skillDamage, transform.parent.gameObject);
         }
     }
 }

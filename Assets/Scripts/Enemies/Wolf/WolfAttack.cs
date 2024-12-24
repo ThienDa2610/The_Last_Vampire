@@ -18,7 +18,7 @@ public class WolfAttack : EnemyAttack
         {
             animator.SetTrigger("Attack");
             yield return new WaitForSeconds(attackDuration);
-            HealthManager.Instance.takeDamage(attackDamage);
+            HealthManager.Instance.takeDamage(attackDamage, transform.parent.gameObject);
             yield return new WaitForSeconds(attackRate);
         }
     }

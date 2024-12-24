@@ -14,6 +14,8 @@ public class HealthManager : MonoBehaviour
     public bool isInvincible = false;
     public Image healthbarOverlay;
     public float fallLimit = -6f;
+
+    public Counter counter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Update()
     {
@@ -25,11 +27,17 @@ public class HealthManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        counter = GetComponent<Counter>();
         currentHealth = maxHealth;
         UpdateHealthbar();
     }
-    public void takeDamage(float damage)
+    public void takeDamage(float damage, GameObject damageDealer)
     {
+        if (counter.enabled && counter.isCountering && damageDealer != null)
+        {
+            counter.Countering(damageDealer);
+            return;
+        }
         if (isInvincible) return;
         currentHealth = (currentHealth - damage) < 0 ? 0 : (currentHealth - damage);
         UpdateHealthbar();

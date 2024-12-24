@@ -5,19 +5,14 @@ using UnityEngine.UI;
 
 public enum SkillType
 {
-    Dash
+    Dash,
+    Counter
 }
 public class SkillCDManager : MonoBehaviour
 {
-    public static SkillCDManager instance;
-    [SerializeField] private Image[] cdOverlay;
-    [SerializeField] private float[] skillCD;
-    public float[] skillCurrentCD;
-    // Start is called before the first frame update
-    void Start()
-    {
-        instance = this;
-    }
+    [SerializeField] private static Image[] cdOverlay;
+    [SerializeField] private static float[] skillCD;
+    public static float[] skillCurrentCD;
 
     // Update is called once per frame
     void Update()
@@ -34,12 +29,12 @@ public class SkillCDManager : MonoBehaviour
     }
     public static void IntoCooldown(SkillType skillType)
     {
-        instance.skillCurrentCD[(int)skillType] = instance.skillCD[(int)skillType];
-        instance.cdOverlay[(int)skillType].fillAmount = 1;
+        skillCurrentCD[(int)skillType] = skillCD[(int)skillType];
+        cdOverlay[(int)skillType].fillAmount = 1;
     }
     public static bool isOffCooldown(SkillType skillType)
     {
-        if (instance.skillCurrentCD[(int)skillType] > 0)
+        if (skillCurrentCD[(int)skillType] > 0)
             return false;
         return true;
     }

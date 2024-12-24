@@ -48,7 +48,7 @@ public class WolfClaw : BossSkill
         {
             if (collidersToDamage[i].CompareTag("Player"))
             {
-                HealthManager.Instance.takeDamage(skillDamage);
+                HealthManager.Instance.takeDamage(skillDamage, gameObject);
             }
         }
     }
