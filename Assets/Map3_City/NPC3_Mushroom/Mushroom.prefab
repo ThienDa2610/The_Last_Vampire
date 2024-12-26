@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 782878075953744221}
   - component: {fileID: 1556866402751606028}
   m_Layer: 0
-  m_Name: Sprite
+  m_Name: Mushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,12 +28,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6000936480053389784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.15, y: 1.53, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalPosition: {x: -6.9133115, y: -3.982055, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3232775563643090114
 SpriteRenderer:
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1430996650, guid: 1b40afba159a59b47bc0f605e3e25348, type: 3}
+  m_Sprite: {fileID: -935182440, guid: 1fa3e51f6fa076c4093a6b8563e0ddfd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 6000936480053389784}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3875ea30829904a4389a0e960acfc03a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2cc8ed413c3e96d4890dc0e0ef8be755, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -140,18 +140,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.03139448, y: 0.31817728}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.03125, y: 2.84375}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.59, y: 0.5}
     newSize: {x: 6.03125, y: 2.84375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.34375, y: 3.21875}
+  m_Size: {x: 0.95317316, y: 0.8412579}
   m_EdgeRadius: 0
 --- !u!114 &1556866402751606028
 MonoBehaviour:
@@ -166,5 +166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8648207094023474666}
+  dialogImage: {fileID: 0}
   dialogText: {fileID: 4280081078074309467, guid: a641da663914f3845be9d3b8ce620fc8, type: 3}
   idleMessage: Hello!

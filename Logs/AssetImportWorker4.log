@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.3f1 (7cdc2969a641) revision 8182825'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26120) 64bit Core' Language: 'en' Physical Memory: 3891 MB
+OS: 'Windows 11  (10.0.26120) 64bit Core' Language: 'en' Physical Memory: 12083 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ D:/BaoDi/7/Game/The_Last_Vampire
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-50233
+1518
 Successfully changed project path to: D:/BaoDi/7/Game/The_Last_Vampire
 D:/BaoDi/7/Game/The_Last_Vampire
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/BaoDi/7/Game/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7140] Host "[IP] 10.0.142.234 [Port] 0 [Flags] 2 [Guid] 2982601676 [EditorId] 2982601676 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10964] Host "[IP] 172.25.16.1 [Port] 0 [Flags] 2 [Guid] 303746128 [EditorId] 303746128 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7140] Host "[IP] 10.0.142.234 [Port] 0 [Flags] 2 [Guid] 2982601676 [EditorId] 2982601676 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10964] Host "[IP] 172.25.16.1 [Port] 0 [Flags] 2 [Guid] 303746128 [EditorId] 303746128 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 23.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 931.93 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path D:/Unity/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -63,51 +63,14 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: Intel(R) UHD Graphics (ID=0x8a56)
     Vendor:   Intel
-    VRAM:     1945 MB
+    VRAM:     6041 MB
     Driver:   27.20.100.9664
 Initialize mono
 Mono path[0] = 'D:/Unity/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.014204 seconds.
-- Loaded All Assemblies, in  9.247 seconds
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  9.559 seconds
-Domain Reload Profiling: 18807ms
-	BeginReloadAssembly (5935ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (0ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (800ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (361ms)
-	LoadAllAssembliesAndSetupDomain (2126ms)
-		LoadAssemblies (5903ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2115ms)
-			TypeCache.Refresh (2108ms)
-				TypeCache.ScanAssembly (2063ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (9561ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2791ms)
-			LogAssemblyErrors (5ms)
-			InitializePlatformSupportModulesInManaged (541ms)
-			SetLoadedEditorAssemblies (658ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (153ms)
-			ProcessInitializeOnLoadAttributes (1203ms)
-			ProcessInitializeOnLoadMethodAttributes (228ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (2ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (0ms)
+Registered in 0.023152 seconds.
