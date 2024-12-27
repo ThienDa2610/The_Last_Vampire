@@ -13,16 +13,71 @@ public class EnemyHealthManager : MonoBehaviour
     public float health;
     public Animator animator;
     public Image healthbarOverlay;
+    private bool isDead = false;
 
+    //skill tree
+    //blood lost
+    private float bloodLostDuration = 2f;
+    private float bloodLostDamage = 2f;
+    private float bloodLostRate = 0.5f;
+    private List<float> bloodLostTimer;
+    private List<float> bloodLostDamageTimer;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         health = maxHealth;
+        bloodLostTimer = new List<float>();
+        bloodLostDamageTimer = new List<float>();
     }
     void Update()
     {
+        if (isDead) return;
+
+        //blood lost damage
+        if (bloodLostTimer.Count > 0)
+        {
+            for (int i = 0; i < bloodLostTimer.Count; i++)
+            {
+                if (bloodLostTimer[i] < bloodLostDamageTimer[i])
+                {
+                    TakeDamage(bloodLostDamage);
+                    bloodLostDamageTimer[i] -= bloodLostRate;
+                }
+            }
+        }
+
+        //bloodlost stack reduce
+        for (int i = 0; i<bloodLostTimer.Count; i++)
+        {
+            bloodLostTimer[i] -= Time.deltaTime;
+            if (bloodLostTimer[i] < 0)
+            {
+                bloodLostTimer.RemoveAt(i);
+                bloodLostDamageTimer.RemoveAt(i);
+            }
+        }  
+
         UpdateHealthbar();
+    }
+    public void InflictBloodLost()
+    {
+        if (bloodLostTimer.Count < 3)
+        {
+            bloodLostTimer.Add(bloodLostDuration);
+            bloodLostDamageTimer.Add(bloodLostDuration);
+        }
+        else
+        {
+            int lowestTimerIdx = bloodLostTimer.Count - 1;
+            for (int i = 0; i < bloodLostTimer.Count - 1; i++)
+            {
+                if (bloodLostTimer[i] < bloodLostTimer[lowestTimerIdx])
+                    lowestTimerIdx = i;
+            }
+            bloodLostTimer[lowestTimerIdx] = bloodLostDuration;
+            bloodLostDamageTimer[lowestTimerIdx] = bloodLostDuration;
+        }
     }
     public void TakeDamage(float damageAmount)
     {
@@ -39,6 +94,7 @@ public class EnemyHealthManager : MonoBehaviour
 
     private void Die()
     {
+        isDead = true;
         animator.SetTrigger("Enemy_die");
         sfxManager.Instance.PlaySound3D("Die", transform.position);
         DropItem();

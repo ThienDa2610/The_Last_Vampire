@@ -48,6 +48,12 @@ public class SkillTreeManager : MonoBehaviour
             case SkillNode.ThreateningAura_3:
                 MeleeBaseState.damage *= 1.05f;
                 break;
+            case SkillNode.DestructiveClaws:
+            //
+            case SkillNode.Tear:
+                MeleeBaseState.Tear = true;
+                break;
+
 
             //movement tree
 

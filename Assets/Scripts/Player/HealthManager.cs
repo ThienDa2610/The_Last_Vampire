@@ -26,7 +26,9 @@ public class HealthManager : MonoBehaviour
         counter = GetComponent<Counter>();
         currentHealth = maxHealth;
         UpdateHealthbar();
-
+    }
+    private void Start()
+    {
         //rebirth
         if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.Rebirth_1))
         {

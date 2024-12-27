@@ -15,9 +15,12 @@ public class MeleeBaseState : State
 
 
     //skill tree
+    // //lifesteal
     public static float damage;
     public static bool lifeSteal = false;
     private float lifeStealPercent = 0.1f;
+    // //blood lost
+    public static bool Tear = false;
     public override void OnEnter(StateMachine _stateMachine)
     {
         base.OnEnter(_stateMachine);
@@ -59,9 +62,15 @@ public class MeleeBaseState : State
                 {
                     //Debug.Log(collidersToDamage[i].gameObject.name);
                     collidersToDamage[i].gameObject.GetComponent<EnemyHealthManager>().TakeDamage(damage);
+                    //vampiric claws
                     if (lifeSteal)
                     {
                         HealthManager.Instance.Heal(damage * lifeStealPercent);
+                    }
+                    //tear
+                    if (Tear || true)
+                    {
+                        collidersToDamage[i].gameObject.GetComponent<EnemyHealthManager>().InflictBloodLost();
                     }
                     collidersDamaged.Add(collidersToDamage[i]);
                 }
