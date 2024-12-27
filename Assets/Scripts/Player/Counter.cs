@@ -9,6 +9,10 @@ public class Counter : MonoBehaviour
     [SerializeField] float teleOffset = 1.5f;
     [SerializeField] float healAmount = 30f;
     [SerializeField] float counterDamage = 30f;
+
+    //skill tree
+    public static bool isEnhanced = false;
+    private float enhancedDuration = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +34,8 @@ public class Counter : MonoBehaviour
         isCountering = true;
         //animation
         yield return new WaitForSeconds(counterDuration);
+        if (isEnhanced)
+            yield return new WaitForSeconds(enhancedDuration);
 
         isCountering = false;
     }

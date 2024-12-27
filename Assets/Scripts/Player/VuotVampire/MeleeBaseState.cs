@@ -12,8 +12,12 @@ public class MeleeBaseState : State
     protected int attackIndex;
     // Cached already struck objects of said attack to avoid overlapping attacks on same target
     private List<Collider2D> collidersDamaged;
-    public float damage;
 
+
+    //skill tree
+    public static float damage;
+    public static bool lifeSteal = false;
+    private float lifeStealPercent = 0.1f;
     public override void OnEnter(StateMachine _stateMachine)
     {
         base.OnEnter(_stateMachine);
@@ -55,6 +59,10 @@ public class MeleeBaseState : State
                 {
                     //Debug.Log(collidersToDamage[i].gameObject.name);
                     collidersToDamage[i].gameObject.GetComponent<EnemyHealthManager>().TakeDamage(damage);
+                    if (lifeSteal)
+                    {
+                        HealthManager.Instance.Heal(damage * lifeStealPercent);
+                    }
                     collidersDamaged.Add(collidersToDamage[i]);
                 }
             }

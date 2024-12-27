@@ -1,16 +1,60 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class SkillTreeManager : MonoBehaviour
 {
     public static SkillTreeManager Instance;
+    private List<SkillNode> unlockedSkillNodeList;
+
     private void Awake()
     {
         Instance = this;
+        unlockedSkillNodeList = new List<SkillNode>();
+        OnSkillUnlocked += SkillTreeManager_OnSkillUnlocked1;
     }
+
+    private void SkillTreeManager_OnSkillUnlocked1(object sender, OnSkillUnlockedEventArgs e)
+    {
+        switch (e.skillNode)
+        {
+            //survival tree
+            case SkillNode.Lifeforce_1:
+            case SkillNode.Lifeforce_2:
+            case SkillNode.Lifeforce_3:
+                HealthManager.Instance.maxHealth += 10f;
+                break;
+            case SkillNode.VapiricClaws:
+                MeleeBaseState.lifeSteal = true;
+                break;
+            case SkillNode.EnhancedSense:
+                Counter.isEnhanced = true;
+                break;
+            case SkillNode.Rebirth_1:
+                HealthManager.rebirthCD = 0;
+                break;
+            case SkillNode.Rebirth_2:
+                HealthManager.canRebirth2 = true;
+                break;
+
+            //offensive tree
+            case SkillNode.ThreateningAura_1:
+            case SkillNode.ThreateningAura_2:
+                MeleeBaseState.damage *= 1.1f;
+                break;
+            case SkillNode.ThreateningAura_3:
+                MeleeBaseState.damage *= 1.05f;
+                break;
+
+            //movement tree
+
+
+        }
+    }
+
     public enum SkillNode
     {
         Lifeforce_1,
@@ -42,12 +86,6 @@ public class SkillTreeManager : MonoBehaviour
         public SkillNode skillNode;
     }
     public event EventHandler<OnSkillUnlockedEventArgs> OnSkillUnlocked;
-
-    private List<SkillNode> unlockedSkillNodeList;
-    public SkillTreeManager()
-    {
-        unlockedSkillNodeList = new List<SkillNode>();
-    }
     public bool IsSkillUnlocked(SkillNode skillNode)
     {
         return unlockedSkillNodeList.Contains(skillNode);
