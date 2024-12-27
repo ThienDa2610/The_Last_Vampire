@@ -1,21 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Touch_Plant_No : MonoBehaviour
 {
-    public GameObject interactionText;
+    public Image dialogImage;
+    public TMP_Text dialogText;
+    public string idleMessage;
 
     private bool isPlayerNear = false;
-    private bool hasBloomed = false;
-
+    public bool hasBloomed = false;
+    void Start()
+    {
+        if (dialogText != null)
+        {
+            dialogText.enabled = false;
+            dialogImage.enabled = false;
+        }
+    }
     void Update()
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !hasBloomed)
         {
             gameObject.SetActive(false);
             hasBloomed = true;
-            interactionText.gameObject.SetActive(false);
+            if (dialogText != null)
+            {
+                dialogText.enabled = false;
+                dialogImage.enabled = false;
+            }
+        }
+    }
+    public void SetPlantState(bool state)
+    {
+        if (hasBloomed != state)
+        {
+            hasBloomed = state;
+            if (hasBloomed)
+            {
+                gameObject.SetActive(false);
+                dialogText.enabled = false;
+                dialogImage.enabled = false;
+            }
+
         }
     }
     void OnTriggerEnter2D(Collider2D other)
@@ -23,7 +52,12 @@ public class Touch_Plant_No : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerNear = true;
-            interactionText.gameObject.SetActive(true);
+            if (!hasBloomed && dialogText != null)
+            {
+                dialogText.enabled = true;
+                dialogImage.enabled = true;
+                dialogText.text = idleMessage;
+            }
         }
     }
 
@@ -32,7 +66,11 @@ public class Touch_Plant_No : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerNear = false;
-            interactionText.gameObject.SetActive(false);
+            if (dialogText != null)
+            {
+                dialogText.enabled = false;
+                dialogImage.enabled = false;
+            }
         }
     }
 }

@@ -15,12 +15,24 @@ public class HealthManager : MonoBehaviour
     public Image healthbarOverlay;
     public float fallLimit = -6f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (PlayerPrefs.HasKey("SavedHealth"))
+        {
+            currentHealth = PlayerPrefs.GetFloat("SavedHealth");
+        }
+        else
+        {
+            currentHealth = maxHealth;
+        }
+    }
     void Update()
     {
         if (transform.position.y < fallLimit)
         {
             Dead();
         }
+       
     }
     void Awake()
     {
@@ -46,12 +58,13 @@ public class HealthManager : MonoBehaviour
     private void Dead()
     {
         sfxManager.Instance.PlaySound2D("Die");
+
+        string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
+        SceneManager.LoadScene(savedSceneName);
         //Time.timeScale = 0;
         //gameOver.SetActive(true);
-        MapLoader.Instance.LoadMap("GameOver");
-        MusicManager.Instance.PlayMusic("Menu");
     }
-    private void UpdateHealthbar()
+    public void UpdateHealthbar()
     {
         healthbarOverlay.fillAmount = currentHealth / maxHealth;
 

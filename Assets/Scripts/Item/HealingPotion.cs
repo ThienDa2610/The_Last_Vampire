@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class HealingPotion : Collectible
 {
+    public BloodPotionManager bloodPotionManager;
+    void Start()
+    {
+        bloodPotionManager = FindObjectOfType<BloodPotionManager>();
+    }
+
     protected override void TakeEffect(Collider2D collision)
     {
-        HealthManager.Instance.Heal(value);
+        base.TakeEffect(collision);  
+
+        bloodPotionManager.CollectBloodBottle();
     }
 }

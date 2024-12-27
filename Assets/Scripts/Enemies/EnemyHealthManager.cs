@@ -10,7 +10,7 @@ public class EnemyHealthManager : MonoBehaviour
     public int dropChance = 100;
     public float health = 15.0f;
     public Animator animator;
-    private bool isDead = false;
+    public bool isDead = false;
 
     // Start is called before the first frame update
     void Start()

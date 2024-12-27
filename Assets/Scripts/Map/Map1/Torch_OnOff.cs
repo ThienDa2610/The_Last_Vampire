@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Torch_OnOff : MonoBehaviour
 {
-    private bool isOn = true;
+    public bool isOn = true;
     public Animator torchAnimator;
-    public GameObject toggleText;
+    public Image dialogImage;
+    public TMP_Text dialogText;
+    public string idleMessage;
     private bool isPlayerNear = false;
 
     void Start()
     {
-        toggleText.SetActive(false);
+        dialogText.enabled = false;
+        dialogImage.enabled = false;
     }
     
     public void ToggleTorch()
@@ -26,7 +31,24 @@ public class Torch_OnOff : MonoBehaviour
             torchAnimator.SetTrigger("TurnOn");
             isOn = true;
         }
-        toggleText.SetActive(false);
+        dialogText.enabled = false;
+        dialogImage.enabled = false;
+    }
+
+    public void SetTorchState(bool state)
+    {
+        if (isOn != state)
+        {
+            isOn = state;
+            if (isOn)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -36,7 +58,9 @@ public class Torch_OnOff : MonoBehaviour
             isPlayerNear = true;
             if (isOn)
             {
-                toggleText.SetActive(true);
+                dialogText.enabled = true;
+                dialogImage.enabled = true;
+                dialogText.text = idleMessage;
             }
         }
     }
@@ -47,7 +71,8 @@ public class Torch_OnOff : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerNear = false;
-            toggleText.SetActive(false);
+            dialogText.enabled = false;
+            dialogImage.enabled = false;
         }
     }
 

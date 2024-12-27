@@ -1,18 +1,65 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class TurnOffTouch : MonoBehaviour
 {
-    public GameObject interactionText;
+    public Image dialogImage;
+    public TMP_Text dialogText;
+    public string idleMessage;
     public Animator torchAnimator; 
     public GameObject tilemap;    
     private bool isPlayerNear = false;
     public bool isTorchOn = true;
-
+    
+    void Start()
+    {
+        if (dialogText != null)
+        {
+            dialogText.enabled = false;
+            dialogImage.enabled = false;
+        }
+        tilemap.SetActive(false);
+    }
+    public void TurnOffTorch()
+    {
+        if (isTorchOn)
+        {
+            torchAnimator.SetTrigger("TurnOff");
+            isTorchOn = false;
+            tilemap.SetActive(true);
+        }
+        else
+        {
+            torchAnimator.SetTrigger("TurnOn");
+            isTorchOn = true;
+            tilemap.SetActive(false);
+        }
+        dialogText.enabled = false;
+        dialogImage.enabled = false;
+    }
+    public void SetTorchState(bool state)
+    {
+        if (isTorchOn != state)
+        {
+            isTorchOn = state;
+            if (isTorchOn)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }
+        }
+    }
     void Update()
     {
-        if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && isTorchOn)
+        if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
         {
             TurnOffTorch(); 
         }
@@ -23,25 +70,29 @@ public class TurnOffTouch : MonoBehaviour
         if (other.CompareTag("Player")) 
         {
             isPlayerNear = true;
-            interactionText.gameObject.SetActive(true);
+            if (isTorchOn)
+            {
+                dialogText.enabled = true;
+                dialogImage.enabled = true;
+                dialogText.text = idleMessage;
+            }
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player"))
         {
             isPlayerNear = false;
-            interactionText.gameObject.SetActive(false);
-        }
-    }
 
-    void TurnOffTorch()
+            dialogText.enabled = false;
+            dialogImage.enabled = false;
+
+        } 
+    }
+    public bool IsTorchOn()
     {
-        torchAnimator.SetTrigger("TurnOff");
-
-        tilemap.SetActive(true);
-        isTorchOn = false;
-        interactionText.gameObject.SetActive(false);
+        return isTorchOn;
     }
+
 }

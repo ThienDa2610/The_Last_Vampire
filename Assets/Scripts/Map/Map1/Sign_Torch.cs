@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Sign_Torch : MonoBehaviour
 {
     public GameObject tilemap;  
-    public GameObject[] torches;  
-    public GameObject toggleText; 
+    public GameObject[] torches;
+    public Image dialogImage;
+    public TMP_Text dialogText;
+    public string idleMessage;
     private bool isPlayerNear = false; 
 
     void Start()
     {
-        toggleText.SetActive(false); 
+        dialogText.enabled = false;
+        dialogImage.enabled = false;
     }
 
     private void Update()
@@ -27,8 +32,10 @@ public class Sign_Torch : MonoBehaviour
     {
         if (other.CompareTag("Player"))  
         {
-            isPlayerNear = true;  
-            toggleText.SetActive(true);  
+            isPlayerNear = true;
+            dialogText.enabled = true;
+            dialogImage.enabled = true;
+            dialogText.text = idleMessage;
         }
     }
 
@@ -36,8 +43,9 @@ public class Sign_Torch : MonoBehaviour
     {
         if (other.CompareTag("Player"))  
         {
-            isPlayerNear = false; 
-            toggleText.SetActive(false);  
+            isPlayerNear = false;
+            dialogText.enabled = false;
+            dialogImage.enabled = false;
         }
     }
 
@@ -50,13 +58,16 @@ public class Sign_Torch : MonoBehaviour
             {
                 torchScript.ToggleTorch();
             }
+            torchScript.dialogText.enabled = false;
+            torchScript.dialogImage.enabled = false;
         }
-
+/*
         foreach (var torch in torches)
         {
             torch.GetComponent<Torch_OnOff>().toggleText.SetActive(false);
-        }
-        toggleText.SetActive(false);
+        }*/
+        dialogText.enabled = false;
+        dialogImage.enabled = false; 
     }
 
     void CheckTorchesStatus()
