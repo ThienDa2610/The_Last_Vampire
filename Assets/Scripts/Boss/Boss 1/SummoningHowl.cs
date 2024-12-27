@@ -4,14 +4,14 @@ using UnityEngine;
 public class SummoningHowl : BossSkill
 {
     public GameObject wolfPrefab; 
-    [SerializeField] private int numberOfWolves = 3;
+    [SerializeField] private int numberOfWolves = 2;
     [SerializeField] private float summonRadius = 5f;
     [SerializeField] private float howlDuration = 1f;
     protected override void Start()
     {
         base.Start();
         skillDamage = 0f;
-        maxCooldown = 15f;
+        maxCooldown = 25f;
         skillRange = 15f;
         isFacingRight = true;
     }
