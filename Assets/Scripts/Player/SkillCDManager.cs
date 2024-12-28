@@ -12,7 +12,7 @@ public class SkillCDManager : MonoBehaviour
 {
     public static SkillCDManager instance;
     [SerializeField] private Image[] cdOverlay;
-    [SerializeField] private float[] skillCD;
+    [SerializeField] public float[] skillCD;
     public float[] skillCurrentCD;
     private void Start()
     {

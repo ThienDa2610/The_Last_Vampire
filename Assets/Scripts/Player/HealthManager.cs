@@ -56,7 +56,7 @@ public class HealthManager : MonoBehaviour
     
     public void takeDamage(float damage, GameObject damageDealer)
     {
-        if (counter.enabled && counter.isCountering && damageDealer != null)
+        if (counter.isCountering && damageDealer != null)
         {
             counter.Countering(damageDealer);
             return;

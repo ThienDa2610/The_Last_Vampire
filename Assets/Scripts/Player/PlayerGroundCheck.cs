@@ -17,6 +17,7 @@ public class PlayerGroundCheck : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            Movement.airJumpLeft = true;
             animator.SetBool("isJumping", false);
         }
     }

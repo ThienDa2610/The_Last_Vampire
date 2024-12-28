@@ -16,12 +16,14 @@ public class EnemyHealthManager : MonoBehaviour
     private bool isDead = false;
 
     //skill tree
-    //blood lost
+    // //blood lost
     private float bloodLostDuration = 2f;
     private float bloodLostDamage = 2f;
     private float bloodLostRate = 0.5f;
     private List<float> bloodLostTimer;
     private List<float> bloodLostDamageTimer;
+    // //infection
+    public static bool infectable = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +83,10 @@ public class EnemyHealthManager : MonoBehaviour
     }
     public void TakeDamage(float damageAmount)
     {
+        if (infectable)
+        {
+            damageAmount *= 1 + bloodLostTimer.Count * 0.05f;
+        }
         health -= damageAmount;
         if (health < 0)
         {
@@ -97,6 +103,10 @@ public class EnemyHealthManager : MonoBehaviour
         isDead = true;
         animator.SetTrigger("Enemy_die");
         sfxManager.Instance.PlaySound3D("Die", transform.position);
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.BloodBoiled))
+        {
+            Movement.Instance.InflictBloodBoiled();
+        }
         DropItem();
         Destroy(gameObject, 0.5f);
     }

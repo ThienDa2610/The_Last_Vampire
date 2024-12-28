@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class SkillTreeManager : MonoBehaviour
 {
     public static SkillTreeManager Instance;
-    private List<SkillNode> unlockedSkillNodeList;
+    private static List<SkillNode> unlockedSkillNodeList;
 
     private void Awake()
     {
@@ -49,15 +49,43 @@ public class SkillTreeManager : MonoBehaviour
                 MeleeBaseState.damage *= 1.05f;
                 break;
             case SkillNode.DestructiveClaws:
-            //
+                BoxCollider2D hitbox = transform.Find("Hitbox").GetComponent<BoxCollider2D>();
+                float dif = hitbox.size.x * 0.3f;
+                hitbox.size = new Vector2(hitbox.size.x * 1.3f, hitbox.size.y);
+                hitbox.offset = new Vector2(hitbox.offset.x + (dif / 2), hitbox.offset.y);
+                break;
             case SkillNode.Tear:
                 MeleeBaseState.Tear = true;
+                break;
+            case SkillNode.PiercingWave:
+            //need script
+            case SkillNode.Infection:
+                EnemyHealthManager.infectable = true;
                 break;
 
 
             //movement tree
-
-
+            case SkillNode.Swifty_1:
+                Movement.Instance.moveSpeed *= 1.1f;
+                break;
+            case SkillNode.GlidingBat:
+                Gliding.glidable = true;
+                break;
+            case SkillNode.AirJump:
+                Movement.airJumpable = true;
+                break;
+            case SkillNode.Swifty_2:
+                //no code needed
+                break;
+            case SkillNode.GlideMaster:
+                Gliding.xPercentReduce = 0.9f;
+                break;
+            case SkillNode.MistyStep:
+                SkillCDManager.instance.skillCD[(int)SkillType.Dash] -= 1f;
+                break;
+            case SkillNode.BloodBoiled:
+                //no code needed
+                break;
         }
     }
 
