@@ -13,6 +13,7 @@ public class GameOverMenu : MonoBehaviour
     {
         //player = GameObject.FindWithTag("Player");
         CheckPoint.ClearGameData();
+        CheckPointJSON.DeleteSaveFile();
 
         MapLoader.Instance.LoadMap("Map1_Forest");
         MusicManager.Instance.PlayMusic("Level_1");

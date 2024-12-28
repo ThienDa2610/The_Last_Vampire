@@ -37,6 +37,7 @@ public class Menu : MonoBehaviour
     {
         //Xoa du lieu cu
         CheckPoint.ClearGameData();
+        CheckPointJSON.DeleteSaveFile();
 
         MapLoader.Instance.LoadMap("Map1_Forest");
         MusicManager.Instance.PlayMusic("Level_1");

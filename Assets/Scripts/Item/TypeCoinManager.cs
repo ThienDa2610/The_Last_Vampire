@@ -22,6 +22,11 @@ public class TypeCoinManager : MonoBehaviour
         if (PlayerPrefs.HasKey("SavedGhostCount"))
         {
             ghostCount = PlayerPrefs.GetInt("SavedGhostCount");
+            //test
+            if(ghostCount == 0)
+            {
+                ghostCount = 12;
+            }
         }
         UpdateGhostCountText();
         UpdateBloodCountText();
@@ -46,7 +51,16 @@ public class TypeCoinManager : MonoBehaviour
     {
         BloodCountText.text = bloodCount.ToString();
     }
-
+    public bool SpendGhost(int amount)
+    {
+        if (ghostCount >= amount)
+        {
+            ghostCount -= amount;
+            UpdateGhostCountText();
+            return true;
+        }
+        return false; 
+    }
     void Update()
     {
        /* if (Input.GetKeyDown(KeyCode.R) && bottleCount > 0)

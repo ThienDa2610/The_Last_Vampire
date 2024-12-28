@@ -7,84 +7,95 @@ using UnityEngine.SceneManagement;
 
 public class CheckPoint : MonoBehaviour
 {
+    // Singleton instance for easy access
     public static CheckPoint Instance { get; private set; }
 
-    //private bool hasChangesSinceLastSave = false;
+    /*private bool hasChangesSinceLastSave = false;*/
 
-    public Animator animator;
+    public Animator animator; // Animator to control checkpoint animation
 
+    // UI elements for dialog at checkpoint
     public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
+    // UI elements for the "Saved" dialog
     public Image SaveddialogImage;
     public TMP_Text SaveddialogText;
     public string SavedidleMessage;
 
-    //public GameObject checkpointLight;
+    /*public GameObject checkpointLight;*/
 
+    // Radius to detect if the player is close enough to the checkpoint
     public float detectionRadius = 3f;
     private bool playerInRange = false;
 
+    // Particle system to show when checkpoint is activated
+    public ParticleSystem checkpointParticleSystem;
+
+    // Saved:
+    // Player and health management references
     public GameObject player;
     public HealthManager playerHealthScript;
 
-    public ParticleSystem checkpointParticleSystem;
+    private Vector3 savedPosition; // Player's saved position
+    private float savedHealth; // Player's saved health
 
-    // Noi dung luu
-    private Vector3 savedPosition;
-    private float savedHealth;
+    private Vector3 initialPosition; // Initial position of the checkpoint
+    private bool initial = false; // Track if saving at the checkpoint
+    private bool positionChanged = false; // Track if the checkpoint has moved
 
-    private int savedBlood;
-    private Vector3 initialPosition;
-    private bool initial = false;
-    private bool positionChanged = false;
+    public bool isSaved = false; // Flag to check if the game is saved
 
-    public bool isSaved = false;
-
+    // Other game objects to be saved (like enemies, plants, etc.)
     public BloodPotionManager bloodPotionManager;
     public TypeCoinManager typeCoinManager;
+    public Shop shop;
 
-    public List<EnemyHealthManager> enemies;
-    public TurnOffTouch[] torches;
-    public Torch_OnOff[] torches2;
+    public List<EnemyHealthManager> enemies; 
+    public TurnOffTouch[] torches; 
+    public Torch_OnOff[] torches2; 
     public Touch_Plant[] plants;
     public Touch_Plant_No[] plantsNo;
 
-    
-
+    // Initialize the instance and check for saved data
     void Awake()
     {
         if (Instance == null)
         {
-            Instance = this;
+            Instance = this; // Set the singleton instance
         }
         else
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);  // Destroy duplicate instance
         }
     }
 
+    // Start method where the checkpoint data is loaded
     void Start()
     {
         if (PlayerPrefs.HasKey("SavedPositionX") && PlayerPrefs.HasKey("SavedPositionY") && PlayerPrefs.HasKey("SavedPositionZ"))
         {
-            LoadGame(); 
+            LoadGame(); // Load game data if available
         }
         else
         {
+            // Set default position if no saved data is found
             player.transform.position = new Vector3(-6f, -1f, 5f);
+            //x = 180 at quiz, x = 210 at boss
+
             if (playerHealthScript != null)
             {
                 playerHealthScript.currentHealth = playerHealthScript.maxHealth;
             }
-            initialPosition = transform.position;  
+            initialPosition = transform.position;  // Set initial checkpoint position
         }
+        // If player health script isn't set, get it
         if (playerHealthScript == null)
         {
             playerHealthScript = player.GetComponent<HealthManager>();
         }
-       
+        // Set up initial UI visibility
         if (dialogText != null)
         {
             dialogText.enabled = false;
@@ -95,6 +106,7 @@ public class CheckPoint : MonoBehaviour
             SaveddialogText.enabled = false;
             SaveddialogImage.enabled = false;
         }
+        // Stop particle system if not saved yet
         if (checkpointParticleSystem != null && !isSaved)
         {
             checkpointParticleSystem.Stop();
@@ -103,11 +115,8 @@ public class CheckPoint : MonoBehaviour
         {
             checkpointLight.SetActive(false);
         }*/
-        /*string sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "Map1_Forest" || sceneName == "Map2_Desert" || sceneName == "Map3_City" || sceneName == "Map4_Cave" || sceneName == "Map5_Ruin")
-        {
-            SaveGame();
-        }*/
+        
+        // Check for scene change and save game if necessary
         string sceneName = SceneManager.GetActiveScene().name;
         string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "");
         if (sceneName != savedSceneName)
@@ -115,6 +124,8 @@ public class CheckPoint : MonoBehaviour
             SaveGame();  // Save if the scene has changed
         }
     }
+
+    // Update the checkpoint dialog when the player is in range
     void Update()
     {
         if (playerInRange)
@@ -128,7 +139,7 @@ public class CheckPoint : MonoBehaviour
                 {
                     initial = true;
                     isSaved = true;
-                    SaveGame();
+                    SaveGame(); // Save game when F is pressed
                 }
             }
         }
@@ -139,6 +150,7 @@ public class CheckPoint : MonoBehaviour
                 dialogText.enabled = false;
                 dialogImage.enabled = false;
             }
+            // Reset checkpoint position if not in range
             if (positionChanged)
             {
                 transform.position = initialPosition;
@@ -146,117 +158,119 @@ public class CheckPoint : MonoBehaviour
             }
         }
     }
+
+    // Detect when the player enters the checkpoint trigger area
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             playerInRange = true;
-            //initial = true;
-            /*if (checkpointLight != null)
-            {
-                checkpointLight.SetActive(true);
-            }*/
+            
+            // If checkpoint is not saved, show particles and animator
             if (!isSaved)
             {
                 if (!positionChanged)
                 {
-
+                    // Move checkpoint position slightly up to indicate activation
                     Vector3 newPosition = transform.position;
                     newPosition.y += 0.2f;
                     transform.position = newPosition;
                     positionChanged = true;
 
                 }
-                animator.SetBool("IsActive", true);
+                animator.SetBool("IsActive", true);// Play checkpoint animation
                 if (checkpointParticleSystem != null)
                 {
-                    checkpointParticleSystem.Play(); 
+                    checkpointParticleSystem.Play(); // Activate particle system
                 }
             }
             
         }
     }
 
+    // Detect when the player exits the checkpoint trigger area
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
-            //initial = false;
-            /* if (checkpointLight != null)
-             {
-                 checkpointLight.SetActive(false);
-             }*/
+            
+            // If checkpoint is not saved, reset position and stop effects
             if (!isSaved)
             {
                 transform.position = initialPosition;
                 positionChanged = false;
-                animator.SetBool("IsActive", false);
+                animator.SetBool("IsActive", false); // Stop animation
                 if (checkpointParticleSystem != null)
                 {
-                    checkpointParticleSystem.Stop(); 
+                    checkpointParticleSystem.Stop(); // Stop particle system 
                 }
             }
         }
     }
+
+    // Show the saved message for a specified amount of time
     private IEnumerator ShowDialogForTime(float timeToShow)
     {
         if (SaveddialogText != null && SaveddialogImage != null)
         {
             SaveddialogText.enabled = true;
             SaveddialogImage.enabled = true;
-            SaveddialogText.text = SavedidleMessage;
+            SaveddialogText.text = SavedidleMessage; // Display saved message
         }
 
-        yield return new WaitForSeconds(timeToShow);
+        yield return new WaitForSeconds(timeToShow);  // Wait for the specified time
 
         if (SaveddialogText != null && SaveddialogImage != null)
         {
-            SaveddialogText.enabled = false;
+            SaveddialogText.enabled = false; // Hide saved message
             SaveddialogImage.enabled = false;
         }
     }
+
+    // Save the game data (position, health, etc.)
     public void SaveGame()
     {
-        StartCoroutine(ShowDialogForTime(1f));
-        
-        //ten ban do
+        StartCoroutine(ShowDialogForTime(1f)); // Show saved message for 1 second
+
+        // Save scene name
         string currentSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetString("SavedSceneName", currentSceneName);
-        if(initial) { initialPosition.y += 0.2f; }
-        //initialPosition = new Vector3(initialPosition.x, initialPosition.y + 0.2f, initialPosition.z);
-        //vi tri nguoi choi
+
+        // Save player position
         PlayerPrefs.SetFloat("SavedPositionX", player.transform.position.x);
         PlayerPrefs.SetFloat("SavedPositionY", player.transform.position.y);
         PlayerPrefs.SetFloat("SavedPositionZ", player.transform.position.z);
 
-        //vi tri qua cau
+        // Save player health
+        float currentHealth = playerHealthScript.currentHealth;
+        PlayerPrefs.SetFloat("SavedHealth", currentHealth);
+
+        // Save initial checkpoint position
+        if (initial) { initialPosition.y += 0.2f; }
         PlayerPrefs.SetFloat("InitialPositionX", initialPosition.x);
         PlayerPrefs.SetFloat("InitialPositionY", initialPosition.y);
         PlayerPrefs.SetFloat("InitialPositionZ", initialPosition.z);
 
-        //mau nguoi choi
-        float currentHealth = playerHealthScript.currentHealth;
-        PlayerPrefs.SetFloat("SavedHealth", currentHealth);
-        
-        //cac thuoc tinh checkpoint
+        // Save animator state (whether checkpoint is active or not)
         bool isActive = animator.GetBool("IsActive");
         PlayerPrefs.SetInt("SavedAnimatorState", isActive ? 1 : 0);
         PlayerPrefs.SetInt("isSaved", isSaved ? 1 : 0);
         PlayerPrefs.SetInt("positionChanged", positionChanged ? 1 : 0);
 
-        //luong binh mau
+        // Save potion and coin counts
         int countBlood = bloodPotionManager.GetComponent<BloodPotionManager>().bottleCount;
         PlayerPrefs.SetInt("SavedBloodPotionCount", countBlood);
-
-        //luong coin
         int countGhost = typeCoinManager.GetComponent<TypeCoinManager>().ghostCount;
         PlayerPrefs.SetInt("SavedGhostCount", countGhost);
-
         int countBloodSkill = typeCoinManager.GetComponent<TypeCoinManager>().bloodCount;
         PlayerPrefs.SetInt("SavedBloodCount", countBloodSkill);
 
-        //tuong tac
+        PlayerPrefs.SetInt("SavedItemRunOut", shop.GetComponent<Shop>().itemRunOut ? 1 : 0);
+        int maxValueItem = Mathf.FloorToInt(shop.quantitySlider.maxValue);
+        PlayerPrefs.SetInt("SavedMaxValueItem", maxValueItem);
+
+        // Save states of torches, plants, and enemies
         for (int i = 0; i < torches2.Length; i++)
         {
             PlayerPrefs.SetInt("Torch2_" + i + "_State", torches2[i].GetComponent<Torch_OnOff>().isOn ? 1 : 0);
@@ -284,23 +298,25 @@ public class CheckPoint : MonoBehaviour
 
         PlayerPrefs.Save();
     }
+
+    // Load the saved game data
     public void LoadGame()
     {
-        //vi tri checkpoint
-
+        // Load checkpoint
         float xInitial = PlayerPrefs.GetFloat("InitialPositionX", 0f);
         float yInitial = PlayerPrefs.GetFloat("InitialPositionY", 0f);
         float zInitial = PlayerPrefs.GetFloat("InitialPositionZ", 0f);
         initialPosition = new Vector3(xInitial, yInitial, zInitial);
+
         transform.position = initialPosition;
-        //vi tri nguoi choi
+        // Load player position and health
         float x = PlayerPrefs.GetFloat("SavedPositionX");
         float y = PlayerPrefs.GetFloat("SavedPositionY");
         float z = PlayerPrefs.GetFloat("SavedPositionZ");
         savedPosition = new Vector3(x, y, z);
         player.transform.position = savedPosition;
 
-        //mau
+        // Load saved health
         savedHealth = PlayerPrefs.GetFloat("SavedHealth");
         if (playerHealthScript != null)
         {
@@ -308,17 +324,25 @@ public class CheckPoint : MonoBehaviour
             playerHealthScript.UpdateHealthbar();
         }
 
-        //binh mau
+        // Load potion and coin counts
         int savedBlood = PlayerPrefs.GetInt("SavedBloodPotionCount", 0);
         bloodPotionManager.GetComponent<BloodPotionManager>().bottleCount = savedBlood;
-
-        //tien
         int savedGhost = PlayerPrefs.GetInt("SavedGhostCount", 0);
         typeCoinManager.GetComponent<TypeCoinManager>().ghostCount = savedGhost;
         int savedBloodSkill = PlayerPrefs.GetInt("SavedBloodCount", 0);
         typeCoinManager.GetComponent<TypeCoinManager>().bloodCount = savedBloodSkill;
 
-        //hoat anh
+        int savedItemRunOut = PlayerPrefs.GetInt("SavedItemRunOut", 0);
+        shop.itemRunOut = savedItemRunOut == 1;
+
+        int savedMaxItem = PlayerPrefs.GetInt("SavedMaxValueItem");
+        if(shop != null)
+        {
+            shop.quantitySlider.maxValue = savedMaxItem;
+        }
+
+
+        // Load animator state
         int savedAnimatorState = PlayerPrefs.GetInt("SavedAnimatorState", 0); 
         animator.SetBool("IsActive", savedAnimatorState == 1);
 
@@ -368,6 +392,8 @@ public class CheckPoint : MonoBehaviour
         }
 
     }
+
+    //Clear data when player choose new game
     public static void ClearGameData()
     {
         PlayerPrefs.DeleteKey("SavedSceneName");
@@ -386,5 +412,7 @@ public class CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("Plant_");
         PlayerPrefs.DeleteKey("PlantNo_");
         PlayerPrefs.DeleteKey("Enemy_");
+        PlayerPrefs.DeleteKey("SavedItemRunOut");
+        PlayerPrefs.DeleteKey("SavedMaxValueItem");
     }
 }

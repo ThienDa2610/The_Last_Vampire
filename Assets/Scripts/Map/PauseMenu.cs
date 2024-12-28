@@ -61,7 +61,10 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
+
         CheckPoint.ClearGameData();
+        CheckPointJSON.DeleteSaveFile();
+
         SceneManager.LoadScene(savedSceneName);
         if (savedSceneName == "Map1_Forest")
         {
@@ -87,11 +90,13 @@ public class PauseMenu : MonoBehaviour
     public void Quit()
     {
         CheckPoint.Instance.SaveGame();
-        //GetComponent<CheckPoint>().SaveGame();
+        CheckPointJSON.Instance.SaveGame();
+        
         Time.timeScale = 1f;
         MapLoader.Instance.LoadMap("Menu");
         MusicManager.Instance.PlayMusic("Menu");
     }
+   
     private IEnumerator SlideInMenu()
     {
         Vector3 targetPosition = Vector3.zero; 
