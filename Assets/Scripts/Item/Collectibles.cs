@@ -7,11 +7,11 @@ public class Collectible : MonoBehaviour
     {
 
     }
-    protected void OnTriggerEnter2D(Collider2D collision)
+    protected void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player"))
         {
-            TakeEffect(collision);
+            TakeEffect(collision.collider);
             Destroy(gameObject);
         }
     }
