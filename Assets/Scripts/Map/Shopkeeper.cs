@@ -8,6 +8,8 @@ public class Shopkeeper : MonoBehaviour
 {
     public Canvas gameplayCanvas;
 
+    public Canvas shopCanvas;
+
     public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
@@ -19,7 +21,8 @@ public class Shopkeeper : MonoBehaviour
     {
         dialogText.enabled = false;
         dialogImage.enabled = false;
-        gameplayCanvas.gameObject.SetActive(false);
+        shopCanvas.gameObject.SetActive(false);
+        gameplayCanvas.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -27,7 +30,8 @@ public class Shopkeeper : MonoBehaviour
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
         {
-            gameplayCanvas.gameObject.SetActive(true);
+            shopCanvas.gameObject.SetActive(true);
+            gameplayCanvas.gameObject.SetActive(false);
             Time.timeScale = 0f;
             dialogText.enabled = false;
             dialogImage.enabled = false;
@@ -35,7 +39,8 @@ public class Shopkeeper : MonoBehaviour
     }
     public void CloseShop()
     {
-        gameplayCanvas.gameObject.SetActive(false);  
+        shopCanvas.gameObject.SetActive(false);
+        gameplayCanvas.gameObject.SetActive(true);
         Time.timeScale = 1f;
         dialogText.enabled = true;
         dialogImage.enabled = true;
@@ -46,7 +51,7 @@ public class Shopkeeper : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerNear = true;
-            if (!gameplayCanvas.gameObject.activeSelf)
+            if (!shopCanvas.gameObject.activeSelf)
             {
                 dialogText.enabled = true;
                 dialogImage.enabled = true;

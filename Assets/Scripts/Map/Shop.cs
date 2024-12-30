@@ -14,6 +14,8 @@ public class Shop : MonoBehaviour
 
     public Slider quantitySlider;
 
+    public TMP_Text ghostText;
+
     public Button buyButton;
     public TMP_Text buttonText;
     public Image buttonImage;
@@ -38,9 +40,12 @@ public class Shop : MonoBehaviour
         }
         quantitySlider.value = 1;
         typeCoinManager = FindObjectOfType<TypeCoinManager>();
+        ghostText.text = typeCoinManager.ghostCount.ToString();
+        Debug.Log(ghostText.text);
         bloodPotionManager = FindObjectOfType<BloodPotionManager>();
         minValue.text = "1";
         maxValue.text = quantitySlider.maxValue.ToString();
+        
         Update();
         if (itemRunOut)
         {
@@ -57,6 +62,7 @@ public class Shop : MonoBehaviour
             UpdateIncreaseDecreaseButtons();
         }
         BloodCountText.text = "owned: " + bloodPotionManager.bottleCount.ToString();
+        ghostText.text = typeCoinManager.ghostCount.ToString();
         UpdatePriceText();
         UpdateBuyButtonStatus();
         if(!itemRunOut) { HandleKeyboardInput(); }
@@ -108,6 +114,8 @@ public class Shop : MonoBehaviour
                 quantitySlider.value = 1;
                 maxValue.text = quantitySlider.maxValue.ToString();
             }
+            
+
             Update();
         }
     }
