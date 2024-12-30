@@ -13,7 +13,7 @@ public class EnemyHealthManager : MonoBehaviour
     public float health;
     public Animator animator;
     public Image healthbarOverlay;
-    private bool isDead = false;
+    public bool isDead = false;
 
     //skill tree
     // //blood lost

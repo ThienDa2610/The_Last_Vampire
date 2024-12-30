@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Counter : MonoBehaviour
 {
-    public static bool counterLearned;
+    public static bool counterLearned = false;
     public bool isCountering = false;
     public float counterDuration = 0.3f;
     [SerializeField] float teleOffset = 1.5f;
@@ -17,7 +17,7 @@ public class Counter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        counterLearned = false;
+        //counterLearned = false;
     }
 
     // Update is called once per frame
