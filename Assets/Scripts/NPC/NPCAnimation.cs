@@ -11,7 +11,7 @@ public class NPCAnimation : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             animator.SetTrigger("Talk");
-            animator.ResetTrigger("Fly");
+            animator.ResetTrigger("Idle");
         }
     }
 
@@ -19,7 +19,7 @@ public class NPCAnimation : MonoBehaviour
     {            
         if (collision.CompareTag("Player"))
         {
-            animator.SetTrigger("Fly"); 
+            animator.SetTrigger("Idle"); 
             animator.ResetTrigger("Talk");
         }
     }

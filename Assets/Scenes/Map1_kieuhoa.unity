@@ -972,9 +972,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c69a697f6ab08d479eb9b8c540f0fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 1596297119}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
   flowerAnimator: {fileID: 136499438}
   animationTrigger: Is_Touch
+  hasBloomed: 0
 --- !u!95 &136499438
 Animator:
   serializedVersion: 5
@@ -1225,7 +1228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272aa16084d29f44cafd2a448bff2751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 1009547536}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
   torchAnimator: {fileID: 166944345}
   tilemap: {fileID: 2067463075}
   isTorchOn: 1
@@ -2043,8 +2048,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50ce9a7245a0364cbea5d078f8f7135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 1
   torchAnimator: {fileID: 252405226}
-  toggleText: {fileID: 654194974}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &252405225
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3601,8 +3609,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50ce9a7245a0364cbea5d078f8f7135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 1
   torchAnimator: {fileID: 466379552}
-  toggleText: {fileID: 1047556678}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &466379551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3853,8 +3864,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50ce9a7245a0364cbea5d078f8f7135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 1
   torchAnimator: {fileID: 491701480}
-  toggleText: {fileID: 605147082}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &491701479
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4390,7 +4404,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921aade8db85d1347bdc1eebd625de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 1807359412}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
+  hasBloomed: 0
 --- !u!61 &563251622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9720,8 +9737,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50ce9a7245a0364cbea5d078f8f7135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 1
   torchAnimator: {fileID: 631751764}
-  toggleText: {fileID: 253020441}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &631751763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10996,9 +11016,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c69a697f6ab08d479eb9b8c540f0fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 856221946}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
   flowerAnimator: {fileID: 848605732}
   animationTrigger: Is_Touch
+  hasBloomed: 0
 --- !u!95 &848605732
 Animator:
   serializedVersion: 5
@@ -11641,9 +11664,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c69a697f6ab08d479eb9b8c540f0fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 433342652}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
   flowerAnimator: {fileID: 899055982}
   animationTrigger: Is_Touch
+  hasBloomed: 0
 --- !u!95 &899055982
 Animator:
   serializedVersion: 5
@@ -12600,7 +12626,9 @@ MonoBehaviour:
   - {fileID: 252405223}
   - {fileID: 1436406470}
   - {fileID: 631751761}
-  toggleText: {fileID: 966552052}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &1076899621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13665,7 +13693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5551062048724941580, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_ScaleFactor
@@ -13796,8 +13824,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50ce9a7245a0364cbea5d078f8f7135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 1
   torchAnimator: {fileID: 1275253443}
-  toggleText: {fileID: 1715944213}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &1275253442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14552,7 +14583,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921aade8db85d1347bdc1eebd625de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 1163260294}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
+  hasBloomed: 0
 --- !u!61 &1378925576
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14955,8 +14989,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50ce9a7245a0364cbea5d078f8f7135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 1
   torchAnimator: {fileID: 1436406473}
-  toggleText: {fileID: 345353832}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &1436406472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16554,9 +16591,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c69a697f6ab08d479eb9b8c540f0fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 1094617754}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
   flowerAnimator: {fileID: 1602594779}
   animationTrigger: Is_Touch
+  hasBloomed: 0
 --- !u!95 &1602594779
 Animator:
   serializedVersion: 5
@@ -16947,7 +16987,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921aade8db85d1347bdc1eebd625de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 1900773256}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
+  hasBloomed: 0
 --- !u!61 &1632556945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17098,8 +17141,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50ce9a7245a0364cbea5d078f8f7135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 1
   torchAnimator: {fileID: 1681793949}
-  toggleText: {fileID: 998122395}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &1681793948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18811,7 +18857,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921aade8db85d1347bdc1eebd625de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: {fileID: 1520574894}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
+  hasBloomed: 0
 --- !u!61 &1875403979
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19298,8 +19347,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50ce9a7245a0364cbea5d078f8f7135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOn: 1
   torchAnimator: {fileID: 1885446901}
-  toggleText: {fileID: 654328617}
+  dialogImage: {fileID: 0}
+  dialogText: {fileID: 0}
+  idleMessage: 
 --- !u!61 &1885446900
 BoxCollider2D:
   m_ObjectHideFlags: 0

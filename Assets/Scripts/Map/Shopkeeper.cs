@@ -46,6 +46,7 @@ public class Shopkeeper : MonoBehaviour
         dialogImage.enabled = true;
         dialogText.text = idleMessage;
     }
+    /*
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player"))
@@ -62,6 +63,32 @@ public class Shopkeeper : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player"))
+        {
+            isPlayerNear = false;
+
+            dialogText.enabled = false;
+            dialogImage.enabled = false;
+
+        }
+    }
+    */
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerNear = true;
+            if (!shopCanvas.gameObject.activeSelf)
+            {
+                dialogText.enabled = true;
+                dialogImage.enabled = true;
+                dialogText.text = idleMessage;
+            }
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
             isPlayerNear = false;
 
