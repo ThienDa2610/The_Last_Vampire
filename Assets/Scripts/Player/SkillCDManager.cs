@@ -5,20 +5,19 @@ using UnityEngine.UI;
 
 public enum SkillType
 {
-    Dash
+    Dash,
+    Counter
 }
 public class SkillCDManager : MonoBehaviour
 {
     public static SkillCDManager instance;
     [SerializeField] private Image[] cdOverlay;
-    [SerializeField] private float[] skillCD;
+    [SerializeField] public float[] skillCD;
     public float[] skillCurrentCD;
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         instance = this;
     }
-
     // Update is called once per frame
     void Update()
     {

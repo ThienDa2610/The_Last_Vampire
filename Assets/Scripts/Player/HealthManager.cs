@@ -14,9 +14,34 @@ public class HealthManager : MonoBehaviour
     public bool isInvincible = false;
     public Image healthbarOverlay;
     public float fallLimit = -6f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Counter counter;
+
+    //skill tree
+    public static float rebirthCD;
+    public static bool canRebirth2 = false;
+    private float rebirthMaxCD = 240f;
+    void Awake()
     {
+        Instance = this;
+        counter = GetComponent<Counter>();
+        currentHealth = maxHealth;
+        UpdateHealthbar();
+    }
+    private void Start()
+    {
+        //rebirth
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.Rebirth_1))
+        {
+            rebirthCD = 0;
+        }
+        else
+        {
+            rebirthCD = rebirthMaxCD;
+        }
+
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.Rebirth_2))
+            canRebirth2 = true;
+        //save
         if (PlayerPrefs.HasKey("SavedHealth"))
         {
             currentHealth = PlayerPrefs.GetFloat("SavedHealth");
@@ -28,26 +53,43 @@ public class HealthManager : MonoBehaviour
     }
     void Update()
     {
+        if (rebirthCD > 0 && SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.Rebirth_1))
+        {
+            rebirthCD = (rebirthCD - Time.deltaTime > 0) ? rebirthCD - Time.deltaTime : 0;
+        }
         if (transform.position.y < fallLimit)
         {
             Dead();
         }
        
     }
-    void Awake()
+    
+    public void takeDamage(float damage, GameObject damageDealer)
     {
-        Instance = this;
-        currentHealth = maxHealth;
-        UpdateHealthbar();
-    }
-    public void takeDamage(float damage)
-    {
+        if (counter.isCountering && damageDealer != null)
+        {
+            counter.Countering(damageDealer);
+            return;
+        }
         if (isInvincible) return;
         currentHealth = (currentHealth - damage) < 0 ? 0 : (currentHealth - damage);
         UpdateHealthbar();
         if (currentHealth == 0)
         {
-            Dead();
+            if (rebirthCD == 0)
+            {
+                Heal(maxHealth * 0.5f);
+                rebirthCD = rebirthMaxCD;
+                UpdateHealthbar();
+            }
+            else if (canRebirth2)
+            {
+                Heal(maxHealth * 0.3f);
+                canRebirth2 = false;
+                UpdateHealthbar();
+            }
+            else
+                Dead();
         }
     }
     public void Heal(float healAmount)
