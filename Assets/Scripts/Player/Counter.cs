@@ -7,6 +7,7 @@ public class Counter : MonoBehaviour
     public static bool counterLearned = false;
     public bool isCountering = false;
     public float counterDuration = 0.3f;
+    public static Animator animator;
     [SerializeField] float teleOffset = 1.5f;
     [SerializeField] float healAmount = 30f;
     [SerializeField] float counterDamage = 30f;
@@ -18,6 +19,8 @@ public class Counter : MonoBehaviour
     void Start()
     {
         //counterLearned = false;
+        animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -34,6 +37,7 @@ public class Counter : MonoBehaviour
 
         isCountering = true;
         //animation
+        animator.SetTrigger("Counter");
         yield return new WaitForSeconds(counterDuration);
         if (isEnhanced)
             yield return new WaitForSeconds(enhancedDuration);
