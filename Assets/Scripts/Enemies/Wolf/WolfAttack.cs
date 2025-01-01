@@ -8,18 +8,35 @@ public class WolfAttack : EnemyAttack
     {
         base.Start();
         attackDamage = 15f;
-        attackDuration = 0.4f;
         attackRate = 1f;
     }
-    protected override IEnumerator Attack()
+    protected override void Update()
     {
-        
-        while (true)
+        base.Update();
+
+        if (isPlayerInRange)
         {
-            animator.SetTrigger("Attack");
-            yield return new WaitForSeconds(attackDuration);
-            HealthManager.Instance.takeDamage(attackDamage, transform.parent.gameObject);
-            yield return new WaitForSeconds(attackRate);
+            if (isAttacking)
+            {
+                if (animator.GetFloat("AttackHit") > 0f)
+                {
+                    HealthManager.Instance.takeDamage(attackDamage, transform.parent.gameObject);
+                }
+                if (animator.GetFloat("AttackFinish") > 0f)
+                {
+                    attackTimer = attackRate;
+                    isAttacking = false;
+                }
+            }
+            else
+            {
+                attackTimer -= Time.deltaTime;
+                if (attackTimer < 0f)
+                {
+                    isAttacking = true;
+                    animator.SetTrigger("Attack");
+                }
+            }
         }
     }
 }

@@ -35,7 +35,7 @@ public class EnemyMovement : MonoBehaviour
 
     void FollowPlayer()
     {
-        if (isBlocked() || enemyAttack.isAttacking)
+        if (isBlocked() || enemyAttack.isPlayerInRange)
         {
             rb.velocity = Vector2.zero;
             return;

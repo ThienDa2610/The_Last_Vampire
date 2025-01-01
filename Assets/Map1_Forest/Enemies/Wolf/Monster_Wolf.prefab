@@ -198,6 +198,7 @@ MonoBehaviour:
   health: 15
   animator: {fileID: 0}
   healthbarOverlay: {fileID: 4790480153634083501}
+  isDead: 0
 --- !u!114 &3610365535457186541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  movingRight: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -505,6 +507,8 @@ MonoBehaviour:
   attackRate: 0
   attackDuration: 0
   isAttacking: 0
+  isPlayerInRange: 0
+  attackTimer: 0
   animator: {fileID: 0}
 --- !u!1 &6872183083592111640
 GameObject:
