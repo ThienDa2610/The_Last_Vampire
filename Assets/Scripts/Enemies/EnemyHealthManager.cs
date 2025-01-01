@@ -83,6 +83,7 @@ public class EnemyHealthManager : MonoBehaviour
     }
     public void TakeDamage(float damageAmount)
     {
+        if (isDead) return;
         if (infectable)
         {
             damageAmount *= 1 + bloodLostTimer.Count * 0.05f;

@@ -31,7 +31,7 @@ public class WolfAttack : EnemyAttack
             else
             {
                 attackTimer -= Time.deltaTime;
-                if (attackTimer < 0f)
+                if (attackTimer <= 0f)
                 {
                     isAttacking = true;
                     animator.SetTrigger("Attack");

@@ -33,10 +33,10 @@ public class BossSkillManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isCastingSkill)
-            castTimer += Time.deltaTime;
         if (!inFight)
             return;
+        if (!isCastingSkill)
+            castTimer += Time.deltaTime;
         if (castTimer > skillCastRate)
         {
             List<int> availableSkill = new List<int>();
