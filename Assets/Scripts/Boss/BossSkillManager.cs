@@ -9,7 +9,7 @@ public class BossSkillManager : MonoBehaviour
     public bool inFight;
     [SerializeField] private float skillCastRate;
     [SerializeField] private float castTimer;
-    [SerializeField] private float moveSpeed = 2f;
+    public float moveSpeed = 2f;
     [SerializeField] private int skillIndex;
     public Animator animator;
     public Rigidbody2D rb;
@@ -24,7 +24,6 @@ public class BossSkillManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        skillCastRate = 2f;
         castTimer = 0;
         isCastingSkill = false;
         inFight = false;
@@ -71,7 +70,7 @@ public class BossSkillManager : MonoBehaviour
         }
     }
 
-    void ApproachPlayer()
+    public void ApproachPlayer()
     {
         animator.SetBool("Walk", true);
         rb.velocity = new Vector2(transform.localScale.x * moveSpeed, rb.velocity.y);

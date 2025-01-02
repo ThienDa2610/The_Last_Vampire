@@ -13,6 +13,7 @@ public class EnemyHealthManager : MonoBehaviour
     public float health;
     public Animator animator;
     public Image healthbarOverlay;
+    public bool isInvincible = false;
     public bool isDead = false;
 
     //skill tree
@@ -84,6 +85,7 @@ public class EnemyHealthManager : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         if (isDead) return;
+        if (isInvincible) return;
         if (infectable)
         {
             damageAmount *= 1 + bloodLostTimer.Count * 0.05f;
