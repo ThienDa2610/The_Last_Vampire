@@ -18,11 +18,11 @@ public class EnemyHealthManager : MonoBehaviour
 
     //skill tree
     // //blood lost
-    private float bloodLostDuration = 2f;
-    private float bloodLostDamage = 2f;
-    private float bloodLostRate = 0.5f;
-    private List<float> bloodLostTimer;
-    private List<float> bloodLostDamageTimer;
+    protected float bloodLostDuration = 2f;
+    protected float bloodLostDamage = 2f;
+    protected float bloodLostRate = 0.5f;
+    protected List<float> bloodLostTimer;
+    protected List<float> bloodLostDamageTimer;
     // //infection
     public static bool infectable = false;
     // Start is called before the first frame update
@@ -101,7 +101,7 @@ public class EnemyHealthManager : MonoBehaviour
         healthbarOverlay.fillAmount = health / maxHealth;
     }
 
-    private void Die()
+    protected virtual void Die()
     {
         isDead = true;
         animator.SetTrigger("Enemy_die");
@@ -114,7 +114,7 @@ public class EnemyHealthManager : MonoBehaviour
         Destroy(gameObject, 0.5f);
     }
 
-    private void DropItem()
+    protected void DropItem()
     {
         for (int i = 0; i< dropItemPrefab.Length; i++)
         {
