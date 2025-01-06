@@ -6,7 +6,7 @@ public class RobotHealthManager : EnemyHealthManager
 {
     public bool isInExplodeRange = false;
     public float explodeDamage = 30f;
-    private float explodeDelay = 0.5f;
+    [SerializeField] public float explodeDelay = 1f;
     public GameObject pf_Explosion;
     protected override void Die()
     {

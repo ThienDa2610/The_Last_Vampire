@@ -199,6 +199,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7270028550147252481, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41501,8 +41505,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.8873596, y: 1, z: 1}
-  m_Center: {x: 0.077041626, y: 0, z: 0}
+  m_Size: {x: 2.1810608, y: 2.4035282, z: 1}
+  m_Center: {x: -0.07687378, y: 0.10413265, z: 0}
 --- !u!1001 &1935585402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45064,7 +45068,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009173155, y: -0.075432934}
+  m_Offset: {x: 0.32009125, y: -0.14623451}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -45075,7 +45079,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2262731, y: 0.6167454}
+  m_Size: {x: 1.1117706, y: 1.0194197}
   m_EdgeRadius: 0
 --- !u!1 &2141659317134085843
 GameObject:
@@ -45121,7 +45125,7 @@ Animator:
   m_GameObject: {fileID: 845377810732691292}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 23cf12ce821767044ac6f79b63a4280d, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffe1263fe41085a48bc77683d5cdc615, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -45200,7 +45204,7 @@ SpriteRenderer:
   m_SortingLayerID: -1017492929
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 321776892, guid: 97888ba2a6ec68842a55a12b221a0c67, type: 3}
+  m_Sprite: {fileID: 2119401338, guid: 92e0495fddfe2e843b098bc25b1e7f98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -45249,7 +45253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845377810732691292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 224.3, y: -2.82, z: 5}
+  m_LocalPosition: {x: 222.987, y: -2.865, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45507,8 +45511,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015285015, y: -0.014126424}
-  m_Size: {x: 1.1856896, y: 0.7468339}
+  m_Offset: {x: 0.007526197, y: -0.19066128}
+  m_Size: {x: 0.93564844, y: 0.93564844}
   m_Direction: 1
 --- !u!114 &7253263859622151211
 MonoBehaviour:
@@ -45526,7 +45530,7 @@ MonoBehaviour:
   dropPoint: {fileID: 0}
   isTakingDamage: 0
   dropChance: []
-  maxHealth: 15
+  maxHealth: 150
   health: 0
   animator: {fileID: 0}
   healthbarOverlay: {fileID: 7197436489723677207}
@@ -45534,7 +45538,8 @@ MonoBehaviour:
   isDead: 0
   isInExplodeRange: 0
   explodeDamage: 30
-  pf_Explosion: {fileID: 5837595596985392466, guid: 513c0f40fc2be5b47b9cdab8343acf93, type: 3}
+  explodeDelay: 1
+  pf_Explosion: {fileID: 6219325873061555098, guid: 88a05aca85a2a0341ae68463189db22e, type: 3}
 --- !u!61 &7498529811513516842
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45567,7 +45572,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.170279, y: 0.09961945}
+  m_Offset: {x: 2.4347, y: 0.0936625}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -45578,7 +45583,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4335585, y: 1.085388}
+  m_Size: {x: 4.5240936, y: 1.398675}
   m_EdgeRadius: 0
 --- !u!1 &7722936617523166096
 GameObject:
@@ -45705,7 +45710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 442.15002, y: 159.65999}
+  m_AnchoredPosition: {x: 442.08, y: 159.85}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9135477153355648674
