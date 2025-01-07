@@ -2,19 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+<<<<<<< HEAD
 using UnityEngine.UI;
 using TMPro;
+=======
+/*using UnityEngine.UI;
+using TMPro;*/
+>>>>>>> BaoDi
 using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class SaveData
 {
+<<<<<<< HEAD
     public Dictionary<string, LevelSaveData> levels = new Dictionary<string, LevelSaveData>();
 }
 
 [System.Serializable]
 public class LevelSaveData
 {
+=======
+>>>>>>> BaoDi
     public string SavedSceneNameJSON;
     public Vector3 savedPosition;
     //public Vector3 initialPosition;
@@ -120,14 +128,23 @@ public class CheckPointJSON : MonoBehaviour
     void Start()
     {
         string sceneName = SceneManager.GetActiveScene().name;
+<<<<<<< HEAD
         LevelSaveData lvsaveData = LoadSaveData();
         if (lvsaveData == null)
+=======
+        SaveData saveData = LoadSaveData();
+        if (saveData == null)
+>>>>>>> BaoDi
         {
             SaveGame();
         }
         else
         {
+<<<<<<< HEAD
             string savedSceneName = lvsaveData.SavedSceneNameJSON;
+=======
+            string savedSceneName = saveData.SavedSceneNameJSON;
+>>>>>>> BaoDi
             if (sceneName != savedSceneName)
             {
                 SaveGame();  // Save if the scene has changed
@@ -246,7 +263,11 @@ public class CheckPointJSON : MonoBehaviour
     public void SaveGame()
     {
         Debug.Log("File JSON Saved");
+<<<<<<< HEAD
         LevelSaveData currentLevelData = new LevelSaveData
+=======
+        SaveData saveData = new SaveData
+>>>>>>> BaoDi
         {
             SavedSceneNameJSON = SceneManager.GetActiveScene().name,
             savedPosition = player.transform.position,
@@ -264,7 +285,11 @@ public class CheckPointJSON : MonoBehaviour
         // Save enemy states
         foreach (var enemy in enemies)
         {
+<<<<<<< HEAD
             currentLevelData.enemies.Add(new EnemySaveData
+=======
+            saveData.enemies.Add(new EnemySaveData
+>>>>>>> BaoDi
             {
                 isDead = enemy.isDead,
                 health = enemy.health
@@ -274,7 +299,11 @@ public class CheckPointJSON : MonoBehaviour
         // Save torch states
         foreach (var torch in torches)
         {
+<<<<<<< HEAD
             currentLevelData.torches.Add(new TorchSaveData
+=======
+            saveData.torches.Add(new TorchSaveData
+>>>>>>> BaoDi
             {
                 isOn = torch.isTorchOn
             });
@@ -283,7 +312,11 @@ public class CheckPointJSON : MonoBehaviour
         // Save torch_end states
         foreach (var torch in torches2)
         {
+<<<<<<< HEAD
             currentLevelData.torches2.Add(new TorchSaveDataEnd
+=======
+            saveData.torches2.Add(new TorchSaveDataEnd
+>>>>>>> BaoDi
             {
                 isOn = torch.isOn
             });
@@ -292,7 +325,11 @@ public class CheckPointJSON : MonoBehaviour
         // Save plant states
         foreach (var plant in plants)
         {
+<<<<<<< HEAD
             currentLevelData.plants.Add(new PlantSaveData
+=======
+            saveData.plants.Add(new PlantSaveData
+>>>>>>> BaoDi
             {
                 hasBloomed = plant.hasBloomed
             });
@@ -301,12 +338,17 @@ public class CheckPointJSON : MonoBehaviour
         // Save plant_no states
         foreach (var plant in plantsNo)
         {
+<<<<<<< HEAD
             currentLevelData.plantsNo.Add(new PlantNoSaveData
+=======
+            saveData.plantsNo.Add(new PlantNoSaveData
+>>>>>>> BaoDi
             {
                 hasBloomed = plant.hasBloomed
             });
         }
 
+<<<<<<< HEAD
         SaveData saveData = new SaveData();
         string levelKey = "Level " + SceneManager.GetActiveScene().buildIndex;  
         saveData.levels.Add(levelKey, currentLevelData);
@@ -316,11 +358,22 @@ public class CheckPointJSON : MonoBehaviour
         System.IO.File.WriteAllText(saveFilePath, json);
     }
     public LevelSaveData LoadSaveData()
+=======
+        // Serialize the save data to JSON
+        string json = JsonUtility.ToJson(saveData, true);
+        System.IO.File.WriteAllText(saveFilePath, json);
+    }
+    public SaveData LoadSaveData()
+>>>>>>> BaoDi
     {
         if (File.Exists(saveFilePath))
         {
             string json = File.ReadAllText(saveFilePath);
+<<<<<<< HEAD
             LevelSaveData saveData = JsonUtility.FromJson<LevelSaveData>(json);
+=======
+            SaveData saveData = JsonUtility.FromJson<SaveData>(json);
+>>>>>>> BaoDi
             return saveData;
         }
         else

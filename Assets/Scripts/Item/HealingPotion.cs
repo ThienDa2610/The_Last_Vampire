@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class HealingPotion : Collectible
 {
+<<<<<<< HEAD
     private BloodPotionManager bloodPotionManager;
+=======
+    public BloodPotionManager bloodPotionManager;
+>>>>>>> BaoDi
     void Start()
     {
         bloodPotionManager = FindObjectOfType<BloodPotionManager>();

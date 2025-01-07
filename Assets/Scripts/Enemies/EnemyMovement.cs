@@ -35,7 +35,11 @@ public class EnemyMovement : MonoBehaviour
 
     void FollowPlayer()
     {
+<<<<<<< HEAD
         if (isBlocked() || enemyAttack.isPlayerInRange)
+=======
+        if (isBlocked() || enemyAttack.isAttacking)
+>>>>>>> BaoDi
         {
             rb.velocity = Vector2.zero;
             return;

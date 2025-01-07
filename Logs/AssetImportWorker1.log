@@ -1,16 +1,25 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.3f1 (7cdc2969a641) revision 8182825'; Using compiler version '192829333'; Build Type 'Release'
+<<<<<<< HEAD
 OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16105 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\2022.3.3f1\Editor\Unity.exe
+=======
+OS: 'Windows 11  (10.0.26120) 64bit Core' Language: 'en' Physical Memory: 12083 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2022.3.3f1\Editor\Unity.exe
+>>>>>>> BaoDi
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
+<<<<<<< HEAD
 D:/HK1_2024_2025/PTGame/The_Last_Vampire
 -logFile
 Logs/AssetImportWorker1.log
@@ -18,6 +27,15 @@ Logs/AssetImportWorker1.log
 49239
 Successfully changed project path to: D:/HK1_2024_2025/PTGame/The_Last_Vampire
 D:/HK1_2024_2025/PTGame/The_Last_Vampire
+=======
+D:/BaoDi/7/Game/The_Last_Vampire
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+3403
+Successfully changed project path to: D:/BaoDi/7/Game/The_Last_Vampire
+D:/BaoDi/7/Game/The_Last_Vampire
+>>>>>>> BaoDi
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,6 +67,7 @@ D:/HK1_2024_2025/PTGame/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [2984] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 1713857332 [EditorId] 1713857332 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [2984] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 1713857332 [EditorId] 1713857332 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -107,6 +126,66 @@ Domain Reload Profiling: 961ms
 			BeforeProcessingInitializeOnLoad (3ms)
 			ProcessInitializeOnLoadAttributes (203ms)
 			ProcessInitializeOnLoadMethodAttributes (66ms)
+=======
+Player connection [14052] Host "[IP] 10.0.233.103 [Port] 0 [Flags] 2 [Guid] 3819036535 [EditorId] 3819036535 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [14052] Host "[IP] 10.0.233.103 [Port] 0 [Flags] 2 [Guid] 3819036535 [EditorId] 3819036535 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-UUB2EGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 22.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.3f1 (7cdc2969a641)
+[Subsystems] Discovering subsystems at path D:/Unity/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/BaoDi/7/Game/The_Last_Vampire/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
+    Vendor:   Intel
+    VRAM:     6041 MB
+    Driver:   27.20.100.9664
+Initialize mono
+Mono path[0] = 'D:/Unity/2022.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.015983 seconds.
+- Loaded All Assemblies, in  1.319 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.382 seconds
+Domain Reload Profiling: 2701ms
+	BeginReloadAssembly (365ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (7ms)
+	RebuildCommonClasses (125ms)
+	RebuildNativeTypeToScriptingClass (37ms)
+	initialDomainReloadingComplete (202ms)
+	LoadAllAssembliesAndSetupDomain (589ms)
+		LoadAssemblies (357ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (579ms)
+			TypeCache.Refresh (572ms)
+				TypeCache.ScanAssembly (501ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1383ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (943ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (99ms)
+			SetLoadedEditorAssemblies (87ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (13ms)
+			ProcessInitializeOnLoadAttributes (567ms)
+			ProcessInitializeOnLoadMethodAttributes (177ms)
+>>>>>>> BaoDi
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -114,6 +193,7 @@ Domain Reload Profiling: 961ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  1.484 seconds
@@ -161,6 +241,55 @@ Unloading 7855 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 249 unused Assets / (14.2 MB). Loaded Objects now: 8197.
 Memory consumption went from 348.3 MB to 334.0 MB.
 Total: 11.162800 ms (FindLiveObjects: 1.021200 ms CreateObjectMapping: 0.923700 ms MarkObjects: 6.178900 ms  DeleteObjects: 3.036500 ms)
+=======
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BaoDi\7\Game\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  4.241 seconds
+Refreshing native plugins compatible for Editor in 36.39 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.496 seconds
+Domain Reload Profiling: 9738ms
+	BeginReloadAssembly (447ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (130ms)
+	RebuildNativeTypeToScriptingClass (42ms)
+	initialDomainReloadingComplete (154ms)
+	LoadAllAssembliesAndSetupDomain (3465ms)
+		LoadAssemblies (1424ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2250ms)
+			TypeCache.Refresh (2043ms)
+				TypeCache.ScanAssembly (2000ms)
+			ScanForSourceGeneratedMonoScriptInfo (157ms)
+			ResolveRequiredComponents (49ms)
+	FinalizeReload (5500ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3918ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (33ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (229ms)
+			ProcessInitializeOnLoadAttributes (2625ms)
+			ProcessInitializeOnLoadMethodAttributes (982ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (80ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.38 seconds
+Refreshing native plugins compatible for Editor in 6.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 253 unused Assets / (14.7 MB). Loaded Objects now: 8130.
+Memory consumption went from 326.6 MB to 312.0 MB.
+Total: 10.584700 ms (FindLiveObjects: 0.703800 ms CreateObjectMapping: 0.635000 ms MarkObjects: 4.948800 ms  DeleteObjects: 4.295200 ms)
+>>>>>>> BaoDi
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -173,6 +302,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+<<<<<<< HEAD
 ========================================================================
 Received Import Request.
   Time since last request: 426394.178967 seconds.
@@ -279,6 +409,11 @@ Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 10
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+=======
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+>>>>>>> BaoDi
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

@@ -8,6 +8,7 @@ public class WolfAttack : EnemyAttack
     {
         base.Start();
         attackDamage = 15f;
+<<<<<<< HEAD
         attackRate = 1f;
     }
     protected override void Update()
@@ -37,6 +38,20 @@ public class WolfAttack : EnemyAttack
                     animator.SetTrigger("Attack");
                 }
             }
+=======
+        attackDuration = 0.4f;
+        attackRate = 1f;
+    }
+    protected override IEnumerator Attack()
+    {
+        
+        while (true)
+        {
+            animator.SetTrigger("Attack");
+            yield return new WaitForSeconds(attackDuration);
+            HealthManager.Instance.takeDamage(attackDamage, transform.parent.gameObject);
+            yield return new WaitForSeconds(attackRate);
+>>>>>>> BaoDi
         }
     }
 }
