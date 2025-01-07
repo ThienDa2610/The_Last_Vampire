@@ -15,7 +15,7 @@ D:/HK1_2024_2025/PTGame/The_Last_Vampire
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-59597
+60857
 Successfully changed project path to: D:/HK1_2024_2025/PTGame/The_Last_Vampire
 D:/HK1_2024_2025/PTGame/The_Last_Vampire
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/HK1_2024_2025/PTGame/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20356] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 2558374511 [EditorId] 2558374511 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23152] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 2298507939 [EditorId] 2298507939 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20356] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 2558374511 [EditorId] 2558374511 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23152] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 2298507939 [EditorId] 2298507939 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 15.92 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 12.31 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010864 seconds.
-- Loaded All Assemblies, in  0.700 seconds
+Registered in 0.009702 seconds.
+- Loaded All Assemblies, in  0.577 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.558 seconds
-Domain Reload Profiling: 1257ms
-	BeginReloadAssembly (149ms)
+- Finished resetting the current domain, in  0.423 seconds
+Domain Reload Profiling: 998ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (92ms)
-	RebuildNativeTypeToScriptingClass (27ms)
-	initialDomainReloadingComplete (124ms)
-	LoadAllAssembliesAndSetupDomain (305ms)
-		LoadAssemblies (145ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (255ms)
+		LoadAssemblies (140ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (296ms)
-			TypeCache.Refresh (294ms)
-				TypeCache.ScanAssembly (267ms)
+		AnalyzeDomain (247ms)
+			TypeCache.Refresh (246ms)
+				TypeCache.ScanAssembly (226ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (559ms)
+	FinalizeReload (423ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (426ms)
+		SetupLoadedEditorAssemblies (321ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (17ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (13ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (277ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
+			ProcessInitializeOnLoadAttributes (212ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,51 +116,51 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.541 seconds
-Refreshing native plugins compatible for Editor in 5.02 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.149 seconds
+Refreshing native plugins compatible for Editor in 4.30 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.803 seconds
-Domain Reload Profiling: 3342ms
-	BeginReloadAssembly (202ms)
+- Finished resetting the current domain, in  1.622 seconds
+Domain Reload Profiling: 2771ms
+	BeginReloadAssembly (163ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (73ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (1151ms)
-		LoadAssemblies (491ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (850ms)
+		LoadAssemblies (351ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (755ms)
-			TypeCache.Refresh (652ms)
-				TypeCache.ScanAssembly (622ms)
-			ScanForSourceGeneratedMonoScriptInfo (81ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1804ms)
+		AnalyzeDomain (583ms)
+			TypeCache.Refresh (516ms)
+				TypeCache.ScanAssembly (498ms)
+			ScanForSourceGeneratedMonoScriptInfo (47ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1623ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1424ms)
+		SetupLoadedEditorAssemblies (1169ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (17ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (187ms)
-			ProcessInitializeOnLoadAttributes (1114ms)
-			ProcessInitializeOnLoadMethodAttributes (95ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (189ms)
+			ProcessInitializeOnLoadAttributes (867ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 6.83 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 3.13 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7789 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 253 unused Assets / (14.7 MB). Loaded Objects now: 8122.
-Memory consumption went from 326.9 MB to 312.3 MB.
-Total: 10.412200 ms (FindLiveObjects: 1.646900 ms CreateObjectMapping: 1.651700 ms MarkObjects: 4.268600 ms  DeleteObjects: 2.842000 ms)
+Unloading 253 unused Assets / (14.7 MB). Loaded Objects now: 8125.
+Memory consumption went from 326.8 MB to 312.2 MB.
+Total: 11.915000 ms (FindLiveObjects: 0.910800 ms CreateObjectMapping: 0.855900 ms MarkObjects: 5.711300 ms  DeleteObjects: 4.434600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -178,360 +178,50 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.519 seconds
-Refreshing native plugins compatible for Editor in 6.65 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.140 seconds
+Refreshing native plugins compatible for Editor in 4.14 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.679 seconds
-Domain Reload Profiling: 5195ms
-	BeginReloadAssembly (253ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (1116ms)
-		LoadAssemblies (477ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (748ms)
-			TypeCache.Refresh (720ms)
-				TypeCache.ScanAssembly (690ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (3680ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1546ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (13ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (359ms)
-			ProcessInitializeOnLoadAttributes (1069ms)
-			ProcessInitializeOnLoadMethodAttributes (79ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 6.62 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8127.
-Memory consumption went from 271.8 MB to 257.2 MB.
-Total: 28.757800 ms (FindLiveObjects: 8.016700 ms CreateObjectMapping: 1.951200 ms MarkObjects: 12.495500 ms  DeleteObjects: 6.291900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.618 seconds
-Refreshing native plugins compatible for Editor in 8.77 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.488 seconds
-Domain Reload Profiling: 4103ms
-	BeginReloadAssembly (294ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (96ms)
-	RebuildCommonClasses (83ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (1148ms)
-		LoadAssemblies (594ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (673ms)
-			TypeCache.Refresh (640ms)
-				TypeCache.ScanAssembly (606ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (33ms)
-	FinalizeReload (2489ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1058ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (10ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (155ms)
-			ProcessInitializeOnLoadAttributes (803ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 4.03 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8131.
-Memory consumption went from 271.8 MB to 257.2 MB.
-Total: 12.744700 ms (FindLiveObjects: 1.059000 ms CreateObjectMapping: 1.435600 ms MarkObjects: 5.255400 ms  DeleteObjects: 4.992900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.524 seconds
-Refreshing native plugins compatible for Editor in 5.13 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.135 seconds
-Domain Reload Profiling: 5655ms
-	BeginReloadAssembly (291ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (103ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (1087ms)
-		LoadAssemblies (476ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (700ms)
-			TypeCache.Refresh (655ms)
-				TypeCache.ScanAssembly (625ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (4135ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1166ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (13ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (208ms)
-			ProcessInitializeOnLoadAttributes (869ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 4.56 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8135.
-Memory consumption went from 271.8 MB to 257.2 MB.
-Total: 13.227700 ms (FindLiveObjects: 0.769300 ms CreateObjectMapping: 0.509300 ms MarkObjects: 6.159400 ms  DeleteObjects: 5.787500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.506 seconds
-Refreshing native plugins compatible for Editor in 5.90 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.842 seconds
-Domain Reload Profiling: 4346ms
-	BeginReloadAssembly (238ms)
+- Finished resetting the current domain, in  2.226 seconds
+Domain Reload Profiling: 3364ms
+	BeginReloadAssembly (208ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (13ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (83ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (1138ms)
-		LoadAssemblies (466ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (837ms)
+		LoadAssemblies (381ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (763ms)
-			TypeCache.Refresh (717ms)
-				TypeCache.ScanAssembly (683ms)
+		AnalyzeDomain (537ms)
+			TypeCache.Refresh (521ms)
+				TypeCache.ScanAssembly (501ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (46ms)
-	FinalizeReload (2843ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2226ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1118ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (221ms)
-			ProcessInitializeOnLoadAttributes (810ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 5.24 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8139.
-Memory consumption went from 271.8 MB to 257.2 MB.
-Total: 15.561600 ms (FindLiveObjects: 1.011300 ms CreateObjectMapping: 2.320000 ms MarkObjects: 7.338400 ms  DeleteObjects: 4.890100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.018 seconds
-Refreshing native plugins compatible for Editor in 6.01 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.704 seconds
-Domain Reload Profiling: 4718ms
-	BeginReloadAssembly (459ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (42ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (100ms)
-	RebuildCommonClasses (93ms)
-	RebuildNativeTypeToScriptingClass (36ms)
-	initialDomainReloadingComplete (54ms)
-	LoadAllAssembliesAndSetupDomain (1371ms)
-		LoadAssemblies (705ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (906ms)
-			TypeCache.Refresh (860ms)
-				TypeCache.ScanAssembly (835ms)
-			ScanForSourceGeneratedMonoScriptInfo (22ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (2705ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1260ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (16ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (182ms)
-			ProcessInitializeOnLoadAttributes (958ms)
-			ProcessInitializeOnLoadMethodAttributes (78ms)
-			AfterProcessingInitializeOnLoad (13ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Refreshing native plugins compatible for Editor in 6.72 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8143.
-Memory consumption went from 271.9 MB to 257.2 MB.
-Total: 18.182700 ms (FindLiveObjects: 3.362700 ms CreateObjectMapping: 1.348400 ms MarkObjects: 7.050800 ms  DeleteObjects: 6.418400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.495 seconds
-Refreshing native plugins compatible for Editor in 5.35 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.492 seconds
-Domain Reload Profiling: 3985ms
-	BeginReloadAssembly (294ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (114ms)
-	RebuildCommonClasses (60ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (1081ms)
-		LoadAssemblies (445ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (735ms)
-			TypeCache.Refresh (686ms)
-				TypeCache.ScanAssembly (650ms)
-			ScanForSourceGeneratedMonoScriptInfo (24ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (2493ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1091ms)
+		SetupLoadedEditorAssemblies (968ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (12ms)
+			SetLoadedEditorAssemblies (13ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (196ms)
-			ProcessInitializeOnLoadAttributes (817ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			BeforeProcessingInitializeOnLoad (194ms)
+			ProcessInitializeOnLoadAttributes (689ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 5.20 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 4.82 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8147.
-Memory consumption went from 271.9 MB to 257.2 MB.
-Total: 8.703000 ms (FindLiveObjects: 0.887000 ms CreateObjectMapping: 0.819100 ms MarkObjects: 3.976900 ms  DeleteObjects: 3.018500 ms)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8130.
+Memory consumption went from 271.8 MB to 257.1 MB.
+Total: 15.602200 ms (FindLiveObjects: 1.023900 ms CreateObjectMapping: 1.260000 ms MarkObjects: 8.070700 ms  DeleteObjects: 5.245500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -550,174 +240,50 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.414 seconds
-Refreshing native plugins compatible for Editor in 5.64 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.574 seconds
-Domain Reload Profiling: 3985ms
-	BeginReloadAssembly (268ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (85ms)
-	RebuildCommonClasses (69ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (1002ms)
-		LoadAssemblies (505ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (616ms)
-			TypeCache.Refresh (593ms)
-				TypeCache.ScanAssembly (565ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (2575ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1161ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (177ms)
-			ProcessInitializeOnLoadAttributes (895ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Refreshing native plugins compatible for Editor in 5.61 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8151.
-Memory consumption went from 271.9 MB to 257.2 MB.
-Total: 11.156500 ms (FindLiveObjects: 0.863200 ms CreateObjectMapping: 0.537100 ms MarkObjects: 6.544900 ms  DeleteObjects: 3.209600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.343 seconds
-Refreshing native plugins compatible for Editor in 7.79 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.374 seconds
-Domain Reload Profiling: 4716ms
-	BeginReloadAssembly (273ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (119ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (946ms)
-		LoadAssemblies (384ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (638ms)
-			TypeCache.Refresh (612ms)
-				TypeCache.ScanAssembly (583ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (25ms)
-	FinalizeReload (3375ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1483ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (14ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (209ms)
-			ProcessInitializeOnLoadAttributes (1138ms)
-			ProcessInitializeOnLoadMethodAttributes (98ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
-Refreshing native plugins compatible for Editor in 9.34 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8155.
-Memory consumption went from 271.9 MB to 257.2 MB.
-Total: 17.506500 ms (FindLiveObjects: 1.022100 ms CreateObjectMapping: 0.879000 ms MarkObjects: 8.918500 ms  DeleteObjects: 6.685000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.036 seconds
+- Loaded All Assemblies, in  1.310 seconds
 Refreshing native plugins compatible for Editor in 5.22 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.982 seconds
-Domain Reload Profiling: 4013ms
-	BeginReloadAssembly (353ms)
+- Finished resetting the current domain, in  2.049 seconds
+Domain Reload Profiling: 3357ms
+	BeginReloadAssembly (210ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (27ms)
+		DisableScriptedObjects (19ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (101ms)
-	RebuildCommonClasses (90ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (1496ms)
-		LoadAssemblies (760ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (1002ms)
+		LoadAssemblies (408ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (899ms)
-			TypeCache.Refresh (861ms)
-				TypeCache.ScanAssembly (838ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (1983ms)
+		AnalyzeDomain (678ms)
+			TypeCache.Refresh (652ms)
+				TypeCache.ScanAssembly (625ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (2050ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (858ms)
+		SetupLoadedEditorAssemblies (888ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (136ms)
-			ProcessInitializeOnLoadAttributes (653ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (651ms)
 			ProcessInitializeOnLoadMethodAttributes (48ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 4.33 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 6.04 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8159.
-Memory consumption went from 271.9 MB to 257.2 MB.
-Total: 9.580800 ms (FindLiveObjects: 0.800300 ms CreateObjectMapping: 0.616400 ms MarkObjects: 4.914400 ms  DeleteObjects: 3.247200 ms)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8134.
+Memory consumption went from 271.8 MB to 257.2 MB.
+Total: 11.021700 ms (FindLiveObjects: 0.810200 ms CreateObjectMapping: 0.520100 ms MarkObjects: 6.371800 ms  DeleteObjects: 3.317500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -736,298 +302,112 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.656 seconds
-Refreshing native plugins compatible for Editor in 5.29 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.299 seconds
+Refreshing native plugins compatible for Editor in 4.12 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.271 seconds
-Domain Reload Profiling: 4925ms
-	BeginReloadAssembly (270ms)
+- Finished resetting the current domain, in  2.259 seconds
+Domain Reload Profiling: 3557ms
+	BeginReloadAssembly (221ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (973ms)
+		LoadAssemblies (456ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (603ms)
+			TypeCache.Refresh (587ms)
+				TypeCache.ScanAssembly (560ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2260ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1130ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (907ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 5.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8138.
+Memory consumption went from 271.8 MB to 257.2 MB.
+Total: 10.757900 ms (FindLiveObjects: 1.037500 ms CreateObjectMapping: 1.027500 ms MarkObjects: 5.586000 ms  DeleteObjects: 3.104800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.777 seconds
+Refreshing native plugins compatible for Editor in 4.33 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.903 seconds
+Domain Reload Profiling: 3676ms
+	BeginReloadAssembly (419ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (22ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (94ms)
-	RebuildCommonClasses (50ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (1263ms)
-		LoadAssemblies (524ms)
+		CreateAndSetChildDomain (97ms)
+	RebuildCommonClasses (66ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (1205ms)
+		LoadAssemblies (871ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (819ms)
-			TypeCache.Refresh (792ms)
-				TypeCache.ScanAssembly (759ms)
+		AnalyzeDomain (572ms)
+			TypeCache.Refresh (555ms)
+				TypeCache.ScanAssembly (530ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (3272ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1904ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1323ms)
+		SetupLoadedEditorAssemblies (887ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (15ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (215ms)
-			ProcessInitializeOnLoadAttributes (960ms)
-			ProcessInitializeOnLoadMethodAttributes (92ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
-Refreshing native plugins compatible for Editor in 7.04 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8163.
-Memory consumption went from 271.9 MB to 257.2 MB.
-Total: 13.136400 ms (FindLiveObjects: 0.742100 ms CreateObjectMapping: 0.554800 ms MarkObjects: 6.722600 ms  DeleteObjects: 5.114700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.733 seconds
-Refreshing native plugins compatible for Editor in 5.26 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.761 seconds
-Domain Reload Profiling: 5490ms
-	BeginReloadAssembly (348ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (103ms)
-	RebuildCommonClasses (67ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (1233ms)
-		LoadAssemblies (668ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (734ms)
-			TypeCache.Refresh (688ms)
-				TypeCache.ScanAssembly (659ms)
-			ScanForSourceGeneratedMonoScriptInfo (23ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (3761ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (979ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (8ms)
 			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (147ms)
-			ProcessInitializeOnLoadAttributes (730ms)
-			ProcessInitializeOnLoadMethodAttributes (79ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Refreshing native plugins compatible for Editor in 4.98 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8167.
-Memory consumption went from 271.9 MB to 257.3 MB.
-Total: 15.552700 ms (FindLiveObjects: 1.128500 ms CreateObjectMapping: 0.900200 ms MarkObjects: 7.907000 ms  DeleteObjects: 5.613800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.358 seconds
-Refreshing native plugins compatible for Editor in 4.80 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.929 seconds
-Domain Reload Profiling: 4283ms
-	BeginReloadAssembly (241ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (90ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (45ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (975ms)
-		LoadAssemblies (472ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (590ms)
-			TypeCache.Refresh (567ms)
-				TypeCache.ScanAssembly (541ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (2929ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1616ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (10ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (192ms)
-			ProcessInitializeOnLoadAttributes (1290ms)
-			ProcessInitializeOnLoadMethodAttributes (99ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (32ms)
-Refreshing native plugins compatible for Editor in 7.55 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8171.
-Memory consumption went from 271.9 MB to 257.3 MB.
-Total: 10.989300 ms (FindLiveObjects: 0.725000 ms CreateObjectMapping: 0.591200 ms MarkObjects: 4.289200 ms  DeleteObjects: 5.382100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.662 seconds
-Refreshing native plugins compatible for Editor in 7.01 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.358 seconds
-Domain Reload Profiling: 4017ms
-	BeginReloadAssembly (338ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (26ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (108ms)
-	RebuildCommonClasses (84ms)
-	RebuildNativeTypeToScriptingClass (39ms)
-	initialDomainReloadingComplete (89ms)
-	LoadAllAssembliesAndSetupDomain (1108ms)
-		LoadAssemblies (547ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (697ms)
-			TypeCache.Refresh (645ms)
-				TypeCache.ScanAssembly (616ms)
-			ScanForSourceGeneratedMonoScriptInfo (24ms)
-			ResolveRequiredComponents (28ms)
-	FinalizeReload (2359ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1040ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (174ms)
-			ProcessInitializeOnLoadAttributes (778ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Refreshing native plugins compatible for Editor in 10.49 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8175.
-Memory consumption went from 271.9 MB to 257.3 MB.
-Total: 14.560800 ms (FindLiveObjects: 2.165400 ms CreateObjectMapping: 1.018900 ms MarkObjects: 6.308900 ms  DeleteObjects: 5.065300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.928 seconds
-Refreshing native plugins compatible for Editor in 6.69 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.791 seconds
-Domain Reload Profiling: 4716ms
-	BeginReloadAssembly (362ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (29ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (110ms)
-	RebuildCommonClasses (104ms)
-	RebuildNativeTypeToScriptingClass (38ms)
-	initialDomainReloadingComplete (95ms)
-	LoadAllAssembliesAndSetupDomain (1325ms)
-		LoadAssemblies (709ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (773ms)
-			TypeCache.Refresh (717ms)
-				TypeCache.ScanAssembly (687ms)
-			ScanForSourceGeneratedMonoScriptInfo (28ms)
-			ResolveRequiredComponents (28ms)
-	FinalizeReload (2792ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1198ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (12ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (181ms)
-			ProcessInitializeOnLoadAttributes (928ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (678ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Refreshing native plugins compatible for Editor in 4.04 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 29.05 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8179.
-Memory consumption went from 271.9 MB to 257.3 MB.
-Total: 10.163000 ms (FindLiveObjects: 0.739400 ms CreateObjectMapping: 0.464200 ms MarkObjects: 5.750100 ms  DeleteObjects: 3.207500 ms)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8142.
+Memory consumption went from 271.8 MB to 257.2 MB.
+Total: 15.587700 ms (FindLiveObjects: 1.508200 ms CreateObjectMapping: 4.088900 ms MarkObjects: 5.603300 ms  DeleteObjects: 4.384600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1046,50 +426,50 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.283 seconds
-Refreshing native plugins compatible for Editor in 5.36 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.287 seconds
+Refreshing native plugins compatible for Editor in 3.32 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.359 seconds
-Domain Reload Profiling: 4640ms
-	BeginReloadAssembly (230ms)
+- Finished resetting the current domain, in  3.087 seconds
+Domain Reload Profiling: 4370ms
+	BeginReloadAssembly (261ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
+		DisableScriptedObjects (14ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (76ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (934ms)
-		LoadAssemblies (425ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (894ms)
+		LoadAssemblies (434ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (596ms)
-			TypeCache.Refresh (575ms)
-				TypeCache.ScanAssembly (554ms)
+		AnalyzeDomain (581ms)
+			TypeCache.Refresh (567ms)
+				TypeCache.ScanAssembly (542ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (3360ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (3088ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1494ms)
+		SetupLoadedEditorAssemblies (944ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (17ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (214ms)
-			ProcessInitializeOnLoadAttributes (1170ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (158ms)
+			ProcessInitializeOnLoadAttributes (713ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 4.25 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 4.51 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8183.
-Memory consumption went from 271.9 MB to 257.3 MB.
-Total: 10.777100 ms (FindLiveObjects: 1.064800 ms CreateObjectMapping: 0.870000 ms MarkObjects: 5.600800 ms  DeleteObjects: 3.239900 ms)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8146.
+Memory consumption went from 271.8 MB to 257.2 MB.
+Total: 12.179700 ms (FindLiveObjects: 0.843600 ms CreateObjectMapping: 0.914700 ms MarkObjects: 6.136500 ms  DeleteObjects: 4.282800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1104,70 +484,54 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 272061.599399 seconds.
-  path: Assets/Menu/Background/Layer1.png
-  artifactKey: Guid(83ddd91a9f6250a49b5f24aebcf0c8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Menu/Background/Layer1.png using Guid(83ddd91a9f6250a49b5f24aebcf0c8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea48302698c6cb54ac4aa5480f93e16') in 0.315159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Menu/Background/Layer3.png
-  artifactKey: Guid(faab72f20e417344f987aa648468eeef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Menu/Background/Layer3.png using Guid(faab72f20e417344f987aa648468eeef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a583667675f6401ab728f86baf49a5f') in 0.041571 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.326 seconds
-Refreshing native plugins compatible for Editor in 7.17 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.426 seconds
+Refreshing native plugins compatible for Editor in 4.85 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.498 seconds
-Domain Reload Profiling: 4821ms
-	BeginReloadAssembly (264ms)
+- Finished resetting the current domain, in  1.936 seconds
+Domain Reload Profiling: 3359ms
+	BeginReloadAssembly (200ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (29ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (90ms)
-	RebuildCommonClasses (66ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (916ms)
-		LoadAssemblies (387ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (1110ms)
+		LoadAssemblies (481ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (613ms)
-			TypeCache.Refresh (586ms)
-				TypeCache.ScanAssembly (560ms)
+		AnalyzeDomain (701ms)
+			TypeCache.Refresh (679ms)
+				TypeCache.ScanAssembly (651ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (3499ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1937ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1484ms)
+		SetupLoadedEditorAssemblies (813ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (12ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (236ms)
-			ProcessInitializeOnLoadAttributes (1119ms)
-			ProcessInitializeOnLoadMethodAttributes (95ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (130ms)
+			ProcessInitializeOnLoadAttributes (611ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 6.64 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 4.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8196.
-Memory consumption went from 276.1 MB to 261.5 MB.
-Total: 13.971900 ms (FindLiveObjects: 1.167600 ms CreateObjectMapping: 0.855800 ms MarkObjects: 6.783200 ms  DeleteObjects: 5.163200 ms)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8150.
+Memory consumption went from 271.8 MB to 257.2 MB.
+Total: 12.874200 ms (FindLiveObjects: 0.949400 ms CreateObjectMapping: 0.835600 ms MarkObjects: 6.429400 ms  DeleteObjects: 4.657800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1186,360 +550,152 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.437 seconds
-Refreshing native plugins compatible for Editor in 6.62 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.118 seconds
+Refreshing native plugins compatible for Editor in 4.47 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.851 seconds
-Domain Reload Profiling: 4286ms
-	BeginReloadAssembly (229ms)
+- Finished resetting the current domain, in  2.058 seconds
+Domain Reload Profiling: 3254ms
+	BeginReloadAssembly (203ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (891ms)
+		LoadAssemblies (406ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (481ms)
+			TypeCache.Refresh (458ms)
+				TypeCache.ScanAssembly (434ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (2059ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (852ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (665ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 4.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8154.
+Memory consumption went from 271.8 MB to 257.2 MB.
+Total: 13.140500 ms (FindLiveObjects: 1.005700 ms CreateObjectMapping: 1.228800 ms MarkObjects: 6.322400 ms  DeleteObjects: 4.581800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 374438.212343 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/Touch/Touch.png
+  artifactKey: Guid(05e7cf19e4f13b4429bf75b3cb17be17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/Touch/Touch.png using Guid(05e7cf19e4f13b4429bf75b3cb17be17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984a753716b93dd56097900a3c12a3f0') in 0.239423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 62.736513 seconds.
+  path: Assets/Map1_Forest/Tilemap/Backgrounds/BUSH - BACKGROUND.png
+  artifactKey: Guid(6e0fcddb85b3bfd4a9a26b3143f5d12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Backgrounds/BUSH - BACKGROUND.png using Guid(6e0fcddb85b3bfd4a9a26b3143f5d12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8620755c26c9f33f1c1100a7fd099fea') in 0.034846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Map1_Forest/Tilemap/Backgrounds/VINES - Second.png
+  artifactKey: Guid(c3909c99bf845a24db9a162d677b6398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Backgrounds/VINES - Second.png using Guid(c3909c99bf845a24db9a162d677b6398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d876e8b7dfbd947cf488ac76ffedda') in 0.027048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Map1_Forest/Tilemap/Backgrounds/WOODS - Fourth.png
+  artifactKey: Guid(0e8e998796118084d8b33b5085a3560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Backgrounds/WOODS - Fourth.png using Guid(0e8e998796118084d8b33b5085a3560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736924d23af378dbbe6eebf88038e97b') in 0.029389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Map1_Forest/Tilemap/Backgrounds/WOODS - Third.png
+  artifactKey: Guid(45367da5e1f745b4daacb977484a3704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Backgrounds/WOODS - Third.png using Guid(45367da5e1f745b4daacb977484a3704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dacf4700445bdc1446265622455a483c') in 0.023736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.354 seconds
+Refreshing native plugins compatible for Editor in 3.57 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.931 seconds
+Domain Reload Profiling: 3282ms
+	BeginReloadAssembly (289ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (71ms)
-	RebuildCommonClasses (90ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (1027ms)
-		LoadAssemblies (402ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (724ms)
-			TypeCache.Refresh (696ms)
-				TypeCache.ScanAssembly (667ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (2852ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1160ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (14ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (186ms)
-			ProcessInitializeOnLoadAttributes (877ms)
-			ProcessInitializeOnLoadMethodAttributes (63ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 6.81 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8200.
-Memory consumption went from 276.1 MB to 261.5 MB.
-Total: 22.529300 ms (FindLiveObjects: 1.763400 ms CreateObjectMapping: 2.489100 ms MarkObjects: 6.372000 ms  DeleteObjects: 11.902100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.363 seconds
-Refreshing native plugins compatible for Editor in 5.69 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.192 seconds
-Domain Reload Profiling: 4554ms
-	BeginReloadAssembly (214ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (79ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (1020ms)
-		LoadAssemblies (416ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (676ms)
-			TypeCache.Refresh (652ms)
-				TypeCache.ScanAssembly (627ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (3194ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1599ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (13ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (251ms)
-			ProcessInitializeOnLoadAttributes (1185ms)
-			ProcessInitializeOnLoadMethodAttributes (129ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (30ms)
-Refreshing native plugins compatible for Editor in 4.01 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8204.
-Memory consumption went from 276.1 MB to 261.5 MB.
-Total: 9.574100 ms (FindLiveObjects: 0.706100 ms CreateObjectMapping: 0.555600 ms MarkObjects: 4.362800 ms  DeleteObjects: 3.947300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.509 seconds
-Refreshing native plugins compatible for Editor in 7.11 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.129 seconds
-Domain Reload Profiling: 4636ms
-	BeginReloadAssembly (230ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (66ms)
-	RebuildCommonClasses (68ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (1126ms)
-		LoadAssemblies (581ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (643ms)
-			TypeCache.Refresh (620ms)
-				TypeCache.ScanAssembly (593ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (3131ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1328ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (13ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (228ms)
-			ProcessInitializeOnLoadAttributes (973ms)
-			ProcessInitializeOnLoadMethodAttributes (94ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 7.33 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8208.
-Memory consumption went from 276.1 MB to 261.5 MB.
-Total: 18.028000 ms (FindLiveObjects: 3.863600 ms CreateObjectMapping: 1.669100 ms MarkObjects: 9.280500 ms  DeleteObjects: 3.212400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.635 seconds
-Refreshing native plugins compatible for Editor in 5.76 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.526 seconds
-Domain Reload Profiling: 4158ms
-	BeginReloadAssembly (222ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (68ms)
-	RebuildCommonClasses (67ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (89ms)
-	LoadAllAssembliesAndSetupDomain (1231ms)
-		LoadAssemblies (563ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (752ms)
-			TypeCache.Refresh (726ms)
-				TypeCache.ScanAssembly (696ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (2527ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1096ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (12ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (149ms)
-			ProcessInitializeOnLoadAttributes (841ms)
-			ProcessInitializeOnLoadMethodAttributes (76ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 5.99 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8212.
-Memory consumption went from 276.1 MB to 261.5 MB.
-Total: 14.044400 ms (FindLiveObjects: 1.024600 ms CreateObjectMapping: 0.772200 ms MarkObjects: 6.524900 ms  DeleteObjects: 5.720200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.547 seconds
-Refreshing native plugins compatible for Editor in 4.85 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.432 seconds
-Domain Reload Profiling: 3973ms
-	BeginReloadAssembly (306ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (102ms)
-	RebuildCommonClasses (62ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (1099ms)
-		LoadAssemblies (539ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (690ms)
-			TypeCache.Refresh (661ms)
-				TypeCache.ScanAssembly (632ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (29ms)
-	FinalizeReload (2433ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1117ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (14ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (161ms)
-			ProcessInitializeOnLoadAttributes (840ms)
-			ProcessInitializeOnLoadMethodAttributes (81ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 6.18 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8216.
-Memory consumption went from 276.1 MB to 261.5 MB.
-Total: 13.951900 ms (FindLiveObjects: 1.643400 ms CreateObjectMapping: 1.389300 ms MarkObjects: 5.779000 ms  DeleteObjects: 5.138400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.328 seconds
-Refreshing native plugins compatible for Editor in 5.03 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.357 seconds
-Domain Reload Profiling: 3682ms
-	BeginReloadAssembly (238ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (81ms)
-	RebuildCommonClasses (45ms)
+		CreateAndSetChildDomain (86ms)
+	RebuildCommonClasses (76ms)
 	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (945ms)
-		LoadAssemblies (438ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (911ms)
+		LoadAssemblies (456ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (597ms)
-			TypeCache.Refresh (581ms)
-				TypeCache.ScanAssembly (554ms)
+		AnalyzeDomain (589ms)
+			TypeCache.Refresh (573ms)
+				TypeCache.ScanAssembly (552ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (16ms)
-	FinalizeReload (2358ms)
+	FinalizeReload (1932ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1038ms)
+		SetupLoadedEditorAssemblies (824ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (8ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (141ms)
-			ProcessInitializeOnLoadAttributes (796ms)
-			ProcessInitializeOnLoadMethodAttributes (76ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (612ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
 			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 11.65 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 5.41 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8220.
-Memory consumption went from 276.1 MB to 261.5 MB.
-Total: 15.500100 ms (FindLiveObjects: 1.076100 ms CreateObjectMapping: 1.152500 ms MarkObjects: 7.278700 ms  DeleteObjects: 5.989100 ms)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8167.
+Memory consumption went from 276.0 MB to 261.4 MB.
+Total: 11.902000 ms (FindLiveObjects: 0.968100 ms CreateObjectMapping: 0.949100 ms MarkObjects: 5.695300 ms  DeleteObjects: 4.287500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1558,112 +714,820 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.428 seconds
-Refreshing native plugins compatible for Editor in 6.24 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.103 seconds
+Refreshing native plugins compatible for Editor in 4.49 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.578 seconds
-Domain Reload Profiling: 5004ms
-	BeginReloadAssembly (253ms)
+- Finished resetting the current domain, in  2.086 seconds
+Domain Reload Profiling: 3188ms
+	BeginReloadAssembly (227ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
+		DisableScriptedObjects (22ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (78ms)
-	RebuildCommonClasses (63ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (54ms)
-	LoadAllAssembliesAndSetupDomain (1036ms)
-		LoadAssemblies (437ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (792ms)
+		LoadAssemblies (357ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (699ms)
-			TypeCache.Refresh (673ms)
-				TypeCache.ScanAssembly (640ms)
+		AnalyzeDomain (516ms)
+			TypeCache.Refresh (492ms)
+				TypeCache.ScanAssembly (469ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (3578ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (2087ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1357ms)
+		SetupLoadedEditorAssemblies (1055ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (201ms)
-			ProcessInitializeOnLoadAttributes (1062ms)
-			ProcessInitializeOnLoadMethodAttributes (65ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Refreshing native plugins compatible for Editor in 3.37 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8224.
-Memory consumption went from 276.1 MB to 261.5 MB.
-Total: 8.251500 ms (FindLiveObjects: 0.707200 ms CreateObjectMapping: 0.466600 ms MarkObjects: 4.038300 ms  DeleteObjects: 3.037300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.346 seconds
-Refreshing native plugins compatible for Editor in 6.66 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.602 seconds
-Domain Reload Profiling: 3943ms
-	BeginReloadAssembly (274ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (88ms)
-	RebuildCommonClasses (66ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (920ms)
-		LoadAssemblies (475ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (566ms)
-			TypeCache.Refresh (544ms)
-				TypeCache.ScanAssembly (519ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (2603ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1019ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (11ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (165ms)
-			ProcessInitializeOnLoadAttributes (770ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (836ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Refreshing native plugins compatible for Editor in 10.43 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 5.51 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8228.
-Memory consumption went from 276.2 MB to 261.5 MB.
-Total: 18.168500 ms (FindLiveObjects: 1.089800 ms CreateObjectMapping: 0.796500 ms MarkObjects: 10.933000 ms  DeleteObjects: 5.347000 ms)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8171.
+Memory consumption went from 276.0 MB to 261.4 MB.
+Total: 10.335300 ms (FindLiveObjects: 0.872300 ms CreateObjectMapping: 0.821100 ms MarkObjects: 5.166700 ms  DeleteObjects: 3.473600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 191.754648 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_57.asset
+  artifactKey: Guid(76bd40e6ab10b6044b16a22ae1d81c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_57.asset using Guid(76bd40e6ab10b6044b16a22ae1d81c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f87fed976eb58b5041d6a03950976b2d') in 0.066642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_74.asset
+  artifactKey: Guid(60e780ca97fbcae47a2f4da2d95df62b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_74.asset using Guid(60e780ca97fbcae47a2f4da2d95df62b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d73e2384475918a581a386d2974492') in 0.007420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_59.asset
+  artifactKey: Guid(8b02fade13b5ee7498f4641861e32e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_59.asset using Guid(8b02fade13b5ee7498f4641861e32e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be255a59b421891332604f1b9fbb63ec') in 0.016515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_78.asset
+  artifactKey: Guid(a07c482782706dd4eb90e596899c044d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_78.asset using Guid(a07c482782706dd4eb90e596899c044d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563c785b527c850c603a968ce9672dc6') in 0.016537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_90.asset
+  artifactKey: Guid(2bd52da821eb2fb408621480870dbf30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_90.asset using Guid(2bd52da821eb2fb408621480870dbf30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '518f1902842c0f2ffa354b12fe1df7b1') in 0.017101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_64.asset
+  artifactKey: Guid(fbfe4128282580f44a1613243d1a8dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_64.asset using Guid(fbfe4128282580f44a1613243d1a8dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3287695c49a504adf4c11122b961d728') in 0.008877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_88.asset
+  artifactKey: Guid(0d7a6e8d197c7f34884b6bb8990ebc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_88.asset using Guid(0d7a6e8d197c7f34884b6bb8990ebc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22e7fa4e2e2af477c79a6f9a51f0819') in 0.018967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_86.asset
+  artifactKey: Guid(666d46685088cf341bbe0a96da2bcfc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_86.asset using Guid(666d46685088cf341bbe0a96da2bcfc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2f2bd8c531f26727469faec9c6642d') in 0.009891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_70.asset
+  artifactKey: Guid(337b0621750552245bcf59f9293f719c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_70.asset using Guid(337b0621750552245bcf59f9293f719c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8fea6744cfdc8a906b2960263d64de') in 0.009622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_68.asset
+  artifactKey: Guid(dd91a2191dcba0f4e8fe00ca3c69c092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_68.asset using Guid(dd91a2191dcba0f4e8fe00ca3c69c092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55659180cf77f41d1b0a8b9660597721') in 0.009319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_60.asset
+  artifactKey: Guid(03bf511fe6aa17841b69c6e1fcf9e7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_60.asset using Guid(03bf511fe6aa17841b69c6e1fcf9e7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603a9f4e8f52c85be46161384f8bd265') in 0.018111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_83.asset
+  artifactKey: Guid(d3602596b1a8b074a90f9c0d315f0f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_83.asset using Guid(d3602596b1a8b074a90f9c0d315f0f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef140ab0dc6915df238a21a7b9bdfcb3') in 0.021584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_67.asset
+  artifactKey: Guid(1aa0fd459a6533c48902856cb7dda0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_67.asset using Guid(1aa0fd459a6533c48902856cb7dda0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8c296e18b9c1cc89de018586fe0faf') in 0.007800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_104.asset
+  artifactKey: Guid(c522bef68e5065f4f8921dc6879f37cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_104.asset using Guid(c522bef68e5065f4f8921dc6879f37cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946a90c4d1c1ad589a6d3ff57213142c') in 0.008975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_97.asset
+  artifactKey: Guid(0b89a31ffaac0d949a263753121afd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_97.asset using Guid(0b89a31ffaac0d949a263753121afd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f95d517450125d388e36a2c7b6eb4c8') in 0.019108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_120.asset
+  artifactKey: Guid(b5307312edaaa1643baf1462cc2de6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_120.asset using Guid(b5307312edaaa1643baf1462cc2de6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ebbfec3bea67d29b2d0e0015a9b006d') in 0.009404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_111.asset
+  artifactKey: Guid(f7216c4cf78a5cf4fb9d70c124b1212a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_111.asset using Guid(f7216c4cf78a5cf4fb9d70c124b1212a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881a8fc2bb381344938ac682a76fbcf2') in 0.008393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_92.asset
+  artifactKey: Guid(4c2c278911360e84ead455122f492009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_92.asset using Guid(4c2c278911360e84ead455122f492009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc08c5f823dc7713804ad84a207f8fe') in 0.008123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_114.asset
+  artifactKey: Guid(9552471376a602842a827d1040b8e422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_114.asset using Guid(9552471376a602842a827d1040b8e422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59cd62d3c08ebd8c896f0081def9f3e8') in 0.018779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_137.asset
+  artifactKey: Guid(efe31e1f1cf7cab4d85961b8c34c2bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_137.asset using Guid(efe31e1f1cf7cab4d85961b8c34c2bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ddeaca4e94ee779b20428f9731805c5') in 0.016027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_118.asset
+  artifactKey: Guid(51cf36b52f882864185db00dee21468c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_118.asset using Guid(51cf36b52f882864185db00dee21468c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '635331472a89c1af0c7b51bb4641937f') in 0.008870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_140.asset
+  artifactKey: Guid(da30d4e1d9abdbd4d8e3fa6611cb3435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_140.asset using Guid(da30d4e1d9abdbd4d8e3fa6611cb3435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166819d9f34b71d2757d5d5198ee76f2') in 0.026395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_121.asset
+  artifactKey: Guid(3ce73b4a142b44f49aeab1a146826f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_121.asset using Guid(3ce73b4a142b44f49aeab1a146826f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dbeb54a27d23a87bb191fe763c85d45') in 0.027327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_112.asset
+  artifactKey: Guid(6dd0464a52b30524595bae9e3e854987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_112.asset using Guid(6dd0464a52b30524595bae9e3e854987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4350a14f9ab4b29f514907ffeed12cca') in 0.009409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_123.asset
+  artifactKey: Guid(8197de3c43583a8489852d5567cfb236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_123.asset using Guid(8197de3c43583a8489852d5567cfb236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef560ebf51a538b5810c56cedcf209fc') in 0.010519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_98.asset
+  artifactKey: Guid(b1d0baf0008676e4d810ed7fffefc546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_98.asset using Guid(b1d0baf0008676e4d810ed7fffefc546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c4c4797bb570d314b361e3ffae3d649') in 0.009076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_126.asset
+  artifactKey: Guid(c24fc9eb19118fe4e85edd91985d577d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_126.asset using Guid(c24fc9eb19118fe4e85edd91985d577d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb08125c7c29ccbdbb2aca9f144b4a0') in 0.009507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_135.asset
+  artifactKey: Guid(51ac08cdd485d6f45b3c41abad9e1855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_135.asset using Guid(51ac08cdd485d6f45b3c41abad9e1855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da30ef48793620afaaa29f49d6d8705c') in 0.008620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_94.asset
+  artifactKey: Guid(f9ed99438e3b6874eb5a060a1a930f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_94.asset using Guid(f9ed99438e3b6874eb5a060a1a930f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a95d961db171009336d97a8c07e5100') in 0.016757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_96.asset
+  artifactKey: Guid(c4b22285623f9b147830a6aa3af25f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_96.asset using Guid(c4b22285623f9b147830a6aa3af25f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebbab6cf57f371b76429b7b2b2a9497') in 0.015296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_129.asset
+  artifactKey: Guid(36bd63e771b7d88479f2e1f1961b6dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_129.asset using Guid(36bd63e771b7d88479f2e1f1961b6dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d73a4790791203652eb00d493bc521f') in 0.015274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_128.asset
+  artifactKey: Guid(e164c9865531f724180d8acf87374db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_128.asset using Guid(e164c9865531f724180d8acf87374db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf60a562dfec6b19836ec96945eab31') in 0.017065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_116.asset
+  artifactKey: Guid(6453782a3de502443a388daa79d5912a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_116.asset using Guid(6453782a3de502443a388daa79d5912a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edb0cfd94ce393e23b15114690a4470') in 0.015203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_66.asset
+  artifactKey: Guid(308b1c48ebd795c448ea1a9b256ad4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_66.asset using Guid(308b1c48ebd795c448ea1a9b256ad4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5443e1a2965d0d02314903a9f08cc840') in 0.007522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_102.asset
+  artifactKey: Guid(f419542aa4474f048bec5b3a90c683f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_102.asset using Guid(f419542aa4474f048bec5b3a90c683f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d64ce38ba021f334bc1e5a1043c73b3') in 0.008655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_82.asset
+  artifactKey: Guid(fe0cbcc077b22724c84bd81caff220ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_82.asset using Guid(fe0cbcc077b22724c84bd81caff220ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffbff398a5669540b167525bcc381699') in 0.017581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_133.asset
+  artifactKey: Guid(9a7b9079bd1f9354385d8f84579f7707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_133.asset using Guid(9a7b9079bd1f9354385d8f84579f7707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdbb27308666edae520406c8c6628a88') in 0.023615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_153.asset
+  artifactKey: Guid(1595b645efe9bcd42aa54d2b5aad1d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_153.asset using Guid(1595b645efe9bcd42aa54d2b5aad1d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc66b88774b10a5c1c180642074658e') in 0.019854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_152.asset
+  artifactKey: Guid(86a749942dc56a24dbbbe53a1fd78062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_152.asset using Guid(86a749942dc56a24dbbbe53a1fd78062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbc6332f29bbd530b22547878991d0e') in 0.020757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_150.asset
+  artifactKey: Guid(650f987915b330345876c8a585b7ea92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_150.asset using Guid(650f987915b330345876c8a585b7ea92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc98829178fe2110e4b368151c4be1a') in 0.019048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_151.asset
+  artifactKey: Guid(46c1a4a994bfab240a81f716f918dcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_151.asset using Guid(46c1a4a994bfab240a81f716f918dcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f2de3822994154ba91dd55f2698530') in 0.015798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_161.asset
+  artifactKey: Guid(26bc52ee76cca964a8a2fe99156be686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_161.asset using Guid(26bc52ee76cca964a8a2fe99156be686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b9faf5d87f9a3bae87ccfeb13fee70') in 0.011098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_170.asset
+  artifactKey: Guid(f445bdaa685872244a104084e3c78d5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_170.asset using Guid(f445bdaa685872244a104084e3c78d5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa2c457240259dd6b3918793c210bbb') in 0.008191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_186.asset
+  artifactKey: Guid(b8e0f1caf9cb5f243a44370e52b8342d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_186.asset using Guid(b8e0f1caf9cb5f243a44370e52b8342d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c7291ae6af307813e6bf75c954edf6') in 0.017402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_187.asset
+  artifactKey: Guid(41cae5b5db819694a9a327769270a1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_187.asset using Guid(41cae5b5db819694a9a327769270a1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f31d191a32b5de7766e479ff7dbed90c') in 0.019152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_189.asset
+  artifactKey: Guid(6e0be64536a0ec24cbc8f62e89eba4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_189.asset using Guid(6e0be64536a0ec24cbc8f62e89eba4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b6087b1504433f795c2ae4ecc00c6d') in 0.008764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_163.asset
+  artifactKey: Guid(04c485102ccd5b14cb590481570b34ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_163.asset using Guid(04c485102ccd5b14cb590481570b34ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2699b7c466cbc9c004a7a5153286ea31') in 0.007483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_174.asset
+  artifactKey: Guid(2aab97eef7b6f3647951e54b23e837f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_174.asset using Guid(2aab97eef7b6f3647951e54b23e837f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35b2af6ffea82d734d097fd03317da0') in 0.015805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_194.asset
+  artifactKey: Guid(7c6e155170294bd45992b4eef780233d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_194.asset using Guid(7c6e155170294bd45992b4eef780233d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b5660e1f8c1fc2c50193eb0d9b1f77') in 0.018391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_181.asset
+  artifactKey: Guid(9546d3fa1475b82478a2b9571adbc15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_181.asset using Guid(9546d3fa1475b82478a2b9571adbc15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8a67c389b2688fa30ba5e645b4632b') in 0.024582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_156.asset
+  artifactKey: Guid(06b0737a8bb590244afdea8c7aeceeb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_156.asset using Guid(06b0737a8bb590244afdea8c7aeceeb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2e2552b87f252c88cef7329489a826') in 0.011972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_160.asset
+  artifactKey: Guid(c4ef732c2514dc14fba567372e30da65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_160.asset using Guid(c4ef732c2514dc14fba567372e30da65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95bcd89e8b09dd3edf0145a54a5f0bc5') in 0.011498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_143.asset
+  artifactKey: Guid(1e65f0d1e28112c408a1bc94a6ecb90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_143.asset using Guid(1e65f0d1e28112c408a1bc94a6ecb90e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c15466152529f721cae236f3e76718a') in 0.013526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_184.asset
+  artifactKey: Guid(e0b6eac7d1f022141a83c17cb03d9299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_184.asset using Guid(e0b6eac7d1f022141a83c17cb03d9299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf53a3c446fbbe656886e10aa6f497a1') in 0.011543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_190.asset
+  artifactKey: Guid(222c570bb78c5504b861952ab4d8b0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_190.asset using Guid(222c570bb78c5504b861952ab4d8b0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e226d978daa58dffd8c15afdc087b8a') in 0.007432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_176.asset
+  artifactKey: Guid(52137de833c47884592caa2417aa7c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_176.asset using Guid(52137de833c47884592caa2417aa7c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff2fce0fc3676e94afaa283f6bbeb73') in 0.008855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.014660 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_147.asset
+  artifactKey: Guid(b9663b6716b3b2b43b8505c82858d202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_147.asset using Guid(b9663b6716b3b2b43b8505c82858d202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b168d54cb776ff4ecd17283600f7bec6') in 0.019893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_154.asset
+  artifactKey: Guid(5be0380dcecf3504787f92ac42553e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_154.asset using Guid(5be0380dcecf3504787f92ac42553e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf9208a6b8b48eae8d1107af4e1de02') in 0.007886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_108.asset
+  artifactKey: Guid(aac584d32547d4e4e89d0fa35e1d66bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_108.asset using Guid(aac584d32547d4e4e89d0fa35e1d66bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b97423d40307f9d658ef26342fbe41a') in 0.007672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_141.asset
+  artifactKey: Guid(8e1f305fd341a9d44aea92130b7d28f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_141.asset using Guid(8e1f305fd341a9d44aea92130b7d28f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692667fc1ad773931326e532c52aa028') in 0.006916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_119.asset
+  artifactKey: Guid(9cca296924476ab4ea7f3200e4b030c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_119.asset using Guid(9cca296924476ab4ea7f3200e4b030c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074bf8deac9256aefebfae596492166a') in 0.008813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_76.asset
+  artifactKey: Guid(db8323d59907d2744af5adef5a3ac4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_76.asset using Guid(db8323d59907d2744af5adef5a3ac4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28590d9e19da39a9e5a9850bec65fc40') in 0.007968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_191.asset
+  artifactKey: Guid(8d958788f97dffc4b9ded909cb5312ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_191.asset using Guid(8d958788f97dffc4b9ded909cb5312ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead5deaf072d58e42e44a94b4dcb3623') in 0.022930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_173.asset
+  artifactKey: Guid(3aaebbec6b9c7424e88514fce473d5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_173.asset using Guid(3aaebbec6b9c7424e88514fce473d5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cfed7f7e4b8041c66885db3e378cf38') in 0.020022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_195.asset
+  artifactKey: Guid(393ded00b9979b746a6712d2437fd28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_195.asset using Guid(393ded00b9979b746a6712d2437fd28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f83aebe854733e2907b19bef4e47474') in 0.020876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_197.asset
+  artifactKey: Guid(0b5978a7b5e38394d8c6968affb4fc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_197.asset using Guid(0b5978a7b5e38394d8c6968affb4fc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c220e56ce67d91e3331cc9d1bc3ce1') in 0.008406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_200.asset
+  artifactKey: Guid(6c28bcfa9c518434dba6392b4299e813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_200.asset using Guid(6c28bcfa9c518434dba6392b4299e813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781913e482fb646e6c35903f285129f6') in 0.022195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_192.asset
+  artifactKey: Guid(285f07e0c035694409d887dfa40067ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_192.asset using Guid(285f07e0c035694409d887dfa40067ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e312688edd97a7e05dcfcde526a755ba') in 0.007283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_149.asset
+  artifactKey: Guid(4935f4fbf589be14b9465c036836a816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_149.asset using Guid(4935f4fbf589be14b9465c036836a816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a98b9407446c1b9cea83702e93ef839') in 0.022386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_171.asset
+  artifactKey: Guid(5f81fd36535c90e459456cf2e2583c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_171.asset using Guid(5f81fd36535c90e459456cf2e2583c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c8c16a9fc3e75907cd6cd1c889a81a') in 0.012004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_72.asset
+  artifactKey: Guid(1f4affffdf2173e4f9375059e058e66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_72.asset using Guid(1f4affffdf2173e4f9375059e058e66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0a0eaef36c918cd70b34c8361897cd') in 0.010328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_159.asset
+  artifactKey: Guid(c25bf22e41541ab4bbae4f93e26d1f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_159.asset using Guid(c25bf22e41541ab4bbae4f93e26d1f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e9d930a618043985ee3c99d7264ed6') in 0.011382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_196.asset
+  artifactKey: Guid(1f8e6e493b9da8244be201bfd2e3a9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map3_City/Tilemap/Tilemap/City tilemap-01_196.asset using Guid(1f8e6e493b9da8244be201bfd2e3a9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4298510952f76b71619b2c30017199a') in 0.009822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.232 seconds
+Refreshing native plugins compatible for Editor in 3.62 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.953 seconds
+Domain Reload Profiling: 3183ms
+	BeginReloadAssembly (275ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (26ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (90ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (833ms)
+		LoadAssemblies (428ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (505ms)
+			TypeCache.Refresh (491ms)
+				TypeCache.ScanAssembly (470ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1953ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (911ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (700ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 5.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8178.
+Memory consumption went from 276.0 MB to 261.4 MB.
+Total: 10.911300 ms (FindLiveObjects: 1.107000 ms CreateObjectMapping: 0.861200 ms MarkObjects: 4.790400 ms  DeleteObjects: 4.150800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.638 seconds
+Refreshing native plugins compatible for Editor in 3.79 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.992 seconds
+Domain Reload Profiling: 3628ms
+	BeginReloadAssembly (250ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (1205ms)
+		LoadAssemblies (728ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (578ms)
+			TypeCache.Refresh (561ms)
+				TypeCache.ScanAssembly (533ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1993ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (888ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (688ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 4.07 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8182.
+Memory consumption went from 276.1 MB to 261.4 MB.
+Total: 8.922700 ms (FindLiveObjects: 0.737900 ms CreateObjectMapping: 0.536500 ms MarkObjects: 3.924100 ms  DeleteObjects: 3.722600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.115 seconds
+Refreshing native plugins compatible for Editor in 3.10 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.054 seconds
+Domain Reload Profiling: 3165ms
+	BeginReloadAssembly (204ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (815ms)
+		LoadAssemblies (408ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (492ms)
+			TypeCache.Refresh (478ms)
+				TypeCache.ScanAssembly (452ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (2055ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1025ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (805ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 4.87 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8186.
+Memory consumption went from 276.1 MB to 261.4 MB.
+Total: 11.361500 ms (FindLiveObjects: 0.780400 ms CreateObjectMapping: 0.528000 ms MarkObjects: 5.457800 ms  DeleteObjects: 4.593200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
