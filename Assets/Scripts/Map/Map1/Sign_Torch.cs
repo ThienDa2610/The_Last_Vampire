@@ -6,12 +6,8 @@ using TMPro;
 
 public class Sign_Torch : MonoBehaviour
 {
-<<<<<<< HEAD
     public GameObject tilemap;
     public GameObject dangeroustilemap;
-=======
-    public GameObject tilemap;  
->>>>>>> BaoDi
     public GameObject[] torches;
     public Image dialogImage;
     public TMP_Text dialogText;
@@ -104,18 +100,12 @@ public class Sign_Torch : MonoBehaviour
         if (allOff && allOn)
         {
             tilemap.SetActive(true);
-<<<<<<< HEAD
             dangeroustilemap.SetActive(true);
-=======
->>>>>>> BaoDi
         }
         else
         {
             tilemap.SetActive(false);
-<<<<<<< HEAD
             dangeroustilemap.SetActive(false);
-=======
->>>>>>> BaoDi
         }
     }
 }

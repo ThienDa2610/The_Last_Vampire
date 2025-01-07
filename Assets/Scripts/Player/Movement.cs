@@ -13,11 +13,8 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rb;
     public TrailRenderer tr;
     private PlayerGroundCheck groundCheck;
-<<<<<<< HEAD
     public bool CanJumpInWater = false;
     public bool isInSlough = false;
-=======
->>>>>>> BaoDi
 
     bool isDashing;
     [SerializeField] float dashingPower = 12f;
@@ -101,7 +98,6 @@ public class Movement : MonoBehaviour
         }
 
         //air jump
-<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (groundCheck.isOnTheGround() || CanJumpInWater) 
@@ -122,12 +118,6 @@ public class Movement : MonoBehaviour
         {
             moveSpeed = 2.5f;
             jumpForce = 0f;
-=======
-        if (Input.GetKeyDown(KeyCode.Space) && !groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            airJumpLeft = false;
->>>>>>> BaoDi
         }
     }
 

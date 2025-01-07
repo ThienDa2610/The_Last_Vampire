@@ -18,12 +18,7 @@ public class SummoningHowl : BossSkill
 
     private IEnumerator Howling()
     {
-<<<<<<< HEAD
         //animator.SetTrigger("Prepare");
-=======
-        animator.SetTrigger("Prepare");
-        animator.SetTrigger("Howl");
->>>>>>> BaoDi
         yield return new WaitForSeconds(howlDuration);
         for (int i = 0; i < numberOfWolves; i++)
         {

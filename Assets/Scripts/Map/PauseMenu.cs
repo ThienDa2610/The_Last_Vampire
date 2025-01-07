@@ -16,11 +16,7 @@ public class PauseMenu : MonoBehaviour
     private RectTransform pauseMenuRect;
     public float slideSpeed = 5f;
 
-<<<<<<< HEAD
     public bool isIt = true;
-=======
-
->>>>>>> BaoDi
     private void Start()
     {
         gameplayCanvas.gameObject.SetActive(true);
@@ -29,11 +25,7 @@ public class PauseMenu : MonoBehaviour
     }
     private void Update()
     {
-<<<<<<< HEAD
         if (isIt && Input.GetKeyDown(KeyCode.Escape))
-=======
-        if (Input.GetKeyDown(KeyCode.Escape))
->>>>>>> BaoDi
         {
             if (!isPaused)
             {

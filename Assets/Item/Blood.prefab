@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3347106983945721935}
   - component: {fileID: 2128709443323378409}
   - component: {fileID: 1674587816726365024}
-  - component: {fileID: -5016219920538117636}
   - component: {fileID: 457334582209686710}
-  m_Layer: 8
+  - component: {fileID: -5016219920538117636}
+  m_Layer: 0
   m_Name: Blood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,6 +122,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.013594121}
   serializedVersion: 2
   m_Radius: 0.31832018
+--- !u!114 &457334582209686710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4451261994187638914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9130fffe8b30841af07b04c1890103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPotionManager: {fileID: 0}
 --- !u!50 &-5016219920538117636
 Rigidbody2D:
   serializedVersion: 4
@@ -149,16 +162,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &457334582209686710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4451261994187638914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9130fffe8b30841af07b04c1890103, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bloodPotionManager: {fileID: 0}

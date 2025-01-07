@@ -41,10 +41,6 @@ public class Shop : MonoBehaviour
         quantitySlider.value = 1;
         typeCoinManager = FindObjectOfType<TypeCoinManager>();
         ghostText.text = typeCoinManager.ghostCount.ToString();
-<<<<<<< HEAD
-=======
-        Debug.Log(ghostText.text);
->>>>>>> BaoDi
         bloodPotionManager = FindObjectOfType<BloodPotionManager>();
         minValue.text = "1";
         maxValue.text = quantitySlider.maxValue.ToString();

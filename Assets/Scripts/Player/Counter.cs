@@ -7,10 +7,6 @@ public class Counter : MonoBehaviour
     public static bool counterLearned = false;
     public bool isCountering = false;
     public float counterDuration = 0.3f;
-<<<<<<< HEAD
-=======
-    public static Animator animator;
->>>>>>> BaoDi
     [SerializeField] float teleOffset = 1.5f;
     [SerializeField] float healAmount = 30f;
     [SerializeField] float counterDamage = 30f;
@@ -22,11 +18,6 @@ public class Counter : MonoBehaviour
     void Start()
     {
         //counterLearned = false;
-<<<<<<< HEAD
-=======
-        animator = GetComponent<Animator>();
-
->>>>>>> BaoDi
     }
 
     // Update is called once per frame
@@ -43,10 +34,6 @@ public class Counter : MonoBehaviour
 
         isCountering = true;
         //animation
-<<<<<<< HEAD
-=======
-        animator.SetTrigger("Counter");
->>>>>>> BaoDi
         yield return new WaitForSeconds(counterDuration);
         if (isEnhanced)
             yield return new WaitForSeconds(enhancedDuration);
