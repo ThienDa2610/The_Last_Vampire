@@ -18,6 +18,7 @@ public class FireMissile : BossSkill
     }
     private IEnumerator FiringMissile()
     {
+        Debug.Log("Firing");
         animator.SetTrigger("isFiring");
         for (int i = 0; i < numberOfMissile; i++)
         {
@@ -29,7 +30,6 @@ public class FireMissile : BossSkill
     }
     private void StartFireMissile()
     {
-        Debug.Log("Fire!");
         Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y - yOffset, transform.position.z);
         GameObject missile = Instantiate(pf_Missile, spawnPosition, Quaternion.identity);
         missile.transform.localScale = transform.localScale;
