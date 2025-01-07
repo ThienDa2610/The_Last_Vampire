@@ -27,7 +27,7 @@ public class PlayerGroundCheck : MonoBehaviour
         {
             isGrounded = false;
             animator.SetBool("isJumping", true);
-        }
+        }  
     }
     public bool isOnTheGround()
     {

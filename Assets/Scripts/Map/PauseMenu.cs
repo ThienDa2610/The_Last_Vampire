@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour
     private RectTransform pauseMenuRect;
     public float slideSpeed = 5f;
 
-
+    public bool isIt = true;
     private void Start()
     {
         gameplayCanvas.gameObject.SetActive(true);
@@ -25,7 +25,7 @@ public class PauseMenu : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (isIt && Input.GetKeyDown(KeyCode.Escape))
         {
             if (!isPaused)
             {

@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-/*using UnityEngine.UI;
-using TMPro;*/
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class SaveData
+{
+    public Dictionary<string, LevelSaveData> levels = new Dictionary<string, LevelSaveData>();
+}
+
+[System.Serializable]
+public class LevelSaveData
 {
     public string SavedSceneNameJSON;
     public Vector3 savedPosition;
@@ -114,14 +120,14 @@ public class CheckPointJSON : MonoBehaviour
     void Start()
     {
         string sceneName = SceneManager.GetActiveScene().name;
-        SaveData saveData = LoadSaveData();
-        if (saveData == null)
+        LevelSaveData lvsaveData = LoadSaveData();
+        if (lvsaveData == null)
         {
             SaveGame();
         }
         else
         {
-            string savedSceneName = saveData.SavedSceneNameJSON;
+            string savedSceneName = lvsaveData.SavedSceneNameJSON;
             if (sceneName != savedSceneName)
             {
                 SaveGame();  // Save if the scene has changed
@@ -240,7 +246,7 @@ public class CheckPointJSON : MonoBehaviour
     public void SaveGame()
     {
         Debug.Log("File JSON Saved");
-        SaveData saveData = new SaveData
+        LevelSaveData currentLevelData = new LevelSaveData
         {
             SavedSceneNameJSON = SceneManager.GetActiveScene().name,
             savedPosition = player.transform.position,
@@ -258,7 +264,7 @@ public class CheckPointJSON : MonoBehaviour
         // Save enemy states
         foreach (var enemy in enemies)
         {
-            saveData.enemies.Add(new EnemySaveData
+            currentLevelData.enemies.Add(new EnemySaveData
             {
                 isDead = enemy.isDead,
                 health = enemy.health
@@ -268,7 +274,7 @@ public class CheckPointJSON : MonoBehaviour
         // Save torch states
         foreach (var torch in torches)
         {
-            saveData.torches.Add(new TorchSaveData
+            currentLevelData.torches.Add(new TorchSaveData
             {
                 isOn = torch.isTorchOn
             });
@@ -277,7 +283,7 @@ public class CheckPointJSON : MonoBehaviour
         // Save torch_end states
         foreach (var torch in torches2)
         {
-            saveData.torches2.Add(new TorchSaveDataEnd
+            currentLevelData.torches2.Add(new TorchSaveDataEnd
             {
                 isOn = torch.isOn
             });
@@ -286,7 +292,7 @@ public class CheckPointJSON : MonoBehaviour
         // Save plant states
         foreach (var plant in plants)
         {
-            saveData.plants.Add(new PlantSaveData
+            currentLevelData.plants.Add(new PlantSaveData
             {
                 hasBloomed = plant.hasBloomed
             });
@@ -295,22 +301,26 @@ public class CheckPointJSON : MonoBehaviour
         // Save plant_no states
         foreach (var plant in plantsNo)
         {
-            saveData.plantsNo.Add(new PlantNoSaveData
+            currentLevelData.plantsNo.Add(new PlantNoSaveData
             {
                 hasBloomed = plant.hasBloomed
             });
         }
 
+        SaveData saveData = new SaveData();
+        string levelKey = "Level " + SceneManager.GetActiveScene().buildIndex;  
+        saveData.levels.Add(levelKey, currentLevelData);
+
         // Serialize the save data to JSON
-        string json = JsonUtility.ToJson(saveData, true);
+        string json = JsonUtility.ToJson(currentLevelData, true);
         System.IO.File.WriteAllText(saveFilePath, json);
     }
-    public SaveData LoadSaveData()
+    public LevelSaveData LoadSaveData()
     {
         if (File.Exists(saveFilePath))
         {
             string json = File.ReadAllText(saveFilePath);
-            SaveData saveData = JsonUtility.FromJson<SaveData>(json);
+            LevelSaveData saveData = JsonUtility.FromJson<LevelSaveData>(json);
             return saveData;
         }
         else

@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rb;
     public TrailRenderer tr;
     private PlayerGroundCheck groundCheck;
+    public bool CanJumpInWater = false;
+    public bool isInSlough = false;
 
     bool isDashing;
     [SerializeField] float dashingPower = 12f;
@@ -96,10 +98,26 @@ public class Movement : MonoBehaviour
         }
 
         //air jump
-        if (Input.GetKeyDown(KeyCode.Space) && !groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            airJumpLeft = false;
+            if (groundCheck.isOnTheGround() || CanJumpInWater) 
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                if (!groundCheck.isOnTheGround() || !CanJumpInWater) 
+                {
+                    airJumpLeft = false;
+                }
+            }
+        }
+        if (!isInSlough)
+        {
+            moveSpeed = 5f;
+            jumpForce = 7f;
+        }
+        else
+        {
+            moveSpeed = 2.5f;
+            jumpForce = 0f;
         }
     }
 
