@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealingPotion : Collectible
 {
-    public BloodPotionManager bloodPotionManager;
+    private BloodPotionManager bloodPotionManager;
     void Start()
     {
         bloodPotionManager = FindObjectOfType<BloodPotionManager>();

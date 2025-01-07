@@ -30,8 +30,9 @@ public class Shopkeeper : MonoBehaviour
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
         {
-            shopCanvas.gameObject.SetActive(true);
             gameplayCanvas.gameObject.SetActive(false);
+            
+            shopCanvas.gameObject.SetActive(true);
             Time.timeScale = 0f;
             dialogText.enabled = false;
             dialogImage.enabled = false;
@@ -39,9 +40,10 @@ public class Shopkeeper : MonoBehaviour
     }
     public void CloseShop()
     {
-        shopCanvas.gameObject.SetActive(false);
-        gameplayCanvas.gameObject.SetActive(true);
         Time.timeScale = 1f;
+        gameplayCanvas.gameObject.SetActive(true);
+        shopCanvas.gameObject.SetActive(false);
+        
         dialogText.enabled = true;
         dialogImage.enabled = true;
         dialogText.text = idleMessage;

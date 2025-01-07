@@ -6,7 +6,8 @@ using TMPro;
 
 public class Sign_Torch : MonoBehaviour
 {
-    public GameObject tilemap;  
+    public GameObject tilemap;
+    public GameObject dangeroustilemap;
     public GameObject[] torches;
     public Image dialogImage;
     public TMP_Text dialogText;
@@ -99,10 +100,12 @@ public class Sign_Torch : MonoBehaviour
         if (allOff && allOn)
         {
             tilemap.SetActive(true);
+            dangeroustilemap.SetActive(true);
         }
         else
         {
             tilemap.SetActive(false);
+            dangeroustilemap.SetActive(false);
         }
     }
 }
