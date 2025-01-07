@@ -15,7 +15,7 @@ D:/HK1_2024_2025/PTGame/The_Last_Vampire
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59597
+49239
 Successfully changed project path to: D:/HK1_2024_2025/PTGame/The_Last_Vampire
 D:/HK1_2024_2025/PTGame/The_Last_Vampire
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/HK1_2024_2025/PTGame/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [6056] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 4193001382 [EditorId] 4193001382 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2984] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 1713857332 [EditorId] 1713857332 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [6056] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 4193001382 [EditorId] 4193001382 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2984] Host "[IP] 26.75.200.97 [Port] 0 [Flags] 2 [Guid] 1713857332 [EditorId] 1713857332 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BS95S0S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 20.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 10.40 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011460 seconds.
-- Loaded All Assemblies, in  0.740 seconds
+Registered in 0.006491 seconds.
+- Loaded All Assemblies, in  0.566 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.446 seconds
-Domain Reload Profiling: 1181ms
-	BeginReloadAssembly (209ms)
+- Finished resetting the current domain, in  0.397 seconds
+Domain Reload Profiling: 961ms
+	BeginReloadAssembly (167ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (108ms)
-	RebuildNativeTypeToScriptingClass (32ms)
-	initialDomainReloadingComplete (144ms)
-	LoadAllAssembliesAndSetupDomain (242ms)
-		LoadAssemblies (206ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (163ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (231ms)
-			TypeCache.Refresh (230ms)
-				TypeCache.ScanAssembly (211ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (215ms)
+			TypeCache.Refresh (214ms)
+				TypeCache.ScanAssembly (193ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (446ms)
+	FinalizeReload (398ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (355ms)
+		SetupLoadedEditorAssemblies (300ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (14ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (13ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (239ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
+			ProcessInitializeOnLoadAttributes (203ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,51 +116,51 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in 14.209 seconds
-Refreshing native plugins compatible for Editor in 5.62 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.484 seconds
+Refreshing native plugins compatible for Editor in 6.17 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.838 seconds
-Domain Reload Profiling: 16046ms
-	BeginReloadAssembly (301ms)
+- Finished resetting the current domain, in  1.738 seconds
+Domain Reload Profiling: 3221ms
+	BeginReloadAssembly (188ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (70ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (13733ms)
-		LoadAssemblies (13087ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (1174ms)
+		LoadAssemblies (414ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (754ms)
-			TypeCache.Refresh (646ms)
-				TypeCache.ScanAssembly (617ms)
-			ScanForSourceGeneratedMonoScriptInfo (80ms)
+		AnalyzeDomain (839ms)
+			TypeCache.Refresh (734ms)
+				TypeCache.ScanAssembly (699ms)
+			ScanForSourceGeneratedMonoScriptInfo (78ms)
 			ResolveRequiredComponents (27ms)
-	FinalizeReload (1838ms)
+	FinalizeReload (1739ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1308ms)
+		SetupLoadedEditorAssemblies (1241ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (163ms)
-			ProcessInitializeOnLoadAttributes (1029ms)
-			ProcessInitializeOnLoadMethodAttributes (90ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (214ms)
+			ProcessInitializeOnLoadAttributes (861ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 30.80 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7789 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 253 unused Assets / (14.7 MB). Loaded Objects now: 8119.
-Memory consumption went from 326.7 MB to 312.0 MB.
-Total: 21.089900 ms (FindLiveObjects: 1.919800 ms CreateObjectMapping: 3.962300 ms MarkObjects: 9.902200 ms  DeleteObjects: 5.303100 ms)
+Unloading 7855 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 249 unused Assets / (14.2 MB). Loaded Objects now: 8197.
+Memory consumption went from 348.3 MB to 334.0 MB.
+Total: 11.162800 ms (FindLiveObjects: 1.021200 ms CreateObjectMapping: 0.923700 ms MarkObjects: 6.178900 ms  DeleteObjects: 3.036500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -175,168 +175,108 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 269015.724239 seconds.
-  path: Assets/Scenes/Map1_Forest.unity
-  artifactKey: Guid(01c5c2cfc241377449dac758c3bc6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Map1_Forest.unity using Guid(01c5c2cfc241377449dac758c3bc6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73cb7f5aa1ad0ead44316345f5669a13') in 0.004808 seconds
+  Time since last request: 426394.178967 seconds.
+  path: Assets/Scripts/Enemies/Wolf/WolfAttack.cs
+  artifactKey: Guid(9564f897e5110004ca7501a3e11759c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemies/Wolf/WolfAttack.cs using Guid(9564f897e5110004ca7501a3e11759c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '318762975f600c8c3e6993db698a2c66') in 0.003119 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/CounterIcon.prefab
-  artifactKey: Guid(49f8799586663fa44b06cee785e89a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CounterIcon.prefab using Guid(49f8799586663fa44b06cee785e89a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33bd8ad7981bd70997e71e24d250f42d') in 0.097402 seconds
+  Time since last request: 690.751372 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/BUSH FOREGROUND 1-1.png
+  artifactKey: Guid(390501f7c18ef384eb17584a5b462691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/BUSH FOREGROUND 1-1.png using Guid(390501f7c18ef384eb17584a5b462691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde614d92faad7b632ddde663d97a3bb') in 0.003544 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 88.964911 seconds.
-  path: Assets/Player/Player.prefab
-  artifactKey: Guid(1baca16a5616e534ca75688c8b3f9dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/Player.prefab using Guid(1baca16a5616e534ca75688c8b3f9dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f7c57dafb6fe4d5a70570dc04381181') in 0.116602 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/BUSH FOREGROUND 1-3.png
+  artifactKey: Guid(a97b342cc5260f04cafe1eb0535e607f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/BUSH FOREGROUND 1-3.png using Guid(a97b342cc5260f04cafe1eb0535e607f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '914c0f02b5aa789c8cced7789907adf2') in 0.002146 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 87
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/Player/vampr_56x80px.png
-  artifactKey: Guid(880665a2a21ecc44fb65660b2eb32d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/vampr_56x80px.png using Guid(880665a2a21ecc44fb65660b2eb32d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639a94e75db60a820951d38ee1338b33') in 0.258379 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/BUSH FOREGROUND 1-5.png
+  artifactKey: Guid(441f0c2aca2fff545bc517e6f139dcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/BUSH FOREGROUND 1-5.png using Guid(441f0c2aca2fff545bc517e6f139dcd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc104c221d7ae397cdc6e7e6bc5ed7ec') in 0.003109 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 59
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 30.223523 seconds.
-  path: Assets/SFX/AudioMixer.mixer
-  artifactKey: Guid(bcc70dbb7bcd8554cbe6303338eec7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SFX/AudioMixer.mixer using Guid(bcc70dbb7bcd8554cbe6303338eec7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7492e84b0388b642e7599023f269d78') in 0.002978 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/GRASS 1-1.png
+  artifactKey: Guid(0601d1c0d4f47414d8f4753656fb214d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/GRASS 1-1.png using Guid(0601d1c0d4f47414d8f4753656fb214d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9760f91160b6d70aa6277d97fac87840') in 0.004485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/GRASS 2-2.png
+  artifactKey: Guid(1ee73367054f56241a4324eb7326adfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/GRASS 2-2.png using Guid(1ee73367054f56241a4324eb7326adfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1b2cfb61453725dd6895837afd4323') in 0.002032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/MUSHROOM 1-1.png
+  artifactKey: Guid(d45bba719c38eef499144f2e7a1d042f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/MUSHROOM 1-1.png using Guid(d45bba719c38eef499144f2e7a1d042f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a283e8bbe443f6594028b50bfe9387') in 0.002075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/Sign.png
+  artifactKey: Guid(a9854288c359ca14a8b2fd04058db313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/Sign.png using Guid(a9854288c359ca14a8b2fd04058db313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b30ae2d5550f9f95f1fd912fd64fa3e') in 0.002888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/GRASS 1-2.png
+  artifactKey: Guid(968fb733146be924a9feb390a617f3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/GRASS 1-2.png using Guid(968fb733146be924a9feb390a617f3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d00e2185afed1e64c00f8e193e02bf') in 0.001567 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/MUSHROOM 1-2.png
+  artifactKey: Guid(86a1d6e5913974b46810fb24e91348a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/MUSHROOM 1-2.png using Guid(86a1d6e5913974b46810fb24e91348a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a7dae27334a16c61f520750706adf9') in 0.001750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/Touch_tryAgain.png
+  artifactKey: Guid(6115543da7fc78c4abcbface8a37caa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/Touch_tryAgain.png using Guid(6115543da7fc78c4abcbface8a37caa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a739d01ea7d60c583b583c58de597d9') in 0.004113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/BUSH FOREGROUND 1-7.png
+  artifactKey: Guid(68304e1b7849e7843b7784e79792ff89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/BUSH FOREGROUND 1-7.png using Guid(68304e1b7849e7843b7784e79792ff89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6bdd8872d2337ea8ae259f7b515267') in 0.001849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.312988 seconds.
+  path: Assets/Map1_Forest/Tilemap/Decorations/Touch/Touch.png
+  artifactKey: Guid(05e7cf19e4f13b4429bf75b3cb17be17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Decorations/Touch/Touch.png using Guid(05e7cf19e4f13b4429bf75b3cb17be17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481047e76ef965971cd7e3cd6602c776') in 0.005506 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 6.961750 seconds.
-  path: Assets/Map1_Forest/NPC1_Spirit/Spirit.prefab
-  artifactKey: Guid(eb749160089bea64eb7e07bcd45612a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map1_Forest/NPC1_Spirit/Spirit.prefab using Guid(eb749160089bea64eb7e07bcd45612a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838c782ab2ab0e7c6f2a74699715a7b2') in 0.087102 seconds
-Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 53
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\HK1_2024_2025\PTGame\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.534 seconds
-Refreshing native plugins compatible for Editor in 6.17 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.502 seconds
-Domain Reload Profiling: 5033ms
-	BeginReloadAssembly (270ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (92ms)
-	RebuildCommonClasses (59ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (1128ms)
-		LoadAssemblies (462ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (769ms)
-			TypeCache.Refresh (719ms)
-				TypeCache.ScanAssembly (690ms)
-			ScanForSourceGeneratedMonoScriptInfo (26ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (3502ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (971ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (11ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (179ms)
-			ProcessInitializeOnLoadAttributes (715ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 6.71 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7558 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 201 unused Assets / (14.6 MB). Loaded Objects now: 8137.
-Memory consumption went from 276.1 MB to 261.4 MB.
-Total: 14.127600 ms (FindLiveObjects: 1.281400 ms CreateObjectMapping: 1.162100 ms MarkObjects: 6.876100 ms  DeleteObjects: 4.805800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 550.683564 seconds.
-  path: Assets/UI/Canvas.prefab
-  artifactKey: Guid(0767d3e3effccfc42a787daf8a57ed3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Canvas.prefab using Guid(0767d3e3effccfc42a787daf8a57ed3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af10562b445dd967bccda37a7cc99f9c') in 0.223927 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 73
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/UI/MapLoader.prefab
-  artifactKey: Guid(33d31e7a7a070a640bc72f9987894e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/MapLoader.prefab using Guid(33d31e7a7a070a640bc72f9987894e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165ad4ece5cca594db3ab60acd2004db') in 0.008451 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/UI/Canvas_KieuHoa.prefab
-  artifactKey: Guid(8fdbe1e1446579b4c9dd841b8a3a2e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Canvas_KieuHoa.prefab using Guid(8fdbe1e1446579b4c9dd841b8a3a2e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370cfd13afd7090c09cb6c8733a90d07') in 0.046341 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 73
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/UI/NPC_kieuhoa.prefab
-  artifactKey: Guid(d84710e9fe8b1684599c2a3fda544034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/NPC_kieuhoa.prefab using Guid(d84710e9fe8b1684599c2a3fda544034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0f6ea5c4da290215b7f6406c43f0429') in 0.095072 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Import Request.
-  Time since last request: 0.000674 seconds.
-  path: Assets/UI/DialogueCanvas.prefab
-  artifactKey: Guid(55f531b174bb05542a6ccc48c4c2e394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/DialogueCanvas.prefab using Guid(55f531b174bb05542a6ccc48c4c2e394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea43e17c2412792493fdae01eb1bb224') in 0.070036 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
