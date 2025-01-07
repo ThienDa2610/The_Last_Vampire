@@ -7132,6 +7132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 993028850}
     m_Modifications:
+    - target: {fileID: 85804106485782614, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983274678}
     - target: {fileID: 3105121473965301726, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_Name
       value: Monster_Eagle (1)
@@ -10847,7 +10851,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26323,6 +26327,67 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 122056404374602165, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillDes
+      value: Extends the "Counter" state duration by 0.2 seconds
+      objectReference: {fileID: 0}
+    - target: {fileID: 122056404374602165, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Enhanced Sense
+      objectReference: {fileID: 0}
+    - target: {fileID: 122056404374602165, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 969581112225060063, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Air Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 969581112225060063, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397448321658688686, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Gliding Bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397448321658688686, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425608060633074555, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Lifeforce 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425608060633074555, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224996424079078709, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Threatening Aura 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224996424079078709, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371890336326324305, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillDes
+      value: Vampire claw attacks  inflict "Bleeding." Enemies in the "Bleeding"
+        state take 2 damage every 0.5 seconds for 2 seconds, stacking up to 3 layers
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371890336326324305, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862738200099128592, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Threatening Aura 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3862738200099128592, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4681311787360338933, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -26333,7 +26398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4681311787360338933, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4681311787360338933, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
       propertyPath: m_AnchorMax.x
@@ -26407,9 +26472,146 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5265170939143259836, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Vapiric Claws
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265170939143259836, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788576963424235989, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Piercing Wave
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788576963424235989, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821230498343075769, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillDes
+      value: Increases the attack range of Vampire claw
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821230498343075769, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Destructive Claws
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821230498343075769, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846221588927230342, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Misty Step
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846221588927230342, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846622478891331086, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Swifty 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5846622478891331086, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992614576580906768, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillDes
+      value: 'Unlocks "Rebirth 1": Upon taking lethal damage, immediately revive
+        with 50% of maximum health.
+
+        Cooldown: 240 seconds.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992614576580906768, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Rebirth 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5992614576580906768, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180360931957916568, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Lifeforce 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180360931957916568, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6390272386945931552, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillDes
+      value: 'Unlocks "Rebirth 2" skill: When taking lethal damage while "Rebirth
+        1" is on cooldown, immediately revive with 30% of maximum health. Can be
+        used once per level.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6390272386945931552, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Rebirth 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6390272386945931552, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451446600862587987, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: bloodCount
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451446600862587987, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: gameplayCanvas
+      value: 
+      objectReference: {fileID: 1057368099}
+    - target: {fileID: 7555051786914550464, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701852532284595598, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Blood Boiled
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701852532284595598, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221238458655947778, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Lifeforce 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221238458655947778, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: isUnlocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373611468687314667, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Swifty 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373611468687314667, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8581542305945750894, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
       propertyPath: m_Name
       value: Canvas-SkillTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820821904853932833, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillDes
+      value: Increases gliding speed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820821904853932833, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Gliding Master
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820821904853932833, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014831862197686798, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: skillName
+      value: Threatening Aura 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014831862197686798, guid: e1a13bc3fc7790b43ab536a24f9d8256, type: 3}
+      propertyPath: currentNode
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39447,6 +39649,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855785659}
   m_CullTransparentMesh: 1
+--- !u!1001 &857491462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.034253
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.81201565
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003445846083135975, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983274678}
+    - target: {fileID: 1211579239604753813, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_Name
+      value: DesertWraith (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211579239604753813, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37315952b39077f499e7e2d222f371da, type: 3}
 --- !u!1 &859608119
 GameObject:
   m_ObjectHideFlags: 0
@@ -42319,6 +42590,10 @@ PrefabInstance:
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: counter
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
+      propertyPath: isInvincible
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: healthbarOverlay
@@ -59675,6 +59950,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 993028850}
     m_Modifications:
+    - target: {fileID: 85804106485782614, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983274678}
     - target: {fileID: 3105121473965301726, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_Name
       value: Monster_Eagle (1)
@@ -61857,6 +62136,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 993028850}
     m_Modifications:
+    - target: {fileID: 85804106485782614, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983274678}
     - target: {fileID: 3105121473965301726, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_Name
       value: Monster_Eagle (3)
@@ -68557,6 +68840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 993028850}
     m_Modifications:
+    - target: {fileID: 85804106485782614, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983274678}
     - target: {fileID: 3105121473965301726, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_Name
       value: Monster_Eagle
@@ -69073,6 +69360,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 993028850}
     m_Modifications:
+    - target: {fileID: 85804106485782614, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983274678}
     - target: {fileID: 3105121473965301726, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_Name
       value: Monster_Eagle
@@ -71141,6 +71432,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 993028850}
     m_Modifications:
+    - target: {fileID: 85804106485782614, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983274678}
     - target: {fileID: 3105121473965301726, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_Name
       value: Monster_Eagle (2)
@@ -71813,9 +72108,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 993028850}
     m_Modifications:
+    - target: {fileID: 85804106485782614, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 983274678}
+    - target: {fileID: 169662271579461769, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3105121473965301726, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_Name
       value: Monster_Eagle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105121473965301726, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3672578552003088974, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256224672761495295, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228452275150572953, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6284051481929576186, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7981934767017682092, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_RootOrder
@@ -71860,6 +72183,10 @@ PrefabInstance:
     - target: {fileID: 7981934767017682092, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930316040177567570, guid: e286d3c95b967fb4fba8187e5c40c35a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
