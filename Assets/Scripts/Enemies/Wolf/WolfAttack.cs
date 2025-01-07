@@ -7,9 +7,9 @@ public class WolfAttack : EnemyAttack
     protected override void Start()
     {
         base.Start();
-        attackDamage = 15f;
+        /*attackDamage = 15f;
         attackRate = 1f;
-        attackDuration = 0.4f;
+        attackDuration = 0.4f;*/
     }
     protected override void Update()
     {

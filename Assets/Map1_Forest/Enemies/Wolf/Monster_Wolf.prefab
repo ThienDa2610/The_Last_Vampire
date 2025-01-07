@@ -198,6 +198,7 @@ MonoBehaviour:
   health: 60
   animator: {fileID: 0}
   healthbarOverlay: {fileID: 4790480153634083501}
+  isInvincible: 0
   isDead: 0
 --- !u!114 &3610365535457186541
 MonoBehaviour:
@@ -211,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396312480264ba14280d78346e2622ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
   animator: {fileID: 0}
   movingRight: 0
   groundLayer:
@@ -503,9 +505,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9564f897e5110004ca7501a3e11759c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 0
-  attackRate: 0
-  attackDuration: 0
+  attackDamage: 15
+  attackRate: 1
+  attackDuration: 0.4
   isAttacking: 0
   isPlayerInRange: 0
   attackTimer: 0
