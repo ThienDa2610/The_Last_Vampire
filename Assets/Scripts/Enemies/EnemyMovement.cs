@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    protected float speed;
+    public float speed;
     protected float speedMultiplier;
     public Animator animator;
 
@@ -21,21 +21,23 @@ public class EnemyMovement : MonoBehaviour
     }
     protected virtual void Update()
     {
-        if (eyeSight.playerSpotted)
+        if (!enemyAttack.isPlayerInRange)
         {
-            FollowPlayer();
+            if (eyeSight.playerSpotted)
+            {
+                FollowPlayer();
+            }
+            else
+            {
+                animator.SetTrigger("Walk");
+                Patrol();
+            }
         }
-        else
-        {
-            animator.SetTrigger("Walk");
-            Patrol();
-        }
-        
     }
 
     void FollowPlayer()
     {
-        if (isBlocked() || enemyAttack.isPlayerInRange)
+        if (isBlocked())
         {
             rb.velocity = Vector2.zero;
             return;
@@ -44,7 +46,7 @@ public class EnemyMovement : MonoBehaviour
         rb.velocity = new Vector2(transform.localScale.x * speed * speedMultiplier, rb.velocity.y);
     }
 
-    void Patrol()
+    protected virtual void Patrol()
     {
         float direction = movingRight ? 1 : -1;
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
@@ -56,7 +58,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    bool isBlocked()
+    protected virtual bool isBlocked()
     {
         Transform pathChecker = transform.Find("PathChecker");
         if (pathChecker != null)
@@ -69,7 +71,7 @@ public class EnemyMovement : MonoBehaviour
         return false;
     }
 
-    void Flip()
+    protected void Flip()
     {
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;

@@ -11,10 +11,12 @@ public class EnemyAttack : MonoBehaviour
     public bool isPlayerInRange;
     public float attackTimer;
     public Animator animator;
+    public Rigidbody2D rb;
 
     protected virtual void Start()
     {
         animator = GetComponentInParent<Animator>();
+        rb = GetComponentInParent<Rigidbody2D>();
         isPlayerInRange = false;
         isAttacking = false;
     }
@@ -23,6 +25,7 @@ public class EnemyAttack : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            rb.velocity = Vector2.zero;
         }
     }
 
@@ -30,6 +33,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("Exit trigger collider");
             isPlayerInRange = false;
             isAttacking = false;
         }

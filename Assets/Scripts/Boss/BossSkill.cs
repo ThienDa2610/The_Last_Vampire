@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class BossSkill : MonoBehaviour
 {
-    protected float skillDamage;
+    public float skillDamage;
     [SerializeField] protected float maxCooldown;
     [SerializeField] protected float currentCooldown;
     public float skillRange;
     protected bool isFacingRight;
     public BossSkillManager skillManager;
-    protected Collider2D Hitbox;
-    protected ApplySkillDamage Applier;
     protected Animator animator;
     protected Rigidbody2D rb;
 
@@ -20,12 +18,9 @@ public class BossSkill : MonoBehaviour
     protected virtual void Start()
     {
         //currentCooldown = 0f;
-        Hitbox = transform.Find("Hitbox").GetComponent<Collider2D>();
-        Applier = transform.Find("Hitbox").GetComponent<ApplySkillDamage>();
         skillManager = GetComponent<BossSkillManager>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        Applier.castingDamage = false;
     }
 
     // Update is called once per frame
