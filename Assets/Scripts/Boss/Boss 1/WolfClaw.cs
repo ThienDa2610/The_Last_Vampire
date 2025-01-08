@@ -14,7 +14,7 @@ public class WolfClaw : BossSkill
     protected override void Start()
     {
         base.Start();
-        skillDamage = 20f;
+        //skillDamage = 20f;
         maxCooldown = 0f;
         skillRange = 2f;
         isFacingRight = true;

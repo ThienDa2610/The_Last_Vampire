@@ -67,12 +67,13 @@ public class SkillTreeManager : MonoBehaviour
             //movement tree
             case SkillNode.Swifty_1:
                 Movement.Instance.moveSpeed *= 1.1f;
+                Debug.Log(Movement.Instance.moveSpeed);
                 break;
             case SkillNode.GlidingBat:
                 Gliding.glidable = true;
                 break;
             case SkillNode.AirJump:
-                Movement.airJumpable = true;
+                Movement.Instance.airJumpable = true;
                 break;
             case SkillNode.Swifty_2:
                 //no code needed

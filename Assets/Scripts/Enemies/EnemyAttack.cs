@@ -8,33 +8,39 @@ public class EnemyAttack : MonoBehaviour
     public float attackRate;
     public float attackDuration;
     public bool isAttacking;
+    public bool isPlayerInRange;
+    public float attackTimer;
     public Animator animator;
+    public Rigidbody2D rb;
 
     protected virtual void Start()
     {
         animator = GetComponentInParent<Animator>();
+        rb = GetComponentInParent<Rigidbody2D>();
+        isPlayerInRange = false;
         isAttacking = false;
     }
     protected void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            isAttacking = true;
-            StartCoroutine(Attack());
+            isPlayerInRange = true;
+            rb.velocity = Vector2.zero;
         }
     }
 
     protected void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            StopAllCoroutines(); 
+            Debug.Log("Exit trigger collider");
+            isPlayerInRange = false;
             isAttacking = false;
         }
     }
 
-    protected virtual IEnumerator Attack()
+    protected virtual void Update()
     {
-        return null;
+        
     }
 }

@@ -22,8 +22,8 @@ public class Movement : MonoBehaviour
 
     //skill tree
     // //air jump
-    public static bool airJumpable;
-    public static bool airJumpLeft = true;
+    public bool airJumpable;
+    public bool airJumpLeft = true;
     // //blood boiled
     [SerializeField] private float bloodBoiledDuration = 5f;
     [SerializeField] private float bloodBoiledEffect = 0.05f;
@@ -98,7 +98,13 @@ public class Movement : MonoBehaviour
         }
 
         //air jump
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
+        {
+            Debug.Log("1");
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            airJumpLeft = false;
+        }
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             if (groundCheck.isOnTheGround() || CanJumpInWater) 
             {
@@ -108,7 +114,7 @@ public class Movement : MonoBehaviour
                     airJumpLeft = false;
                 }
             }
-        }
+        }*/
         if (!isInSlough)
         {
             moveSpeed = 5f;

@@ -7,19 +7,33 @@ public class WolfAttack : EnemyAttack
     protected override void Start()
     {
         base.Start();
-        attackDamage = 15f;
-        attackDuration = 0.4f;
+        /*attackDamage = 15f;
         attackRate = 1f;
+        attackDuration = 0.4f;*/
     }
-    protected override IEnumerator Attack()
+    protected override void Update()
     {
-        
-        while (true)
+        base.Update();
+        if (attackTimer > 0)
         {
-            animator.SetTrigger("Attack");
-            yield return new WaitForSeconds(attackDuration);
-            HealthManager.Instance.takeDamage(attackDamage, transform.parent.gameObject);
-            yield return new WaitForSeconds(attackRate);
+            attackTimer -= Time.deltaTime;
         }
+        if (isPlayerInRange)
+        {
+            if (attackTimer <= 0 && !isAttacking)
+            {
+                StartCoroutine(Attack());
+            }
+        }
+    }
+    IEnumerator Attack()
+    {
+        isAttacking = true;
+        animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(attackDuration);
+        HealthManager.Instance.takeDamage(attackDamage, transform.parent.gameObject);
+
+        isAttacking = false;
+        attackTimer = attackRate;
     }
 }
