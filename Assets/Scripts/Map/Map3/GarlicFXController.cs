@@ -8,7 +8,7 @@ using UnityEditor.Rendering;
 
 public class GarlicFXController : MonoBehaviour
 {
-    public PlayerInteractGuide guide;
+    public GarlicDestroy garlicDestroy;
 
     [Header("Time Stats")]
     [SerializeField] private float fadeOutTime = 0.5f;
@@ -28,13 +28,8 @@ public class GarlicFXController : MonoBehaviour
     }
     void Update()
     {
-        if (guide.isPlayerNear && Input.GetKeyDown(KeyCode.F))
-        {
-            garlicShader.SetActive(false);
-            guide.animator.SetTrigger("isDestroy");
-            guide.TurnOffGuide();
-            Destroy(guide.gameObject);
-        }
+        if (garlicDestroy != null && garlicDestroy.getIsNear() && Input.GetKeyDown(KeyCode.F))
+            garlicShader.SetActive(true);
     }
 
     /*

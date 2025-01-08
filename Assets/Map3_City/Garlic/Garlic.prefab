@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2945fa7dc160242980f9e3a6318dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guide: {fileID: 8439341471647882528}
+  garlicDestroy: {fileID: 6207116945015508977}
   fadeOutTime: 0.5
   garlicShader: {fileID: 5915090905389755918, guid: 2d35a0c58f4ba334aad284ac30f605e9, type: 2}
   garlicMAT: {fileID: 2100000, guid: 2c2149c6f7b544f4da23fd6b293011f9, type: 2}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2113736212582003778}
   - component: {fileID: 8758623092789118554}
   - component: {fileID: 2213118530207680940}
-  - component: {fileID: 8439341471647882528}
+  - component: {fileID: 6207116945015508977}
   m_Layer: 0
   m_Name: Garlic
   m_TagString: Untagged
@@ -243,7 +243,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8439341471647882528
+--- !u!114 &6207116945015508977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,11 +252,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2252375688090876789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98d2948d9ec6be24b9fd3ff162063371, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ee31bd159633474ca0af01b42ac0f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 0}
   idleMessage: '[F] To Destroy'
-  gameObj: {fileID: 0}
-  animator: {fileID: 0}
-  isPlayerNear: 0

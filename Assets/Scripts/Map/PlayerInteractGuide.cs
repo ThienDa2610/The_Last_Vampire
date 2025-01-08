@@ -9,20 +9,26 @@ public class PlayerInteractGuide : MonoBehaviour
     public TMP_Text dialogText;
     public string idleMessage;
 
-    public GameObject gameObj;
-    public Animator animator;
+    protected Animator animator;
 
-    public bool isPlayerNear = false;
+    protected bool isPlayerNear = false;
 
     void Start()
     { 
-        gameObj = gameObject;
         animator = GetComponent<Animator>();
         if (dialogText != null)
             dialogText.enabled = false;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void Update()
+    {
+        Interact();
+    }
+    public bool getIsNear()
+    {
+        return isPlayerNear;
+    }
+    protected void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -35,7 +41,7 @@ public class PlayerInteractGuide : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    protected void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -43,9 +49,10 @@ public class PlayerInteractGuide : MonoBehaviour
             TurnOffGuide();
         }
     }
-    public void TurnOffGuide()
+    protected void TurnOffGuide()
     {
         if (dialogText != null)
             dialogText.enabled = false;
     }
+    protected virtual void Interact() { }
 }
