@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4184756872741951102}
   - component: {fileID: 8980880141838244451}
   - component: {fileID: 338817747502304451}
+  - component: {fileID: 6380893384493808206}
   m_Layer: 0
   m_Name: DmgZone
   m_TagString: Untagged
@@ -85,6 +86,19 @@ MonoBehaviour:
   garlicShader: {fileID: 5915090905389755918, guid: 2d35a0c58f4ba334aad284ac30f605e9, type: 2}
   garlicMAT: {fileID: 2100000, guid: 2c2149c6f7b544f4da23fd6b293011f9, type: 2}
   intensityStat: 1.5
+--- !u!114 &6380893384493808206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940226632164017314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ee4b6f4802ef14192d01485463f340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 1
 --- !u!1 &2252375688090876789
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +109,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8326589575718648640}
   - component: {fileID: 2452010214262865459}
-  - component: {fileID: 2113736212582003778}
   - component: {fileID: 8758623092789118554}
   - component: {fileID: 2213118530207680940}
   - component: {fileID: 6207116945015508977}
@@ -174,19 +187,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2113736212582003778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2252375688090876789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ee4b6f4802ef14192d01485463f340, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmg: 1
 --- !u!58 &8758623092789118554
 CircleCollider2D:
   m_ObjectHideFlags: 0

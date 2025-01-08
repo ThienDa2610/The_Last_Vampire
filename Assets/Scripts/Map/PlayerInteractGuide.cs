@@ -18,6 +18,7 @@ public class PlayerInteractGuide : MonoBehaviour
         animator = GetComponent<Animator>();
         if (dialogText != null)
             dialogText.enabled = false;
+        SetupMore();
     }
 
     void Update()
@@ -55,4 +56,5 @@ public class PlayerInteractGuide : MonoBehaviour
             dialogText.enabled = false;
     }
     protected virtual void Interact() { }
+    protected virtual void SetupMore() { }
 }
