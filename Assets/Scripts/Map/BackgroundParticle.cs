@@ -8,14 +8,14 @@ public class BackgroundParticle : MonoBehaviour
     public GameObject cam;
     public float parallaxEffect;
 
-    private ParticleSystem particleSystem;
+    private ParticleSystem particleSystemtmp;
 
     void Start()
     {
         startPos = transform.position.x;
         length = GetComponent<Renderer>().bounds.size.x;
 
-        particleSystem = GetComponent<ParticleSystem>();
+        particleSystemtmp = GetComponent<ParticleSystem>();
     }
 
     void FixedUpdate()

@@ -15,7 +15,9 @@ public class Shopkeeper : MonoBehaviour
     public string idleMessage;
 
     private bool isPlayerNear = false;
+    private bool thisScript = false;
 
+    public PauseMenu isIt;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +27,13 @@ public class Shopkeeper : MonoBehaviour
         gameplayCanvas.gameObject.SetActive(true);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
         {
             gameplayCanvas.gameObject.SetActive(false);
-            
+            thisScript = true;
+            isIt.isIt = false;
             shopCanvas.gameObject.SetActive(true);
             Time.timeScale = 0f;
             dialogText.enabled = false;
@@ -40,41 +42,19 @@ public class Shopkeeper : MonoBehaviour
     }
     public void CloseShop()
     {
-        Time.timeScale = 1f;
-        gameplayCanvas.gameObject.SetActive(true);
-        shopCanvas.gameObject.SetActive(false);
-        
-        dialogText.enabled = true;
-        dialogImage.enabled = true;
-        dialogText.text = idleMessage;
-    }
-    /*
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player"))
+        if (thisScript)
         {
-            isPlayerNear = true;
-            if (!shopCanvas.gameObject.activeSelf)
-            {
-                dialogText.enabled = true;
-                dialogImage.enabled = true;
-                dialogText.text = idleMessage;
-            }
+            Time.timeScale = 1f;
+            gameplayCanvas.gameObject.SetActive(true);
+            shopCanvas.gameObject.SetActive(false);
+            thisScript = false;
+            isIt.isIt = true;
+            dialogText.enabled = true;
+            dialogImage.enabled = true;
+            dialogText.text = idleMessage;
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            isPlayerNear = false;
-
-            dialogText.enabled = false;
-            dialogImage.enabled = false;
-
-        }
-    }
-    */
-
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

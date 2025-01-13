@@ -86,9 +86,15 @@ public class Movement : MonoBehaviour
         rb.velocity = new Vector2 (move * moveSpeed, rb.velocity.y);
 
         //jump
-        if (Input.GetKeyDown(KeyCode.Space) && groundCheck.isOnTheGround())
+        if (Input.GetKeyDown(KeyCode.Space) && (groundCheck.isOnTheGround() || CanJumpInWater))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+
+        //double jump in water
+        if (CanJumpInWater)
+        {
+            airJumpLeft = true;
         }
 
         //dash

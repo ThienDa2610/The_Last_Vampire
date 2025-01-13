@@ -31,6 +31,7 @@ public class Shop : MonoBehaviour
 
     private TypeCoinManager typeCoinManager;
     private BloodPotionManager bloodPotionManager;
+    
     // Start is called before the first frame update
     void Start()
     {

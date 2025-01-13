@@ -37,6 +37,8 @@ public class PuzzleInPyramid2 : MonoBehaviour
     public int Puzzle1Or2 = 1;
     public bool done = false;
 
+    private bool thisScript = false;
+    private bool updated = false;
     void Start()
     {
         if (dialogText != null)
@@ -111,6 +113,7 @@ public class PuzzleInPyramid2 : MonoBehaviour
             if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript_number.isPuzzleDone)
             {
                 puzzleCanvas.gameObject.SetActive(true);
+                thisScript = true;
                 gameplayCanvas.gameObject.SetActive(false);
                 isIt.isIt = false;
                 Time.timeScale = 0f;
@@ -127,6 +130,7 @@ public class PuzzleInPyramid2 : MonoBehaviour
             if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript_vase.isPuzzleDone)
             {
                 puzzleCanvas.gameObject.SetActive(true);
+                thisScript = true;
                 gameplayCanvas.gameObject.SetActive(false);
                 isIt.isIt = false;
                 Time.timeScale = 0f;
@@ -138,9 +142,10 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 StartCoroutine(HandlePuzzleCompletion());
             }
         }
-        if (!isIt.isIt && Input.GetKeyDown(KeyCode.Escape))
+        if (!isIt.isIt && Input.GetKeyDown(KeyCode.Escape) && thisScript)
         {
             ClosePuzzle();
+            
         }
     }
 
@@ -190,7 +195,11 @@ public class PuzzleInPyramid2 : MonoBehaviour
         
         Time.timeScale = 1f;
         gameplayCanvas.gameObject.SetActive(true);
-        isIt.isIt = true;   
+        if (!updated)
+        {
+            isIt.isIt = true;
+            updated = true;
+        }
     }
 
     public void ClosePuzzle()
@@ -198,6 +207,7 @@ public class PuzzleInPyramid2 : MonoBehaviour
         puzzleCanvas.gameObject.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
         isIt.isIt = true;
+        thisScript = false;
         Time.timeScale = 1f;
         dialogText.enabled = true;
         dialogImage.enabled = true;

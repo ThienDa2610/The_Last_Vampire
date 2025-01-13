@@ -25,7 +25,8 @@ public class PicturePuzzle : MonoBehaviour
     public bool done = false;
 
     public PauseMenu isIt;
-
+    private bool thisScript = false;
+    private bool updated = false;
     void Start()
     {
         if (dialogText != null)
@@ -51,6 +52,7 @@ public class PicturePuzzle : MonoBehaviour
         if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript.isPuzzleDone)
         {
             puzzleCanvas.gameObject.SetActive(true);
+            thisScript = true;
             gameplayCanvas.gameObject.SetActive(false);
             isIt.isIt = false;
             Time.timeScale = 0f;
@@ -61,7 +63,7 @@ public class PicturePuzzle : MonoBehaviour
         {
             StartCoroutine(HandlePuzzleCompletion());
         }
-        if (!isIt.isIt && Input.GetKeyDown(KeyCode.Escape))
+        if (!isIt.isIt && Input.GetKeyDown(KeyCode.Escape) && thisScript)
         {
             CloseShop();
         }
@@ -86,7 +88,11 @@ public class PicturePuzzle : MonoBehaviour
         puzzleCanvas.gameObject.SetActive(false);
         Time.timeScale = 1f;
         gameplayCanvas.gameObject.SetActive(true);
-        isIt.isIt = true;
+        if (!updated)
+        {
+            isIt.isIt = true;
+            updated = true;
+        }
         if (!done)
         {
             StartCoroutine(ShowDialogForTime(1f));
@@ -97,6 +103,7 @@ public class PicturePuzzle : MonoBehaviour
         puzzleCanvas.gameObject.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
         isIt.isIt = true;
+        thisScript = false;
         Time.timeScale = 1f;
         dialogText.enabled = true;
         dialogImage.enabled = true;
