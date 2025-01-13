@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2988587041535871339}
   - component: {fileID: 5899492047156193498}
   - component: {fileID: -7052304041081409346}
+  - component: {fileID: 4329421146416253859}
   m_Layer: 0
   m_Name: pf_Missile
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5287741010539852655
 SpriteRenderer:
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1017492929
-  m_SortingLayer: 10
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_Sprite: {fileID: -1692451165, guid: 71dda26ad046a874d8f5736eeb234323, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,9 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1ec76165d047a418ffb5545405c625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillDamage: 40
+  skillDamage: 25
   maxDuration: 10
-  moveSpeed: 0.2
+  moveSpeed: 4
   pf_effExplosion: {fileID: 6219325873061555098, guid: 88a05aca85a2a0341ae68463189db22e, type: 3}
   shooter: {fileID: 0}
 --- !u!95 &5899492047156193498
@@ -160,3 +161,30 @@ CapsuleCollider2D:
   m_Offset: {x: 1.1282947, y: 0.004156366}
   m_Size: {x: 2.3990078, y: 0.59421384}
   m_Direction: 1
+--- !u!50 &4329421146416253859
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031473352609142827}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

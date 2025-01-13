@@ -6,9 +6,7 @@ public class WolfMovement : EnemyMovement
 {
     private void Awake()
     {
-        speed = 2f;
-        speedMultiplier = 1.5f;
-        movingRight = true;
+
     }
     protected override void Start()
     {

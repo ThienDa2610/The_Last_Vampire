@@ -9,16 +9,18 @@ public class EnergyBlast : MonoBehaviour
     public float moveSpeed = 0.2f;
     public GameObject pf_effExplosion;
     public GameObject shooter;
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, maxDuration);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(transform.localScale.x * moveSpeed, 0f, 0f));
+        rb.velocity = new Vector3(transform.localScale.x * moveSpeed, 0f, 0f);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
