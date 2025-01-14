@@ -61,5 +61,21 @@ public class VasePuzzle : MonoBehaviour
     {
         currentIndex = (currentIndex + 1) % images.Length;
     }
-
+    public void SetPuzzleState(bool state)
+    {
+        if (isPuzzleDone != state)
+        {
+            isPuzzleDone = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
+        }
+    }
 }

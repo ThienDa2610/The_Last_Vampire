@@ -249,6 +249,39 @@ public class GoInSandStorm : MonoBehaviour
         // If player presses the correct key and time is within the correct range
         result = (isInputCorrect && timeSpent >= duration - 0.5f && timeSpent <= duration + 0.5f);
     }
-   
+    public void SetSS1State(bool state)
+    {
+        if (SS1 != state)
+        {
+            SS1 = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
+        }
+    }
+    public void SetSS2State(bool state)
+    {
+        if (SS2 != state)
+        {
+            SS2 = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
+        }
+    }
 }
 

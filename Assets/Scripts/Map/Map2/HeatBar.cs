@@ -28,6 +28,10 @@ public class HeatBar : MonoBehaviour
         {
             health = player.GetComponent<HealthManager>();
         }
+        if (PlayerPrefs.HasKey("HeatValue"))
+        {
+            heatSlider.value = PlayerPrefs.GetFloat("HeatValue");
+        }
         screenOverlay.color = normalColor;
     }
 
@@ -91,5 +95,9 @@ public class HeatBar : MonoBehaviour
             heatSlider.value += Time.deltaTime * 0.05f;
         }
     }
-   
+    public void UpdateHeatbar()
+    {
+        screenOverlay.fillAmount = heatSlider.value / heatSlider.maxValue;
+
+    }
 }

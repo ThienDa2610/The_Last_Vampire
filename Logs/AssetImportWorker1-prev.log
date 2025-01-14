@@ -15,7 +15,7 @@ D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-10599
+29046
 Successfully changed project path to: D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [43600] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 4168477026 [EditorId] 4168477026 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [49864] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 3685624916 [EditorId] 3685624916 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [43600] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 4168477026 [EditorId] 4168477026 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [49864] Host "[IP] 192.168.1.4 [Port] 0 [Flags] 2 [Guid] 3685624916 [EditorId] 3685624916 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 18.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 238.45 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.031402 seconds.
-- Loaded All Assemblies, in  0.615 seconds
+Registered in 0.013151 seconds.
+- Loaded All Assemblies, in  0.582 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.402 seconds
-Domain Reload Profiling: 1014ms
-	BeginReloadAssembly (186ms)
+- Finished resetting the current domain, in  0.440 seconds
+Domain Reload Profiling: 1020ms
+	BeginReloadAssembly (199ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (122ms)
-	LoadAllAssembliesAndSetupDomain (243ms)
-		LoadAssemblies (183ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (91ms)
+	LoadAllAssembliesAndSetupDomain (222ms)
+		LoadAssemblies (196ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (233ms)
-			TypeCache.Refresh (232ms)
-				TypeCache.ScanAssembly (200ms)
+		AnalyzeDomain (210ms)
+			TypeCache.Refresh (208ms)
+				TypeCache.ScanAssembly (184ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (403ms)
+	FinalizeReload (441ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (319ms)
+		SetupLoadedEditorAssemblies (340ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (209ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
+			ProcessInitializeOnLoadAttributes (199ms)
+			ProcessInitializeOnLoadMethodAttributes (110ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,342 +116,52 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.871 seconds
-Refreshing native plugins compatible for Editor in 9.64 ms, found 4 plugins.
+- Loaded All Assemblies, in  2.305 seconds
+Refreshing native plugins compatible for Editor in 5.97 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.504 seconds
-Domain Reload Profiling: 3371ms
-	BeginReloadAssembly (278ms)
+- Finished resetting the current domain, in  1.594 seconds
+Domain Reload Profiling: 3916ms
+	BeginReloadAssembly (338ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (1457ms)
-		LoadAssemblies (909ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (113ms)
+	LoadAllAssembliesAndSetupDomain (1803ms)
+		LoadAssemblies (1125ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (706ms)
-			TypeCache.Refresh (625ms)
-				TypeCache.ScanAssembly (585ms)
-			ScanForSourceGeneratedMonoScriptInfo (64ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1504ms)
+		AnalyzeDomain (864ms)
+			TypeCache.Refresh (772ms)
+				TypeCache.ScanAssembly (562ms)
+			ScanForSourceGeneratedMonoScriptInfo (71ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1609ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1105ms)
+		SetupLoadedEditorAssemblies (1113ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (8ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (147ms)
-			ProcessInitializeOnLoadAttributes (770ms)
-			ProcessInitializeOnLoadMethodAttributes (161ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 10.94 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7886 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 249 unused Assets / (14.3 MB). Loaded Objects now: 8219.
-Memory consumption went from 344.4 MB to 330.2 MB.
-Total: 100.887600 ms (FindLiveObjects: 6.351300 ms CreateObjectMapping: 1.106500 ms MarkObjects: 16.281400 ms  DeleteObjects: 77.144500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 867875.673079 seconds.
-  path: Assets/CounterIcon.prefab
-  artifactKey: Guid(49f8799586663fa44b06cee785e89a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CounterIcon.prefab using Guid(49f8799586663fa44b06cee785e89a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a99df6ce78efb6f9680dd58567406d') in 0.081653 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 314.257325 seconds.
-  path: Assets/SFX/AudioMixer.mixer
-  artifactKey: Guid(bcc70dbb7bcd8554cbe6303338eec7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SFX/AudioMixer.mixer using Guid(bcc70dbb7bcd8554cbe6303338eec7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc3b602b5c4ba317ca96f8abdec7dc1') in 0.084111 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 1.381858 seconds.
-  path: Assets/UI/Canvas.prefab
-  artifactKey: Guid(4e3d1b4a9d8e5d24bb908fc9270845da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Canvas.prefab using Guid(4e3d1b4a9d8e5d24bb908fc9270845da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601bd21684fcbee77dc961a6705cc111') in 0.790126 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 159
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/UI/GlowParticle.png
-  artifactKey: Guid(6f1830c3f1bbcbe4aab02200882723d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/GlowParticle.png using Guid(6f1830c3f1bbcbe4aab02200882723d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2cb6770b8b20ce33f24a68edb6b55b') in 0.004789 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/UI/GlowParticleMAT.mat
-  artifactKey: Guid(c461f669ccb5b114297a476b89691b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/GlowParticleMAT.mat using Guid(c461f669ccb5b114297a476b89691b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edfb9ee5a1778a1e2a7a864f78533e36') in 0.010990 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/UI/CheckPoint.prefab
-  artifactKey: Guid(59e8fa45763080d4db44e4820fd4520b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/CheckPoint.prefab using Guid(59e8fa45763080d4db44e4820fd4520b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a6ff69050ad832c641ce117472ede2') in 0.041807 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/UI/MapLoader.prefab
-  artifactKey: Guid(2e5a070688ec08b4e85eafb5b5bdc089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/MapLoader.prefab using Guid(2e5a070688ec08b4e85eafb5b5bdc089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225a3eb44dbbf324fe3dd44d4e23f31b') in 0.022308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/UI/Logo.png
-  artifactKey: Guid(8dc68d401df79664db3b7c2f28dbcb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Logo.png using Guid(8dc68d401df79664db3b7c2f28dbcb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a02e7e2270d8512e4ba87fd3465c09') in 0.010757 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 251.561088 seconds.
-  path: Assets/Settings/High_PipelineAsset_ForwardRenderer.asset
-  artifactKey: Guid(18fa5cfdf86190845a3597ccd8a6121b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/High_PipelineAsset_ForwardRenderer.asset using Guid(18fa5cfdf86190845a3597ccd8a6121b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660d6eace8a29ad14b7ca78e942e5f44') in 0.018142 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Settings/Medium_PipelineAsset.asset
-  artifactKey: Guid(be7c8814e28664f4bac3d47e98ee67dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Medium_PipelineAsset.asset using Guid(be7c8814e28664f4bac3d47e98ee67dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbd76a17f5d9e9d2f36428b0b3a1582') in 0.005461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Settings/Ultra_PipelineAsset.asset
-  artifactKey: Guid(512338b04600aab49ba16347cff2dd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Ultra_PipelineAsset.asset using Guid(512338b04600aab49ba16347cff2dd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d1f4827669f5f60e1f0d9f3c3d1942') in 0.006796 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Settings/Very High_PipelineAsset.asset
-  artifactKey: Guid(9509f5dc61133d04cac3892e6f8ce533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Very High_PipelineAsset.asset using Guid(9509f5dc61133d04cac3892e6f8ce533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37daabc2780fb186e94c8dcdf6332e4c') in 0.010804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Settings/Very Low_PipelineAsset_ForwardRenderer.asset
-  artifactKey: Guid(9bffed791fbb4ab4f8ba23bc78c19103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Very Low_PipelineAsset_ForwardRenderer.asset using Guid(9bffed791fbb4ab4f8ba23bc78c19103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e57d9848319d79c3c8617cb5d150543') in 0.002630 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.281 seconds
-Refreshing native plugins compatible for Editor in 7.03 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 14.716 seconds
-Domain Reload Profiling: 17997ms
-	BeginReloadAssembly (1454ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (124ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (3ms)
-		CreateAndSetChildDomain (924ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (1686ms)
-		LoadAssemblies (1198ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (671ms)
-			TypeCache.Refresh (619ms)
-				TypeCache.ScanAssembly (509ms)
-			ScanForSourceGeneratedMonoScriptInfo (36ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (14717ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (799ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (13ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (139ms)
-			ProcessInitializeOnLoadAttributes (583ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Refreshing native plugins compatible for Editor in 7.19 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7591 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 199 unused Assets / (14.3 MB). Loaded Objects now: 8226.
-Memory consumption went from 283.5 MB to 269.2 MB.
-Total: 12.498800 ms (FindLiveObjects: 1.307200 ms CreateObjectMapping: 0.470300 ms MarkObjects: 6.705100 ms  DeleteObjects: 4.011300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.597 seconds
-Refreshing native plugins compatible for Editor in 3.06 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.830 seconds
-Domain Reload Profiling: 4426ms
-	BeginReloadAssembly (253ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (107ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (1261ms)
-		LoadAssemblies (756ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (598ms)
-			TypeCache.Refresh (563ms)
-				TypeCache.ScanAssembly (497ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (2831ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (773ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (121ms)
-			ProcessInitializeOnLoadAttributes (575ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (154ms)
+			ProcessInitializeOnLoadAttributes (731ms)
+			ProcessInitializeOnLoadMethodAttributes (199ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Refreshing native plugins compatible for Editor in 3.79 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 14.00 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7591 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8231.
-Memory consumption went from 283.5 MB to 269.3 MB.
-Total: 16.333300 ms (FindLiveObjects: 1.473200 ms CreateObjectMapping: 0.723200 ms MarkObjects: 6.189800 ms  DeleteObjects: 7.943400 ms)
+Unloading 7887 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 249 unused Assets / (14.2 MB). Loaded Objects now: 8223.
+Memory consumption went from 344.7 MB to 330.4 MB.
+Total: 219.161900 ms (FindLiveObjects: 8.942100 ms CreateObjectMapping: 1.365800 ms MarkObjects: 25.125200 ms  DeleteObjects: 183.726300 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.800 seconds
-Refreshing native plugins compatible for Editor in 3.61 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.404 seconds
-Domain Reload Profiling: 8210ms
-	BeginReloadAssembly (1073ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (113ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (2ms)
-		CreateAndSetChildDomain (584ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (2589ms)
-		LoadAssemblies (1697ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1092ms)
-			TypeCache.Refresh (1041ms)
-				TypeCache.ScanAssembly (755ms)
-			ScanForSourceGeneratedMonoScriptInfo (34ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (4405ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1150ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (38ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (270ms)
-			ProcessInitializeOnLoadAttributes (755ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 8.14 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7591 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8236.
-Memory consumption went from 283.5 MB to 269.3 MB.
-Total: 83.117800 ms (FindLiveObjects: 7.921100 ms CreateObjectMapping: 1.039100 ms MarkObjects: 21.291500 ms  DeleteObjects: 52.854500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -465,913 +175,293 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 665.719263 seconds.
-  path: Assets/Player/Player.prefab
-  artifactKey: Guid(1baca16a5616e534ca75688c8b3f9dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/Player.prefab using Guid(1baca16a5616e534ca75688c8b3f9dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e265210e1c66bc7d20f61d1336a1ae') in 0.124143 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 3.028968 seconds.
-  path: Assets/Map2_Desert/NPC2_Drawf/Drawf.prefab
-  artifactKey: Guid(fd6b68d2694b13a4aa3a0e28173cc61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/NPC2_Drawf/Drawf.prefab using Guid(fd6b68d2694b13a4aa3a0e28173cc61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f476adaaf63da679bef4ea764b10c006') in 0.141103 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 31
-========================================================================
-Received Import Request.
-  Time since last request: 2.164927 seconds.
-  path: Assets/Map2_Desert/Tilemap/Decoration/Decoration.png
-  artifactKey: Guid(45763b0824c938543924f8e69fdda624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Decoration/Decoration.png using Guid(45763b0824c938543924f8e69fdda624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e7039fb37e7acb07cef7f8bc6a701b4') in 0.020040 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 65
-========================================================================
-Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/Map2_Desert/Tilemap/Decoration/Pyramid.png
-  artifactKey: Guid(4351fcd4d698b13458a150e0b35f5a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Decoration/Pyramid.png using Guid(4351fcd4d698b13458a150e0b35f5a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f1dcebdd8762a7f000a00529d6426b') in 0.023499 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 47
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Map2_Desert/Tilemap/Decoration/Sun.png
-  artifactKey: Guid(a38bfe2f694190e4e93ddcf5033d395d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Decoration/Sun.png using Guid(a38bfe2f694190e4e93ddcf5033d395d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69371f7357813a102dfad4259178e233') in 0.004120 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 46.018458 seconds.
-  path: Assets/Map2_Desert/Tilemap/Decoration/2DWater/Materials/Realistic 6/6WaterRenderTexture.renderTexture
-  artifactKey: Guid(6cff3b17d34ba7a4dbc5183d3e444f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Decoration/2DWater/Materials/Realistic 6/6WaterRenderTexture.renderTexture using Guid(6cff3b17d34ba7a4dbc5183d3e444f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ecd3a0fd66bbe122b3218f270bd8ed2') in 0.002327 seconds
+  Time since last request: 909938.798199 seconds.
+  path: Assets/SFX/SFX/Boss2 skill2.mp3
+  artifactKey: Guid(1b715cbca3d9fa9458d127f39552c5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss2 skill2.mp3 using Guid(1b715cbca3d9fa9458d127f39552c5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4f429b28b2ece72d2ee7f7af723054') in 0.082029 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 5.424874 seconds.
-  path: Assets/Map2_Desert/Tilemap/Decoration/2DWater/Materials/Realistic 7/7WaterRenderTexture.renderTexture
-  artifactKey: Guid(df65e7cf969687941add45ba2cff98bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Decoration/2DWater/Materials/Realistic 7/7WaterRenderTexture.renderTexture using Guid(df65e7cf969687941add45ba2cff98bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990c2df143f987bdc12d2f32bd0fe7da') in 0.002735 seconds
+  Time since last request: 0.000263 seconds.
+  path: Assets/SFX/SFX/take_damage.mp3
+  artifactKey: Guid(c0174676f8f306e4aa1b4ff40493472b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/take_damage.mp3 using Guid(c0174676f8f306e4aa1b4ff40493472b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed1ea8e6481eefee5d8b440509137dd') in 0.002585 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 126.362600 seconds.
-  path: Assets/Map2_Desert/Tilemap/Background/2 Layer2.png
-  artifactKey: Guid(d91819af1b3a37b4e8fd04f681b5218d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Background/2 Layer2.png using Guid(d91819af1b3a37b4e8fd04f681b5218d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c2a4e4143d256ad583ec4e8964a7f3') in 0.029886 seconds
+  Time since last request: 0.000818 seconds.
+  path: Assets/SFX/SFX/Enemy4.mp3
+  artifactKey: Guid(a567bc28c9ef0e7468543b622b33a674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Enemy4.mp3 using Guid(a567bc28c9ef0e7468543b622b33a674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50800df5c83e3fab5949bdb1ceb1f4f3') in 0.002649 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Map2_Desert/Tilemap/Background/7 Clouds2.png
-  artifactKey: Guid(a10cc2e5aed28d74bb8620b687066074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Background/7 Clouds2.png using Guid(a10cc2e5aed28d74bb8620b687066074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd456ae5664bb780d98cf598408bae8bd') in 0.006785 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Map2_Desert/Tilemap/Background/8 Stars2.png
-  artifactKey: Guid(5fb370976faa8d141955b422f6baf25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Background/8 Stars2.png using Guid(5fb370976faa8d141955b422f6baf25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc5b6563055c6c26b0939f4b82624593') in 0.008197 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/Map2_Desert/Tilemap/Background/7 Clouds.png
-  artifactKey: Guid(717e58caf3462f4409c820069d9405ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Background/7 Clouds.png using Guid(717e58caf3462f4409c820069d9405ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5805234da8c98ec79335d9a08b7eb72d') in 0.014679 seconds
+  path: Assets/SFX/SFX/Boss3 skill3.mp3
+  artifactKey: Guid(c1ebee013105a8942b6762a944476348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss3 skill3.mp3 using Guid(c1ebee013105a8942b6762a944476348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa2135a7dc6b95e7bff4cfb087689d3') in 0.002538 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SFX/SFX/Boss5 skill3.mp3
+  artifactKey: Guid(08b99f2ceca179c4186474f9e9143e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss5 skill3.mp3 using Guid(08b99f2ceca179c4186474f9e9143e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ac59394e25e0c4bb98abd6c6594b95') in 0.002416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SFX/SFX/Boss2 skill1.mp3
+  artifactKey: Guid(6656b9d8336949b44be96ac57c4057da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss2 skill1.mp3 using Guid(6656b9d8336949b44be96ac57c4057da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d2ef4911658ad62031a314c61bdf3ef') in 0.002165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Map1_Forest.unity
+  artifactKey: Guid(01c5c2cfc241377449dac758c3bc6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map1_Forest.unity using Guid(01c5c2cfc241377449dac758c3bc6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54729e0370d1c9e4490b2893dc4d0155') in 0.000671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/Map2_Desert/Tilemap/Background/3 Layer3.png
-  artifactKey: Guid(43c523d46b29d1f4ebe86fb923f2ca3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Background/3 Layer3.png using Guid(43c523d46b29d1f4ebe86fb923f2ca3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5f802113a3bdc3c029baaa967ee6510') in 0.015833 seconds
+  path: Assets/Item/SavedGame.png
+  artifactKey: Guid(f420b5f6d0df4624dad4839f3342e8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Item/SavedGame.png using Guid(f420b5f6d0df4624dad4839f3342e8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6770a5ed82c150b3136eda6eae158bc2') in 0.020190 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SFX/SFX/Boss4 skill3.mp3
+  artifactKey: Guid(665d086e31cb80146afe3ef5b6948881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss4 skill3.mp3 using Guid(665d086e31cb80146afe3ef5b6948881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c02fd7c9ff0c173c2f5cd4979657f75c') in 0.004785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/SFX/SFX/Enemy5.mp3
+  artifactKey: Guid(aafbce0cf4394b74cb1a431c81e2876d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Enemy5.mp3 using Guid(aafbce0cf4394b74cb1a431c81e2876d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afe7ac4557f1846b44b9c9682a759b4') in 0.002990 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SFX/SFX/Boss3 skill1.mp3
+  artifactKey: Guid(b6acf739cabe71b4997d321a0ece2ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss3 skill1.mp3 using Guid(b6acf739cabe71b4997d321a0ece2ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206b0052d7d5d79e899c6ed4688c4974') in 0.003233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SFX/SFX/Boss1 skill1.mp3
+  artifactKey: Guid(79947a90c271cb042b3583c143587888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss1 skill1.mp3 using Guid(79947a90c271cb042b3583c143587888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef88fa6847e20945c7232290a1a1bc4') in 0.007211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/Map2_Desert/Tilemap/Background/6 Sun.png
-  artifactKey: Guid(87d5ecc6dfdfb114293328f01bd1ec40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Background/6 Sun.png using Guid(87d5ecc6dfdfb114293328f01bd1ec40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5997ea9de77a17bbb6c085ff4199f6') in 0.014770 seconds
+  path: Assets/Item/Blood.png
+  artifactKey: Guid(02c66f299c72a2d449e3512d5e287d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Item/Blood.png using Guid(02c66f299c72a2d449e3512d5e287d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae16681ab1e0bb666674a35b55fb4f47') in 0.003390 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  4.532 seconds
-Refreshing native plugins compatible for Editor in 7.47 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  8.173 seconds
-Domain Reload Profiling: 12704ms
-	BeginReloadAssembly (1472ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (130ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (5ms)
-		CreateAndSetChildDomain (968ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (95ms)
-	LoadAllAssembliesAndSetupDomain (2878ms)
-		LoadAssemblies (2016ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1043ms)
-			TypeCache.Refresh (975ms)
-				TypeCache.ScanAssembly (731ms)
-			ScanForSourceGeneratedMonoScriptInfo (49ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (8174ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (975ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (10ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (131ms)
-			ProcessInitializeOnLoadAttributes (747ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Refreshing native plugins compatible for Editor in 5.50 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8242.
-Memory consumption went from 283.5 MB to 269.3 MB.
-Total: 40.389300 ms (FindLiveObjects: 2.999100 ms CreateObjectMapping: 1.614800 ms MarkObjects: 15.934800 ms  DeleteObjects: 19.834200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.925 seconds
-Refreshing native plugins compatible for Editor in 5.99 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.835 seconds
-Domain Reload Profiling: 6764ms
-	BeginReloadAssembly (590ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (38ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (8ms)
-		CreateAndSetChildDomain (272ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (2205ms)
-		LoadAssemblies (1583ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (785ms)
-			TypeCache.Refresh (723ms)
-				TypeCache.ScanAssembly (561ms)
-			ScanForSourceGeneratedMonoScriptInfo (46ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (3836ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1013ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (166ms)
-			ProcessInitializeOnLoadAttributes (754ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (32ms)
-Refreshing native plugins compatible for Editor in 7.55 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8247.
-Memory consumption went from 283.5 MB to 269.3 MB.
-Total: 16.276900 ms (FindLiveObjects: 1.104500 ms CreateObjectMapping: 0.544900 ms MarkObjects: 7.667300 ms  DeleteObjects: 6.957600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.011 seconds
-Refreshing native plugins compatible for Editor in 4.96 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.327 seconds
-Domain Reload Profiling: 6339ms
-	BeginReloadAssembly (880ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (143ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (2ms)
-		CreateAndSetChildDomain (398ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (2037ms)
-		LoadAssemblies (1072ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1085ms)
-			TypeCache.Refresh (1041ms)
-				TypeCache.ScanAssembly (821ms)
-			ScanForSourceGeneratedMonoScriptInfo (29ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (3328ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (700ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (113ms)
-			ProcessInitializeOnLoadAttributes (513ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Refreshing native plugins compatible for Editor in 4.54 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8252.
-Memory consumption went from 283.5 MB to 269.3 MB.
-Total: 23.863600 ms (FindLiveObjects: 1.662500 ms CreateObjectMapping: 0.635400 ms MarkObjects: 12.497600 ms  DeleteObjects: 9.064500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.207 seconds
-Refreshing native plugins compatible for Editor in 4.28 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.664 seconds
-Domain Reload Profiling: 5871ms
-	BeginReloadAssembly (437ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (22ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (3ms)
-		CreateAndSetChildDomain (236ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (2662ms)
-		LoadAssemblies (1996ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (782ms)
-			TypeCache.Refresh (715ms)
-				TypeCache.ScanAssembly (523ms)
-			ScanForSourceGeneratedMonoScriptInfo (48ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (2664ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (646ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (461ms)
-			ProcessInitializeOnLoadMethodAttributes (36ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 13.74 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8257.
-Memory consumption went from 283.5 MB to 269.3 MB.
-Total: 17.159700 ms (FindLiveObjects: 1.141300 ms CreateObjectMapping: 0.726500 ms MarkObjects: 10.393300 ms  DeleteObjects: 4.895100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.913 seconds
-Refreshing native plugins compatible for Editor in 4.50 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.040 seconds
-Domain Reload Profiling: 5953ms
-	BeginReloadAssembly (253ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (22ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (95ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (2582ms)
-		LoadAssemblies (1536ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1121ms)
-			TypeCache.Refresh (1039ms)
-				TypeCache.ScanAssembly (772ms)
-			ScanForSourceGeneratedMonoScriptInfo (61ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (3040ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (913ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (144ms)
-			ProcessInitializeOnLoadAttributes (665ms)
-			ProcessInitializeOnLoadMethodAttributes (76ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (35ms)
-Refreshing native plugins compatible for Editor in 6.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8262.
-Memory consumption went from 283.6 MB to 269.3 MB.
-Total: 22.458400 ms (FindLiveObjects: 2.768700 ms CreateObjectMapping: 0.886000 ms MarkObjects: 7.888300 ms  DeleteObjects: 10.911900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.861 seconds
-Refreshing native plugins compatible for Editor in 5.29 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.105 seconds
-Domain Reload Profiling: 4965ms
-	BeginReloadAssembly (349ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (26ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (150ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (1430ms)
-		LoadAssemblies (489ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1034ms)
-			TypeCache.Refresh (903ms)
-				TypeCache.ScanAssembly (651ms)
-			ScanForSourceGeneratedMonoScriptInfo (109ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (3106ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (875ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (131ms)
-			ProcessInitializeOnLoadAttributes (668ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Refreshing native plugins compatible for Editor in 3.66 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8267.
-Memory consumption went from 283.6 MB to 269.3 MB.
-Total: 12.419300 ms (FindLiveObjects: 0.957400 ms CreateObjectMapping: 0.456600 ms MarkObjects: 5.685700 ms  DeleteObjects: 5.317700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SFX/SFX/Collecting.wav
+  artifactKey: Guid(5f0e6f037138bc14b96107a8d2e4fd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Collecting.wav using Guid(5f0e6f037138bc14b96107a8d2e4fd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36a220a6d62d25cc690087b1b3c9161') in 0.001679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 1431.039032 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/Pyramid.prefab
-  artifactKey: Guid(10941fb91f6af8b4684752dd94a5f262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/Pyramid.prefab using Guid(10941fb91f6af8b4684752dd94a5f262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e14d526d98a03ff5813f43c00df3067') in 0.067809 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/SFX/SFX/Boss4 skill1.mp3
+  artifactKey: Guid(e7a583f4c6ba69749b4351930f1760f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss4 skill1.mp3 using Guid(e7a583f4c6ba69749b4351930f1760f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e301788a38d87409d912e1c717f1d86') in 0.001871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Player/Circle.prefab
+  artifactKey: Guid(50526eb467b8946489d15748b6d100ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player/Circle.prefab using Guid(50526eb467b8946489d15748b6d100ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2864e5ef3808c8a7c9ceaa137d9c09d7') in 0.027138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SFX/SFX/Xuc tu mau.mp3
+  artifactKey: Guid(3d27f8465f3236445b0acd336dab8c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Xuc tu mau.mp3 using Guid(3d27f8465f3236445b0acd336dab8c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cdf024ea7c31c7da660c58f5123c9ab') in 0.001644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/SFX/SFX/phan don.mp3
+  artifactKey: Guid(09adbdc748234174eb9d31ecc0586fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/phan don.mp3 using Guid(09adbdc748234174eb9d31ecc0586fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54d79802bce656b50c93e5682a878279') in 0.003492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Item/BloodSkill.png
+  artifactKey: Guid(943f9ae4ea8d8004eb5958478c025b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Item/BloodSkill.png using Guid(943f9ae4ea8d8004eb5958478c025b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbfe9b7c0be9c37134625696fb1a91d4') in 0.004563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SFX/SFX
+  artifactKey: Guid(a412420c5df6714439ccaed722551a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX using Guid(a412420c5df6714439ccaed722551a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91c542566359fccf1be6681f818825d') in 0.001387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SFX/SFX/Melee3.mp3
+  artifactKey: Guid(8f3d1dead2e9db1489dabd472a56bb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Melee3.mp3 using Guid(8f3d1dead2e9db1489dabd472a56bb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b803970675e218ec7842d41c0deecfc1') in 0.002089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Item/Blood.prefab
+  artifactKey: Guid(491c762327ec44d4190176ffdf0db467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Item/Blood.prefab using Guid(491c762327ec44d4190176ffdf0db467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d1198f8263526a3fee06aaecfc11b5') in 0.006118 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid.png
-  artifactKey: Guid(617a35b74b6574d4fb3ec2882cb7dc90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid.png using Guid(617a35b74b6574d4fb3ec2882cb7dc90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470fd4300a566fe158737199966b8aab') in 0.021775 seconds
+  Time since last request: 0.000026 seconds.
+  path: Assets/SFX/SFX/CharacterDash.wav
+  artifactKey: Guid(ea4869fffc7511842a798f7a698c0aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/CharacterDash.wav using Guid(ea4869fffc7511842a798f7a698c0aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915ae754ebacb873fc7f599252ca6ab8') in 0.001430 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_2.asset
-  artifactKey: Guid(94339d03c73cec540ba44ef8488767f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_2.asset using Guid(94339d03c73cec540ba44ef8488767f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b1f4695111a49d50554d3aaf613c6f') in 0.002575 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.224514 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_6.asset
-  artifactKey: Guid(162f6272488a06d49958f77a7850ea22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_6.asset using Guid(162f6272488a06d49958f77a7850ea22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7fb35b88e726c7a994fca41ec65df2') in 0.001711 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_47.asset
-  artifactKey: Guid(f3b30087f30bcee4f895134215433ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_47.asset using Guid(f3b30087f30bcee4f895134215433ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bad82525891e8abf361de411140ecbf') in 0.001679 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_10.asset
-  artifactKey: Guid(e188c1122c297584bb02b51a749a2f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_10.asset using Guid(e188c1122c297584bb02b51a749a2f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3550aa18b5559982bcfa1915cca83e5e') in 0.001643 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_12.asset
-  artifactKey: Guid(25513c28a5f8f7448a84aaa894c24a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_12.asset using Guid(25513c28a5f8f7448a84aaa894c24a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879eb88229550b884a37a1a320146a38') in 0.001728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_26.asset
-  artifactKey: Guid(15d155782dee00747a5cc47883246eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_26.asset using Guid(15d155782dee00747a5cc47883246eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '721a916c149737b963d153e4d6eddff2') in 0.001675 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_27.asset
-  artifactKey: Guid(ed7a7ce3129009641943290b2ba863e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_27.asset using Guid(ed7a7ce3129009641943290b2ba863e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421f9551f95d995012fc0135bd887ac0') in 0.015496 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_18.asset
-  artifactKey: Guid(817356d37401cb349bf4404708733e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_18.asset using Guid(817356d37401cb349bf4404708733e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b6daac945ae26c6bad30dfeb120104') in 0.001249 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_20.asset
-  artifactKey: Guid(9ca1fbe29010b3949a45e34591e9149d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_20.asset using Guid(9ca1fbe29010b3949a45e34591e9149d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6232a9c67658c1eb41a4ce80a15f4d42') in 0.013292 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_28.asset
-  artifactKey: Guid(52d0bf2d7962e9544bb6c6ca4046b450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_28.asset using Guid(52d0bf2d7962e9544bb6c6ca4046b450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4e18918b4fcf927100bb3844a5763e') in 0.011962 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_23.asset
-  artifactKey: Guid(d753e634beac14c43bdeb66c602b98ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_23.asset using Guid(d753e634beac14c43bdeb66c602b98ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd386de120cef4303575f672f37f8818d') in 0.002258 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_44.asset
-  artifactKey: Guid(fcee1b2523de1a44fb68f297df538ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_44.asset using Guid(fcee1b2523de1a44fb68f297df538ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa26e96164061db3a89724e4a55530ed') in 0.012299 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_31.asset
-  artifactKey: Guid(2d9f147bb566e7e498b9c1feaafbd092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_31.asset using Guid(2d9f147bb566e7e498b9c1feaafbd092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81fd8a2a1a26a36a1fb9615abb508ae4') in 0.011618 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_41.asset
-  artifactKey: Guid(95d52e6c10a0b564d95cb877cb799c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_41.asset using Guid(95d52e6c10a0b564d95cb877cb799c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da882f64a4a903fc87b2830c4fd94df7') in 0.001448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_16.asset
-  artifactKey: Guid(5f571fa522bd88c4ca39bd94618abce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_16.asset using Guid(5f571fa522bd88c4ca39bd94618abce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ecb1d02e4f94c5e827f4166d59b1f90') in 0.001530 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_46.asset
-  artifactKey: Guid(0e8dbdabe87f6ae41a913998a630eaff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_46.asset using Guid(0e8dbdabe87f6ae41a913998a630eaff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca3aa95e3940ae7a8c44ad74fd6a905') in 0.013619 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_33.asset
-  artifactKey: Guid(fabe613dbbdbe0d43b5ca9ce81f57e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_33.asset using Guid(fabe613dbbdbe0d43b5ca9ce81f57e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec3a09e35c352799aa4b51b7a134c9a') in 0.011067 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_17.asset
-  artifactKey: Guid(95e276ccd644f924a9635db961a62fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_17.asset using Guid(95e276ccd644f924a9635db961a62fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1de47d956d2f0688e037735b6ea7c2') in 0.001520 seconds
+  path: Assets/SFX/SFX/Boss3 skill2.mp3
+  artifactKey: Guid(5ef986a03f0012a47850b44f98d4cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss3 skill2.mp3 using Guid(5ef986a03f0012a47850b44f98d4cef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5188dcd0b8504c377ce77ae48f02433b') in 0.001453 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_14.asset
-  artifactKey: Guid(7ce7be9971d02864f9d81ea37401fb6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_14.asset using Guid(7ce7be9971d02864f9d81ea37401fb6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24daa3bd018f5083d9ef9683a7c8782f') in 0.001638 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_32.asset
-  artifactKey: Guid(1a4e99d8585f98c4da0d7269a634b4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_32.asset using Guid(1a4e99d8585f98c4da0d7269a634b4dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '080326033c153765ad2481190d3b2c42') in 0.012559 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_15.asset
-  artifactKey: Guid(1a3d98322cb4cdf42b65a133d4183f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_15.asset using Guid(1a3d98322cb4cdf42b65a133d4183f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d58a51bc03288ef41f78fd11876f7be') in 0.002611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_45.asset
-  artifactKey: Guid(66a568a5c4638064f8f5173c0a1b28c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tile_pyramid_45.asset using Guid(66a568a5c4638064f8f5173c0a1b28c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0963e1b2e72c93af41fcce5a901f3e8f') in 0.012754 seconds
+  path: Assets/SFX/SFX/wolf-attack 1.mp3
+  artifactKey: Guid(cfb7bd227fc994a4588990bd5a5b473a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/wolf-attack 1.mp3 using Guid(cfb7bd227fc994a4588990bd5a5b473a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1985e17166cd6791ae41c43a14da0485') in 0.001802 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 11.923438 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_0.asset
-  artifactKey: Guid(465c026208829fe458c6a54fe922b6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_0.asset using Guid(465c026208829fe458c6a54fe922b6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4887580939839bd969096cd5d89f393e') in 0.024896 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_4.asset
-  artifactKey: Guid(c77f5739f79329e439141d96512b99ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_4.asset using Guid(c77f5739f79329e439141d96512b99ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9409c56dc3beb2c5cf1ecb9fefb91a9a') in 0.020179 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_6.asset
-  artifactKey: Guid(cde0e1b0332a1d348acfdf4aa7ea8829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_6.asset using Guid(cde0e1b0332a1d348acfdf4aa7ea8829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '614eb8749763f24c04ca3c96a5f902b0') in 0.016720 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_7.asset
-  artifactKey: Guid(4a0aeeb27cac1a1499c3da12a09278fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_7.asset using Guid(4a0aeeb27cac1a1499c3da12a09278fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255d88b2558016e34a3a477d8e2aef5e') in 0.017904 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_3.asset
-  artifactKey: Guid(45df10229ecc785489cd8e99caa5b968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_3.asset using Guid(45df10229ecc785489cd8e99caa5b968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e63954079056aaa10febca87eee5ea') in 0.020459 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.085839 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_9.asset
-  artifactKey: Guid(7bca27e8f94263a44bf5b12eae0af310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_9.asset using Guid(7bca27e8f94263a44bf5b12eae0af310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062244a4380e7c74130f73a33f97965c') in 0.019422 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_16.asset
-  artifactKey: Guid(cd971bb7ec0d8de44965dde5072372be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_16.asset using Guid(cd971bb7ec0d8de44965dde5072372be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70cd97c4b763195e7f4b8e848ffca5de') in 0.016714 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_10.asset
-  artifactKey: Guid(1a84063326108b94b9750b33c1f5dea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_10.asset using Guid(1a84063326108b94b9750b33c1f5dea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b871cf4aeeb2e52943a7cdb9d7386d') in 0.015811 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_15.asset
-  artifactKey: Guid(9e63b2bb03f03c34db22e248b3335809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_15.asset using Guid(9e63b2bb03f03c34db22e248b3335809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb872612572c33c5421feeebf45b4ed2') in 0.014644 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_12.asset
-  artifactKey: Guid(7267bcc3a45b490419d0aac8d4fa2ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_12.asset using Guid(7267bcc3a45b490419d0aac8d4fa2ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34501b30f85dcdc13e69db88a5650e5') in 0.017334 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.974635 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_19.asset
-  artifactKey: Guid(6d40d288f7c0b0141a81db5d2cc5cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_19.asset using Guid(6d40d288f7c0b0141a81db5d2cc5cdf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22528ac39a8a81cd8a63d4531193a9ec') in 0.014605 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_22.asset
-  artifactKey: Guid(b348bf5ffb9f7b548aac7e52d026bd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_22.asset using Guid(b348bf5ffb9f7b548aac7e52d026bd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1919eb9fe313fbcf786e32b8e38bc8b') in 0.013751 seconds
+  path: Assets/SFX/SFX/Boss2 skill3 .mp3
+  artifactKey: Guid(d122db8e07cddff4c8eb14a41414337d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss2 skill3 .mp3 using Guid(d122db8e07cddff4c8eb14a41414337d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d5fa93298282912d3566b4226d67c6') in 0.001224 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_26.asset
-  artifactKey: Guid(0bdd64cae93998e4985350678ba99431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_26.asset using Guid(0bdd64cae93998e4985350678ba99431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '320bf27a5ddfe25c3c2acd76cc3a30a0') in 0.011073 seconds
+  Time since last request: 0.000030 seconds.
+  path: Assets/SFX/SFX/MouseEntering.wav
+  artifactKey: Guid(bcd3d1909045d9a4dbf2308d1bc3d2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/MouseEntering.wav using Guid(bcd3d1909045d9a4dbf2308d1bc3d2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214d911c419ced93d0a1629fd2a58a48') in 0.001233 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_27.asset
-  artifactKey: Guid(b20f0f48a01abc74196509d0e4698497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_27.asset using Guid(b20f0f48a01abc74196509d0e4698497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46853c7d6b1b070e133b78abff847b7e') in 0.012663 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/SFX/SFX/Melee1.mp3
+  artifactKey: Guid(935b096c88c0faa4e93e299544fedc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Melee1.mp3 using Guid(935b096c88c0faa4e93e299544fedc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54692ce82353daf6e5d9d2a30cd76e48') in 0.001085 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.016581 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_29.asset
-  artifactKey: Guid(e1b949bcca59475449ea3cb7c424921c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_29.asset using Guid(e1b949bcca59475449ea3cb7c424921c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21cdfb19dcbb11d0fc29eab3e5ca910') in 0.013543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_38.asset
-  artifactKey: Guid(d5284034accbd6241925350e5d3063d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_38.asset using Guid(d5284034accbd6241925350e5d3063d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f58f2cc985b0dd6f352f97ed91ef35f') in 0.012958 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_37.asset
-  artifactKey: Guid(e35fa90e6fd5ceb4ea1d95f537e2ec58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_37.asset using Guid(e35fa90e6fd5ceb4ea1d95f537e2ec58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02324f8c976e75cd63dde5c89bc9cb13') in 0.012396 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_31.asset
-  artifactKey: Guid(8ac44193bfaa5e848b319dcd034d3108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_31.asset using Guid(8ac44193bfaa5e848b319dcd034d3108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa1a66537e134f62c230edfa156b98e') in 0.013846 seconds
+  path: Assets/SFX/SFX/Boss5 skill2.mp3
+  artifactKey: Guid(3a18c792d86552c4cb3e15ce6476ae0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss5 skill2.mp3 using Guid(3a18c792d86552c4cb3e15ce6476ae0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fa3b2d5e79afd41dc63a0b1aafba88') in 0.001348 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_42.asset
-  artifactKey: Guid(d7cf94748d5695443902d6486be6dc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_42.asset using Guid(d7cf94748d5695443902d6486be6dc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a2cb355a9b38d587b6124d64d8a9a7') in 0.012385 seconds
+  Time since last request: 0.000024 seconds.
+  path: Assets/SFX/SFX/Boss1 skill3.mp3
+  artifactKey: Guid(0c8ad48ac65ad6a4daf1b2040dbeeff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/SFX/Boss1 skill3.mp3 using Guid(0c8ad48ac65ad6a4daf1b2040dbeeff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3861db57d9284967142faa46fa5ed7ce') in 0.001164 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_39.asset
-  artifactKey: Guid(e0735f14385f20d42ac1a031b17ab919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_39.asset using Guid(e0735f14385f20d42ac1a031b17ab919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e54cf589206bcd202bb61805a8b8f2') in 0.010707 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 7.944276 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_47.asset
-  artifactKey: Guid(791deb1c6d9627d448846da06d12118f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_47.asset using Guid(791deb1c6d9627d448846da06d12118f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f6ac18c35a22254f65d526f333ac1e') in 0.025354 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_49.asset
-  artifactKey: Guid(d003befbeea6079479d98314d87b310c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_49.asset using Guid(d003befbeea6079479d98314d87b310c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '088a59b2d1fccd15880284d74b14357e') in 0.017201 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_54.asset
-  artifactKey: Guid(b2f3009aebb7ddf488b7740a396722df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_54.asset using Guid(b2f3009aebb7ddf488b7740a396722df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f746849a9742efaa809fbfe4597beea') in 0.014973 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.151660 seconds.
-  path: Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_56.asset
-  artifactKey: Guid(a2b570bec650eae4ea7f2ae4298358d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map2_Desert/Tilemap/Tile/tilemapDesert_56.asset using Guid(a2b570bec650eae4ea7f2ae4298358d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c22abb878303350b84d217a0073e2d') in 0.016265 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.616 seconds
-Refreshing native plugins compatible for Editor in 3.94 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.759 seconds
+Refreshing native plugins compatible for Editor in 6.44 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.705 seconds
-Domain Reload Profiling: 4319ms
-	BeginReloadAssembly (350ms)
+- Finished resetting the current domain, in  3.369 seconds
+Domain Reload Profiling: 5127ms
+	BeginReloadAssembly (326ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (28ms)
+		DisableScriptedObjects (23ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (168ms)
-	RebuildCommonClasses (41ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (100ms)
+	RebuildCommonClasses (39ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (1158ms)
-		LoadAssemblies (638ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (1327ms)
+		LoadAssemblies (708ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (614ms)
-			TypeCache.Refresh (586ms)
-				TypeCache.ScanAssembly (484ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (2706ms)
+		AnalyzeDomain (770ms)
+			TypeCache.Refresh (756ms)
+				TypeCache.ScanAssembly (682ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (3370ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1107ms)
+		SetupLoadedEditorAssemblies (953ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (127ms)
-			ProcessInitializeOnLoadAttributes (874ms)
-			ProcessInitializeOnLoadMethodAttributes (83ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			BeforeProcessingInitializeOnLoad (141ms)
+			ProcessInitializeOnLoadAttributes (722ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (45ms)
-Refreshing native plugins compatible for Editor in 4.50 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 6.56 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8272.
-Memory consumption went from 284.4 MB to 270.2 MB.
-Total: 21.629200 ms (FindLiveObjects: 2.523300 ms CreateObjectMapping: 1.202900 ms MarkObjects: 9.332600 ms  DeleteObjects: 8.564100 ms)
+Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8230.
+Memory consumption went from 283.7 MB to 269.4 MB.
+Total: 59.869700 ms (FindLiveObjects: 4.957400 ms CreateObjectMapping: 1.320700 ms MarkObjects: 17.338000 ms  DeleteObjects: 36.241800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1385,8 +475,543 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.997 seconds
+Refreshing native plugins compatible for Editor in 5.70 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.769 seconds
+Domain Reload Profiling: 5765ms
+	BeginReloadAssembly (620ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (39ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (342ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (2263ms)
+		LoadAssemblies (1461ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (947ms)
+			TypeCache.Refresh (929ms)
+				TypeCache.ScanAssembly (638ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (2770ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (645ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (124ms)
+			ProcessInitializeOnLoadAttributes (462ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 6.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8235.
+Memory consumption went from 283.7 MB to 269.5 MB.
+Total: 27.959900 ms (FindLiveObjects: 1.973500 ms CreateObjectMapping: 6.093400 ms MarkObjects: 14.388000 ms  DeleteObjects: 5.500100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.089 seconds
+Refreshing native plugins compatible for Editor in 3.77 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.600 seconds
+Domain Reload Profiling: 4688ms
+	BeginReloadAssembly (265ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (107ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (1747ms)
+		LoadAssemblies (1070ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (773ms)
+			TypeCache.Refresh (752ms)
+				TypeCache.ScanAssembly (646ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2601ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (859ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (138ms)
+			ProcessInitializeOnLoadAttributes (658ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 3.08 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8240.
+Memory consumption went from 283.7 MB to 269.5 MB.
+Total: 10.686600 ms (FindLiveObjects: 0.777900 ms CreateObjectMapping: 0.850400 ms MarkObjects: 4.504200 ms  DeleteObjects: 4.553100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 703.031204 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(b4f7c29b4ed30344fa52dbbe25ae8c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(b4f7c29b4ed30344fa52dbbe25ae8c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df93c12f626067ab3e0630ca65f4c189') in 0.196942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.886215 seconds.
+  path: Assets/Map1_Forest/Enemies/Wolf/Monster_Wolf.prefab
+  artifactKey: Guid(79584e046080e11489dcfe03b28023a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Enemies/Wolf/Monster_Wolf.prefab using Guid(79584e046080e11489dcfe03b28023a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda17e71da434661e6ffd5689eb83767') in 0.034712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 29.991232 seconds.
+  path: Assets/Map1_Forest/NPC1_Spirit/Spirit.prefab
+  artifactKey: Guid(eb749160089bea64eb7e07bcd45612a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/NPC1_Spirit/Spirit.prefab using Guid(eb749160089bea64eb7e07bcd45612a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2229fde7c2e6ebc0d9fdb56388dda5ff') in 0.077551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.812 seconds
+Refreshing native plugins compatible for Editor in 4.58 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.818 seconds
+Domain Reload Profiling: 4629ms
+	BeginReloadAssembly (361ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (32ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (178ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (1357ms)
+		LoadAssemblies (767ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (676ms)
+			TypeCache.Refresh (659ms)
+				TypeCache.ScanAssembly (614ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2818ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (836ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (137ms)
+			ProcessInitializeOnLoadAttributes (615ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 5.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8245.
+Memory consumption went from 283.7 MB to 269.5 MB.
+Total: 22.716400 ms (FindLiveObjects: 2.813300 ms CreateObjectMapping: 0.860700 ms MarkObjects: 10.691800 ms  DeleteObjects: 8.343300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.478 seconds
+Refreshing native plugins compatible for Editor in 8.21 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.743 seconds
+Domain Reload Profiling: 7221ms
+	BeginReloadAssembly (275ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (128ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (2112ms)
+		LoadAssemblies (1490ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (707ms)
+			TypeCache.Refresh (639ms)
+				TypeCache.ScanAssembly (513ms)
+			ScanForSourceGeneratedMonoScriptInfo (47ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (4743ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (668ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (498ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 6.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7592 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8250.
+Memory consumption went from 283.7 MB to 269.5 MB.
+Total: 24.412100 ms (FindLiveObjects: 1.816300 ms CreateObjectMapping: 0.987800 ms MarkObjects: 10.498900 ms  DeleteObjects: 11.105200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.152 seconds
+Refreshing native plugins compatible for Editor in 3.04 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.053 seconds
+Domain Reload Profiling: 8204ms
+	BeginReloadAssembly (292ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (123ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (1772ms)
+		LoadAssemblies (783ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1081ms)
+			TypeCache.Refresh (1038ms)
+				TypeCache.ScanAssembly (707ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (6053ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (878ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (682ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 5.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8256.
+Memory consumption went from 283.7 MB to 269.5 MB.
+Total: 337.983400 ms (FindLiveObjects: 4.969400 ms CreateObjectMapping: 4.320900 ms MarkObjects: 82.675500 ms  DeleteObjects: 245.989100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.929 seconds
+Refreshing native plugins compatible for Editor in 6.41 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.126 seconds
+Domain Reload Profiling: 6065ms
+	BeginReloadAssembly (603ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (57ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (335ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (2245ms)
+		LoadAssemblies (1097ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1247ms)
+			TypeCache.Refresh (1187ms)
+				TypeCache.ScanAssembly (685ms)
+			ScanForSourceGeneratedMonoScriptInfo (43ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (3127ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (693ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (520ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 4.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8261.
+Memory consumption went from 283.7 MB to 269.5 MB.
+Total: 14.709700 ms (FindLiveObjects: 1.377500 ms CreateObjectMapping: 0.772000 ms MarkObjects: 8.260000 ms  DeleteObjects: 4.298000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.437 seconds
+Refreshing native plugins compatible for Editor in 4.49 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.522 seconds
+Domain Reload Profiling: 3957ms
+	BeginReloadAssembly (305ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (126ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (1005ms)
+		LoadAssemblies (677ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (437ms)
+			TypeCache.Refresh (419ms)
+				TypeCache.ScanAssembly (392ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2523ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (810ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (614ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 4.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8266.
+Memory consumption went from 283.8 MB to 269.5 MB.
+Total: 15.629100 ms (FindLiveObjects: 1.470700 ms CreateObjectMapping: 0.539600 ms MarkObjects: 7.590000 ms  DeleteObjects: 6.027500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 589.663329 seconds.
+  path: Assets/UI/Canvas.prefab
+  artifactKey: Guid(4e3d1b4a9d8e5d24bb908fc9270845da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Canvas.prefab using Guid(4e3d1b4a9d8e5d24bb908fc9270845da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601bd21684fcbee77dc961a6705cc111') in 0.399597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 159
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/UI/GlowParticle 1.png
+  artifactKey: Guid(5ee531b9caf4d5e4f877a2cfff7c4ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/GlowParticle 1.png using Guid(5ee531b9caf4d5e4f877a2cfff7c4ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aac37571b08545e35a47b6478957580') in 0.004100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/UI/GlowParticle.mat
+  artifactKey: Guid(ed965504e72a6e14bae9c5ceee432048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/GlowParticle.mat using Guid(ed965504e72a6e14bae9c5ceee432048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886e574ed22a1c8db6e4aeae64f382cb') in 0.002518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/UI/DialogueBox.prefab
+  artifactKey: Guid(e3b0fe0df637e384e9a68d6034aac0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/DialogueBox.prefab using Guid(e3b0fe0df637e384e9a68d6034aac0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6567f5ce8f2e10c73af66dbc679f7e5c') in 0.027483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 48
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI/GlowParticle.png
+  artifactKey: Guid(6f1830c3f1bbcbe4aab02200882723d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/GlowParticle.png using Guid(6f1830c3f1bbcbe4aab02200882723d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2cb6770b8b20ce33f24a68edb6b55b') in 0.002097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/CheckPoint.prefab
+  artifactKey: Guid(59e8fa45763080d4db44e4820fd4520b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/CheckPoint.prefab using Guid(59e8fa45763080d4db44e4820fd4520b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a6ff69050ad832c641ce117472ede2') in 0.031600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/UI/Logo.png
+  artifactKey: Guid(8dc68d401df79664db3b7c2f28dbcb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Logo.png using Guid(8dc68d401df79664db3b7c2f28dbcb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a02e7e2270d8512e4ba87fd3465c09') in 0.005176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.018260 seconds.
+  path: Assets/SFX/BGM/Level_1_Music.mp3
+  artifactKey: Guid(55511086c0947664abaf86425a342fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/BGM/Level_1_Music.mp3 using Guid(55511086c0947664abaf86425a342fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b73879fae76e46f66f7a5aa927f06dc') in 0.014632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/SFX/BGM/map2.mp3
+  artifactKey: Guid(958b53b02a9639342a4359930828b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/BGM/map2.mp3 using Guid(958b53b02a9639342a4359930828b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c18a34f4dbc96127125f31c4c852266') in 0.012752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/SFX/BGM/map4.mp3
+  artifactKey: Guid(42681482ccef2ca48bbe69b882d06258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/BGM/map4.mp3 using Guid(42681482ccef2ca48bbe69b882d06258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbea8b452f5b504d7382e3855dd4a913') in 0.012081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.
