@@ -28,5 +28,6 @@ public class CastBloodWave : MonoBehaviour
         animator.SetTrigger("BloodWave");
         GameObject bloodWave = Instantiate(pf_bloodWave,transform.position,Quaternion.identity);
         bloodWave.transform.localScale = transform.localScale;
+        bloodWave.GetComponent<BloodWave>().isEnhanced = isEnhanced;
     }
 }

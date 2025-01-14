@@ -26,6 +26,7 @@ public class EnemyAttack : MonoBehaviour
         {
             isPlayerInRange = true;
             rb.velocity = Vector2.zero;
+            Debug.Log(rb.velocity.x);
         }
     }
 

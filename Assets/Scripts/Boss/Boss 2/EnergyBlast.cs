@@ -6,7 +6,7 @@ public class EnergyBlast : MonoBehaviour
 {
     public float skillDamage = 15f;
     public float maxDuration = 10f;
-    public float moveSpeed = 0.2f;
+    public float moveSpeed = 15f;
     public GameObject pf_effExplosion;
     public GameObject shooter;
     Rigidbody2D rb;
@@ -34,7 +34,7 @@ public class EnergyBlast : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void CreateEffect()
+    protected void CreateEffect()
     {
         Instantiate(pf_effExplosion, transform.position, Quaternion.identity);
     }

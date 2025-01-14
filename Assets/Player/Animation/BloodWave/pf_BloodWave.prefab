@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9126531879027339970
+--- !u!1 &5761253905798335362
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,58 +8,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4812237928010652506}
-  - component: {fileID: -5634035879413317556}
-  - component: {fileID: 1291985306777929453}
-  - component: {fileID: 8127697941957596355}
-  - component: {fileID: 116742812663617101}
-  - component: {fileID: -5049067052420977602}
+  - component: {fileID: 607182086101727434}
+  - component: {fileID: 8109712791720233871}
+  - component: {fileID: 7992486594233590416}
+  - component: {fileID: 5236031781137425508}
+  - component: {fileID: 3233497240518205848}
+  - component: {fileID: 1546892291614872916}
   m_Layer: 0
-  m_Name: EnergyBlast
+  m_Name: pf_BloodWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4812237928010652506
+--- !u!4 &607182086101727434
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9126531879027339970}
+  m_GameObject: {fileID: 5761253905798335362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 217.6, y: -1.01, z: 0}
+  m_LocalPosition: {x: 213.36, y: -0.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5634035879413317556
+--- !u!114 &8109712791720233871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9126531879027339970}
+  m_GameObject: {fileID: 5761253905798335362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce1ec76165d047a418ffb5545405c625, type: 3}
+  m_Script: {fileID: 11500000, guid: f90e4c62b67b68b4eaeac249ac9fda16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillDamage: 15
+  skillDamage: 25
   maxDuration: 10
-  moveSpeed: 15
-  pf_effExplosion: {fileID: 5837595596985392466, guid: 513c0f40fc2be5b47b9cdab8343acf93, type: 3}
+  moveSpeed: 20
+  pf_effExplosion: {fileID: 6412478327699126669, guid: 5c707530af440aa4da19e67ae5d1ba39, type: 3}
   shooter: {fileID: 0}
---- !u!212 &1291985306777929453
+  isEnhanced: 0
+  maxBloodLostStack: 3
+--- !u!212 &7992486594233590416
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9126531879027339970}
+  m_GameObject: {fileID: 5761253905798335362}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -94,45 +96,51 @@ SpriteRenderer:
   m_SortingLayerID: -1017492929
   m_SortingLayer: 11
   m_SortingOrder: 0
-  m_Sprite: {fileID: -751217905, guid: 0e4d3908018322047b8009a7541ea213, type: 3}
+  m_Sprite: {fileID: -1612721089, guid: 484f5885f5e82f44c97b1edddcfafada, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.9375, y: 0.78125}
+  m_Size: {x: 0.953125, y: 0.59375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8127697941957596355
-Animator:
-  serializedVersion: 5
+--- !u!50 &5236031781137425508
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9126531879027339970}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1cf63a943e3c1144088b00faa53fc727, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!58 &116742812663617101
-CircleCollider2D:
+  m_GameObject: {fileID: 5761253905798335362}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &3233497240518205848
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9126531879027339970}
+  m_GameObject: {fileID: 5761253905798335362}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -158,33 +166,27 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.029411316, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.30623627
---- !u!50 &-5049067052420977602
-Rigidbody2D:
-  serializedVersion: 4
+  m_Offset: {x: 0.104083315, y: -0.000000012407696}
+  m_Size: {x: 0.7449606, y: 0.5937513}
+  m_Direction: 1
+--- !u!95 &1546892291614872916
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9126531879027339970}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_GameObject: {fileID: 5761253905798335362}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4be05143b245b9247a581712ca906ac5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

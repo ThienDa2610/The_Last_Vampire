@@ -58,7 +58,8 @@ public class SkillTreeManager : MonoBehaviour
                 MeleeBaseState.Tear = true;
                 break;
             case SkillNode.PiercingWave:
-            //need script
+                CastBloodWave.isEnhanced = true;
+                break;
             case SkillNode.Infection:
                 EnemyHealthManager.infectable = true;
                 break;
