@@ -21,7 +21,14 @@ public class TurnOffTouch : MonoBehaviour
             dialogText.enabled = false;
             dialogImage.enabled = false;
         }
-        tilemap.SetActive(false);
+        if (isTorchOn)
+        {
+            tilemap.SetActive(false);
+        }
+        else
+        {
+            tilemap.SetActive(true);
+        }
     }
     public void TurnOffTorch()
     {

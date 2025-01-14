@@ -231,6 +231,7 @@ public class CheckPoint : MonoBehaviour
     // Save the game data (position, health, etc.)
     public void SaveGame()
     {
+        Debug.Log("Prefab saved");
         StartCoroutine(ShowDialogForTime(1f)); // Show saved message for 1 second
 
         // Save scene name

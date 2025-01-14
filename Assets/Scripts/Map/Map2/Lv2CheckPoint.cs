@@ -85,7 +85,7 @@ public class Lv2CheckPoint : MonoBehaviour
         else
         {
             // Set default position if no saved data is found
-            player.transform.position = new Vector3(-6f, -1f, 5f);
+            player.transform.position = new Vector3(-2f, -2.5f, 0f);
             //x = 180 at quiz, x = 210 at boss
 
             if (playerHealthScript != null)
@@ -231,6 +231,7 @@ public class Lv2CheckPoint : MonoBehaviour
     // Save the game data (position, health, etc.)
     public void SaveGame()
     {
+        Debug.Log("Prefab saved");
         StartCoroutine(ShowDialogForTime(1f)); // Show saved message for 1 second
 
         // Save scene name
