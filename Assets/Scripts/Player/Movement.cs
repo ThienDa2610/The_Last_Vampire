@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     public float jumpForce = 7f;
     public Animator animator;
     private Rigidbody2D rb;
-    public TrailRenderer tr;
+    //public TrailRenderer tr;
     private PlayerGroundCheck groundCheck;
     public bool CanJumpInWater = false;
     public bool isInSlough = false;
@@ -36,7 +36,7 @@ public class Movement : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        tr = GetComponent<TrailRenderer>();
+        //tr = GetComponent<TrailRenderer>();
         groundCheck = GetComponentInChildren<PlayerGroundCheck>();
 
         airJumpable = SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.AirJump);
@@ -135,10 +135,10 @@ public class Movement : MonoBehaviour
         float oriGravity = rb.gravityScale;
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
-        tr.emitting = true;
+        //tr.emitting = true;
         sfxManager.Instance.PlaySound2D("Dash");
         yield return new WaitForSeconds(dashingTime);
-        tr.emitting = false;
+        //tr.emitting = false;
         HealthManager.Instance.isInvincible = false;
         rb.gravityScale = oriGravity;
         isDashing = false;
