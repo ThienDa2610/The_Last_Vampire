@@ -50,7 +50,6 @@ public class CheckPoint : MonoBehaviour
     // Other game objects to be saved (like enemies, plants, etc.)
     public BloodPotionManager bloodPotionManager;
     public TypeCoinManager typeCoinManager;
-    public Shop shop;
 
     public List<EnemyHealthManager> enemies; 
     public TurnOffTouch[] torches; 
@@ -267,10 +266,6 @@ public class CheckPoint : MonoBehaviour
         int countBloodSkill = typeCoinManager.GetComponent<TypeCoinManager>().bloodCount;
         PlayerPrefs.SetInt("SavedBloodCount", countBloodSkill);
 
-        PlayerPrefs.SetInt("SavedItemRunOut", shop.GetComponent<Shop>().itemRunOut ? 1 : 0);
-        int maxValueItem = Mathf.FloorToInt(shop.quantitySlider.maxValue);
-        PlayerPrefs.SetInt("SavedMaxValueItem", maxValueItem);
-
         // Save states of torches, plants, and enemies
         for (int i = 0; i < torches2.Length; i++)
         {
@@ -332,16 +327,6 @@ public class CheckPoint : MonoBehaviour
         typeCoinManager.GetComponent<TypeCoinManager>().ghostCount = savedGhost;
         int savedBloodSkill = PlayerPrefs.GetInt("SavedBloodCount", 0);
         typeCoinManager.GetComponent<TypeCoinManager>().bloodCount = savedBloodSkill;
-
-        int savedItemRunOut = PlayerPrefs.GetInt("SavedItemRunOut", 0);
-        shop.itemRunOut = savedItemRunOut == 1;
-
-        int savedMaxItem = PlayerPrefs.GetInt("SavedMaxValueItem");
-        if(shop != null)
-        {
-            shop.quantitySlider.maxValue = savedMaxItem;
-        }
-
 
         // Load animator state
         int savedAnimatorState = PlayerPrefs.GetInt("SavedAnimatorState", 0); 
@@ -413,7 +398,5 @@ public class CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("Plant_");
         PlayerPrefs.DeleteKey("PlantNo_");
         PlayerPrefs.DeleteKey("Enemy_");
-        PlayerPrefs.DeleteKey("SavedItemRunOut");
-        PlayerPrefs.DeleteKey("SavedMaxValueItem");
     }
 }

@@ -15,7 +15,7 @@ D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-40354
+4103
 Successfully changed project path to: D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [47232] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 1473004297 [EditorId] 1473004297 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [47408] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 346931473 [EditorId] 346931473 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [47232] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 1473004297 [EditorId] 1473004297 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [47408] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 346931473 [EditorId] 346931473 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 8.84 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2446.68 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010694 seconds.
-- Loaded All Assemblies, in  0.468 seconds
+Registered in 0.125609 seconds.
+- Loaded All Assemblies, in  7.891 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.305 seconds
-Domain Reload Profiling: 772ms
-	BeginReloadAssembly (167ms)
+- Finished resetting the current domain, in  0.240 seconds
+Domain Reload Profiling: 8130ms
+	BeginReloadAssembly (6229ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (59ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (144ms)
-		LoadAssemblies (164ms)
+	RebuildCommonClasses (419ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (178ms)
+	LoadAllAssembliesAndSetupDomain (1054ms)
+		LoadAssemblies (6227ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (138ms)
-			TypeCache.Refresh (137ms)
-				TypeCache.ScanAssembly (118ms)
+		AnalyzeDomain (1048ms)
+			TypeCache.Refresh (1048ms)
+				TypeCache.ScanAssembly (756ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (306ms)
+	FinalizeReload (241ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (239ms)
+		SetupLoadedEditorAssemblies (189ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (165ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (125ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,51 +116,51 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.793 seconds
-Refreshing native plugins compatible for Editor in 5.95 ms, found 4 plugins.
+- Loaded All Assemblies, in 13.818 seconds
+Refreshing native plugins compatible for Editor in 4.81 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.467 seconds
-Domain Reload Profiling: 3259ms
-	BeginReloadAssembly (301ms)
+- Finished resetting the current domain, in  2.419 seconds
+Domain Reload Profiling: 16241ms
+	BeginReloadAssembly (207ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (1382ms)
-		LoadAssemblies (873ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (13511ms)
+		LoadAssemblies (12607ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (679ms)
-			TypeCache.Refresh (594ms)
-				TypeCache.ScanAssembly (516ms)
-			ScanForSourceGeneratedMonoScriptInfo (65ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1467ms)
+		AnalyzeDomain (1016ms)
+			TypeCache.Refresh (963ms)
+				TypeCache.ScanAssembly (859ms)
+			ScanForSourceGeneratedMonoScriptInfo (40ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (2421ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1175ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (7ms)
+		SetupLoadedEditorAssemblies (2014ms)
+			LogAssemblyErrors (2ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (134ms)
-			ProcessInitializeOnLoadAttributes (823ms)
-			ProcessInitializeOnLoadMethodAttributes (194ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (271ms)
+			ProcessInitializeOnLoadAttributes (1058ms)
+			ProcessInitializeOnLoadMethodAttributes (641ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 11.98 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 13.33 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7889 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 249 unused Assets / (14.3 MB). Loaded Objects now: 8227.
-Memory consumption went from 345.3 MB to 331.0 MB.
-Total: 50.109600 ms (FindLiveObjects: 3.202200 ms CreateObjectMapping: 1.549600 ms MarkObjects: 10.108300 ms  DeleteObjects: 35.244600 ms)
+Unloading 249 unused Assets / (14.2 MB). Loaded Objects now: 8227.
+Memory consumption went from 345.3 MB to 331.1 MB.
+Total: 37.102700 ms (FindLiveObjects: 3.560300 ms CreateObjectMapping: 0.822100 ms MarkObjects: 13.755800 ms  DeleteObjects: 18.963200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -175,539 +175,654 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 929744.180934 seconds.
-  path: Assets/Scripts/Player
-  artifactKey: Guid(3c3b44eae1c07004f908b989bb8142aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player using Guid(3c3b44eae1c07004f908b989bb8142aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b0fec1043c8b2a6e5f65b4643c09ef3') in 0.008725 seconds
+  Time since last request: 1026258.133422 seconds.
+  path: Assets/Map1_Forest/Tilemap/Tiles/BallCheckPoint 1.png
+  artifactKey: Guid(716599c2ca661514f9672ca7ba8695d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map1_Forest/Tilemap/Tiles/BallCheckPoint 1.png using Guid(716599c2ca661514f9672ca7ba8695d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '345d241629e5e72734ea9b13b4e4a8e0') in 0.039739 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 50.656734 seconds.
-  path: Assets/Player/Player.prefab
-  artifactKey: Guid(1baca16a5616e534ca75688c8b3f9dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/Player.prefab using Guid(1baca16a5616e534ca75688c8b3f9dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b17a9050b6767628a9d0e781a064b3') in 0.021301 seconds
+  Time since last request: 887.371519 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_0.asset
+  artifactKey: Guid(a444ff7cd2903bc48abc60825e213887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_0.asset using Guid(a444ff7cd2903bc48abc60825e213887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e36ce38e6089fcefe33615e5f782f4c') in 0.181624 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 5.339879 seconds.
-  path: Assets/Scripts/Map/Map2/GoInSandStorm.cs
-  artifactKey: Guid(9d3ecf89b33e70f49bb9196f5d23e11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Map/Map2/GoInSandStorm.cs using Guid(9d3ecf89b33e70f49bb9196f5d23e11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f9f2c4fbb32f6ae7b71d49255963d5') in 0.000955 seconds
+  Time since last request: 0.000759 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_18.asset
+  artifactKey: Guid(a5c349c3644c1da4a9085f66a3227d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_18.asset using Guid(a5c349c3644c1da4a9085f66a3227d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1cf0c8b51e54737c4f7a511b70c8c8') in 0.004141 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.553 seconds
-Refreshing native plugins compatible for Editor in 13.99 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 11.797 seconds
-Domain Reload Profiling: 15368ms
-	BeginReloadAssembly (998ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (68ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (578ms)
-	RebuildCommonClasses (66ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (2427ms)
-		LoadAssemblies (1346ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1302ms)
-			TypeCache.Refresh (1193ms)
-				TypeCache.ScanAssembly (787ms)
-			ScanForSourceGeneratedMonoScriptInfo (84ms)
-			ResolveRequiredComponents (25ms)
-	FinalizeReload (11797ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (817ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (115ms)
-			ProcessInitializeOnLoadAttributes (620ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 6.60 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8234.
-Memory consumption went from 284.0 MB to 269.8 MB.
-Total: 21.931700 ms (FindLiveObjects: 2.065600 ms CreateObjectMapping: 0.918100 ms MarkObjects: 8.183900 ms  DeleteObjects: 10.760100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.472 seconds
-Refreshing native plugins compatible for Editor in 3.09 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.306 seconds
-Domain Reload Profiling: 3775ms
-	BeginReloadAssembly (286ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (93ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (1080ms)
-		LoadAssemblies (726ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (483ms)
-			TypeCache.Refresh (466ms)
-				TypeCache.ScanAssembly (422ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (2307ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (725ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (552ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Refreshing native plugins compatible for Editor in 5.22 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8239.
-Memory consumption went from 284.0 MB to 269.8 MB.
-Total: 18.201900 ms (FindLiveObjects: 1.258600 ms CreateObjectMapping: 0.811100 ms MarkObjects: 8.303500 ms  DeleteObjects: 7.826700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.925 seconds
-Refreshing native plugins compatible for Editor in 3.52 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.299 seconds
-Domain Reload Profiling: 5224ms
-	BeginReloadAssembly (358ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (26ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (161ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (1470ms)
-		LoadAssemblies (750ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (833ms)
-			TypeCache.Refresh (754ms)
-				TypeCache.ScanAssembly (676ms)
-			ScanForSourceGeneratedMonoScriptInfo (62ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (3300ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (917ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (10ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (130ms)
-			ProcessInitializeOnLoadAttributes (691ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Refreshing native plugins compatible for Editor in 4.25 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8244.
-Memory consumption went from 284.0 MB to 269.8 MB.
-Total: 25.984200 ms (FindLiveObjects: 2.586100 ms CreateObjectMapping: 1.576400 ms MarkObjects: 10.760600 ms  DeleteObjects: 11.058400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.374 seconds
-Refreshing native plugins compatible for Editor in 3.91 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.722 seconds
-Domain Reload Profiling: 4093ms
-	BeginReloadAssembly (269ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (89ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (999ms)
-		LoadAssemblies (669ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (449ms)
-			TypeCache.Refresh (435ms)
-				TypeCache.ScanAssembly (403ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (2723ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (911ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (12ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (157ms)
-			ProcessInitializeOnLoadAttributes (663ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Refreshing native plugins compatible for Editor in 4.08 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8249.
-Memory consumption went from 284.1 MB to 269.8 MB.
-Total: 15.591400 ms (FindLiveObjects: 1.153300 ms CreateObjectMapping: 0.465900 ms MarkObjects: 6.290100 ms  DeleteObjects: 7.680200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.099 seconds
-Refreshing native plugins compatible for Editor in 2.97 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  6.594 seconds
-Domain Reload Profiling: 7690ms
-	BeginReloadAssembly (220ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (801ms)
-		LoadAssemblies (492ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (417ms)
-			TypeCache.Refresh (358ms)
-				TypeCache.ScanAssembly (318ms)
-			ScanForSourceGeneratedMonoScriptInfo (43ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (6594ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (657ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (107ms)
-			ProcessInitializeOnLoadAttributes (490ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Refreshing native plugins compatible for Editor in 3.73 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8254.
-Memory consumption went from 284.1 MB to 269.8 MB.
-Total: 15.883300 ms (FindLiveObjects: 0.927100 ms CreateObjectMapping: 0.703400 ms MarkObjects: 9.552400 ms  DeleteObjects: 4.697100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.385 seconds
-Refreshing native plugins compatible for Editor in 3.36 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.572 seconds
-Domain Reload Profiling: 5957ms
-	BeginReloadAssembly (317ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (169ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (1981ms)
-		LoadAssemblies (952ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1101ms)
-			TypeCache.Refresh (1065ms)
-				TypeCache.ScanAssembly (835ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (3572ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (763ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (122ms)
-			ProcessInitializeOnLoadAttributes (570ms)
-			ProcessInitializeOnLoadMethodAttributes (45ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (24ms)
-Refreshing native plugins compatible for Editor in 5.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8259.
-Memory consumption went from 284.1 MB to 269.8 MB.
-Total: 14.963500 ms (FindLiveObjects: 0.957600 ms CreateObjectMapping: 0.858800 ms MarkObjects: 6.130300 ms  DeleteObjects: 7.014800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.973 seconds
-Refreshing native plugins compatible for Editor in 3.18 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.207 seconds
-Domain Reload Profiling: 3178ms
-	BeginReloadAssembly (194ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (69ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (686ms)
-		LoadAssemblies (410ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (350ms)
-			TypeCache.Refresh (337ms)
-				TypeCache.ScanAssembly (308ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (2208ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (860ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (10ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (133ms)
-			ProcessInitializeOnLoadAttributes (647ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 4.80 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8264.
-Memory consumption went from 284.1 MB to 269.9 MB.
-Total: 21.297200 ms (FindLiveObjects: 1.289000 ms CreateObjectMapping: 0.520000 ms MarkObjects: 9.479100 ms  DeleteObjects: 10.006800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 559.033727 seconds.
-  path: Assets/Scripts/Map/Map2/Lv2CheckPoint.cs
-  artifactKey: Guid(1f40d06a4d9489944a3802687720f49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Map/Map2/Lv2CheckPoint.cs using Guid(1f40d06a4d9489944a3802687720f49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2302e16f0dbe7029ffcb639175259d70') in 0.021981 seconds
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_17.asset
+  artifactKey: Guid(7025ca2b57cfffa4b8b1242192147498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_17.asset using Guid(7025ca2b57cfffa4b8b1242192147498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b69e9f88b46620e4d52cfe2b3881c0') in 0.003369 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.351 seconds
-Refreshing native plugins compatible for Editor in 6.13 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.535 seconds
-Domain Reload Profiling: 6904ms
-	BeginReloadAssembly (1269ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (111ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (3ms)
-		CreateAndSetChildDomain (744ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (54ms)
-	LoadAllAssembliesAndSetupDomain (1981ms)
-		LoadAssemblies (1081ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1121ms)
-			TypeCache.Refresh (1046ms)
-				TypeCache.ScanAssembly (775ms)
-			ScanForSourceGeneratedMonoScriptInfo (49ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (3536ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (809ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (142ms)
-			ProcessInitializeOnLoadAttributes (595ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 7.15 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8269.
-Memory consumption went from 284.1 MB to 269.9 MB.
-Total: 33.401300 ms (FindLiveObjects: 3.444900 ms CreateObjectMapping: 1.507400 ms MarkObjects: 14.186200 ms  DeleteObjects: 14.258000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 95.691632 seconds.
-  path: Assets/Scenes/Map1_Forest.unity
-  artifactKey: Guid(01c5c2cfc241377449dac758c3bc6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Map1_Forest.unity using Guid(01c5c2cfc241377449dac758c3bc6cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b16a1d3e6fd64b6c378ac84d27a586') in 0.027250 seconds
+  Time since last request: 0.000019 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_6.asset
+  artifactKey: Guid(9c48dfb7399b51a43b3b7fee97929300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_6.asset using Guid(9c48dfb7399b51a43b3b7fee97929300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b3ce5d3d6c61af943d99e498a0818f') in 0.002830 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-TcpMessagingSession - receive error
-AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_25.asset
+  artifactKey: Guid(26a2f3306c56dd041821dc0c2da28b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_25.asset using Guid(26a2f3306c56dd041821dc0c2da28b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bef2cf8b77407c6bed3f06a788b3ed1') in 0.016749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_15.asset
+  artifactKey: Guid(72dcb42f878c56d49bef7e454357097b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_15.asset using Guid(72dcb42f878c56d49bef7e454357097b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2343972ad77ba10178fba53f57fd68ce') in 0.002383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_4.asset
+  artifactKey: Guid(47337978c04e51e418bb799eb2c6d4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_4.asset using Guid(47337978c04e51e418bb799eb2c6d4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c9b33800993b40f413c647c5d18a07') in 0.003678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_3.asset
+  artifactKey: Guid(eb1afe3e45c2a7747ae5e1035fcbfd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_3.asset using Guid(eb1afe3e45c2a7747ae5e1035fcbfd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d47f630cc09e1b2d25239a84868ea51') in 0.003347 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_11.asset
+  artifactKey: Guid(986d85fe69c1df54ab2b6793db163e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_11.asset using Guid(986d85fe69c1df54ab2b6793db163e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2adf0e3a5be904494e77506ee039736') in 0.003039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_23.asset
+  artifactKey: Guid(009cac628ce0721469d120b26865cd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_23.asset using Guid(009cac628ce0721469d120b26865cd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482433e462390eece15828a41a252334') in 0.002316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.222599 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_28.asset
+  artifactKey: Guid(d53edc1118ecbd740a9e6fa31fa0964e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_28.asset using Guid(d53edc1118ecbd740a9e6fa31fa0964e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c8bc9430305057082fbde0dd2a62ec3') in 0.006226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_29.asset
+  artifactKey: Guid(e9e884d8f3f3bf54c95fc58c2be665d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_29.asset using Guid(e9e884d8f3f3bf54c95fc58c2be665d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d30890e457f0d03b4b923b743771b7') in 0.003903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_32.asset
+  artifactKey: Guid(afc058e12139dfa43b6643ab99fd4af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_32.asset using Guid(afc058e12139dfa43b6643ab99fd4af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58365a24b5dcb9f6179e7c75c3cc2806') in 0.002507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.005751 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_34.asset
+  artifactKey: Guid(dde30cbe21778c243b246a8c64d5b18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_34.asset using Guid(dde30cbe21778c243b246a8c64d5b18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18039eefef40a1ba93e8ec71269a6e0d') in 0.004059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_39.asset
+  artifactKey: Guid(57c0a27bb5a34a448b58891d8d5418f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_39.asset using Guid(57c0a27bb5a34a448b58891d8d5418f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639dc81d87b2b68e9f99e292408e6f6b') in 0.002784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_35.asset
+  artifactKey: Guid(d0363258e3372bb449c29c8f1c7289a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_35.asset using Guid(d0363258e3372bb449c29c8f1c7289a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab36ad4aea652291532f95112cf4370f') in 0.002478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.673485 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_41.asset
+  artifactKey: Guid(9466367f37369974da20e49bf7791658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_41.asset using Guid(9466367f37369974da20e49bf7791658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a782b8853d45857048cfd31564effc37') in 0.004124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_43.asset
+  artifactKey: Guid(76201bdc1b6287c41a8ca29d76ba2b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_43.asset using Guid(76201bdc1b6287c41a8ca29d76ba2b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0138bc681de1635349169131c9da513') in 0.002866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_45.asset
+  artifactKey: Guid(7fb2890cc3b4dea469405825ac8a3817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_45.asset using Guid(7fb2890cc3b4dea469405825ac8a3817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6118655bf5c0c3dbcf88a18e4fba865') in 0.002497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.128459 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_48.asset
+  artifactKey: Guid(6696aa497dbaa244ea8fecfb2da5876d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_48.asset using Guid(6696aa497dbaa244ea8fecfb2da5876d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0690792af8728ea9da0d27834c1952') in 0.004356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_49.asset
+  artifactKey: Guid(fc1b8f45c8b65d445a9e55e83a8ccc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_49.asset using Guid(fc1b8f45c8b65d445a9e55e83a8ccc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669730d428165138dff83f2c35cf3b41') in 0.006489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_51.asset
+  artifactKey: Guid(64c23a568b8c8c24da21e1b45a66f317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_51.asset using Guid(64c23a568b8c8c24da21e1b45a66f317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724a08dec62634c779169240c9225fff') in 0.003990 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.431963 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_55.asset
+  artifactKey: Guid(baed0fe6e31823c4489f54eb8ae7bb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_55.asset using Guid(baed0fe6e31823c4489f54eb8ae7bb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d22782ff79d7d18135489dd7cefeb09') in 0.003160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_60.asset
+  artifactKey: Guid(8b1b4566755fb3c4bbd9a8a78f11273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_60.asset using Guid(8b1b4566755fb3c4bbd9a8a78f11273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ead76fa7bc8da726d4c77f855c2d3bc') in 0.003660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_58.asset
+  artifactKey: Guid(2006614e85256df4b9db34d541590f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_58.asset using Guid(2006614e85256df4b9db34d541590f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814a9c0e31e093933f3cb382d37d3150') in 0.010562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.048886 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_62.asset
+  artifactKey: Guid(25ff09e7e83068f4d91df8c4e5be59a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_62.asset using Guid(25ff09e7e83068f4d91df8c4e5be59a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe6426e455f132610113c0620cdd32f') in 0.003951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_67.asset
+  artifactKey: Guid(c2f9fd3e5858e9d4a9b487600a84e64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_67.asset using Guid(c2f9fd3e5858e9d4a9b487600a84e64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746a821c515c673570c9c7ed55119a7f') in 0.002809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_63.asset
+  artifactKey: Guid(a062f0f69bcb86e40b975e2d011fa622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_63.asset using Guid(a062f0f69bcb86e40b975e2d011fa622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3a23e8d1bac353223129b136b8969f') in 0.002620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.061074 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_69.asset
+  artifactKey: Guid(9b75368762251db44bca86bad1eba0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_69.asset using Guid(9b75368762251db44bca86bad1eba0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e936387836addeebe50c985a3894808c') in 0.006621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_73.asset
+  artifactKey: Guid(0fb8073e49b14ad439d8f90a921a60f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_73.asset using Guid(0fb8073e49b14ad439d8f90a921a60f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63abb554c0ca0085c03249a0e205362') in 0.002220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_71.asset
+  artifactKey: Guid(abc9f7719835fd64a8434a445f7361ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_71.asset using Guid(abc9f7719835fd64a8434a445f7361ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e099f101ecc5ac5370ac317d24891b') in 0.003127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.256970 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_76.asset
+  artifactKey: Guid(a2782bb0346056343a321f1bfca19620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_76.asset using Guid(a2782bb0346056343a321f1bfca19620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ce4b7d82b1b761ce8a6723781a9a94') in 0.002118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_80.asset
+  artifactKey: Guid(4f7ebb0c82c8646448c232fdff875f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_80.asset using Guid(4f7ebb0c82c8646448c232fdff875f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d948b19fd6eaa245f266d3ed5007da7') in 0.002251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_79.asset
+  artifactKey: Guid(a46a85539f1c4744cba9a313775ddac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_79.asset using Guid(a46a85539f1c4744cba9a313775ddac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8feb561fd2ac9811fcdd4670a40f96') in 0.004357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.415137 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_83.asset
+  artifactKey: Guid(ec9c34406e29ed64b9e0f4dfeb649680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_83.asset using Guid(ec9c34406e29ed64b9e0f4dfeb649680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89794d05e2f7874fcd4f28732761143c') in 0.003927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_88.asset
+  artifactKey: Guid(c3668a8f2e2377e47a583c798715ae27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_88.asset using Guid(c3668a8f2e2377e47a583c798715ae27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c5b5f8026d5d4d69ddf6e20a482707') in 0.003324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_87.asset
+  artifactKey: Guid(7319fe8723b95634ba5f2debcd31444d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_87.asset using Guid(7319fe8723b95634ba5f2debcd31444d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03df6efd060fc5061e68d9ce14310d1') in 0.003095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.019351 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_90.asset
+  artifactKey: Guid(48081c4389277674eb5524d25faa1a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_90.asset using Guid(48081c4389277674eb5524d25faa1a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51ebbfed7b648d51a3c7be167a34b68') in 0.004042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_93.asset
+  artifactKey: Guid(d2af1fe5ad5a3ed478573bd3861a52fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_93.asset using Guid(d2af1fe5ad5a3ed478573bd3861a52fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17485b61b31f4a8e9d4f326d54e003ef') in 0.004340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.046018 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_97.asset
+  artifactKey: Guid(8eb41e31a4dafb748ad6dbeed738d77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_97.asset using Guid(8eb41e31a4dafb748ad6dbeed738d77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8aa5f00b2a1985c537cc098098df13b') in 0.002086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_99.asset
+  artifactKey: Guid(35270cd3797277447b44072d72bed08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_99.asset using Guid(35270cd3797277447b44072d72bed08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe2f70dd131cb89e4656b190c86152f') in 0.003188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.280496 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_104.asset
+  artifactKey: Guid(b831d8b75f043784e8d19bbdedc9bbc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_104.asset using Guid(b831d8b75f043784e8d19bbdedc9bbc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f5adb73b615dab7203ea419ff6d3e2') in 0.003463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_107.asset
+  artifactKey: Guid(29c72fe00aaa5244a8285f3262422de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_107.asset using Guid(29c72fe00aaa5244a8285f3262422de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd08643a29df5761e1d02ccfec05babb') in 0.002748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.021329 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_111.asset
+  artifactKey: Guid(be7b827e5b253224b881ef9359c89a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_111.asset using Guid(be7b827e5b253224b881ef9359c89a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2313cfe0d1f9c25f7dc1ba4c92c9fd') in 0.009844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_118.asset
+  artifactKey: Guid(315510292ee0b1943bc8b723dc5182ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_118.asset using Guid(315510292ee0b1943bc8b723dc5182ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b751c42c678e181725703eecd76967fe') in 0.002491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_114.asset
+  artifactKey: Guid(1efaa36a6263f014b8f51c02f531eda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_114.asset using Guid(1efaa36a6263f014b8f51c02f531eda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9feb12f96f67f311edf9664d08644314') in 0.003339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_123.asset
+  artifactKey: Guid(294d86bb6bec33a4399a19a3c58470cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_123.asset using Guid(294d86bb6bec33a4399a19a3c58470cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020b4ce18c938b156cdd8153fb9c4981') in 0.001675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_121.asset
+  artifactKey: Guid(aa994201128ffc548a1c27650b2a1dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_121.asset using Guid(aa994201128ffc548a1c27650b2a1dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45c479438a2712a47d7be4050b78ad1') in 0.002197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.542982 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_125.asset
+  artifactKey: Guid(2941cd0338d23cc4d89e45c1b5f1ced8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_125.asset using Guid(2941cd0338d23cc4d89e45c1b5f1ced8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7971d8dd2c3d809959a2bf87af0767') in 0.004180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_128.asset
+  artifactKey: Guid(c00da4fd0e1a36049b29f5059b6d48a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_128.asset using Guid(c00da4fd0e1a36049b29f5059b6d48a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da080360e3c29e9aa09af52084d004e') in 0.002206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.303733 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_132.asset
+  artifactKey: Guid(353e632c2c4265b4a908b5373076ddd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_132.asset using Guid(353e632c2c4265b4a908b5373076ddd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e813081ead0b8d5aa07dbe510e1ea4b7') in 0.001931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_135.asset
+  artifactKey: Guid(73e9f67b7064d2040a7c807c763d73b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_135.asset using Guid(73e9f67b7064d2040a7c807c763d73b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2e2dce24f75110302df383c22c7aa0') in 0.003086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_140.asset
+  artifactKey: Guid(3d87c1aca1d292b4a8075e0d4fb15c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_140.asset using Guid(3d87c1aca1d292b4a8075e0d4fb15c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c99974968a5f2d4ebf23a31abc5e321') in 0.001579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_142.asset
+  artifactKey: Guid(e8cc000290be5f246a894c37538b71eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_142.asset using Guid(e8cc000290be5f246a894c37538b71eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7936ca39888d936a8c88c4e660fe46') in 0.002935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_136.asset
+  artifactKey: Guid(6c910271becaec849b3ea1ad19328e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_136.asset using Guid(6c910271becaec849b3ea1ad19328e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f64739db01c22ffa0c6ef860056613') in 0.002139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.408165 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_146.asset
+  artifactKey: Guid(eb0cdc6f389371a4c994238fca03c165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_146.asset using Guid(eb0cdc6f389371a4c994238fca03c165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea9f140511b7995ec29c06c90bac982') in 0.009873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_150.asset
+  artifactKey: Guid(f57b27341a1fa6b42b5b6aaaf321b83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_150.asset using Guid(f57b27341a1fa6b42b5b6aaaf321b83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1810eb22a38af98633e6c1195002a631') in 0.002998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_158.asset
+  artifactKey: Guid(f8217b212bd4c46458115f9b1bf2c876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_158.asset using Guid(f8217b212bd4c46458115f9b1bf2c876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a169196548d90729e9a4e0d9eaa0a0a1') in 0.002237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_152.asset
+  artifactKey: Guid(cf37926926c0d604b8a9c34a91534f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_152.asset using Guid(cf37926926c0d604b8a9c34a91534f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011dd3689f0226a5afc8bf414f9ee78e') in 0.002430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_157.asset
+  artifactKey: Guid(5207e77621f65d444b4af2c8f71eb6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_157.asset using Guid(5207e77621f65d444b4af2c8f71eb6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcb378d634a5ebaba0376d0f8285120') in 0.002135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_164.asset
+  artifactKey: Guid(d9f7a1a73753fdb408851b4e09d8bd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_164.asset using Guid(d9f7a1a73753fdb408851b4e09d8bd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0029e7f0b81f03b7bd6eb79b492485eb') in 0.008204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_165.asset
+  artifactKey: Guid(8182849a180624242aea021e2e88318f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_165.asset using Guid(8182849a180624242aea021e2e88318f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d8f02c7d499925930add6d45c0f4df') in 0.003188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.317945 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_167.asset
+  artifactKey: Guid(7f524b9233f860f4da167f17feb39f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_167.asset using Guid(7f524b9233f860f4da167f17feb39f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c42aa9593c97a855548932df4b14e7') in 0.003067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_172.asset
+  artifactKey: Guid(1cd56ba7fe4a51146838d46a8cf5cadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_172.asset using Guid(1cd56ba7fe4a51146838d46a8cf5cadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144c848f1cd78d60d400d485fbbffa43') in 0.003791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.696793 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_174.asset
+  artifactKey: Guid(e92c0357d1ccc79488b382eae81e83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_174.asset using Guid(e92c0357d1ccc79488b382eae81e83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7983bc385e1acf3e30d8aabfb007be') in 0.001521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_177.asset
+  artifactKey: Guid(905000a0021b42346a5e20adb3a18d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_177.asset using Guid(905000a0021b42346a5e20adb3a18d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55cee7e154a47dcf233300334634596') in 0.001912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_181.asset
+  artifactKey: Guid(38f372fda7088c34babda72075933827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_181.asset using Guid(38f372fda7088c34babda72075933827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d0fef4b8c4853f6ed5c33bd1bf9244d') in 0.003265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_183.asset
+  artifactKey: Guid(4c5e507d9b0901a4ba0dfb0b023a8f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_183.asset using Guid(4c5e507d9b0901a4ba0dfb0b023a8f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefba55b1079e2c4cb9ba74d9d617f39') in 0.001801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_186.asset
+  artifactKey: Guid(16a9349a5d0c4944b971426e4cc3f111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_186.asset using Guid(16a9349a5d0c4944b971426e4cc3f111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b12317ba203986b18426b66c252dbc7') in 0.002540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.894864 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_188.asset
+  artifactKey: Guid(99755062317085649b3252a9888e133e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_188.asset using Guid(99755062317085649b3252a9888e133e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4813d22cc3fab2a46f174481d748e294') in 0.005917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_193.asset
+  artifactKey: Guid(9cacb7e5829c01a4da3ae42e1f9409b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_193.asset using Guid(9cacb7e5829c01a4da3ae42e1f9409b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b913bcc41f20e80d51c41a902e10889') in 0.002986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_192.asset
+  artifactKey: Guid(2f5a815afa1958946bdd91c68ccbdd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_192.asset using Guid(2f5a815afa1958946bdd91c68ccbdd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf61c4a7c55a180e28aa7fff89227d3') in 0.005480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001555 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_196.asset
+  artifactKey: Guid(3b4e64a20763b784faa644937c7ae7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_196.asset using Guid(3b4e64a20763b784faa644937c7ae7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00284f10753ae48f978fca5e1dcc2dcc') in 0.002754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_197.asset
+  artifactKey: Guid(251f326f26ff6af45953e8022994e0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_197.asset using Guid(251f326f26ff6af45953e8022994e0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762eaa5fea796ff3cceb48ab5e894050') in 0.002998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_206.asset
+  artifactKey: Guid(a62570a72d8c1334d91be6054bd7b15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_206.asset using Guid(a62570a72d8c1334d91be6054bd7b15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0aeff4ffcba041120a8ddde43f341ab') in 0.001992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_205.asset
+  artifactKey: Guid(cc9609dda6ce0bc4e9333dbe1553b05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_205.asset using Guid(cc9609dda6ce0bc4e9333dbe1553b05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50909a9c5e9eacfe75eb8100a56d89b') in 0.002141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.468558 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_209.asset
+  artifactKey: Guid(59cc3f5514632764d9de8a74dc428c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_209.asset using Guid(59cc3f5514632764d9de8a74dc428c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002ee379e1a6bff6f703b5877e61f5a6') in 0.001892 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_215.asset
+  artifactKey: Guid(65f2a9ff5e9fe284ea7cf993ac25dfb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_215.asset using Guid(65f2a9ff5e9fe284ea7cf993ac25dfb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d01ce8aad5d58a997212d49804bd08b') in 0.001839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_218.asset
+  artifactKey: Guid(d46febbf387ce6547bc35099861c1641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_218.asset using Guid(d46febbf387ce6547bc35099861c1641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20a8d64bd325549f24f86dcdd0b0037') in 0.001763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Map4_Cave/Tilemap/CaveBG_216.asset
+  artifactKey: Guid(5e7227875291b7e4c8abe71084a84c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map4_Cave/Tilemap/CaveBG_216.asset using Guid(5e7227875291b7e4c8abe71084a84c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f6c4566d4291d5e6c32491bf7dede5b') in 0.001387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

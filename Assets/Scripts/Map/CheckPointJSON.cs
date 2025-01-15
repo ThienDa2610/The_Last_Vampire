@@ -17,15 +17,10 @@ public class LevelSaveData
 {
     public string SavedSceneNameJSON;
     public Vector3 savedPosition;
-    //public Vector3 initialPosition;
     public float savedHealth;
     public int savedBloodPotionCount;
     public int savedGhostCount;
     public int savedBloodCount;
-    public bool savedItemRunOut;
-    public int SavedMaxValueItem;
-    //public bool isSaved;
-    //public bool positionChanged;
 
     public List<EnemySaveData> enemies = new List<EnemySaveData>();
     public List<TorchSaveData> torches = new List<TorchSaveData>();
@@ -69,25 +64,12 @@ public class CheckPointJSON : MonoBehaviour
 {
     public static CheckPointJSON Instance { get; private set; }
 
-    /*public Animator animator;
-    public Image dialogImage;
-    public TMP_Text dialogText;
-    public string idleMessage;*/
-    /*public Image SaveddialogImage;
-    public TMP_Text SaveddialogText;
-    public string SavedidleMessage;*/
-
-    //public float detectionRadius = 3f;
     private bool playerInRange = false;
 
     public GameObject player;
     public HealthManager playerHealthScript;
-    //public ParticleSystem checkpointParticleSystem;
 
     public Vector3 savedPosition;
-    //private Vector3 initialPosition;
-    //private bool initial = false;
-    //private bool positionChanged = false;
 
     public bool isSaved = false;
 
@@ -114,7 +96,6 @@ public class CheckPointJSON : MonoBehaviour
             Destroy(gameObject);
         }
         saveFilePath = Application.dataPath + "/savegame.json";
-        //Debug.Log("Save file path: " + saveFilePath);
     }
 
     void Start()
@@ -133,52 +114,15 @@ public class CheckPointJSON : MonoBehaviour
                 SaveGame();  // Save if the scene has changed
             }
         }
-        /*if (File.Exists(saveFilePath))
-        {
-            LoadGame();
-        }
-        else
-        {
-            player.transform.position = new Vector3(-6f, -1f, 5f);
-            if (playerHealthScript != null)
-            {
-                playerHealthScript.currentHealth = playerHealthScript.maxHealth;
-            }
-            initialPosition = transform.position;
-        }
-
-        if (playerHealthScript == null)
-        {
-            playerHealthScript = player.GetComponent<HealthManager>();
-        }
-
-        if (dialogText != null)
-        {
-            dialogText.enabled = false;
-            dialogImage.enabled = false;
-        }
-
-        if (SaveddialogText != null)
-        {
-            SaveddialogText.enabled = false;
-            SaveddialogImage.enabled = false;
-        }
-
-        if (checkpointParticleSystem != null && !isSaved)
-        {
-            checkpointParticleSystem.Stop();
-        }*/
+       
     }
 
     void Update()
     {
         if (playerInRange)
         {
-            if (!isSaved) // && dialogText != null)
+            if (!isSaved) 
             {
-                /*dialogText.enabled = true;
-                dialogImage.enabled = true;
-                dialogText.text = idleMessage;*/
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     //initial = true;
@@ -187,19 +131,7 @@ public class CheckPointJSON : MonoBehaviour
                 }
             }
         }
-       /* else
-        {
-            if (dialogText != null)
-            {
-                dialogText.enabled = false;
-                dialogImage.enabled = false;
-            }
-            if (positionChanged)
-            {
-                transform.position = initialPosition;
-                positionChanged = false;
-            }
-        }*/
+      
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -207,21 +139,7 @@ public class CheckPointJSON : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = true;
-            /*if (!isSaved)
-            {
-                if (!positionChanged)
-                {
-                    Vector3 newPosition = transform.position;
-                    newPosition.y += 0.2f;
-                    transform.position = newPosition;
-                    positionChanged = true;
-                }
-                animator.SetBool("IsActive", true);
-                if (checkpointParticleSystem != null)
-                {
-                    checkpointParticleSystem.Play();
-                }
-            }*/
+            
         }
     }
 
@@ -230,16 +148,7 @@ public class CheckPointJSON : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
-            /*if (!isSaved)
-            {
-                transform.position = initialPosition;
-                positionChanged = false;
-                animator.SetBool("IsActive", false);
-                if (checkpointParticleSystem != null)
-                {
-                    checkpointParticleSystem.Stop();
-                }
-            }*/
+            
         }
     }
 
@@ -250,15 +159,10 @@ public class CheckPointJSON : MonoBehaviour
         {
             SavedSceneNameJSON = SceneManager.GetActiveScene().name,
             savedPosition = player.transform.position,
-            //initialPosition = initialPosition,
             savedHealth = playerHealthScript.currentHealth,
             savedBloodPotionCount = bloodPotionManager.bottleCount,
             savedGhostCount = typeCoinManager.ghostCount,
             savedBloodCount = typeCoinManager.bloodCount,
-            savedItemRunOut = shop.itemRunOut,
-            SavedMaxValueItem = Mathf.FloorToInt(shop.quantitySlider.maxValue)
-            //isSaved = isSaved,
-            //positionChanged = positionChanged
         };
 
         // Save enemy states
@@ -328,55 +232,7 @@ public class CheckPointJSON : MonoBehaviour
             return null;
         }
     }
-    /*
-        public void LoadGame()
-        {
-            if (File.Exists(saveFilePath))
-            {
-                string json = File.ReadAllText(saveFilePath);
-                SaveData saveData = JsonUtility.FromJson<SaveData>(json);
-
-                // Load data
-                player.transform.position = saveData.savedPosition;
-                playerHealthScript.currentHealth = saveData.savedHealth;
-                playerHealthScript.UpdateHealthbar();
-
-                // Load inventory
-                bloodPotionManager.bottleCount = saveData.savedBloodPotionCount;
-                typeCoinManager.ghostCount = saveData.savedGhostCount;
-                typeCoinManager.bloodCount = saveData.savedBloodCount;
-                shop.itemRunOut = saveData.savedItemRunOut;
-                shop.quantitySlider.maxValue = saveData.SavedMaxValueItem;
-                // Load enemies
-                for (int i = 0; i < saveData.enemies.Count; i++)
-                {
-                    var enemyData = saveData.enemies[i];
-                    if (i < enemies.Count)
-                    {
-                        enemies[i].isDead = enemyData.isDead;
-                        enemies[i].health = enemyData.health;
-                        enemies[i].gameObject.SetActive(!enemyData.isDead);
-                    }
-                }
-
-                // Load torches and plants
-                for (int i = 0; i < saveData.torches.Count; i++)
-                {
-                    if (i < torches.Length)
-                    {
-                        torches[i].isTorchOn = saveData.torches[i].isOn;
-                    }
-                }
-
-                for (int i = 0; i < saveData.plants.Count; i++)
-                {
-                    if (i < plants.Length)
-                    {
-                        plants[i].hasBloomed = saveData.plants[i].hasBloomed;
-                    }
-                }
-            }
-        }*/
+   
     public static void DeleteSaveFile()
     {
         string delsaveFilePath = Application.dataPath + "/savegame.json";
