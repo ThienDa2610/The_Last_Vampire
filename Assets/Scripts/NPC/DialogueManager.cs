@@ -8,22 +8,25 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
+    public Canvas mainUI;
+
     public Image characterAvatar;
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueText;
 
-    private Queue<DialogueLine> lines;
+    public Queue<DialogueLine> lines;
 
     public float typingSpeed = 0.02f;
 
     public Animator animator;
 
-    private bool isOpen = false;
+    public bool isOpen = false;
 
     private void Start()
     {
         if (Instance == null)
             Instance = this;
+        animator.updateMode = AnimatorUpdateMode.UnscaledTime;
     }
 
     private void Update()
@@ -34,7 +37,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Time.timeScale = 0f;
+        mainUI.gameObject.SetActive(false);
         isOpen = true;
         animator.SetBool("isOpen", true);
 
@@ -47,13 +50,14 @@ public class DialogueManager : MonoBehaviour
             lines.Enqueue(line);
 
         DisplayNextLine();
+        Time.timeScale = 0f;
     }
 
     public void DisplayNextLine()
     {
         if (lines.Count == 0)
         {
-            EndDialogue();
+            StartCoroutine(EndDialogue());
             return;
         }
 
@@ -72,14 +76,16 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in line.line.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSecondsRealtime(typingSpeed);
         }
     }
 
-    void EndDialogue()
+    IEnumerator EndDialogue()
     {
-        isOpen = false;
         animator.SetBool("isOpen", false);
+        yield return new WaitForSecondsRealtime(0.5f);
+        mainUI.gameObject.SetActive(true);
         Time.timeScale = 1f;
+        isOpen = false;
     }
 }
