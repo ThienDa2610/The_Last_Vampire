@@ -18,14 +18,24 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
+    private bool isOpen = false;
+
     private void Start()
     {
         if (Instance == null)
             Instance = this;
     }
 
+    private void Update()
+    {
+        if (isOpen && Input.GetKeyDown(KeyCode.F))
+            DisplayNextLine();
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
+        Time.timeScale = 0f;
+        isOpen = true;
         animator.SetBool("isOpen", true);
 
         if (lines == null)
@@ -68,6 +78,8 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        isOpen = false;
         animator.SetBool("isOpen", false);
+        Time.timeScale = 1f;
     }
 }

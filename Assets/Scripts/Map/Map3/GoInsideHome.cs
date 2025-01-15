@@ -7,6 +7,11 @@ using UnityEngine.UI;
 
 public class GoInsideHome : PlayerInteractGuide
 {
+    public Camera mainCamera;
+    public Camera secondaryCamera;
+    public Vector3 targetPos;
+    public GameObject player;
+
     public Button firstButton;
 
     [SerializeField] public TMP_Text ans;
@@ -18,6 +23,11 @@ public class GoInsideHome : PlayerInteractGuide
     private string answer = "163693";
     protected override void SetupMore()
     {
+        base.SetupMore();
+        if (secondaryCamera != null)
+        {
+            secondaryCamera.gameObject.SetActive(false);
+        }
         ans.text = "";
         gamePlay.gameObject.SetActive(true);
         password.gameObject.SetActive(false);
@@ -59,19 +69,24 @@ public class GoInsideHome : PlayerInteractGuide
     {
         if (ans.text == answer)
         {
-            gamePlay.gameObject.SetActive(true);
-            password.gameObject.SetActive(false);
+            Close();
+            player.transform.position = targetPos;
+            if (mainCamera != null && secondaryCamera != null)
+            {
+                mainCamera.gameObject.SetActive(false);
+                secondaryCamera.gameObject.SetActive(true);
+            }
             Time.timeScale = 1f;
         }
         else
         {
-            ans.text = "INCORRECT!";
             StartCoroutine(Incorrect());
         }
     }
 
     private IEnumerator Incorrect()
     {
+        ans.text = "INCORRECT!";
         yield return new WaitForSecondsRealtime(2f);
         ans.text = "";
     }

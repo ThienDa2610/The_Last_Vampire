@@ -15,7 +15,6 @@ public class CheckPoint : MonoBehaviour
     public Animator animator; // Animator to control checkpoint animation
 
     // UI elements for dialog at checkpoint
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
@@ -99,7 +98,6 @@ public class CheckPoint : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
         if (SaveddialogText != null)
         {
@@ -133,7 +131,6 @@ public class CheckPoint : MonoBehaviour
             if (!isSaved && dialogText != null)
             {
                 dialogText.enabled = true;
-                dialogImage.enabled = true;
                 dialogText.text = idleMessage;
                 if (Input.GetKeyDown(KeyCode.F))
                 {
@@ -148,7 +145,6 @@ public class CheckPoint : MonoBehaviour
             if (dialogText != null)
             {
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
             // Reset checkpoint position if not in range
             if (positionChanged)

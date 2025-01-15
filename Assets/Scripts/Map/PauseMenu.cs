@@ -13,12 +13,15 @@ public class PauseMenu : MonoBehaviour
     public Canvas gameplayCanvas;
     private bool isPaused = false;
 
+    public Button firstButton;
+
     private RectTransform pauseMenuRect;
     public float slideSpeed = 5f;
 
     public bool isIt = true;
     private void Start()
     {
+        firstButton.Select();
         gameplayCanvas.gameObject.SetActive(true);
         pauseMenu.SetActive(false);
         pauseMenuRect = pauseMenu.GetComponent<RectTransform>();
