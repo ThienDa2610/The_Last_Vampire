@@ -18,7 +18,7 @@ public class CastBloodWave : MonoBehaviour
     }
     private void Update()
     {
-        if (bloodWaveLearned && Input.GetKeyDown(KeyCode.E) && SkillCDManager.isOffCooldown(SkillType.BloodWave))
+        if (bloodWaveLearned && Input.GetKeyDown(KeyCode.K) && !StatusManager.Instance.isStun && SkillCDManager.isOffCooldown(SkillType.BloodWave))
         {
             CastingBloodWave();
         }

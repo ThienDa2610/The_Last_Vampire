@@ -60,6 +60,7 @@ public class Movement : MonoBehaviour
             }
         }
         if (isDashing) return;
+        if (StatusManager.Instance.isStun) return;
         float move = Input.GetAxis("Horizontal");
 
         //horizontal flip
@@ -100,7 +101,6 @@ public class Movement : MonoBehaviour
         //air jump
         if (Input.GetKeyDown(KeyCode.Space) && !groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
         {
-            Debug.Log("1");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             airJumpLeft = false;
         }
