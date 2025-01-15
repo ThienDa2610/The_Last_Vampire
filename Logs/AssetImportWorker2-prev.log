@@ -15,7 +15,7 @@ D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-4103
+6111
 Successfully changed project path to: D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/Tài liệu/Năm 4-1/PT GAME/The_Last_Vampire
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [53244] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 3040275837 [EditorId] 3040275837 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20088] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2583268193 [EditorId] 2583268193 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [53244] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 3040275837 [EditorId] 3040275837 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20088] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2583268193 [EditorId] 2583268193 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H92HV5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 11.71 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 10.11 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010162 seconds.
-- Loaded All Assemblies, in  0.441 seconds
+Registered in 0.009510 seconds.
+- Loaded All Assemblies, in  0.393 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.356 seconds
-Domain Reload Profiling: 796ms
-	BeginReloadAssembly (150ms)
+- Finished resetting the current domain, in  0.252 seconds
+Domain Reload Profiling: 644ms
+	BeginReloadAssembly (135ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (163ms)
-		LoadAssemblies (147ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (142ms)
+		LoadAssemblies (131ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (156ms)
-			TypeCache.Refresh (155ms)
-				TypeCache.ScanAssembly (136ms)
+		AnalyzeDomain (136ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (119ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (357ms)
+	FinalizeReload (253ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (281ms)
+		SetupLoadedEditorAssemblies (198ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
+			InitializePlatformSupportModulesInManaged (9ms)
 			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (189ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (131ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,51 +116,51 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in 13.811 seconds
-Refreshing native plugins compatible for Editor in 7.03 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.009 seconds
+Refreshing native plugins compatible for Editor in 6.66 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.424 seconds
-Domain Reload Profiling: 16236ms
-	BeginReloadAssembly (206ms)
+- Finished resetting the current domain, in  1.022 seconds
+Domain Reload Profiling: 2030ms
+	BeginReloadAssembly (185ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (13494ms)
-		LoadAssemblies (12600ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (727ms)
+		LoadAssemblies (468ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1011ms)
-			TypeCache.Refresh (953ms)
-				TypeCache.ScanAssembly (857ms)
-			ScanForSourceGeneratedMonoScriptInfo (46ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (2425ms)
+		AnalyzeDomain (364ms)
+			TypeCache.Refresh (315ms)
+				TypeCache.ScanAssembly (298ms)
+			ScanForSourceGeneratedMonoScriptInfo (37ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1023ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1908ms)
+		SetupLoadedEditorAssemblies (800ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (34ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (116ms)
-			ProcessInitializeOnLoadAttributes (1092ms)
-			ProcessInitializeOnLoadMethodAttributes (646ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (546ms)
+			ProcessInitializeOnLoadMethodAttributes (133ms)
 			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (1ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
-Refreshing native plugins compatible for Editor in 13.62 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 7.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7889 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 249 unused Assets / (14.2 MB). Loaded Objects now: 8227.
+Unloading 249 unused Assets / (14.3 MB). Loaded Objects now: 8227.
 Memory consumption went from 345.3 MB to 331.1 MB.
-Total: 35.565200 ms (FindLiveObjects: 5.135100 ms CreateObjectMapping: 0.825100 ms MarkObjects: 6.745900 ms  DeleteObjects: 22.858000 ms)
+Total: 11.560700 ms (FindLiveObjects: 0.893800 ms CreateObjectMapping: 0.640900 ms MarkObjects: 5.973200 ms  DeleteObjects: 4.047900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -175,1632 +175,556 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1026257.998897 seconds.
-  path: Assets/Map1_Forest/Tilemap/Tiles/Tilesheet - WOODS.png
-  artifactKey: Guid(b425613db706e0a49821a35253ec9db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map1_Forest/Tilemap/Tiles/Tilesheet - WOODS.png using Guid(b425613db706e0a49821a35253ec9db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7514bc572ec6e1e52a93fd1ddc2f93c3') in 0.058462 seconds
+  Time since last request: 1035275.181300 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Background
+  artifactKey: Guid(75f66c8cf8c927a4ea48e4ac6a39bf01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Background using Guid(75f66c8cf8c927a4ea48e4ac6a39bf01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ef120f3cd8d7cc38440d2eb33163a9') in 0.025598 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 89
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Map1_Forest/Tilemap/Tiles/Danger_zone.prefab
-  artifactKey: Guid(06a73329b95235b4e9cea37b08d3282a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map1_Forest/Tilemap/Tiles/Danger_zone.prefab using Guid(06a73329b95235b4e9cea37b08d3282a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f99af6c05e390ee744102c117ac0edc') in 0.006447 seconds
+  Time since last request: 7.775119 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile
+  artifactKey: Guid(026e2b82c72fb4d4590c6016a79a7de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile using Guid(026e2b82c72fb4d4590c6016a79a7de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66165e44c6f64fcc57986b197b5388e9') in 0.000697 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Map1_Forest/Tilemap/Tiles/danger_zone.asset
-  artifactKey: Guid(ee7942ab9a78fca4394e70586675f769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map1_Forest/Tilemap/Tiles/danger_zone.asset using Guid(ee7942ab9a78fca4394e70586675f769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff92d7c6369447e4b8d6470961cfb25') in 0.004307 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Map1_Forest/Tilemap/Tiles/danger_zone.png
-  artifactKey: Guid(eeecbc94c2512e444b8191a3c2b2478a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map1_Forest/Tilemap/Tiles/danger_zone.png using Guid(eeecbc94c2512e444b8191a3c2b2478a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7eb501d189c2cddeaa30d75de3243ef') in 0.002397 seconds
+  Time since last request: 176.457724 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/tile.png
+  artifactKey: Guid(1a2933f0bee07c7448c4faf1ae333dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/tile.png using Guid(1a2933f0bee07c7448c4faf1ae333dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d656886dfae248e4e90c932aff5e7d8') in 0.042605 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Map1_Forest/Tilemap/Tiles/Rectangular Palette.prefab
-  artifactKey: Guid(28bcf7a33d6ec764392ebb81ed9cf812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map1_Forest/Tilemap/Tiles/Rectangular Palette.prefab using Guid(28bcf7a33d6ec764392ebb81ed9cf812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8da4a75474f03176f5b38c73a0993fa') in 0.003133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 68.495557 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG.aseprite
-  artifactKey: Guid(dbe96d12273667444a490ba6152abb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG.aseprite using Guid(dbe96d12273667444a490ba6152abb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c07e752843dba5f49d4aeed0310d43b3') in 0.031792 seconds
+  Time since last request: 15.977459 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/tile.png
+  artifactKey: Guid(1a2933f0bee07c7448c4faf1ae333dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/tile.png using Guid(1a2933f0bee07c7448c4faf1ae333dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8fafaafbd3105c2f85954fac587ad96') in 0.005476 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 323.496781 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG.aseprite
-  artifactKey: Guid(24ccf5d4359c0a149ae845871e4551a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG.aseprite using Guid(24ccf5d4359c0a149ae845871e4551a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d2c10486285ab5a9464570ef219b1b') in 0.037454 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 220
-========================================================================
-Received Import Request.
-  Time since last request: 9.975734 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG.aseprite
-  artifactKey: Guid(24ccf5d4359c0a149ae845871e4551a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG.aseprite using Guid(24ccf5d4359c0a149ae845871e4551a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c0a53cffb26ce9ab2f5869569d350a') in 0.032490 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 220
-========================================================================
-Received Import Request.
-  Time since last request: 24.903318 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG.aseprite
-  artifactKey: Guid(dbe96d12273667444a490ba6152abb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG.aseprite using Guid(dbe96d12273667444a490ba6152abb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afefefd0c3ae26200c24b513bb88fcc') in 0.023733 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 220
-========================================================================
-Received Import Request.
-  Time since last request: 418.367164 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG.aseprite
-  artifactKey: Guid(dbe96d12273667444a490ba6152abb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG.aseprite using Guid(dbe96d12273667444a490ba6152abb44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9272a30ac05d3ca13ec8245e955b087c') in 0.030133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 220
-========================================================================
-Received Import Request.
-  Time since last request: 34.111103 seconds.
-  path: Assets/Map4_Cave/Tilemap/Cave_BG.prefab
-  artifactKey: Guid(dafe254122949ef4c97b0c356cdd8d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/Cave_BG.prefab using Guid(dafe254122949ef4c97b0c356cdd8d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95957ae90e6ebb8280cf64c5e9a5a467') in 0.020463 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 7.687459 seconds.
-  path: Assets/Map4_Cave/Tilemap/Cave_BG.prefab
-  artifactKey: Guid(dafe254122949ef4c97b0c356cdd8d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/Cave_BG.prefab using Guid(dafe254122949ef4c97b0c356cdd8d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24293dcca04e867a9e502f589d9e51b') in 0.062743 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_26.asset
-  artifactKey: Guid(dc2a49b762c597043879eec508c82bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_26.asset using Guid(dc2a49b762c597043879eec508c82bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc256dab8681dd44a4694fc13a108bc') in 0.012271 seconds
+  Time since last request: 136.358545 seconds.
+  path: Assets/Map5_Ruin/Tilemap/Decoration/decoration.png
+  artifactKey: Guid(d6ab5711f5c24394fb874484be24d775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/Decoration/decoration.png using Guid(d6ab5711f5c24394fb874484be24d775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1901838ce963b17fe694d0d037770d80') in 0.007997 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_5.asset
-  artifactKey: Guid(b1f8219b86b7f7d4e8157d6e9233c76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_5.asset using Guid(b1f8219b86b7f7d4e8157d6e9233c76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087c52762ecf392f020a0db38ac14f7d') in 0.003726 seconds
+  Time since last request: 377.061838 seconds.
+  path: Assets/Map5_Ruin/Tilemap/Decoration/decoration-Photoroom.png
+  artifactKey: Guid(50023f5e2d3f6894a97cafba4c1f531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/Decoration/decoration-Photoroom.png using Guid(50023f5e2d3f6894a97cafba4c1f531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6947c83dfe458bcf5faf9f75ef9d38') in 0.019743 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_20.asset
-  artifactKey: Guid(bbc964395a397124c9df8b87f76b224f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_20.asset using Guid(bbc964395a397124c9df8b87f76b224f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6dd66c2a07230d8751283cf9fbc698') in 0.002960 seconds
+  Time since last request: 7.604923 seconds.
+  path: Assets/Map5_Ruin/Tilemap/Decoration/decoration-Photoroom.png
+  artifactKey: Guid(50023f5e2d3f6894a97cafba4c1f531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/Decoration/decoration-Photoroom.png using Guid(50023f5e2d3f6894a97cafba4c1f531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc4333ff687aa7f69d2a7a5fdc8651f') in 0.005823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.688531 seconds.
+  path: Assets/Map5_Ruin/Tilemap/Decoration/decoration-Photoroom.png
+  artifactKey: Guid(50023f5e2d3f6894a97cafba4c1f531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/Decoration/decoration-Photoroom.png using Guid(50023f5e2d3f6894a97cafba4c1f531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132a0693b6c2e20a5ab524296fc1ab1f') in 0.003879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.856474 seconds.
+  path: Assets/Map5_Ruin/Tilemap/Decoration/decoration-Photoroom.png
+  artifactKey: Guid(50023f5e2d3f6894a97cafba4c1f531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/Decoration/decoration-Photoroom.png using Guid(50023f5e2d3f6894a97cafba4c1f531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a24715d61d6cf34aaad7323ee7f4c7a') in 0.030527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 60
+========================================================================
+Received Import Request.
+  Time since last request: 25.282901 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/iE24tx.png
+  artifactKey: Guid(1263442fe2514644bb0795b9b5ffd11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/iE24tx.png using Guid(1263442fe2514644bb0795b9b5ffd11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4edf1372ffd3a1c56f4319ebc1e21ac3') in 0.005341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.638921 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png
+  artifactKey: Guid(1263442fe2514644bb0795b9b5ffd11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png using Guid(1263442fe2514644bb0795b9b5ffd11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333479845bfc35a3178bba4ed72508e4') in 0.004100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.935558 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png
+  artifactKey: Guid(1263442fe2514644bb0795b9b5ffd11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png using Guid(1263442fe2514644bb0795b9b5ffd11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481fc58ca0b830075212f02713a40c52') in 0.013910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 107.093361 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png
+  artifactKey: Guid(1263442fe2514644bb0795b9b5ffd11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png using Guid(1263442fe2514644bb0795b9b5ffd11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '416ed733f2971c49b17006592de8e28e') in 0.032991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 111
+========================================================================
+Received Import Request.
+  Time since last request: 80.305878 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5.prefab
+  artifactKey: Guid(3a4a7ce4f3d781a498d64f3486604039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5.prefab using Guid(3a4a7ce4f3d781a498d64f3486604039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3973aa2dc1860b984ea78759855a4f32') in 0.042378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 19.752053 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5.prefab
+  artifactKey: Guid(3a4a7ce4f3d781a498d64f3486604039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5.prefab using Guid(3a4a7ce4f3d781a498d64f3486604039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3649ae30ea850b150318d8961c28e6cb') in 0.011861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 2.787511 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_0.asset
+  artifactKey: Guid(b64703a2a28600a40b810a7c8f773fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_0.asset using Guid(b64703a2a28600a40b810a7c8f773fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10873f4e799db105cc6614483d116136') in 0.068280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_18.asset
+  artifactKey: Guid(4a74011c71c857d4189f6b04b29eb560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_18.asset using Guid(4a74011c71c857d4189f6b04b29eb560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc394fac54674ab5fb0a2c5ecd78234') in 0.001381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_8.asset
+  artifactKey: Guid(fc44a305a193725418951d4e3721a50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_8.asset using Guid(fc44a305a193725418951d4e3721a50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e860721484f3346dec8f9d763546c1f') in 0.001386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_21.asset
+  artifactKey: Guid(9edc1fece0303b6438af0281b42746d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_21.asset using Guid(9edc1fece0303b6438af0281b42746d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4c78ad4ee15dc3e4f629db04ee5bba') in 0.002757 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_8.asset
-  artifactKey: Guid(757ea3655418ec948ae7cca0b5f984de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_8.asset using Guid(757ea3655418ec948ae7cca0b5f984de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b6d062cbea960c8b818c64843a6e9f') in 0.011291 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_9.asset
+  artifactKey: Guid(0b2c35d746086a346ae22808bbd3a3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_9.asset using Guid(0b2c35d746086a346ae22808bbd3a3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec219e01a7e5b1fffee53c258db9814') in 0.003815 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_12.asset
-  artifactKey: Guid(b1d8cbd0a721a184ba80c94b02f5e54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_12.asset using Guid(b1d8cbd0a721a184ba80c94b02f5e54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2484b0d26792d865d064881c8d99ff') in 0.002439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_24.asset
-  artifactKey: Guid(373c04598e42ad540aa602961574d329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_24.asset using Guid(373c04598e42ad540aa602961574d329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72b1d6839f6657233092597e9ffb28a') in 0.001602 seconds
+  Time since last request: 0.000028 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_15.asset
+  artifactKey: Guid(8e98b0635ad9f2c418b385e166d633f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_15.asset using Guid(8e98b0635ad9f2c418b385e166d633f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3f11b17bbf5528fe6c21bf3d5d65b1') in 0.001634 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_13.asset
-  artifactKey: Guid(afb5b9ea4b32bbc4c8c9bf1a1d1f4754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_13.asset using Guid(afb5b9ea4b32bbc4c8c9bf1a1d1f4754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97077e812f35fce67a1d7f07b0ed1d3a') in 0.002837 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_2.asset
+  artifactKey: Guid(523d83f41049f684eb651c7924c8bd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_2.asset using Guid(523d83f41049f684eb651c7924c8bd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c34d9dfc553118a9c8476c7a6f997486') in 0.001717 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_14.asset
-  artifactKey: Guid(7e7cb8eaf0b74f9419337764730a98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_14.asset using Guid(7e7cb8eaf0b74f9419337764730a98c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ab965d43ef554003b6a5e61c664fa2') in 0.002772 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_24.asset
+  artifactKey: Guid(6bda57b757d41b44ab4b0d459ccdd168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_24.asset using Guid(6bda57b757d41b44ab4b0d459ccdd168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778eb77162b92da897c8fa61ae499018') in 0.001534 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_25.asset
+  artifactKey: Guid(408b0187f8882124b88b00c790804aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_25.asset using Guid(408b0187f8882124b88b00c790804aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb5f0b836b8a53128744721c1d4cf53') in 0.002578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_13.asset
+  artifactKey: Guid(dcdb4173f800c2e43a608859db6535c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_13.asset using Guid(dcdb4173f800c2e43a608859db6535c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47838ed4fbe4b339990e6cd5dbf04b8c') in 0.001580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_20.asset
+  artifactKey: Guid(7034003470a233f4694071c8eb004387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_20.asset using Guid(7034003470a233f4694071c8eb004387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f0c20beb9f589ba69c3b82ea6c4a921') in 0.001345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_4.asset
+  artifactKey: Guid(35d36cd79721e664eaf21945f7578652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_4.asset using Guid(35d36cd79721e664eaf21945f7578652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc1ca7fa631826c12bc28f3fa046a92') in 0.001965 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_12.asset
+  artifactKey: Guid(7ebadf4ed3636c44fb87695a34a4ca45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_12.asset using Guid(7ebadf4ed3636c44fb87695a34a4ca45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7301c2975245014bd78762beadb83ba7') in 0.002380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_17.asset
+  artifactKey: Guid(4662619e777827f4b9d48c71a50033e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_17.asset using Guid(4662619e777827f4b9d48c71a50033e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc338a5370d11840b25f375d9254c330') in 0.001755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_6.asset
+  artifactKey: Guid(f96f9fcfc9ce32d459011906a3e952c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_6.asset using Guid(f96f9fcfc9ce32d459011906a3e952c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3576bba8495530fbc4db47c3d9ad7a9e') in 0.002364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_28.asset
+  artifactKey: Guid(8ef87dbac7ed3af47899faaeef8e1022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_28.asset using Guid(8ef87dbac7ed3af47899faaeef8e1022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7014f60b163a5f49d7c81586f44bcbaa') in 0.002457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_3.asset
+  artifactKey: Guid(e6aea3e21c593fd489f15a0bf54e0ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_3.asset using Guid(e6aea3e21c593fd489f15a0bf54e0ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a7661522ce152b78563d5bca81576f') in 0.003134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_26.asset
+  artifactKey: Guid(1d361689634003b41a9f018a097ccef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Map5/Tile_26.asset using Guid(1d361689634003b41a9f018a097ccef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6138a9db1d248223aa246148499705') in 0.002033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 73.292956 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/iE24tx-Photoroom.png
+  artifactKey: Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/iE24tx-Photoroom.png using Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d37539cbb4404863dbd03f880c57759') in 0.016262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.423392 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/TTile.png
+  artifactKey: Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/TTile.png using Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bebafb46824d157f7353c6b63aa641f') in 0.004277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.105517 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png
+  artifactKey: Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png using Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26f11b72d1f19d87f6dd858e9e65ea0') in 0.003253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.197490 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png
+  artifactKey: Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png using Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e89ca83ee99daea91c23b7a091880c22') in 0.004793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.187876 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png
+  artifactKey: Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png using Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626507d9d03891d35ddd812337f1b381') in 0.029538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 111
+========================================================================
+Received Import Request.
+  Time since last request: 19.764710 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin.prefab
+  artifactKey: Guid(d262a12edeedbde4699b9bf7b153d44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin.prefab using Guid(d262a12edeedbde4699b9bf7b153d44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ce34b208cead763db883e93a66b6f2') in 0.004623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 16.522452 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin.prefab
+  artifactKey: Guid(d262a12edeedbde4699b9bf7b153d44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin.prefab using Guid(d262a12edeedbde4699b9bf7b153d44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a98c040735db005e92e6b92c6af99cb') in 0.004498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 28.083672 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png
+  artifactKey: Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png using Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14aa1019ef266a3de13250fc825e0b5') in 0.011098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 111
+========================================================================
+Received Import Request.
+  Time since last request: 28.822894 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png
+  artifactKey: Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Tile.png using Guid(bec1d411f6574b84c969c83f0970cf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76e188955cb15646c869a05e96dd37a') in 0.014236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 111
+========================================================================
+Received Import Request.
+  Time since last request: 1020.937318 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_0.asset
+  artifactKey: Guid(ecd17513463672e40a7ea6055a3d5f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_0.asset using Guid(ecd17513463672e40a7ea6055a3d5f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c970684e2fb41b390933a57b83f84f') in 0.082119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_23.asset
+  artifactKey: Guid(f00ef759165aad041b35a87c054f2b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_23.asset using Guid(f00ef759165aad041b35a87c054f2b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487b270ed42e9c5d197042311fe1a243') in 0.004607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_18.asset
+  artifactKey: Guid(4b6adbda7ed837b4dbda18e9ccb6c35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_18.asset using Guid(4b6adbda7ed837b4dbda18e9ccb6c35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5189a9b30913df5843152cf35229df0') in 0.003581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_13.asset
+  artifactKey: Guid(8a045b1ed926abe429cc9a3b98be8c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_13.asset using Guid(8a045b1ed926abe429cc9a3b98be8c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf57267ecc364a28c498bec2fd8ea05') in 0.002278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_4.asset
+  artifactKey: Guid(5dc66e1472d695743ab295ba709c33b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_4.asset using Guid(5dc66e1472d695743ab295ba709c33b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc4cb2ef80d93947c8daf991ba643dd') in 0.003362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_24.asset
+  artifactKey: Guid(32828d6bd8410d644955acfc95c7e2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_24.asset using Guid(32828d6bd8410d644955acfc95c7e2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14dba279ec4a950f2bca817d076a4808') in 0.004660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_19.asset
+  artifactKey: Guid(4c43cff443d3a1e46a48a9ed2648dff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_19.asset using Guid(4c43cff443d3a1e46a48a9ed2648dff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '988c5efb6feca5178867a2c9888137e9') in 0.001822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_7.asset
+  artifactKey: Guid(02c27ccbc3b6fb247bfdc724a465395e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_7.asset using Guid(02c27ccbc3b6fb247bfdc724a465395e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0d1ada9f69fb827c3ad3732e4f4050f') in 0.002552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_15.asset
+  artifactKey: Guid(0017fb56cbdea6344a7af036b26e8339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_15.asset using Guid(0017fb56cbdea6344a7af036b26e8339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a10cb25eb10494855382957eafd701f6') in 0.003472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_26.asset
+  artifactKey: Guid(8e35f0d53592bf74a977e3dafaa88695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_26.asset using Guid(8e35f0d53592bf74a977e3dafaa88695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0df2e3f96d5e6c928dd12b1d53540a8') in 0.002821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000043 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_16.asset
-  artifactKey: Guid(4e46d89a036f755479fb99b44c7e9f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_16.asset using Guid(4e46d89a036f755479fb99b44c7e9f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e625068c3266abab6842eb9c41698292') in 0.001473 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_16.asset
+  artifactKey: Guid(c255c4fb97cbe2348a67bd182edf8819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_16.asset using Guid(c255c4fb97cbe2348a67bd182edf8819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6460cc17cc75b7f5281d1c98563a257') in 0.001630 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_21.asset
-  artifactKey: Guid(7d12525fdbdf2c04887122f6a8cf0151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_21.asset using Guid(7d12525fdbdf2c04887122f6a8cf0151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '901420fc688840c455035e23a66bf25e') in 0.001892 seconds
+  Time since last request: 0.000038 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_21.asset
+  artifactKey: Guid(cb385bd04df0ed44ebf011cd55bead70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_21.asset using Guid(cb385bd04df0ed44ebf011cd55bead70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903c163b613d4778c25fc680bb86737b') in 0.001854 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_2.asset
-  artifactKey: Guid(810373162be620d4ba10707f01d127b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_2.asset using Guid(810373162be620d4ba10707f01d127b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678c9165ddfd45ff45c6b82986aeb620') in 0.002293 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_9.asset
-  artifactKey: Guid(610c6aff2f36df84fbfa8fbd292585fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_9.asset using Guid(610c6aff2f36df84fbfa8fbd292585fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c177be35ce72eb704f8416314212cc') in 0.002219 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_7.asset
-  artifactKey: Guid(1b4db83e93f8f9444aa24a22227a4f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_7.asset using Guid(1b4db83e93f8f9444aa24a22227a4f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c8061f0afe3084508828ebd874d358') in 0.002484 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_12.asset
+  artifactKey: Guid(018cc54984336ea428684a12d99a974a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_12.asset using Guid(018cc54984336ea428684a12d99a974a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99dc0533814803c5950c033e95c5b10c') in 0.002936 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_22.asset
-  artifactKey: Guid(ff152fa857298ca4d8cd61bde551880d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_22.asset using Guid(ff152fa857298ca4d8cd61bde551880d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247a7198ce04f13c1a6b077978c6ace3') in 0.002530 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_19.asset
-  artifactKey: Guid(2b4f808878730d448a35ccf4bb405595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_19.asset using Guid(2b4f808878730d448a35ccf4bb405595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba27beca606d9fd35d385dcd8e92c500') in 0.002239 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_10.asset
-  artifactKey: Guid(346361ae1bccc894ab8edbc94ebc5381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_10.asset using Guid(346361ae1bccc894ab8edbc94ebc5381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6dfc39fb2ef5a36fa53307d130917c') in 0.002368 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_1.asset
-  artifactKey: Guid(357106f2f1edd4743bab1134cd71e25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_1.asset using Guid(357106f2f1edd4743bab1134cd71e25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86526883837dedf64a59adb75f30dff') in 0.001398 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 8.243678 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_27.asset
-  artifactKey: Guid(dd8ad52dce4909a4f881170e04d46ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_27.asset using Guid(dd8ad52dce4909a4f881170e04d46ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c0f333541fe9cd12218f737fddf634') in 0.002744 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_30.asset
-  artifactKey: Guid(b9ebd225f77dded47ac673fc28f8b403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_30.asset using Guid(b9ebd225f77dded47ac673fc28f8b403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '048d717467bdd907160e3d037331ec81') in 0.003433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_31.asset
-  artifactKey: Guid(03a885e764982004098150f060e7a8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_31.asset using Guid(03a885e764982004098150f060e7a8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4c2f7be866267c65c59c8ea5855fae') in 0.001856 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.006907 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_33.asset
-  artifactKey: Guid(f6a62c64bde8faa4e8e73df76540de8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_33.asset using Guid(f6a62c64bde8faa4e8e73df76540de8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35d8b5f9d0e75e2100b1d1c850a3ed1') in 0.002724 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_37.asset
-  artifactKey: Guid(42937408f385bc14aa88309345546f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_37.asset using Guid(42937408f385bc14aa88309345546f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367cafb1f10a0e30600cc291c614abf5') in 0.001965 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_38.asset
-  artifactKey: Guid(7d5fb145576d52949abfe30291ecf903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_38.asset using Guid(7d5fb145576d52949abfe30291ecf903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7ff0a8e6b37862ca3aa9b6375b53bf') in 0.001557 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_36.asset
-  artifactKey: Guid(b5884d460edeca940b27dd6e7cbe9e00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_36.asset using Guid(b5884d460edeca940b27dd6e7cbe9e00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f519d7ab80ee1bad610181405a6c60') in 0.001353 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.660515 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_40.asset
-  artifactKey: Guid(287d43201ed496447a0a5ac1875e5e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_40.asset using Guid(287d43201ed496447a0a5ac1875e5e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441273342b1be4851b66d6a89f45f340') in 0.002830 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_44.asset
-  artifactKey: Guid(c63e27996bd7b564db737224482611de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_44.asset using Guid(c63e27996bd7b564db737224482611de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf19793761a220e01980cb5859b7b87') in 0.002604 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_46.asset
-  artifactKey: Guid(7adc2d5220d53c54f825a8658ca910be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_46.asset using Guid(7adc2d5220d53c54f825a8658ca910be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd948249e7e4da7b2711bf9bb70061e0') in 0.002492 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_42.asset
-  artifactKey: Guid(c1b1c9e6da4614841a79da1b9b891c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_42.asset using Guid(c1b1c9e6da4614841a79da1b9b891c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c158f3cdf8d4e207fc3860b3bf1a62ab') in 0.008685 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.088682 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_47.asset
-  artifactKey: Guid(9e0c16f06077eac43a102122c5e37027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_47.asset using Guid(9e0c16f06077eac43a102122c5e37027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '193fcf03539d71bad390c6a060a4bceb') in 0.002611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_52.asset
-  artifactKey: Guid(8be0104a403d5b749b66ecfc04df9fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_52.asset using Guid(8be0104a403d5b749b66ecfc04df9fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c447e846b9f5b72d13a96a45dfea120d') in 0.004071 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_50.asset
-  artifactKey: Guid(e388ee66c0ff3a940be58459b84c36ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_50.asset using Guid(e388ee66c0ff3a940be58459b84c36ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1733e4506ba1f37bd0ff879230503c') in 0.003815 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_53.asset
-  artifactKey: Guid(08834c9ca938e3d4099f554852dd439e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_53.asset using Guid(08834c9ca938e3d4099f554852dd439e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6dc88df94e14c786d1d643a24ec7e4') in 0.006572 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.352895 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_54.asset
-  artifactKey: Guid(da1a4524df44f2f47822089f52808bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_54.asset using Guid(da1a4524df44f2f47822089f52808bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be5790479a21b3947375e2ebf5effac') in 0.003633 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_57.asset
-  artifactKey: Guid(9ab889142ae07d14690067691f64ed6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_57.asset using Guid(9ab889142ae07d14690067691f64ed6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2141336675561353bc92c51dfa3dfe73') in 0.001906 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_56.asset
-  artifactKey: Guid(a4d99e468f403fb4982d7cea61d8887f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_56.asset using Guid(a4d99e468f403fb4982d7cea61d8887f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec656991ff4f6f86942b413126581b0e') in 0.007917 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_59.asset
-  artifactKey: Guid(a4776ebe6fd220d4b96d1f02348691c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_59.asset using Guid(a4776ebe6fd220d4b96d1f02348691c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7bc84ef380ead1cc9394a3a5a6d6ee') in 0.001584 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.013724 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_61.asset
-  artifactKey: Guid(e3f00a5c7f708de4d850269367704e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_61.asset using Guid(e3f00a5c7f708de4d850269367704e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b820433ed944730f0986764cd27ca9e') in 0.003250 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_66.asset
-  artifactKey: Guid(3ebcf75baf3adae40897ada26cee346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_66.asset using Guid(3ebcf75baf3adae40897ada26cee346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd885dc254a03de2ea6a59ad87348f072') in 0.001991 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_64.asset
-  artifactKey: Guid(7dd2950a33a096842b94336f75d2649e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_64.asset using Guid(7dd2950a33a096842b94336f75d2649e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76da241ccf2eba26689b8908dd1cc1e4') in 0.002396 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_65.asset
-  artifactKey: Guid(a5e464df6043dd34baff14d477509079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_65.asset using Guid(a5e464df6043dd34baff14d477509079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04cf711bfd4216b368eca3d532a9b10e') in 0.003202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.029083 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_68.asset
-  artifactKey: Guid(4fef6084a79cd5940be822696f58e0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_68.asset using Guid(4fef6084a79cd5940be822696f58e0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83ebd5a087cb6e8acd592afc3c021b6') in 0.007699 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_72.asset
-  artifactKey: Guid(f97f720cc65532948ad7021eb866d054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_72.asset using Guid(f97f720cc65532948ad7021eb866d054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cc167a9c3a519af6015e265d6ceca4') in 0.001865 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_74.asset
-  artifactKey: Guid(7be63acbff03573429f353ec6773a4a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_74.asset using Guid(7be63acbff03573429f353ec6773a4a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece8765844ce96657125de13eac14c8d') in 0.002768 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_70.asset
-  artifactKey: Guid(0609511bb482cc84faa7ad9954ed549b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_70.asset using Guid(0609511bb482cc84faa7ad9954ed549b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861bb2491a80cca5f3ef09817db2c88f') in 0.002371 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.228552 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_75.asset
-  artifactKey: Guid(31cdfdf154d3c684ebd687ed1b41cf86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_75.asset using Guid(31cdfdf154d3c684ebd687ed1b41cf86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd1b6605ca52d5199084ca5088ab25e') in 0.001573 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_77.asset
-  artifactKey: Guid(01e13e4131734884ba59765c32c80aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_77.asset using Guid(01e13e4131734884ba59765c32c80aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba52b74288597679936bd2b3bd7a02a') in 0.001761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_78.asset
-  artifactKey: Guid(e2caeed7576f78442a9a00b8813f84ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_78.asset using Guid(e2caeed7576f78442a9a00b8813f84ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ec865b2ca6986720e8e3aa11c97887') in 0.002062 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000947 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_81.asset
-  artifactKey: Guid(d3fd06e2f9511e146a9e47068a017267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_81.asset using Guid(d3fd06e2f9511e146a9e47068a017267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c41292391ac17f457d0cb2ba063cfce') in 0.002439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.384899 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_82.asset
-  artifactKey: Guid(ddb521901befc484494ac049d3eff4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_82.asset using Guid(ddb521901befc484494ac049d3eff4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd9fe40d8970079e5298f3bbd388bb3') in 0.001881 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_86.asset
-  artifactKey: Guid(668f152fe8f880349ace67b3d172b874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_86.asset using Guid(668f152fe8f880349ace67b3d172b874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a08acbc5ecd6bf2b6970df3fdd6da15b') in 0.002175 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_85.asset
-  artifactKey: Guid(8671ffabe4c057341a1cc71c3c1b0c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_85.asset using Guid(8671ffabe4c057341a1cc71c3c1b0c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9cdddc5826ab4b1e6d9b4fdaf2b442') in 0.002044 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.022518 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_89.asset
-  artifactKey: Guid(5cf46606cf162fa4b92c53d2ffa581ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_89.asset using Guid(5cf46606cf162fa4b92c53d2ffa581ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b4f0996a80e2da5c078cc37d057bf4') in 0.001882 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_92.asset
-  artifactKey: Guid(d8d16e88164a5124cbfe4d27bd0c2dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_92.asset using Guid(d8d16e88164a5124cbfe4d27bd0c2dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c40baff68f137423e3422c0ba1641eae') in 0.006842 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_94.asset
-  artifactKey: Guid(6053bdd8b72571842aa39d81889501a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_94.asset using Guid(6053bdd8b72571842aa39d81889501a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e760d9f0c2073dbf5b6384585ff78f') in 0.001859 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.010551 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_96.asset
-  artifactKey: Guid(97751b1502e2cdf4091b38408ae980eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_96.asset using Guid(97751b1502e2cdf4091b38408ae980eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75312b65c6f326107769617db596c74b') in 0.002889 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_102.asset
-  artifactKey: Guid(509a084a7ad18c146af9f2114b7d50c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_102.asset using Guid(509a084a7ad18c146af9f2114b7d50c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3949a7b7f3b7a6f78ad6437513b836f2') in 0.002434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_100.asset
-  artifactKey: Guid(bc4bf992a6dc8214cb1651f3eebc31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_100.asset using Guid(bc4bf992a6dc8214cb1651f3eebc31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e64d8ad9d3c7de716add0ab1e7531c') in 0.001383 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.257915 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_103.asset
-  artifactKey: Guid(7a898f39061992e44a46b9b7b559d107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_103.asset using Guid(7a898f39061992e44a46b9b7b559d107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6060b25e3f7dacb8af22610427cbf61e') in 0.002841 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_109.asset
-  artifactKey: Guid(e89aeeb524279c74db94a67dfc42aa20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_109.asset using Guid(e89aeeb524279c74db94a67dfc42aa20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7387d3b2f8854dd1cb29b6324dd64354') in 0.002055 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.021417 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_110.asset
-  artifactKey: Guid(d0411fe8eef4b814e991c418cdf44afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_110.asset using Guid(d0411fe8eef4b814e991c418cdf44afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9fdf750d0c6eb10d57fdffa10e7174') in 0.008781 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_122.asset
-  artifactKey: Guid(2fc2a49e873342c46a75fe50960f1977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_122.asset using Guid(2fc2a49e873342c46a75fe50960f1977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced5ac0dd74a5ebe06d8626907e5f055') in 0.001824 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_119.asset
-  artifactKey: Guid(f8f796776e99e184a9d610a652ef51b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_119.asset using Guid(f8f796776e99e184a9d610a652ef51b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbdcd4608f666c91bbd5425f0295436') in 0.002234 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_120.asset
-  artifactKey: Guid(85a6fcfe90a121344befe4fab8567f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_120.asset using Guid(85a6fcfe90a121344befe4fab8567f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5944ba04d6563e33ae5f510b56fe08') in 0.001738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_115.asset
-  artifactKey: Guid(dae6f7e4987a9404b888daee0cc5ef3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_115.asset using Guid(dae6f7e4987a9404b888daee0cc5ef3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6491fd44b5fda37bbae45b0237e01d') in 0.002209 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.542209 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_124.asset
-  artifactKey: Guid(ce699d658436cf54eb9aa1640a17b24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_124.asset using Guid(ce699d658436cf54eb9aa1640a17b24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e901d3d7528be5680451c8caee9af99a') in 0.002141 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_127.asset
-  artifactKey: Guid(f9c368c5ff6a8684eb839904b7c3d79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_127.asset using Guid(f9c368c5ff6a8684eb839904b7c3d79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd2d4224212fde68084a4749599a330') in 0.002361 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.300133 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_131.asset
-  artifactKey: Guid(7f6676bde7ac98e40be78469e697f473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_131.asset using Guid(7f6676bde7ac98e40be78469e697f473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1bf74f251e58544c4cc8172377c5f1') in 0.002100 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000041 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_144.asset
-  artifactKey: Guid(4857c2e50c55cd0448b1dc9390abee86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_144.asset using Guid(4857c2e50c55cd0448b1dc9390abee86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f0bc1b43344b7c1a490e640846d67f9') in 0.001799 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_10.asset
+  artifactKey: Guid(67cfe0a95b1a5ad4fbc3a16e6e7a1be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_10.asset using Guid(67cfe0a95b1a5ad4fbc3a16e6e7a1be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d00f72b4c76fcfbbe528bb616444d4') in 0.001688 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_138.asset
-  artifactKey: Guid(cfb26b4cb4749454aae3ad4e675d603a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_138.asset using Guid(cfb26b4cb4749454aae3ad4e675d603a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc99fe25f1ed55b50b687be222199950') in 0.003032 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_134.asset
-  artifactKey: Guid(ef7b16fd90ced8348967910fbc575470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_134.asset using Guid(ef7b16fd90ced8348967910fbc575470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9af0fb59783e97fc530e87b497e9117') in 0.003488 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_22.asset
+  artifactKey: Guid(18b8e2bee13214b48b1b69521dd112ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_22.asset using Guid(18b8e2bee13214b48b1b69521dd112ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629eb049d35f29beea9ec43fbf91112d') in 0.003007 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_141.asset
-  artifactKey: Guid(8d2b5940cf828844e94ee01d2c4c3991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_141.asset using Guid(8d2b5940cf828844e94ee01d2c4c3991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea038fbee2edf7b79b4ebf8e0c849142') in 0.001738 seconds
+  Time since last request: 0.000088 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_27.asset
+  artifactKey: Guid(86ffc64cdce6f2341b4f0d7a6c2d7848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_27.asset using Guid(86ffc64cdce6f2341b4f0d7a6c2d7848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a430b2cdace5dd2917ce7bc82f9eb28') in 0.002869 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.386499 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_145.asset
-  artifactKey: Guid(859bfde8ad4fb214f84386dd1acba823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_145.asset using Guid(859bfde8ad4fb214f84386dd1acba823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9291ab54fe29e20f631645dd8eb65ee') in 0.008038 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_6.asset
+  artifactKey: Guid(6749ae7b0ad123241a0777ba9ca56f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_6.asset using Guid(6749ae7b0ad123241a0777ba9ca56f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0596ab9b2b22149ac39b660831825945') in 0.002635 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_151.asset
-  artifactKey: Guid(838f957063e0217469dda264d92c2cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_151.asset using Guid(838f957063e0217469dda264d92c2cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55725e8094ca49d0eeafd7988bfd4316') in 0.002759 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_156.asset
-  artifactKey: Guid(94a61e762309c5c43b0b48640e5e7598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_156.asset using Guid(94a61e762309c5c43b0b48640e5e7598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d96684c5b39392c8f5434cac98d743') in 0.001797 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_155.asset
-  artifactKey: Guid(a5e985afdce4c9846a9400c6369a32f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_155.asset using Guid(a5e985afdce4c9846a9400c6369a32f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30a887944e2156981454c54d92d5470') in 0.001769 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_11.asset
+  artifactKey: Guid(4383f07d768da3e48851833b7d630dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_11.asset using Guid(4383f07d768da3e48851833b7d630dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5178b29acc07e30208b17f7bf29537dc') in 0.002096 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_159.asset
-  artifactKey: Guid(3a208c9850a4cc04687d0cfd67691db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_159.asset using Guid(3a208c9850a4cc04687d0cfd67691db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706825b9cad4e76e30909a66d98e4cb1') in 0.001795 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_28.asset
+  artifactKey: Guid(71b85a8e06dccd14f80ee455077f6fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_28.asset using Guid(71b85a8e06dccd14f80ee455077f6fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19acfdcc5dd94e2ce544cfc8f9b4168a') in 0.001701 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_160.asset
-  artifactKey: Guid(51550aa18d8ca4b4a9adba1947e00f15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_160.asset using Guid(51550aa18d8ca4b4a9adba1947e00f15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f2013477ee7e1334cde0a3a620aadd') in 0.007710 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_163.asset
-  artifactKey: Guid(87d6a9f06954afd4c9fcf1216c4ba615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_163.asset using Guid(87d6a9f06954afd4c9fcf1216c4ba615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5171d8d61d1976a447a717c1aabd996') in 0.003066 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.319647 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_166.asset
-  artifactKey: Guid(f05855c2eae91824d8b82ae9563bbd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_166.asset using Guid(f05855c2eae91824d8b82ae9563bbd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022c7cb400e4a6a69ad8d9b70db24209') in 0.002889 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_170.asset
-  artifactKey: Guid(e80571973ca32e141906381966130a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_170.asset using Guid(e80571973ca32e141906381966130a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ba5d604382222c967e619607cdf572') in 0.003184 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_171.asset
-  artifactKey: Guid(c848b02baca9efb48a6f9dd4bbc8766c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_171.asset using Guid(c848b02baca9efb48a6f9dd4bbc8766c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe4ccea2f83728a744e599877ec17b7') in 0.002376 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.673079 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_173.asset
-  artifactKey: Guid(e10c529c73e9de04a8836fd992850563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_173.asset using Guid(e10c529c73e9de04a8836fd992850563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145cba035e0dedbc03d5e1a69182baa3') in 0.002135 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_178.asset
-  artifactKey: Guid(021e953267cf90e4ab586dc9d40d7f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_178.asset using Guid(021e953267cf90e4ab586dc9d40d7f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecfe95fb7630c6d8d1c6078922212c63') in 0.001563 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_179.asset
-  artifactKey: Guid(2f6dc69b6d4a46f45b4969bba3b7c817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_179.asset using Guid(2f6dc69b6d4a46f45b4969bba3b7c817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52a463e9901d7f7d606386cb5b391f0') in 0.003084 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_185.asset
-  artifactKey: Guid(40543640c67f57d4db1e80037fa5fbfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_185.asset using Guid(40543640c67f57d4db1e80037fa5fbfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '406d743d6ae394ebb27e22b08ba2cdb6') in 0.001611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.936101 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_187.asset
-  artifactKey: Guid(6dd9ff4e1fda25d4a9194c1db0b0d517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_187.asset using Guid(6dd9ff4e1fda25d4a9194c1db0b0d517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2039752856253b14481e07f252c116ac') in 0.003290 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_190.asset
-  artifactKey: Guid(0e8b7dc506ac4e047b37f3c0ed0c742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_190.asset using Guid(0e8b7dc506ac4e047b37f3c0ed0c742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213c406bf829f699a280336d2d599984') in 0.002216 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.034442 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_194.asset
-  artifactKey: Guid(73a5dddac2b14fa4597bc913d2d9a22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_194.asset using Guid(73a5dddac2b14fa4597bc913d2d9a22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c59ad292a7b18f82ab28f9131d8a6ae') in 0.002429 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_199.asset
-  artifactKey: Guid(fe94ed23379dfc7479efad5b9e57a4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_199.asset using Guid(fe94ed23379dfc7479efad5b9e57a4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07514a4d97132541cd70a3168596ed09') in 0.002388 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_203.asset
-  artifactKey: Guid(33fb5a1d505f2e14481829290839396c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_203.asset using Guid(33fb5a1d505f2e14481829290839396c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4d974fcea0102c84d23a5d3a80ba46a') in 0.001762 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_201.asset
-  artifactKey: Guid(6709b9984c54bb14c8e060caf754a3fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_201.asset using Guid(6709b9984c54bb14c8e060caf754a3fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d649672410d64b9c778c647984d6d62') in 0.001950 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_25.asset
+  artifactKey: Guid(3fefa68c775915944a42e96a398b004c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_25.asset using Guid(3fefa68c775915944a42e96a398b004c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29821c9f987fff0e30c4d918c6a61271') in 0.002547 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_202.asset
-  artifactKey: Guid(3676cf91af551e2489a192f45bf807b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_202.asset using Guid(3676cf91af551e2489a192f45bf807b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b0a0caf120dbf59b1d7e64ac1deb9e') in 0.001572 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.444488 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_208.asset
-  artifactKey: Guid(621bdf62001952f43a7a746ca330a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_208.asset using Guid(621bdf62001952f43a7a746ca330a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdc1dd83e13e5a3f008bd8b1b879193') in 0.001818 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_211.asset
-  artifactKey: Guid(159ce8d9a3882e444bb9a4df7a3ea510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_211.asset using Guid(159ce8d9a3882e444bb9a4df7a3ea510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0d3f8907c5f73bc19b12c4a3d89be6') in 0.001892 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveBG_217.asset
-  artifactKey: Guid(74cde1fc6b159434c85af0a2b1ff3162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveBG_217.asset using Guid(74cde1fc6b159434c85af0a2b1ff3162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb85da4e2b006f2e354aabe53e9bf6e0') in 0.002005 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 49.008994 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG.prefab
-  artifactKey: Guid(322daad1e231fd047989e1e835b4abc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG.prefab using Guid(322daad1e231fd047989e1e835b4abc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130d6a039224e569ac9dd32bd5740e2b') in 0.003703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 26.191804 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG.prefab
-  artifactKey: Guid(322daad1e231fd047989e1e835b4abc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG.prefab using Guid(322daad1e231fd047989e1e835b4abc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea9587f7b9e88673be064d236aaec23') in 0.030398 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_22.asset
-  artifactKey: Guid(5041c78755174574ea0b1d8ea25db90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_22.asset using Guid(5041c78755174574ea0b1d8ea25db90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b70deb2a128933a36ab423b0ee28293') in 0.002328 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_4.asset
-  artifactKey: Guid(25f8a67c06d11454e9107dfb80ed1c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_4.asset using Guid(25f8a67c06d11454e9107dfb80ed1c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df15679295430455cc3e04a20908ef9') in 0.001550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_16.asset
-  artifactKey: Guid(b14f8f747a2912f46b9a43f6de4682d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_16.asset using Guid(b14f8f747a2912f46b9a43f6de4682d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16646acf6b2391bd196b53189851702c') in 0.002801 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_17.asset
-  artifactKey: Guid(aceb32f1cf3e0824fbcd87683d4c150f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_17.asset using Guid(aceb32f1cf3e0824fbcd87683d4c150f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4baece082cf97153edaf8564e6071113') in 0.003633 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_19.asset
-  artifactKey: Guid(992ea23195b4e594b9bdbacde9217609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_19.asset using Guid(992ea23195b4e594b9bdbacde9217609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755b63e2874b04b417119a352b37300c') in 0.002973 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_21.asset
-  artifactKey: Guid(e801cac74a4207a43b207f2c0e2c2538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_21.asset using Guid(e801cac74a4207a43b207f2c0e2c2538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ddfc218f1a5dca2524d9c6161c05df2') in 0.009178 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_14.asset
-  artifactKey: Guid(e3ffeec48b37610489e911df3cd5e6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_14.asset using Guid(e3ffeec48b37610489e911df3cd5e6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a000d2483202ddc8d150c63c62fc74') in 0.001488 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_15.asset
-  artifactKey: Guid(5ebff072d570fcc429b131affe714503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_15.asset using Guid(5ebff072d570fcc429b131affe714503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aadeb9abe3d359ed9c022772d727ac0') in 0.001793 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_9.asset
-  artifactKey: Guid(a323aca5aed38ed4f9d404ec25e326ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_9.asset using Guid(a323aca5aed38ed4f9d404ec25e326ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4301d5cddcba667145547846320778a6') in 0.002060 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_8.asset
-  artifactKey: Guid(0a3731d256718c44f82a0ee37c71ac27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_8.asset using Guid(0a3731d256718c44f82a0ee37c71ac27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7f34d9c894d18303a0f254c89e5f63') in 0.002955 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.241333 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_204.asset
-  artifactKey: Guid(56c67a6c660851f43b6d497f86746849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_204.asset using Guid(56c67a6c660851f43b6d497f86746849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b96e5a57f818103a7b6f8315c86e071') in 0.002056 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_213.asset
-  artifactKey: Guid(a3d1b69294934d541b6151519805606d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_213.asset using Guid(a3d1b69294934d541b6151519805606d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da89fe4af6d20801f13e31f6460fbd85') in 0.001489 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_206.asset
-  artifactKey: Guid(a90e242e378b95b4db7317b5f668d1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_206.asset using Guid(a90e242e378b95b4db7317b5f668d1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa270d67034a8ef0739b6ad6809ea98f') in 0.001410 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_208.asset
-  artifactKey: Guid(043821b25478ab24f9c1219b42fdad74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_208.asset using Guid(043821b25478ab24f9c1219b42fdad74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a52e03fd83ab7612e3d954554c1ac2f') in 0.001404 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_217.asset
-  artifactKey: Guid(b2a6a35b66c8cd342a31506aa3c7fa21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_217.asset using Guid(b2a6a35b66c8cd342a31506aa3c7fa21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bb453fc2fe072d84b34f172efd397f') in 0.005396 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_211.asset
-  artifactKey: Guid(ca9dd5e59c16abd428a4ecdc4f232f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_211.asset using Guid(ca9dd5e59c16abd428a4ecdc4f232f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b218d03c87d1e3c206c66f95b4a8940') in 0.001989 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_214.asset
-  artifactKey: Guid(2731459803f2f9b4c8c26f1cc58ccba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_214.asset using Guid(2731459803f2f9b4c8c26f1cc58ccba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9494e26168c5390f57ac1650bbc80a17') in 0.002414 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_218.asset
-  artifactKey: Guid(50e4bb9c86cb20841a9d8f39fedab82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_218.asset using Guid(50e4bb9c86cb20841a9d8f39fedab82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4d4ae4c38087844aede2168afa1e98') in 0.001791 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 7.724863 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_24.asset
-  artifactKey: Guid(fef86c8d90d479741acaf8928949ea82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_24.asset using Guid(fef86c8d90d479741acaf8928949ea82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c150d4bcf8187e9671b7edcef69a13') in 0.002333 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_41.asset
-  artifactKey: Guid(728aa3ee4edf6234c948369559c07296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_41.asset using Guid(728aa3ee4edf6234c948369559c07296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4623a5a0ba0a8c6c879a2a193a6323f9') in 0.003893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_29.asset
-  artifactKey: Guid(be5087fbaad15c5499ad731904e35276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_29.asset using Guid(be5087fbaad15c5499ad731904e35276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6bf92b186a17f0632e0cbc9e11be86') in 0.001594 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_48.asset
-  artifactKey: Guid(ac5f76448c6c1f347a565414588bd669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_48.asset using Guid(ac5f76448c6c1f347a565414588bd669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1d9a373d7a0dece347f3cb6fe1642e') in 0.002235 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_75.asset
-  artifactKey: Guid(453fa063cacffa14cb560100c81d9e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_75.asset using Guid(453fa063cacffa14cb560100c81d9e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7121b6acc9904c09f274e9bf4314770') in 0.002683 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_84.asset
-  artifactKey: Guid(a4b919a148fb9dd449707a884df30961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_84.asset using Guid(a4b919a148fb9dd449707a884df30961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c54473a8ed47d369b18ca11566aeb68') in 0.002118 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_81.asset
-  artifactKey: Guid(56656f6fde5200141b022bb9ad083a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_81.asset using Guid(56656f6fde5200141b022bb9ad083a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1307bfb31672cb04ce159f32bfba6dc2') in 0.001646 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_119.asset
-  artifactKey: Guid(1a12cb34809073a43aae3fb037238c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_119.asset using Guid(1a12cb34809073a43aae3fb037238c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e49def9884004a79e126dee18cd5621') in 0.002225 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_36.asset
-  artifactKey: Guid(8ad2d30cbda9b2f4eb34fc9ac9ccd9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_36.asset using Guid(8ad2d30cbda9b2f4eb34fc9ac9ccd9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a5c4b2287732a802b0f092f56c910d4') in 0.001723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_123.asset
-  artifactKey: Guid(d1e67a858dc458541866022c439628f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_123.asset using Guid(d1e67a858dc458541866022c439628f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fcba6eaad1f170058ae5a9bd09d2c83') in 0.002078 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_126.asset
-  artifactKey: Guid(644bb0022571c794e970ed69d99ad0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_126.asset using Guid(644bb0022571c794e970ed69d99ad0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6adadb3943ead9d978788b85133aa3ad') in 0.002224 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_52.asset
-  artifactKey: Guid(f397bc113c1054f4eab22c92431f88d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_52.asset using Guid(f397bc113c1054f4eab22c92431f88d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29cff08c655be156df3af75dc643f2f1') in 0.002255 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000029 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_37.asset
-  artifactKey: Guid(53718bea05b0a12489607da40e8e0d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_37.asset using Guid(53718bea05b0a12489607da40e8e0d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4456db42d92b37558eae8f473c90e6') in 0.002216 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_14.asset
+  artifactKey: Guid(a9955b12bb7c5314e922a5098e8c45d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_14.asset using Guid(a9955b12bb7c5314e922a5098e8c45d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2c5ed2542e147d4a45c9483184eb59') in 0.003762 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_131.asset
-  artifactKey: Guid(a0f82136681d48748859f1fc325af862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_131.asset using Guid(a0f82136681d48748859f1fc325af862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7340ef4a558c72f24024b7daf0fefd73') in 0.002595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_146.asset
-  artifactKey: Guid(1d28f9882799ab64da4c57cfb3c419c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_146.asset using Guid(1d28f9882799ab64da4c57cfb3c419c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5fab27a7b99574950ad1bddb348e06a') in 0.002322 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_198.asset
-  artifactKey: Guid(28439d786418869448eaa81a31ea122a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_198.asset using Guid(28439d786418869448eaa81a31ea122a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b77d569bb165503aa74d46694105b5') in 0.002138 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_203.asset
-  artifactKey: Guid(474da5615adb0b947827f1cc7e829fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_203.asset using Guid(474da5615adb0b947827f1cc7e829fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7d2d57385648eb94e08bb06592ad81') in 0.002715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_38.asset
-  artifactKey: Guid(2f985a615ced9dc47bb02baecf69be4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_38.asset using Guid(2f985a615ced9dc47bb02baecf69be4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb789512f9e32f92135412083e61be3') in 0.001762 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_132.asset
-  artifactKey: Guid(32850a3293f7ba6418cf022919f9d7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_132.asset using Guid(32850a3293f7ba6418cf022919f9d7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0d60ac7b9f55beda4f6454cea1dea5') in 0.002628 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_201.asset
-  artifactKey: Guid(898dd2350f7198d4f8a7fc2cb55a7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_201.asset using Guid(898dd2350f7198d4f8a7fc2cb55a7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45df89c8026ccb0eb6ba65b5c7a033ef') in 0.002757 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_43.asset
-  artifactKey: Guid(ec7c2d1532aa04c4e9594396d8e13c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_43.asset using Guid(ec7c2d1532aa04c4e9594396d8e13c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b114170065969457825827c62dc19e') in 0.002352 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_78.asset
-  artifactKey: Guid(9f4d3c0e299afc64e9d38d195085e20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_78.asset using Guid(9f4d3c0e299afc64e9d38d195085e20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02fb7d869304a5106d3157fea4190161') in 0.002263 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_76.asset
-  artifactKey: Guid(0ffe3c2ec03c1ad4c8196b62088afa62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_76.asset using Guid(0ffe3c2ec03c1ad4c8196b62088afa62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b5b1f99525bd3a6a2d2b5074078c58') in 0.002110 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_197.asset
-  artifactKey: Guid(bcfa7dd3bd24b704f8fa64b41f4c3550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_197.asset using Guid(bcfa7dd3bd24b704f8fa64b41f4c3550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac8f228af29fc0a0eaaaa3a7370dd4b') in 0.002652 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_53.asset
-  artifactKey: Guid(4916b07a54c43cb40a183d6debcea6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_53.asset using Guid(4916b07a54c43cb40a183d6debcea6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09962af49c8bd499aa67f4d429112f28') in 0.002178 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_91.asset
-  artifactKey: Guid(a2af40f726cd57d4593a5836805aa8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_91.asset using Guid(a2af40f726cd57d4593a5836805aa8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af266ad11695a2ad76f90d0c5a40b1d9') in 0.002127 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000041 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_139.asset
-  artifactKey: Guid(f451a118823c3f6479aa4fab93a0f20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_139.asset using Guid(f451a118823c3f6479aa4fab93a0f20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2526f9dc2e7729a3b42e1424a1642d6a') in 0.002693 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_17.asset
+  artifactKey: Guid(30fd7016409880242bcbdef8397aff78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_17.asset using Guid(30fd7016409880242bcbdef8397aff78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623a53071959b8e98af22475b9ea8ee1') in 0.019808 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_51.asset
-  artifactKey: Guid(23329bc8e8f68ff4881b0cfd2ccfbf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_51.asset using Guid(23329bc8e8f68ff4881b0cfd2ccfbf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca8894381426e8de0bfad42c280226d') in 0.002607 seconds
+  Time since last request: 0.000180 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_5.asset
+  artifactKey: Guid(dd67a1493f141e844b2f3291c945d315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_5.asset using Guid(dd67a1493f141e844b2f3291c945d315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ad27009840e2bbeec6331f79f8a0ca') in 0.002427 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_71.asset
-  artifactKey: Guid(063b9dd4ac0a5e349a89272febcfa94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_71.asset using Guid(063b9dd4ac0a5e349a89272febcfa94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847a2a85d25f69365dc5875b43afc02e') in 0.002450 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_137.asset
-  artifactKey: Guid(3a5f380a1ba18484184dfd7bd814378e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_137.asset using Guid(3a5f380a1ba18484184dfd7bd814378e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e46535cf387926c893dd80566557e9') in 0.003074 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_128.asset
-  artifactKey: Guid(76a22e525f97847499c6d3e1ac946af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_128.asset using Guid(76a22e525f97847499c6d3e1ac946af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86dd63a17cbc10bb712b1a627300371') in 0.002982 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_26.asset
-  artifactKey: Guid(0a7d1c1f7859c6f498e56d73ffb809eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_26.asset using Guid(0a7d1c1f7859c6f498e56d73ffb809eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4191e1a26b7b580f0482029bb02326') in 0.001991 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_47.asset
-  artifactKey: Guid(1e347ec1eb22ca2478c512b4945d3e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_47.asset using Guid(1e347ec1eb22ca2478c512b4945d3e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c09f9888d1f5f0e93d5cc4284dd45a4') in 0.001898 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_42.asset
-  artifactKey: Guid(5ec7d06d23e0e9f449155a7cdcedd3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_42.asset using Guid(5ec7d06d23e0e9f449155a7cdcedd3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1856e7b769566a740ede17bbaf63243') in 0.003235 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.518916 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_190.asset
-  artifactKey: Guid(ad2c7f477b266f2449547930a9af2423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_190.asset using Guid(ad2c7f477b266f2449547930a9af2423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe10b1412daa024bb6c9607aacda84d') in 0.001935 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_194.asset
-  artifactKey: Guid(21605f292a8a99546885a0ad8a91064f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_194.asset using Guid(21605f292a8a99546885a0ad8a91064f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80b5e3a6b71c61ff00c6de53b78cd4a') in 0.001985 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_175.asset
-  artifactKey: Guid(17db7123597a25949a0201ce0e4ac339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_175.asset using Guid(17db7123597a25949a0201ce0e4ac339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8aa1982671dfb34f948318681e07e6d') in 0.002460 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.011300 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_179.asset
-  artifactKey: Guid(bf3af07e688798249b115139e912bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_179.asset using Guid(bf3af07e688798249b115139e912bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba97c97375b5d7543d4fc2cea8fe1eb') in 0.001693 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_184.asset
-  artifactKey: Guid(3dfae65b3a883a6479b82ee25890cc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_184.asset using Guid(3dfae65b3a883a6479b82ee25890cc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86e21702f32e1494ba8a5b193d5e774') in 0.001776 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_186.asset
-  artifactKey: Guid(a3c77416d9d85134eaca5b36ebd749fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_186.asset using Guid(a3c77416d9d85134eaca5b36ebd749fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d09cbd73fd9fb6169a8efb90e66333') in 0.003153 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_180.asset
-  artifactKey: Guid(e08041dcc336c9d42a8cb06271b2cec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_180.asset using Guid(e08041dcc336c9d42a8cb06271b2cec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9bab412821309153c79a2efc450c79') in 0.001566 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.005846 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_149.asset
-  artifactKey: Guid(39ed45daa8481144b9d010914d0fa674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_149.asset using Guid(39ed45daa8481144b9d010914d0fa674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d8e6c6740f912cfdc4b86bc23da419') in 0.002739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_155.asset
-  artifactKey: Guid(8d685376b5d1a774cb00131a07e6f108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_155.asset using Guid(8d685376b5d1a774cb00131a07e6f108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43104482d963dd04e911662a424143e3') in 0.001871 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_20.asset
+  artifactKey: Guid(1e365fe2e84c41f4292ddb406f199c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_20.asset using Guid(1e365fe2e84c41f4292ddb406f199c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dedef1f31b38b04d00092e2e10d58ed2') in 0.002361 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_156.asset
-  artifactKey: Guid(fcd8c797e84d4a94ebecca2c0f453b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_156.asset using Guid(fcd8c797e84d4a94ebecca2c0f453b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434e8003dcc14f0c6062c5d9f4babc51') in 0.001824 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_154.asset
-  artifactKey: Guid(ae00e79c4f3e0c7498d2a428c74b1828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_154.asset using Guid(ae00e79c4f3e0c7498d2a428c74b1828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ea76ceaf850687f2716b1c86e00787') in 0.001666 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_60.asset
-  artifactKey: Guid(acdf564603753e64e954541a2e9b7c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_60.asset using Guid(acdf564603753e64e954541a2e9b7c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c7db57d5f5250abd7c9cdd989788b6') in 0.002419 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_61.asset
-  artifactKey: Guid(be472c26aad80884e9cbece5dffaaf93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_61.asset using Guid(be472c26aad80884e9cbece5dffaaf93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a021ffb05f243f0757eec913b19b9c4a') in 0.002414 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_159.asset
-  artifactKey: Guid(72cf18123244f70429955c9e13fa145a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_159.asset using Guid(72cf18123244f70429955c9e13fa145a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f37b2a09ec96989b66da7f4c127b57c') in 0.003465 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  4.575 seconds
-Refreshing native plugins compatible for Editor in 9.36 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.626 seconds
-Domain Reload Profiling: 8223ms
-	BeginReloadAssembly (1956ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (132ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (3ms)
-		CreateAndSetChildDomain (1421ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (74ms)
-	LoadAllAssembliesAndSetupDomain (2513ms)
-		LoadAssemblies (1438ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1184ms)
-			TypeCache.Refresh (1097ms)
-				TypeCache.ScanAssembly (762ms)
-			ScanForSourceGeneratedMonoScriptInfo (59ms)
-			ResolveRequiredComponents (28ms)
-	FinalizeReload (3628ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1456ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (202ms)
-			ProcessInitializeOnLoadAttributes (1079ms)
-			ProcessInitializeOnLoadMethodAttributes (141ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (2ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (37ms)
-Refreshing native plugins compatible for Editor in 10.26 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8234.
-Memory consumption went from 285.1 MB to 270.9 MB.
-Total: 17.167700 ms (FindLiveObjects: 1.104300 ms CreateObjectMapping: 0.889000 ms MarkObjects: 9.930500 ms  DeleteObjects: 5.242300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Tài liệu\Năm 4-1\PT GAME\The_Last_Vampire\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.376 seconds
-Refreshing native plugins compatible for Editor in 6.21 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.766 seconds
-Domain Reload Profiling: 6144ms
-	BeginReloadAssembly (259ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (76ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (2028ms)
-		LoadAssemblies (1366ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (789ms)
-			TypeCache.Refresh (734ms)
-				TypeCache.ScanAssembly (537ms)
-			ScanForSourceGeneratedMonoScriptInfo (34ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (3767ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1061ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (225ms)
-			ProcessInitializeOnLoadAttributes (749ms)
-			ProcessInitializeOnLoadMethodAttributes (58ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Refreshing native plugins compatible for Editor in 4.97 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7593 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 197 unused Assets / (14.2 MB). Loaded Objects now: 8239.
-Memory consumption went from 285.2 MB to 270.9 MB.
-Total: 36.926200 ms (FindLiveObjects: 5.032000 ms CreateObjectMapping: 1.294500 ms MarkObjects: 20.016800 ms  DeleteObjects: 10.575900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 37.217196 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_93.asset
-  artifactKey: Guid(7ef6daf5ef505a84998a38b79a072eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_93.asset using Guid(7ef6daf5ef505a84998a38b79a072eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e4f54d992450bc66b1ab904954cec31') in 0.043206 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_104.asset
-  artifactKey: Guid(119d1a7dd74f5a54282098b2749eb384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_104.asset using Guid(119d1a7dd74f5a54282098b2749eb384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa778b06462db23258050607e6632d9') in 0.002652 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_169.asset
-  artifactKey: Guid(7f42065b574c5244cb1a5c3c39f8b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_169.asset using Guid(7f42065b574c5244cb1a5c3c39f8b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e07d753ade3683bac2a9b7209f54b1') in 0.003231 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_105.asset
-  artifactKey: Guid(acc2d2c2d4d4c3f48b0e12496fdb0d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_105.asset using Guid(acc2d2c2d4d4c3f48b0e12496fdb0d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bf7044717b48009032bd4d5db080ca') in 0.002319 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_98.asset
-  artifactKey: Guid(a5ea890555ff3c146a8a4e1d5ae5ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_98.asset using Guid(a5ea890555ff3c146a8a4e1d5ae5ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c8d1e6d582e01603be53179635dd7e') in 0.009468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_171.asset
-  artifactKey: Guid(b7b0f5202f354494ab442143aabe9c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_171.asset using Guid(b7b0f5202f354494ab442143aabe9c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a0bb89a4f59017c470b1e98bc9fbc1') in 0.002309 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_174.asset
-  artifactKey: Guid(84ee0af6e9d5d99469c550aa777fa14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_174.asset using Guid(84ee0af6e9d5d99469c550aa777fa14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29835c926f98237bc9210215e642011') in 0.002433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.371940 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_163.asset
-  artifactKey: Guid(878a31923e334da4e9310790c9a5bbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_163.asset using Guid(878a31923e334da4e9310790c9a5bbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7be310c8a06765da59b0bd1f332f87a') in 0.002157 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_165.asset
-  artifactKey: Guid(e2aa516ce3dc9284eab9661888336e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_165.asset using Guid(e2aa516ce3dc9284eab9661888336e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a35dc5757ed83a39838d74a14b86ee2') in 0.006231 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.028579 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_107.asset
-  artifactKey: Guid(447aeca09bd513848b566b81647c282d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_107.asset using Guid(447aeca09bd513848b566b81647c282d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68bbb975414fe70f92c2c7fb44837a6d') in 0.001893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_115.asset
-  artifactKey: Guid(9176b3e7bbebfbf408b9fc70994de23b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_115.asset using Guid(9176b3e7bbebfbf408b9fc70994de23b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17d4acc61d20c9c904b8a4bd0fe375d') in 0.002342 seconds
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_8.asset
+  artifactKey: Guid(581a5b3db1f18504dae862f853a5ce4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_8.asset using Guid(581a5b3db1f18504dae862f853a5ce4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a1b9d3cefcc7397dbb1759a1cd4478') in 0.002004 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_118.asset
-  artifactKey: Guid(16865152d7b0b5d40b768c3fc4a5bd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_118.asset using Guid(16865152d7b0b5d40b768c3fc4a5bd48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60fd1d186fa339ff2700414fae8990b1') in 0.002187 seconds
+  Time since last request: 0.000035 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_2.asset
+  artifactKey: Guid(209c5ecc4575902458b9ea46a08093c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_2.asset using Guid(209c5ecc4575902458b9ea46a08093c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '951a3802bc80062b4d42b34404d5ffb8') in 0.002994 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Map4_Cave/Tilemap/CaveG_111.asset
-  artifactKey: Guid(c4d7dc35a69f4ab47b4a89a307f3dac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Map4_Cave/Tilemap/CaveG_111.asset using Guid(c4d7dc35a69f4ab47b4a89a307f3dac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8c8cd616c1ff60e172624cb19b6d18') in 0.002278 seconds
+  Time since last request: 0.000025 seconds.
+  path: Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_3.asset
+  artifactKey: Guid(07b61e6cbaef57a408a34cfe8e9b5681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map5_Ruin/Tilemap/TileMap/Tile/Ruin/Tile_3.asset using Guid(07b61e6cbaef57a408a34cfe8e9b5681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8062dd078ad2acc795bafa6de655a36') in 0.002992 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
