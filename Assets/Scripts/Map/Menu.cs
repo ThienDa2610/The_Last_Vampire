@@ -39,6 +39,7 @@ public class Menu : MonoBehaviour
         CheckPoint.ClearGameData();
         CheckPointJSON.DeleteSaveFile();
         Lv2CheckPoint.ClearGameData();
+        Lv4CheckPoint.ClearGameData();
 
         MapLoader.Instance.LoadMap("Map1_Forest");
         MusicManager.Instance.PlayMusic("Level_1");
