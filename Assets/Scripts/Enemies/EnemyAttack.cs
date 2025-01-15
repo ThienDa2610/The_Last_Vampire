@@ -33,7 +33,6 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Exit trigger collider");
             isPlayerInRange = false;
             isAttacking = false;
         }

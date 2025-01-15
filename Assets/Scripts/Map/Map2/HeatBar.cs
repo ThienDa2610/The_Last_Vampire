@@ -49,7 +49,7 @@ public class HeatBar : MonoBehaviour
         {
             if (heatSlider.value < heatSlider.maxValue)
             {
-                heatSlider.value += Time.deltaTime * 0.01f;
+                heatSlider.value += Time.deltaTime * 0.005f;
             }
         }
         if (heatSlider.value >= 0.7f * heatSlider.maxValue && heatSlider.value < heatSlider.maxValue)
@@ -77,7 +77,7 @@ public class HeatBar : MonoBehaviour
     {
         while (heatSlider.value >= heatSlider.maxValue)
         {
-            health.currentHealth -= 0.005f;
+            health.currentHealth -= 0.007f;
             health.UpdateHealthbar();
             yield return new WaitForSeconds(1f);
         }
@@ -92,7 +92,7 @@ public class HeatBar : MonoBehaviour
     {
         if (heatSlider.value < heatSlider.maxValue)
         {
-            heatSlider.value += Time.deltaTime * 0.05f;
+            heatSlider.value += Time.deltaTime * 0.01f;
         }
     }
     public void UpdateHeatbar()

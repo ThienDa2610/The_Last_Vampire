@@ -84,14 +84,15 @@ public class PicturePuzzle : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1f);
 
-        pictureImage.SetActive(true);
-        puzzleCanvas.gameObject.SetActive(false);
-        Time.timeScale = 1f;
-        gameplayCanvas.gameObject.SetActive(true);
+        
         if (!updated)
         {
             isIt.isIt = true;
             updated = true;
+            pictureImage.SetActive(true);
+            puzzleCanvas.gameObject.SetActive(false);
+            gameplayCanvas.gameObject.SetActive(true);
+            Time.timeScale = 1f;
         }
         if (!done)
         {
@@ -129,6 +130,23 @@ public class PicturePuzzle : MonoBehaviour
             isPlayerNear = false;
             dialogText.enabled = false;
             dialogImage.enabled = false;
+        }
+    }
+    public void SetPuzzleState(bool state)
+    {
+        if (done != state)
+        {
+            done = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
         }
     }
 }

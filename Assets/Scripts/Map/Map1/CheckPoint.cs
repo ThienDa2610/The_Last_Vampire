@@ -381,14 +381,14 @@ public class CheckPoint : MonoBehaviour
         {
             int enemyDead = PlayerPrefs.GetInt("Enemy_" + i + "_Dead", 0); // Default to alive (0)
             enemies[i].isDead = enemyDead == 1;
-            enemies[i].health = PlayerPrefs.GetFloat("Enemy_" + i + "_Health", enemies[i].health);
             if (enemies[i].isDead)
             {
                 Destroy(enemies[i].gameObject);
             }
             else
             {
-                enemies[i].gameObject.SetActive(true);
+                enemies[i].health = PlayerPrefs.GetFloat("Enemy_" + i + "_Health", enemies[i].maxHealth);
+                enemies[i].UpdateHealthbar();
             }
         }
 

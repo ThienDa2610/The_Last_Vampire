@@ -56,11 +56,14 @@ public class Lv2CheckPoint : MonoBehaviour
     public List<EnemyHealthManager> enemies;
     //------------change--------------
     public Puzzle puzzle1;
+    public PicturePuzzle puzzle1Done;
     public ColorChangeAndInput puzzle2;
+    public PuzzleInPyramid2 puzzle2Done;
     public VasePuzzle puzzle3;
+    public PuzzleInPyramid2 puzzle3Done;
     public GoInSandStorm inSS;
     public HeatBar heat;
-
+    public Camera[] cameras;
 
     // Initialize the instance and check for saved data
     void Awake()
@@ -78,7 +81,12 @@ public class Lv2CheckPoint : MonoBehaviour
     // Start method where the checkpoint data is loaded
     void Start()
     {
-        if (PlayerPrefs.HasKey("SavedPositionX") && PlayerPrefs.HasKey("SavedPositionY") && PlayerPrefs.HasKey("SavedPositionZ"))
+        foreach (Camera cam in cameras)
+        {
+            cam.gameObject.SetActive(false);
+        }
+
+        if (PlayerPrefs.HasKey("SavedPosition2X") && PlayerPrefs.HasKey("SavedPosition2Y") && PlayerPrefs.HasKey("SavedPosition2Z"))
         {
             LoadGame(); // Load game data if available
         }
@@ -94,6 +102,9 @@ public class Lv2CheckPoint : MonoBehaviour
             }
             initialPosition = transform.position;  // Set initial checkpoint position
         }
+        int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex", 0); // Default to first camera
+        cameras[savedActiveCameraIndex].gameObject.SetActive(true);
+
         // If player health script isn't set, get it
         if (playerHealthScript == null)
         {
@@ -239,9 +250,10 @@ public class Lv2CheckPoint : MonoBehaviour
         PlayerPrefs.SetString("SavedSceneName", currentSceneName);
 
         // Save player position
-        PlayerPrefs.SetFloat("SavedPositionX", player.transform.position.x);
-        PlayerPrefs.SetFloat("SavedPositionY", player.transform.position.y);
-        PlayerPrefs.SetFloat("SavedPositionZ", player.transform.position.z);
+        //------------change--------------
+        PlayerPrefs.SetFloat("SavedPosition2X", player.transform.position.x);
+        PlayerPrefs.SetFloat("SavedPosition2Y", player.transform.position.y);
+        PlayerPrefs.SetFloat("SavedPosition2Z", player.transform.position.z);
 
         // Save player health
         float currentHealth = playerHealthScript.currentHealth;
@@ -288,10 +300,25 @@ public class Lv2CheckPoint : MonoBehaviour
         PlayerPrefs.SetInt("Puzzle2", puzzle2.GetComponent<ColorChangeAndInput>().isPuzzleDone ? 1 : 0);
         PlayerPrefs.SetInt("Puzzle3", puzzle3.GetComponent<VasePuzzle>().isPuzzleDone ? 1 : 0);
 
+        PlayerPrefs.SetInt("Puzzle1Done", puzzle1Done.GetComponent<PicturePuzzle>().done ? 1 : 0);
+        PlayerPrefs.SetInt("Puzzle2Done", puzzle2Done.GetComponent<PuzzleInPyramid2>().done ? 1 : 0);
+        PlayerPrefs.SetInt("Puzzle3Done", puzzle3Done.GetComponent<PuzzleInPyramid2>().done ? 1 : 0);
+
         PlayerPrefs.SetInt("SandStorm1", inSS.GetComponent<GoInSandStorm>().SS1 ? 1 : 0);
         PlayerPrefs.SetInt("SandStorm2", inSS.GetComponent<GoInSandStorm>().SS2 ? 1 : 0);
 
         PlayerPrefs.SetFloat("HeatValue", heat.heatSlider.value);
+        // Save the index of the active camera
+        int activeCameraIndex = -1;
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            if (cameras[i].gameObject.activeInHierarchy)
+            {
+                activeCameraIndex = i;
+                break;
+            }
+        }
+        PlayerPrefs.SetInt("ActiveCameraIndex", activeCameraIndex);
 
         PlayerPrefs.Save();
     }
@@ -308,9 +335,10 @@ public class Lv2CheckPoint : MonoBehaviour
 
         transform.position = initialPosition;
         // Load player position and health
-        float x = PlayerPrefs.GetFloat("SavedPositionX");
-        float y = PlayerPrefs.GetFloat("SavedPositionY");
-        float z = PlayerPrefs.GetFloat("SavedPositionZ");
+        //------------change--------------
+        float x = PlayerPrefs.GetFloat("SavedPosition2X");
+        float y = PlayerPrefs.GetFloat("SavedPosition2Y");
+        float z = PlayerPrefs.GetFloat("SavedPosition2Z");
         savedPosition = new Vector3(x, y, z);
         player.transform.position = savedPosition;
 
@@ -353,14 +381,15 @@ public class Lv2CheckPoint : MonoBehaviour
         {
             int enemyDead = PlayerPrefs.GetInt("Enemy2_" + i + "_Dead", 0); // Default to alive (0)
             enemies[i].isDead = enemyDead == 1;
-            enemies[i].health = PlayerPrefs.GetFloat("Enemy2_" + i + "_Health", enemies[i].health);
+
             if (enemies[i].isDead)
             {
                 Destroy(enemies[i].gameObject);
             }
             else
             {
-                enemies[i].gameObject.SetActive(true);
+                enemies[i].health = PlayerPrefs.GetFloat("Enemy2_" + i + "_Health", enemies[i].maxHealth);
+                enemies[i].UpdateHealthbar();
             }
         }
 
@@ -372,6 +401,13 @@ public class Lv2CheckPoint : MonoBehaviour
         int puzzle3State = PlayerPrefs.GetInt("Puzzle3", 1); // Default to on (1)
         puzzle3.GetComponent<VasePuzzle>().SetPuzzleState(puzzle3State == 1);
 
+        int pz1Done = PlayerPrefs.GetInt("Puzzle1Done", 1); // Default to on (1)
+        puzzle1Done.GetComponent<PicturePuzzle>().SetPuzzleState(pz1Done == 1);
+        int pz2Done = PlayerPrefs.GetInt("Puzzle2Done", 1); // Default to on (1)
+        puzzle2Done.GetComponent<PuzzleInPyramid2>().SetPuzzleState(pz2Done == 1);
+        int pz3Done = PlayerPrefs.GetInt("Puzzle3Done", 1); // Default to on (1)
+        puzzle3Done.GetComponent<PuzzleInPyramid2>().SetPuzzleState(pz3Done == 1);
+
         int SS1State = PlayerPrefs.GetInt("SandStorm1", 1); // Default to on (1)
         inSS.GetComponent<GoInSandStorm>().SetSS1State(SS1State == 1);
         int SS2State = PlayerPrefs.GetInt("SandStorm2", 1); // Default to on (1)
@@ -380,15 +416,24 @@ public class Lv2CheckPoint : MonoBehaviour
         float SavedHeat = PlayerPrefs.GetFloat("HeatValue");
         heat.heatSlider.value = SavedHeat;
         heat.UpdateHeatbar();
+        // Load the index of the active camera
+        int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex", 0); // Default to the first camera if not found
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            cameras[i].gameObject.SetActive(i == savedActiveCameraIndex); // Activate the camera at the saved index
+        }
+
     }
 
     //Clear data when player choose new game
     public static void ClearGameData()
     {
         PlayerPrefs.DeleteKey("SavedSceneName");
-        PlayerPrefs.DeleteKey("SavedPositionX");
-        PlayerPrefs.DeleteKey("SavedPositionY");
-        PlayerPrefs.DeleteKey("SavedPositionZ");
+        //------------change--------------
+        PlayerPrefs.DeleteKey("SavedPosition2X");
+        PlayerPrefs.DeleteKey("SavedPosition2Y");
+        PlayerPrefs.DeleteKey("SavedPosition2Z");
+
         PlayerPrefs.DeleteKey("SavedHealth");
         PlayerPrefs.DeleteKey("InitialPositionX");
         PlayerPrefs.DeleteKey("InitialPositionY");
@@ -402,13 +447,17 @@ public class Lv2CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedItemRunOut2");
         PlayerPrefs.DeleteKey("SavedMaxValueItem2");
         PlayerPrefs.DeleteKey("Enemy2_");
-
+        //------------change--------------
         PlayerPrefs.DeleteKey("Puzzle1");
         PlayerPrefs.DeleteKey("Puzzle2");
         PlayerPrefs.DeleteKey("Puzzle3");
+        PlayerPrefs.DeleteKey("Puzzle1Done");
+        PlayerPrefs.DeleteKey("Puzzle2Done");
+        PlayerPrefs.DeleteKey("Puzzle3Done");
         PlayerPrefs.DeleteKey("SandStorm1");
         PlayerPrefs.DeleteKey("SandStorm2");
         PlayerPrefs.DeleteKey("HeatValue");
+        PlayerPrefs.DeleteKey("ActiveCameraIndex");
 
     }
 }

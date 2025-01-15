@@ -165,10 +165,18 @@ public class PuzzleInPyramid2 : MonoBehaviour
     IEnumerator HandlePuzzleCompletion()
     {
         yield return new WaitForSecondsRealtime(1f);
-        puzzleCanvas.gameObject.SetActive(false);
+        
 
         if (Puzzle1Or2 == 1)
         {
+            if (!updated)
+            {
+                isIt.isIt = true;
+                updated = true;
+                Time.timeScale = 1f;
+                puzzleCanvas.gameObject.SetActive(false);
+                gameplayCanvas.gameObject.SetActive(true);
+            }
             tilemapSeen.SetActive(true);
             obj1.SetActive(false);
             obj2.SetActive(false);
@@ -178,6 +186,18 @@ public class PuzzleInPyramid2 : MonoBehaviour
         }
         else
         {
+            if (!updated)
+            {
+                isIt.isIt = true;
+                updated = true;
+                Time.timeScale = 1f;
+                puzzleCanvas.gameObject.SetActive(false);
+                gameplayCanvas.gameObject.SetActive(true);
+            }
+            if (!done)
+            {
+                StartCoroutine(ShowDialogForTime(2f));
+            }
             tilemapHide.SetActive(false);
             waterHide.SetActive(false);
             foreach (GameObject waterObject in waterSeen)
@@ -193,13 +213,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
             }
         }
         
-        Time.timeScale = 1f;
-        gameplayCanvas.gameObject.SetActive(true);
-        if (!updated)
-        {
-            isIt.isIt = true;
-            updated = true;
-        }
     }
 
     public void ClosePuzzle()
@@ -265,6 +278,23 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 }
             }
             
+        }
+    }
+    public void SetPuzzleState(bool state)
+    {
+        if (done != state)
+        {
+            done = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
         }
     }
 }
