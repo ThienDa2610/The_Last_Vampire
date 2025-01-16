@@ -8,7 +8,7 @@ public class MapLoader : MonoBehaviour
     public static MapLoader Instance;
 
     public Animator transition;
-    void Start()
+    void Awake()
     {
         if (Instance != null && Instance != this)
         {

@@ -13,12 +13,15 @@ public class PauseMenu : MonoBehaviour
     public Canvas gameplayCanvas;
     private bool isPaused = false;
 
+    public Button firstButton;
+
     private RectTransform pauseMenuRect;
     public float slideSpeed = 5f;
 
     public bool isIt = true;
     private void Start()
     {
+        firstButton.Select();
         gameplayCanvas.gameObject.SetActive(true);
         pauseMenu.SetActive(false);
         pauseMenuRect = pauseMenu.GetComponent<RectTransform>();
@@ -92,19 +95,19 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map2_Desert")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_2");
         }
         else if (savedSceneName == "Map3_City")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_3");
         }
         else if (savedSceneName == "Map4_Cave")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_4");
         }
         else if (savedSceneName == "Map5_Ruin")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_5");
         }
     }
     public void Quit()

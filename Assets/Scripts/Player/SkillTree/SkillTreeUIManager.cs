@@ -62,21 +62,25 @@ public class SkillTreeUIManager : MonoBehaviour
     {
         if (!isOpen && Input.GetKeyDown(KeyCode.C))
         {
-            skillTree.SetActive(true);
-            gameplayCanvas.gameObject.SetActive(false);
-            isOpen = true;
-            Time.timeScale = 0f;
-            if (activeSkill == null)
-            {
-                activeSkill = skills[0];
-            }
+            Open();
         }
         if (isOpen)
         {
             checkUnLock();
         }
-    }
+    }   
 
+    public void Open()
+    {
+        skillTree.SetActive(true);
+        gameplayCanvas.gameObject.SetActive(false);
+        isOpen = true;
+        Time.timeScale = 0f;
+        if (activeSkill == null)
+        {
+            activeSkill = skills[0];
+        }
+    }
     public void UpdatebloodCountText()
     {
         bloodCountText.text = bloodCount.ToString();
@@ -85,7 +89,7 @@ public class SkillTreeUIManager : MonoBehaviour
     public void SetActiveSkill(Skill skill)
     {
         activeSkill = skill;
-        
+
     }
 
 
