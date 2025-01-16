@@ -5,16 +5,25 @@ using UnityEngine;
 public class StatusManager : MonoBehaviour
 {
     public static StatusManager Instance;
+    //stun
     public bool isStun = false;
     public float stunTimer;
     public GameObject eff_Frozen;
     public float frozenYOffset = -0.4f;
-
+    //burn
     public bool isBurned = false;
     public float burnDamage = 5f;
     public float burnRate = 0.5f;
     public float nextBurnTime;
     public float burnedTimer;
+    //trap
+    public bool isTrap = false;
+    public float nextTrapTime;
+    public float trapTimer;
+    public float trapRate = 1f;
+    public float trapDamage = 15f;
+    public float trapSlowPercent = 0.6f;
+    public float trapSpeedDif;
     private void Start()
     {
         Instance = this;
@@ -42,6 +51,15 @@ public class StatusManager : MonoBehaviour
                 isBurned = false;
             }
         }
+        if (isTrap)
+        {
+            trapTimer += Time.deltaTime;
+            if (trapTimer >= nextTrapTime)
+            {
+                HealthManager.Instance.takeDamage(trapDamage, null);
+                nextTrapTime += trapRate;
+            }
+        }
     }
     public void InflictStun(float stunDuration)
     {
@@ -49,11 +67,27 @@ public class StatusManager : MonoBehaviour
         stunTimer = stunDuration;
         GameObject effFrozen = Instantiate(eff_Frozen, new Vector3(transform.position.x, transform.position.y + frozenYOffset, transform.position.z), Quaternion.identity);
         effFrozen.GetComponent<ExplosionEffect>().effectDuration = stunDuration;
+        effFrozen.transform.SetParent(transform);
     }
     public void InflictBurn(float burnDuration)
     {
         isBurned = true;
         burnedTimer = burnDuration;
         nextBurnTime = burnDuration;
+    }
+    public void InflictTrap()
+    {
+        isTrap = true;
+        trapTimer = 0f;
+        nextTrapTime = 0f;
+        trapSpeedDif = Movement.Instance.moveSpeed * trapSlowPercent;
+        Movement.Instance.moveSpeed -= trapSpeedDif;
+    }
+    public void CleanseTrap()
+    {
+        if (!isTrap)
+            return;
+        isTrap = false;
+        Movement.Instance.moveSpeed += trapSpeedDif;
     }
 }

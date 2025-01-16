@@ -73,7 +73,10 @@ public class BossSkillManager : MonoBehaviour
     public void ApproachPlayer()
     {
         animator.SetTrigger("Walk");
-        rb.velocity = new Vector2(transform.localScale.x * moveSpeed, rb.velocity.y);
+        if (isFacingRight)
+            rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+        else
+            rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
     }
 
     public void AdjustDirection(Transform target)

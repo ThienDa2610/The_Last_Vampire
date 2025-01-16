@@ -93,7 +93,7 @@ public class Movement : MonoBehaviour
         }
 
         //dash
-        if (Input.GetKeyDown(KeyCode.LeftShift) && SkillCDManager.isOffCooldown(SkillType.Dash))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !StatusManager.Instance.isTrap && SkillCDManager.isOffCooldown(SkillType.Dash))
         {
             StartCoroutine(Dash());
         }
