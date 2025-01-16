@@ -6,7 +6,6 @@ using TMPro;
 
 public class PicturePuzzle : MonoBehaviour
 {
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
@@ -32,7 +31,6 @@ public class PicturePuzzle : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
         if (donedialogText != null)
         {
@@ -57,7 +55,6 @@ public class PicturePuzzle : MonoBehaviour
             isIt.isIt = false;
             Time.timeScale = 0f;
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
         if (puzzleScript.isPuzzleDone)
         {
@@ -107,7 +104,6 @@ public class PicturePuzzle : MonoBehaviour
         thisScript = false;
         Time.timeScale = 1f;
         dialogText.enabled = true;
-        dialogImage.enabled = true;
         dialogText.text = idleMessage;
     }
 
@@ -118,7 +114,6 @@ public class PicturePuzzle : MonoBehaviour
             isPlayerNear = true;
 
             dialogText.enabled = true;
-            dialogImage.enabled = true;
             dialogText.text = idleMessage;
         }
     }
@@ -129,7 +124,6 @@ public class PicturePuzzle : MonoBehaviour
         {
             isPlayerNear = false;
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
     }
     public void SetPuzzleState(bool state)

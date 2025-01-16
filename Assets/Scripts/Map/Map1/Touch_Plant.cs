@@ -6,7 +6,6 @@ using TMPro;
 
 public class Touch_Plant : MonoBehaviour
 {
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
@@ -19,7 +18,6 @@ public class Touch_Plant : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
     }
     void Update()
@@ -31,7 +29,6 @@ public class Touch_Plant : MonoBehaviour
             if (dialogText != null)
             {
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
         }
     }
@@ -44,7 +41,6 @@ public class Touch_Plant : MonoBehaviour
             {
                 flowerAnimator.SetTrigger(animationTrigger);
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
             
         }
@@ -57,7 +53,6 @@ public class Touch_Plant : MonoBehaviour
             if (!hasBloomed && dialogText != null)
             {
                 dialogText.enabled = true;
-                dialogImage.enabled = true;
                 dialogText.text = idleMessage;
             }
         }
@@ -71,7 +66,6 @@ public class Touch_Plant : MonoBehaviour
             if (dialogText != null)
             {
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
         }
     }

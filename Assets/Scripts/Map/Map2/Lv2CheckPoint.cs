@@ -15,7 +15,6 @@ public class Lv2CheckPoint : MonoBehaviour
     public Animator animator; // Animator to control checkpoint animation
 
     // UI elements for dialog at checkpoint
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
@@ -85,7 +84,8 @@ public class Lv2CheckPoint : MonoBehaviour
         {
             cam.gameObject.SetActive(false);
         }
-
+        int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex", 0); // Default to first camera
+        cameras[savedActiveCameraIndex].gameObject.SetActive(true);
         if (PlayerPrefs.HasKey("SavedPosition2X") && PlayerPrefs.HasKey("SavedPosition2Y") && PlayerPrefs.HasKey("SavedPosition2Z"))
         {
             LoadGame(); // Load game data if available
@@ -102,8 +102,7 @@ public class Lv2CheckPoint : MonoBehaviour
             }
             initialPosition = transform.position;  // Set initial checkpoint position
         }
-        int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex", 0); // Default to first camera
-        cameras[savedActiveCameraIndex].gameObject.SetActive(true);
+        
 
         // If player health script isn't set, get it
         if (playerHealthScript == null)
@@ -114,7 +113,6 @@ public class Lv2CheckPoint : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
         if (SaveddialogText != null)
         {
@@ -144,7 +142,6 @@ public class Lv2CheckPoint : MonoBehaviour
             if (!isSaved && dialogText != null)
             {
                 dialogText.enabled = true;
-                dialogImage.enabled = true;
                 dialogText.text = idleMessage;
                 if (Input.GetKeyDown(KeyCode.F))
                 {
@@ -159,7 +156,6 @@ public class Lv2CheckPoint : MonoBehaviour
             if (dialogText != null)
             {
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
             // Reset checkpoint position if not in range
             if (positionChanged)
@@ -319,7 +315,6 @@ public class Lv2CheckPoint : MonoBehaviour
             }
         }
         PlayerPrefs.SetInt("ActiveCameraIndex", activeCameraIndex);
-
         PlayerPrefs.Save();
     }
 
@@ -418,6 +413,7 @@ public class Lv2CheckPoint : MonoBehaviour
         heat.UpdateHeatbar();
         // Load the index of the active camera
         int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex", 0); // Default to the first camera if not found
+        
         for (int i = 0; i < cameras.Length; i++)
         {
             cameras[i].gameObject.SetActive(i == savedActiveCameraIndex); // Activate the camera at the saved index

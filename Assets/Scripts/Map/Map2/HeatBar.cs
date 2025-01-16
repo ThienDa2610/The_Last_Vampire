@@ -91,7 +91,7 @@ public class HeatBar : MonoBehaviour
     {
         if (heatSlider.value < heatSlider.maxValue)
         {
-            heatSlider.value += Time.deltaTime * 0.01f;
+            heatSlider.value += Time.deltaTime * 0.025f;
         }
     }
     public void UpdateHeatbar()

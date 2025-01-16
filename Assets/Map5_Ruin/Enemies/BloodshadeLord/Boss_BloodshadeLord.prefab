@@ -530,7 +530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8a18969c95cc54da04ad922cb0f173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillDamage: 20
+  skillDamage: 40
+  stunDuration: 2
 --- !u!114 &4648787709911761035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,7 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada86b21143607d46931905da297681d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillDamage: 0
+  skillDamage: 35
   maxCooldown: 0
   currentCooldown: 0
   skillRange: 3
@@ -584,9 +585,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   inFight: 0
-  skillCastRate: 2
+  skillCastRate: 1.5
   castTimer: 0
-  moveSpeed: 2
+  moveSpeed: 3.5
   skillIndex: 0
   animator: {fileID: 0}
   rb: {fileID: 0}
@@ -624,6 +625,7 @@ MonoBehaviour:
   healthbarOverlay: {fileID: 1616877389825228946}
   isInvincible: 0
   isDead: 0
+  dropable: 1
 --- !u!212 &1422975390824818535
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class EnemyHealthManager : MonoBehaviour
     public Image healthbarOverlay;
     public bool isInvincible = false;
     public bool isDead = false;
+    public bool dropable = true;
 
     //skill tree
     // //blood lost
@@ -120,6 +121,7 @@ public class EnemyHealthManager : MonoBehaviour
 
     protected void DropItem()
     {
+        if (!dropable) return;
         for (int i = 0; i< dropItemPrefab.Length; i++)
         {
             if (Random.Range(0f,100f) <= dropChance[i])

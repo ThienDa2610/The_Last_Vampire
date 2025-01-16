@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4119007143714366399}
   - component: {fileID: 8131680241409652231}
   - component: {fileID: 4213644502070782145}
-  - component: {fileID: 2687653515532307915}
+  - component: {fileID: 4209388541590677906}
   m_Layer: 0
   m_Name: Boom
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 2662749070791495964}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4119007143714366399
 SpriteRenderer:
@@ -144,7 +144,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.75, y: 0.9375}
   m_Direction: 0
---- !u!114 &2687653515532307915
+--- !u!114 &4209388541590677906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8131680241409652231}
-  isNear: {fileID: 0}
+  isNear: {fileID: 210822552495076081}
   explode: 0
 --- !u!1 &8796271825546403888
 GameObject:
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 2662749070791495964}
   - component: {fileID: 3971852614929307066}
   - component: {fileID: 7674669458475627548}
-  - component: {fileID: 9173883414203630546}
+  - component: {fileID: 210822552495076081}
   m_Layer: 0
   m_Name: Range
   m_TagString: Untagged
@@ -280,7 +280,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9173883414203630546
+--- !u!114 &210822552495076081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

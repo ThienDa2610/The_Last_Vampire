@@ -11,6 +11,7 @@ public class TypeCoinManager : MonoBehaviour
 
     public int ghostCount = 0;
     public int bloodCount = 0;
+    public bool dragonHeart = false;
     
 
     void Start()
@@ -36,6 +37,12 @@ public class TypeCoinManager : MonoBehaviour
     {
         bloodCount++;
         UpdateBloodCountText();
+    }
+
+    public void CollectDragonHeart()
+    {
+        Debug.Log("true");
+        dragonHeart = true;
     }
 
     public void UpdateGhostCountText()

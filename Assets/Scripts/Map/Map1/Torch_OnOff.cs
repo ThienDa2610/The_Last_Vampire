@@ -8,7 +8,6 @@ public class Torch_OnOff : MonoBehaviour
 {
     public bool isOn = true;
     public Animator torchAnimator;
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
     private bool isPlayerNear = false;
@@ -16,7 +15,6 @@ public class Torch_OnOff : MonoBehaviour
     void Start()
     {
         dialogText.enabled = false;
-        dialogImage.enabled = false;
     }
     
     public void ToggleTorch()
@@ -32,7 +30,6 @@ public class Torch_OnOff : MonoBehaviour
             isOn = true;
         }
         dialogText.enabled = false;
-        dialogImage.enabled = false;
     }
 
     public void SetTorchState(bool state)
@@ -59,7 +56,6 @@ public class Torch_OnOff : MonoBehaviour
             if (isOn)
             {
                 dialogText.enabled = true;
-                dialogImage.enabled = true;
                 dialogText.text = idleMessage;
             }
         }
@@ -72,7 +68,6 @@ public class Torch_OnOff : MonoBehaviour
         {
             isPlayerNear = false;
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
     }
 

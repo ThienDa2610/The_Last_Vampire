@@ -6,7 +6,6 @@ using TMPro;
 
 public class TurnOffTouch : MonoBehaviour
 {
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
     public Animator torchAnimator; 
@@ -19,7 +18,6 @@ public class TurnOffTouch : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
         if (isTorchOn)
         {
@@ -45,7 +43,6 @@ public class TurnOffTouch : MonoBehaviour
             tilemap.SetActive(false);
         }
         dialogText.enabled = false;
-        dialogImage.enabled = false;
     }
     public void SetTorchState(bool state)
     {
@@ -80,7 +77,6 @@ public class TurnOffTouch : MonoBehaviour
             if (isTorchOn)
             {
                 dialogText.enabled = true;
-                dialogImage.enabled = true;
                 dialogText.text = idleMessage;
             }
         }
@@ -93,7 +89,6 @@ public class TurnOffTouch : MonoBehaviour
             isPlayerNear = false;
 
             dialogText.enabled = false;
-            dialogImage.enabled = false;
 
         } 
     }

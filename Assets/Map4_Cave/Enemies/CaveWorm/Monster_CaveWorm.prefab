@@ -423,7 +423,7 @@ Transform:
   - {fileID: 6929559983603323670}
   - {fileID: 442389387826324682}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7718061591273681211
 SpriteRenderer:
@@ -540,6 +540,7 @@ MonoBehaviour:
   healthbarOverlay: {fileID: 7516311844714349463}
   isInvincible: 0
   isDead: 0
+  dropable: 1
 --- !u!114 &296548616364354828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,8 +553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee39e6245161449479787f00b8c451e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  speedMultiplier: 1.2
+  speed: 4
+  speedMultiplier: 1.25
   animator: {fileID: 0}
   movingRight: 1
   groundLayer:

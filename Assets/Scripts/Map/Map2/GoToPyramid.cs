@@ -6,7 +6,6 @@ using TMPro;
 
 public class GoToPyramid : MonoBehaviour
 {
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
     public Vector3 targetPosition;
@@ -24,7 +23,6 @@ public class GoToPyramid : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
         if (secondaryCamera != null)
         {
@@ -49,7 +47,6 @@ public class GoToPyramid : MonoBehaviour
         {
             isPlayerNear = true;
             dialogText.enabled = true;
-            dialogImage.enabled = true;
             dialogText.text = idleMessage;
 
         }
@@ -61,7 +58,6 @@ public class GoToPyramid : MonoBehaviour
         {
             isPlayerNear = false;
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
     }
 }

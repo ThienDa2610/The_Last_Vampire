@@ -35,9 +35,41 @@ public class Shop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("SavedMaxValueItem"))
+        string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
+        if (savedSceneName == "Map1_Forest")
         {
-            quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem");
+            if (PlayerPrefs.HasKey("SavedMaxValueItem"))
+            {
+                quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem");
+            }
+        }
+        else if (savedSceneName == "Map2_Desert")
+        {
+            if (PlayerPrefs.HasKey("SavedMaxValueItem2"))
+            {
+                quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem2");
+            }
+        }
+        else if (savedSceneName == "Map3_City")
+        {
+            if (PlayerPrefs.HasKey("SavedMaxValueItem3"))
+            {
+                quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem3");
+            }
+        }
+        else if (savedSceneName == "Map4_Cave")
+        {
+            if (PlayerPrefs.HasKey("SavedMaxValueItem4"))
+            {
+                quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem4");
+            }
+        }
+        else if (savedSceneName == "Map5_Ruin")
+        {
+            if (PlayerPrefs.HasKey("SavedMaxValueItem5"))
+            {
+                quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem5");
+            }
         }
         quantitySlider.value = 1;
         typeCoinManager = FindObjectOfType<TypeCoinManager>();

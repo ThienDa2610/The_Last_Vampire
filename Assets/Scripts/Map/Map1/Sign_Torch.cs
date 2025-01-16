@@ -9,7 +9,6 @@ public class Sign_Torch : MonoBehaviour
     public GameObject tilemap;
     public GameObject dangeroustilemap;
     public GameObject[] torches;
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
     private bool isPlayerNear = false; 
@@ -17,7 +16,6 @@ public class Sign_Torch : MonoBehaviour
     void Start()
     {
         dialogText.enabled = false;
-        dialogImage.enabled = false;
     }
 
     private void Update()
@@ -35,7 +33,6 @@ public class Sign_Torch : MonoBehaviour
         {
             isPlayerNear = true;
             dialogText.enabled = true;
-            dialogImage.enabled = true;
             dialogText.text = idleMessage;
         }
     }
@@ -46,7 +43,6 @@ public class Sign_Torch : MonoBehaviour
         {
             isPlayerNear = false;
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
     }
 
@@ -60,7 +56,6 @@ public class Sign_Torch : MonoBehaviour
                 torchScript.ToggleTorch();
             }
             torchScript.dialogText.enabled = false;
-            torchScript.dialogImage.enabled = false;
         }
 /*
         foreach (var torch in torches)
@@ -68,7 +63,6 @@ public class Sign_Torch : MonoBehaviour
             torch.GetComponent<Torch_OnOff>().toggleText.SetActive(false);
         }*/
         dialogText.enabled = false;
-        dialogImage.enabled = false; 
     }
 
     void CheckTorchesStatus()

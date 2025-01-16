@@ -73,7 +73,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map3_City")
         {
-            Lv4CheckPoint.ClearGameData();
+            Lv3CheckPoint.ClearGameData();
         }
         else if (savedSceneName == "Map4_Cave")
         {
@@ -92,19 +92,19 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map2_Desert")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_2");
         }
         else if (savedSceneName == "Map3_City")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_3");
         }
         else if (savedSceneName == "Map4_Cave")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_4");
         }
         else if (savedSceneName == "Map5_Ruin")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_5");
         }
     }
     public void Quit()
@@ -121,7 +121,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map3_City")
         {
-            Lv2CheckPoint.Instance.SaveGame();
+            Lv3CheckPoint.Instance.SaveGame();
         }
         else if (savedSceneName == "Map4_Cave")
         {

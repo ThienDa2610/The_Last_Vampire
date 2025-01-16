@@ -6,7 +6,6 @@ using TMPro;
 
 public class GoOutPyramid : MonoBehaviour
 {
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
@@ -35,7 +34,6 @@ public class GoOutPyramid : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
         if (ClosedialogText != null)
         {
@@ -107,7 +105,6 @@ public class GoOutPyramid : MonoBehaviour
         {
             isPlayerNear = true;
             dialogText.enabled = true;
-            dialogImage.enabled = true;
             dialogText.text = idleMessage;
         }
     }
@@ -118,7 +115,6 @@ public class GoOutPyramid : MonoBehaviour
         {
             isPlayerNear = false;
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
     }
 }
