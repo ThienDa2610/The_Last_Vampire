@@ -39,6 +39,7 @@ public class Menu : MonoBehaviour
         CheckPoint.ClearGameData();
         CheckPointJSON.DeleteSaveFile();
         Lv2CheckPoint.ClearGameData();
+        Lv3CheckPoint.ClearGameData();
         Lv4CheckPoint.ClearGameData();
         Lv5CheckPoint.ClearGameData();
 

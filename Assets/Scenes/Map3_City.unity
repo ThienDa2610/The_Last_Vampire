@@ -61767,11 +61767,58 @@ PrefabInstance:
       propertyPath: playerHealthScript
       value: 
       objectReference: {fileID: 1944258693}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8904029457746115327, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+    - {fileID: 7275837091065864707, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1975070238}
   m_SourcePrefab: {fileID: 100100000, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+--- !u!198 &1975070235 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 906377235956721263, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 1975070234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1975070236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 1975070234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1975070237 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6979962501386720832, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 1975070234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1975070238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975070236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d598dd67cd15cbe468cda4baf1f65113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1975070237}
+  dialogText: {fileID: 2057600191}
+  idleMessage: '[F] Save'
+  SaveddialogImage: {fileID: 1912877546}
+  SaveddialogText: {fileID: 1912877545}
+  SavedidleMessage: Game Saved
+  detectionRadius: 3
+  checkpointParticleSystem: {fileID: 1975070235}
+  player: {fileID: 1944258695}
+  playerHealthScript: {fileID: 1944258693}
+  isSaved: 0
+  bloodPotionManager: {fileID: 849541308}
+  typeCoinManager: {fileID: 849541307}
+  shop: {fileID: 830587112}
+  enemies: []
 --- !u!1 &1986100979
 GameObject:
   m_ObjectHideFlags: 0

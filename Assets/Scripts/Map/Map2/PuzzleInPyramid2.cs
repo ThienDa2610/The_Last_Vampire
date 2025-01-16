@@ -6,7 +6,6 @@ using TMPro;
 
 public class PuzzleInPyramid2 : MonoBehaviour
 {
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
@@ -44,7 +43,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
         puzzleCanvas.gameObject.SetActive(false);
         if (donedialogText != null)
@@ -118,7 +116,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 isIt.isIt = false;
                 Time.timeScale = 0f;
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
             if (puzzleScript_number.isPuzzleDone)
             {
@@ -135,7 +132,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 isIt.isIt = false;
                 Time.timeScale = 0f;
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
             if (puzzleScript_vase.isPuzzleDone)
             {
@@ -223,7 +219,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
         thisScript = false;
         Time.timeScale = 1f;
         dialogText.enabled = true;
-        dialogImage.enabled = true;
         dialogText.text = idleMessage;
     }
     void OnTriggerEnter2D(Collider2D other)
@@ -237,7 +232,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
                     isPlayerNear = true;
 
                     dialogText.enabled = true;
-                    dialogImage.enabled = true;
                     dialogText.text = idleMessage;
                 }
             }
@@ -248,7 +242,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
                     isPlayerNear = true;
 
                     dialogText.enabled = true;
-                    dialogImage.enabled = true;
                     dialogText.text = idleMessage;
                 }
             }
@@ -265,7 +258,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 {
                     isPlayerNear = false;
                     dialogText.enabled = false;
-                    dialogImage.enabled = false;
                 }
             }
             else if (Puzzle1Or2 == 2)
@@ -274,7 +266,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 {
                     isPlayerNear = false;
                     dialogText.enabled = false;
-                    dialogImage.enabled = false;
                 }
             }
             

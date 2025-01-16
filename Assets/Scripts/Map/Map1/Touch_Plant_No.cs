@@ -6,7 +6,6 @@ using TMPro;
 
 public class Touch_Plant_No : MonoBehaviour
 {
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
@@ -17,7 +16,6 @@ public class Touch_Plant_No : MonoBehaviour
         if (dialogText != null)
         {
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
     }
     void Update()
@@ -29,7 +27,6 @@ public class Touch_Plant_No : MonoBehaviour
             if (dialogText != null)
             {
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
         }
     }
@@ -42,7 +39,6 @@ public class Touch_Plant_No : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
 
         }
@@ -55,7 +51,6 @@ public class Touch_Plant_No : MonoBehaviour
             if (!hasBloomed && dialogText != null)
             {
                 dialogText.enabled = true;
-                dialogImage.enabled = true;
                 dialogText.text = idleMessage;
             }
         }
@@ -69,7 +64,6 @@ public class Touch_Plant_No : MonoBehaviour
             if (dialogText != null)
             {
                 dialogText.enabled = false;
-                dialogImage.enabled = false;
             }
         }
     }
