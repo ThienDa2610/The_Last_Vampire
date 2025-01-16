@@ -10239,12 +10239,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2508489373767823942, guid: 37315952b39077f499e7e2d222f371da, type: 3}
   m_PrefabInstance: {fileID: 253028695}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 253028697}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f44f364e31f33541b58f66b09288a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &253028697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1211579239604753813, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+  m_PrefabInstance: {fileID: 253028695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &258591408
 GameObject:
   m_ObjectHideFlags: 0
@@ -40023,11 +40028,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 146.79
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.53
+      value: -2.77
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -40103,6 +40108,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1363250673037657446, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 983274719}
+    - targetCorrespondingSourceObject: {fileID: 1363250673037657446, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 983274720}
   m_SourcePrefab: {fileID: 100100000, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
 --- !u!4 &983274678 stripped
 Transform:
@@ -40150,6 +40158,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb81d78daafddd489e4eab799c597a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &983274720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983274680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54890d1a01260c24e96e5a285dddd6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boss: {fileID: 253028697}
+  player: {fileID: 983274680}
+  xTrigger: 391
+  NextScene: Map3_City
 --- !u!1 &987557839
 GameObject:
   m_ObjectHideFlags: 0
