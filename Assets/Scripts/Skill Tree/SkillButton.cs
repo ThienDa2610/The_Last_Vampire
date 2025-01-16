@@ -9,6 +9,7 @@ public class SkillButton : MonoBehaviour
     public Image skillImage;
     public TMP_Text skillName;
     public TMP_Text skillDes;
+    public TMP_Text skillCost;
 
     public int skillButtonId;
 
@@ -18,5 +19,6 @@ public class SkillButton : MonoBehaviour
         skillImage.sprite = SkillTreeUIManager.instance.skills[skillButtonId].skillSprite;
         skillName.text = SkillTreeUIManager.instance.skills[skillButtonId].skillName;
         skillDes.text = SkillTreeUIManager.instance.skills[skillButtonId].skillDes;   
+        skillCost.text = SkillTreeUIManager.instance.skills[skillButtonId].cost.ToString();
     }
 }
