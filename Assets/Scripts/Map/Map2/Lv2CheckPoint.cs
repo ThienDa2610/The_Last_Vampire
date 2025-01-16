@@ -262,9 +262,9 @@ public class Lv2CheckPoint : MonoBehaviour
         //------------change--------------
         // Save initial checkpoint position
         if (initial) { initialPosition.y += 0.2f; }
-        PlayerPrefs.SetFloat("Initial2PositionX", initialPosition.x);
-        PlayerPrefs.SetFloat("Initial2PositionY", initialPosition.y);
-        PlayerPrefs.SetFloat("Initial2PositionZ", initialPosition.z);
+        PlayerPrefs.SetFloat("InitialPosition2X", initialPosition.x);
+        PlayerPrefs.SetFloat("InitialPosition2Y", initialPosition.y);
+        PlayerPrefs.SetFloat("InitialPosition2Z", initialPosition.z);
 
         // Save animator state (whether checkpoint is active or not)
         bool isActive = animator.GetBool("IsActive");
@@ -328,9 +328,9 @@ public class Lv2CheckPoint : MonoBehaviour
     {
         //------------change--------------
         // Load checkpoint
-        float xInitial = PlayerPrefs.GetFloat("Initial2PositionX", 0f);
-        float yInitial = PlayerPrefs.GetFloat("Initial2PositionY", 0f);
-        float zInitial = PlayerPrefs.GetFloat("Initial2PositionZ", 0f);
+        float xInitial = PlayerPrefs.GetFloat("InitialPosition2X", 0f);
+        float yInitial = PlayerPrefs.GetFloat("InitialPosition2Y", 0f);
+        float zInitial = PlayerPrefs.GetFloat("InitialPosition2Z", 0f);
         initialPosition = new Vector3(xInitial, yInitial, zInitial);
 
         transform.position = initialPosition;

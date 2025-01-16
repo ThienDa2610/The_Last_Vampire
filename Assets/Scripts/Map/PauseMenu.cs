@@ -81,7 +81,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map5_Ruin")
         {
-            Lv4CheckPoint.ClearGameData();
+            Lv5CheckPoint.ClearGameData();
         }
 
         SceneManager.LoadScene(savedSceneName);
@@ -129,7 +129,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map5_Ruin")
         {
-            Lv2CheckPoint.Instance.SaveGame();
+            Lv5CheckPoint.Instance.SaveGame();
         }
         
         Time.timeScale = 1f;

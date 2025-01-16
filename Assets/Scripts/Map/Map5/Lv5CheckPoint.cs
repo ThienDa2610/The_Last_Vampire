@@ -5,10 +5,10 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Lv4CheckPoint : MonoBehaviour
+public class Lv5CheckPoint : MonoBehaviour
 {
     // Singleton instance for easy access
-    public static Lv4CheckPoint Instance { get; private set; }
+    public static Lv5CheckPoint Instance { get; private set; }
 
     /*private bool hasChangesSinceLastSave = false;*/
 
@@ -51,7 +51,7 @@ public class Lv4CheckPoint : MonoBehaviour
 
     //Diffent things of maps
     public List<EnemyHealthManager> enemies;
- 
+
 
     // Initialize the instance and check for saved data
     void Awake()
@@ -69,8 +69,8 @@ public class Lv4CheckPoint : MonoBehaviour
     // Start method where the checkpoint data is loaded
     void Start()
     {
-        
-        if (PlayerPrefs.HasKey("SavedPosition4X") && PlayerPrefs.HasKey("SavedPosition4Y") && PlayerPrefs.HasKey("SavedPosition4Z"))
+
+        if (PlayerPrefs.HasKey("SavedPosition5X") && PlayerPrefs.HasKey("SavedPosition5Y") && PlayerPrefs.HasKey("SavedPosition5Z"))
         {
             LoadGame(); // Load game data if available
         }
@@ -86,7 +86,7 @@ public class Lv4CheckPoint : MonoBehaviour
             }
             initialPosition = transform.position;  // Set initial checkpoint position
         }
-       
+
         // If player health script isn't set, get it
         if (playerHealthScript == null)
         {
@@ -230,9 +230,9 @@ public class Lv4CheckPoint : MonoBehaviour
 
         // Save player position
         //------------change--------------
-        PlayerPrefs.SetFloat("SavedPosition4X", player.transform.position.x);
-        PlayerPrefs.SetFloat("SavedPosition4Y", player.transform.position.y);
-        PlayerPrefs.SetFloat("SavedPosition4Z", player.transform.position.z);
+        PlayerPrefs.SetFloat("SavedPosition5X", player.transform.position.x);
+        PlayerPrefs.SetFloat("SavedPosition5Y", player.transform.position.y);
+        PlayerPrefs.SetFloat("SavedPosition5Z", player.transform.position.z);
 
         // Save player health
         float currentHealth = playerHealthScript.currentHealth;
@@ -241,16 +241,16 @@ public class Lv4CheckPoint : MonoBehaviour
         //------------change--------------
         // Save initial checkpoint position
         if (initial) { initialPosition.y += 0.2f; }
-        PlayerPrefs.SetFloat("InitialPosition4X", initialPosition.x);
-        PlayerPrefs.SetFloat("InitialPosition4Y", initialPosition.y);
-        PlayerPrefs.SetFloat("InitialPosition4Z", initialPosition.z);
+        PlayerPrefs.SetFloat("InitialPosition5X", initialPosition.x);
+        PlayerPrefs.SetFloat("InitialPosition5Y", initialPosition.y);
+        PlayerPrefs.SetFloat("InitialPosition5Z", initialPosition.z);
 
         // Save animator state (whether checkpoint is active or not)
         bool isActive = animator.GetBool("IsActive");
         //------------change--------------
-        PlayerPrefs.SetInt("SavedAnimatorState4", isActive ? 1 : 0);
-        PlayerPrefs.SetInt("isSaved4", isSaved ? 1 : 0);
-        PlayerPrefs.SetInt("positionChanged4", positionChanged ? 1 : 0);
+        PlayerPrefs.SetInt("SavedAnimatorState5", isActive ? 1 : 0);
+        PlayerPrefs.SetInt("isSaved5", isSaved ? 1 : 0);
+        PlayerPrefs.SetInt("positionChanged5", positionChanged ? 1 : 0);
 
         // Save potion and coin counts
         int countBlood = bloodPotionManager.GetComponent<BloodPotionManager>().bottleCount;
@@ -261,17 +261,17 @@ public class Lv4CheckPoint : MonoBehaviour
         PlayerPrefs.SetInt("SavedBloodCount", countBloodSkill);
 
         //------------change--------------
-        PlayerPrefs.SetInt("SavedItemRunOut4", shop.GetComponent<Shop>().itemRunOut ? 1 : 0);
+        PlayerPrefs.SetInt("SavedItemRunOut5", shop.GetComponent<Shop>().itemRunOut ? 1 : 0);
         int maxValueItem = Mathf.FloorToInt(shop.quantitySlider.maxValue);
-        PlayerPrefs.SetInt("SavedMaxValueItem4", maxValueItem);
+        PlayerPrefs.SetInt("SavedMaxValueItem5", maxValueItem);
 
         // Save states of torches, plants, and enemies
 
         //------------change--------------
         for (int i = 0; i < enemies.Count; i++)
         {
-            PlayerPrefs.SetInt("Enemy4_" + i + "_Dead", enemies[i].isDead ? 1 : 0);
-            PlayerPrefs.SetFloat("Enemy4_" + i + "_Health", enemies[i].health);
+            PlayerPrefs.SetInt("Enemy5_" + i + "_Dead", enemies[i].isDead ? 1 : 0);
+            PlayerPrefs.SetFloat("Enemy5_" + i + "_Health", enemies[i].health);
         }
 
         PlayerPrefs.Save();
@@ -282,17 +282,17 @@ public class Lv4CheckPoint : MonoBehaviour
     {
         //------------change--------------
         // Load checkpoint
-        float xInitial = PlayerPrefs.GetFloat("InitialPosition4X", 0f);
-        float yInitial = PlayerPrefs.GetFloat("InitialPosition4Y", 0f);
-        float zInitial = PlayerPrefs.GetFloat("InitialPosition4Z", 0f);
+        float xInitial = PlayerPrefs.GetFloat("InitialPosition5X", 0f);
+        float yInitial = PlayerPrefs.GetFloat("InitialPosition5Y", 0f);
+        float zInitial = PlayerPrefs.GetFloat("InitialPosition5Z", 0f);
         initialPosition = new Vector3(xInitial, yInitial, zInitial);
 
         transform.position = initialPosition;
         // Load player position and health
         //------------change--------------
-        float x = PlayerPrefs.GetFloat("SavedPosition4X");
-        float y = PlayerPrefs.GetFloat("SavedPosition4Y");
-        float z = PlayerPrefs.GetFloat("SavedPosition4Z");
+        float x = PlayerPrefs.GetFloat("SavedPosition5X");
+        float y = PlayerPrefs.GetFloat("SavedPosition5Y");
+        float z = PlayerPrefs.GetFloat("SavedPosition5Z");
         savedPosition = new Vector3(x, y, z);
         player.transform.position = savedPosition;
 
@@ -313,9 +313,9 @@ public class Lv4CheckPoint : MonoBehaviour
         typeCoinManager.GetComponent<TypeCoinManager>().bloodCount = savedBloodSkill;
 
         //------------change--------------
-        int savedItemRunOut = PlayerPrefs.GetInt("SavedItemRunOut4", 0);
+        int savedItemRunOut = PlayerPrefs.GetInt("SavedItemRunOut5", 0);
         shop.itemRunOut = savedItemRunOut == 1;
-        int savedMaxItem = PlayerPrefs.GetInt("SavedMaxValueItem4");
+        int savedMaxItem = PlayerPrefs.GetInt("SavedMaxValueItem5");
         if (shop != null)
         {
             shop.quantitySlider.maxValue = savedMaxItem;
@@ -323,17 +323,17 @@ public class Lv4CheckPoint : MonoBehaviour
 
         // Load animator state
         //------------change--------------
-        int savedAnimatorState = PlayerPrefs.GetInt("SavedAnimatorState4", 0);
+        int savedAnimatorState = PlayerPrefs.GetInt("SavedAnimatorState5", 0);
         animator.SetBool("IsActive", savedAnimatorState == 1);
 
-        isSaved = PlayerPrefs.GetInt("isSaved4", 0) == 1;
-        positionChanged = PlayerPrefs.GetInt("positionChanged4", 0) == 1;
+        isSaved = PlayerPrefs.GetInt("isSaved5", 0) == 1;
+        positionChanged = PlayerPrefs.GetInt("positionChanged5", 0) == 1;
 
         //------------change--------------
         // Load enemies state
         for (int i = 0; i < enemies.Count; i++)
         {
-            int enemyDead = PlayerPrefs.GetInt("Enemy4_" + i + "_Dead", 0); // Default to alive (0)
+            int enemyDead = PlayerPrefs.GetInt("Enemy5_" + i + "_Dead", 0); // Default to alive (0)
             enemies[i].isDead = enemyDead == 1;
 
             if (enemies[i].isDead)
@@ -342,7 +342,7 @@ public class Lv4CheckPoint : MonoBehaviour
             }
             else
             {
-                enemies[i].health = PlayerPrefs.GetFloat("Enemy4_" + i + "_Health", enemies[i].maxHealth);
+                enemies[i].health = PlayerPrefs.GetFloat("Enemy5_" + i + "_Health", enemies[i].maxHealth);
                 enemies[i].UpdateHealthbar();
             }
         }
@@ -354,22 +354,22 @@ public class Lv4CheckPoint : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("SavedSceneName");
         //------------change--------------
-        PlayerPrefs.DeleteKey("SavedPosition4X");
-        PlayerPrefs.DeleteKey("SavedPosition4Y");
-        PlayerPrefs.DeleteKey("SavedPosition4Z");
+        PlayerPrefs.DeleteKey("SavedPosition5X");
+        PlayerPrefs.DeleteKey("SavedPosition5Y");
+        PlayerPrefs.DeleteKey("SavedPosition5Z");
 
         PlayerPrefs.DeleteKey("SavedHealth");
-        PlayerPrefs.DeleteKey("InitialPosition4X");
-        PlayerPrefs.DeleteKey("InitialPosition4Y");
-        PlayerPrefs.DeleteKey("InitialPosition4Z");
-        PlayerPrefs.DeleteKey("SavedAnimatorState4");
-        PlayerPrefs.DeleteKey("isSaved4");
-        PlayerPrefs.DeleteKey("positionChanged4");
+        PlayerPrefs.DeleteKey("InitialPosition5X");
+        PlayerPrefs.DeleteKey("InitialPosition5Y");
+        PlayerPrefs.DeleteKey("InitialPosition5Z");
+        PlayerPrefs.DeleteKey("SavedAnimatorState5");
+        PlayerPrefs.DeleteKey("isSaved5");
+        PlayerPrefs.DeleteKey("positionChanged5");
         PlayerPrefs.DeleteKey("SavedBloodPotionCount");
         PlayerPrefs.DeleteKey("SavedGhostCount");
         PlayerPrefs.DeleteKey("SavedBloodCount");
-        PlayerPrefs.DeleteKey("SavedItemRunOut4");
-        PlayerPrefs.DeleteKey("SavedMaxValueItem4");
-        PlayerPrefs.DeleteKey("Enemy4_");
+        PlayerPrefs.DeleteKey("SavedItemRunOut5");
+        PlayerPrefs.DeleteKey("SavedMaxValueItem5");
+        PlayerPrefs.DeleteKey("Enemy5_");
     }
 }
