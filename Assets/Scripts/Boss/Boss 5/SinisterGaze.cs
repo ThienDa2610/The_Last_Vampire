@@ -5,8 +5,10 @@ using UnityEngine;
 public class SinisterGaze : MonoBehaviour
 {
     public float skillDamage;
+    public float stunDuration = 2f;
     void Start()
     {
+        skillDamage = 40f;
     }
     public void Play(Transform target)
     {

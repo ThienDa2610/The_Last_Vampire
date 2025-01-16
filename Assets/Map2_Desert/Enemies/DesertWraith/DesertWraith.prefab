@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9200334476871017304}
   - component: {fileID: 8246037291376040490}
   - component: {fileID: 8225566352709120570}
-  - component: {fileID: 2508489373767823942}
+  - component: {fileID: -6169437410454458027}
   - component: {fileID: 8083018959941403578}
   - component: {fileID: 691646446968864185}
   m_Layer: 7
@@ -25,7 +25,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &703379864019632140
 Transform:
   m_ObjectHideFlags: 0
@@ -42,7 +42,7 @@ Transform:
   - {fileID: 2125452868908642064}
   - {fileID: 5009571078238397801}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3580939652490700201
 MonoBehaviour:
@@ -248,7 +248,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2508489373767823942
+--- !u!114 &-6169437410454458027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1211579239604753813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f44f364e31f33541b58f66b09288a1a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cf919a0e3120fa42992f823531bb9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dropItemPrefab:
@@ -276,6 +276,7 @@ MonoBehaviour:
   healthbarOverlay: {fileID: 6161422684613888862}
   isInvincible: 0
   isDead: 0
+  dropable: 1
 --- !u!114 &8083018959941403578
 MonoBehaviour:
   m_ObjectHideFlags: 0
