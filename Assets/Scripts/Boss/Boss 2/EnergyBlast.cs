@@ -7,6 +7,7 @@ public class EnergyBlast : MonoBehaviour
     public float skillDamage = 15f;
     public float maxDuration = 10f;
     public float moveSpeed = 15f;
+    public bool isFalling = false;
     public GameObject pf_effExplosion;
     public GameObject shooter;
     Rigidbody2D rb;
@@ -20,7 +21,8 @@ public class EnergyBlast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector3(transform.localScale.x * moveSpeed, 0f, 0f);
+        if (!isFalling)
+            rb.velocity = new Vector3(transform.localScale.x * moveSpeed, 0f, 0f);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

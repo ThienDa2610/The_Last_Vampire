@@ -9,7 +9,7 @@ public class FireBlast : EnergyBlast
     {
         if (collision.CompareTag("Player"))
         {
-            if (HealthManager.Instance.takeDamage(skillDamage, shooter))
+            if (HealthManager.Instance.takeDamage(skillDamage, shooter) == 0)
                 StatusManager.Instance.InflictBurn(burnDuration);
         }
         if (collision.CompareTag("Player") || collision.CompareTag("Ground"))

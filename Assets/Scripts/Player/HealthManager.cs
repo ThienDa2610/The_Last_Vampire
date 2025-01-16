@@ -65,14 +65,14 @@ public class HealthManager : MonoBehaviour
        
     }
     
-    public bool takeDamage(float damage, GameObject damageDealer)
+    public int takeDamage(float damage, GameObject damageDealer)
     {
         if (counter.isCountering && damageDealer != null)
         {
             counter.Countering(damageDealer);
-            return false;
+            return 2; //countered
         }
-        if (isInvincible) return false;
+        if (isInvincible) return 1; //dodged
         currentHealth = (currentHealth - damage) < 0 ? 0 : (currentHealth - damage);
         UpdateHealthbar();
         if (currentHealth == 0)
@@ -92,7 +92,7 @@ public class HealthManager : MonoBehaviour
             else
                 Dead();
         }
-        return true;
+        return 0; //hit
     }
     public void Heal(float healAmount)
     {
