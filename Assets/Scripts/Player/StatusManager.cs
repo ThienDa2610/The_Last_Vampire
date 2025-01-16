@@ -24,6 +24,11 @@ public class StatusManager : MonoBehaviour
     public float trapDamage = 15f;
     public float trapSlowPercent = 0.6f;
     public float trapSpeedDif;
+    //slough
+    public bool isInSlough = false;
+    public float sloughSlowPercent = 0.5f;
+    public float sloughSpeedDif;
+    public float sloughjumpDif;
     private void Start()
     {
         Instance = this;
@@ -89,5 +94,21 @@ public class StatusManager : MonoBehaviour
             return;
         isTrap = false;
         Movement.Instance.moveSpeed += trapSpeedDif;
+    }
+    public void InflictSlough()
+    {
+        isInSlough = true;
+        
+        sloughSpeedDif = Movement.Instance.moveSpeed * sloughSlowPercent;
+        Movement.Instance.moveSpeed -= sloughSpeedDif;
+
+        sloughjumpDif = Movement.Instance.jumpForce;
+        Movement.Instance.jumpForce = 0f;
+    }
+    public void CleanseSlough()
+    {
+        isInSlough = false;
+        Movement.Instance.moveSpeed += sloughSpeedDif;
+        Movement.Instance.jumpForce += sloughjumpDif;
     }
 }

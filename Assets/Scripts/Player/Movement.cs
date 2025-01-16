@@ -115,7 +115,8 @@ public class Movement : MonoBehaviour
                 }
             }
         }*/
-        if (!isInSlough)
+
+        /*if (!isInSlough)
         {
             moveSpeed = 5f;
             jumpForce = 7f;
@@ -124,7 +125,7 @@ public class Movement : MonoBehaviour
         {
             moveSpeed = 2.5f;
             jumpForce = 0f;
-        }
+        }*/
     }
 
     private IEnumerator Dash()
