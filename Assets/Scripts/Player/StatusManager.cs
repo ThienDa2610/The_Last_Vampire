@@ -97,11 +97,13 @@ public class StatusManager : MonoBehaviour
     }
     public void InflictSlough()
     {
+        if (isInSlough) return;
         isInSlough = true;
         
         sloughSpeedDif = Movement.Instance.moveSpeed * sloughSlowPercent;
         Movement.Instance.moveSpeed -= sloughSpeedDif;
 
+        Debug.Log(Movement.Instance.jumpForce);
         sloughjumpDif = Movement.Instance.jumpForce;
         Movement.Instance.jumpForce = 0f;
     }
@@ -110,5 +112,8 @@ public class StatusManager : MonoBehaviour
         isInSlough = false;
         Movement.Instance.moveSpeed += sloughSpeedDif;
         Movement.Instance.jumpForce += sloughjumpDif;
+
+        sloughSpeedDif = 0f;
+        sloughjumpDif = 0f;
     }
 }

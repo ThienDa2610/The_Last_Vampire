@@ -40,7 +40,7 @@ public class Counter : MonoBehaviour
         yield return new WaitForSeconds(counterDuration);
         if (isEnhanced)
             yield return new WaitForSeconds(enhancedDuration);
-        animator.SetBool("isCountering", true);
+        animator.SetBool("isCountering", false);
         isCountering = false;
     }
     public void Countering(GameObject target)
