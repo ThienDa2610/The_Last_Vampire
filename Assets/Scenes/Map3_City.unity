@@ -28807,6 +28807,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 423c564a66d1e4d41859f1035b913fc7, type: 3}
+--- !u!1 &731873939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5976891044393792614, guid: 423c564a66d1e4d41859f1035b913fc7, type: 3}
+  m_PrefabInstance: {fileID: 731873938}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &743757841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64496,11 +64501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 215.8
+      value: 218
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64557,7 +64562,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1363250673037657446, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1944258696}
   m_SourcePrefab: {fileID: 100100000, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
 --- !u!114 &1944258693 stripped
 MonoBehaviour:
@@ -64580,6 +64588,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1363250673037657446, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
   m_PrefabInstance: {fileID: 1944258692}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1944258696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944258695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54890d1a01260c24e96e5a285dddd6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boss: {fileID: 731873939}
+  player: {fileID: 1944258695}
+  xTrigger: 250
+  NextScene: Map4_Cave
 --- !u!1001 &1975070234
 PrefabInstance:
   m_ObjectHideFlags: 0

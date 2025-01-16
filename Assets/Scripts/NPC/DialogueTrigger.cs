@@ -27,6 +27,8 @@ public class Dialogue
 public class DialogueTrigger : MonoBehaviour
 {
     public int tutorLabel = 0;
+    public GameObject counterIcon;
+    public GameObject bloodWaveIcon;
     public Dialogue dialogue;
     private bool dialogued = false;
     private bool isNear = false;
@@ -63,9 +65,11 @@ public class DialogueTrigger : MonoBehaviour
                 {
                     case 1:
                     Counter.counterLearned = true;
+                    counterIcon.SetActive(true);
                     break;
                     case 2:
                     CastBloodWave.bloodWaveLearned = true;
+                    bloodWaveIcon.SetActive(true);
                     break;
                     default:
                     break;
