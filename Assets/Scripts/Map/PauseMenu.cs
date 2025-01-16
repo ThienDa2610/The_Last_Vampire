@@ -9,6 +9,8 @@ using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
+    public Button firstButton;
+    public GameObject pauseMenu;
     public Canvas gameplayCanvas;
     private bool isPaused = false;
 
@@ -19,8 +21,8 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         gameplayCanvas.gameObject.SetActive(true);
-        gameObject.SetActive(false);
-        pauseMenuRect = gameObject.GetComponent<RectTransform>();
+        pauseMenu.SetActive(false);
+        pauseMenuRect = pauseMenu.GetComponent<RectTransform>();
     }
     private void Update()
     {
@@ -40,11 +42,11 @@ public class PauseMenu : MonoBehaviour
     {
         gameplayCanvas.gameObject.SetActive(false);
         isPaused = true;
-        gameObject.SetActive(true);
-
+        pauseMenu.SetActive(true);
+        firstButton.Select();
         StartCoroutine(SlideInMenu());
 
-        Time.timeScale = 0f;  
+        Time.timeScale = 0f;
     }
     public void Continue()
     {
@@ -72,7 +74,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map3_City")
         {
-            Lv4CheckPoint.ClearGameData();
+            //Lv3CheckPoint.ClearGameData();
         }
         else if (savedSceneName == "Map4_Cave")
         {
@@ -91,19 +93,19 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map2_Desert")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_2");
         }
         else if (savedSceneName == "Map3_City")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_3");
         }
         else if (savedSceneName == "Map4_Cave")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_4");
         }
         else if (savedSceneName == "Map5_Ruin")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_5");
         }
     }
     public void Quit()
@@ -120,7 +122,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map3_City")
         {
-            Lv2CheckPoint.Instance.SaveGame();
+            //Lv3CheckPoint.Instance.SaveGame();
         }
         else if (savedSceneName == "Map4_Cave")
         {
@@ -130,16 +132,16 @@ public class PauseMenu : MonoBehaviour
         {
             Lv5CheckPoint.Instance.SaveGame();
         }
-        
+
         Time.timeScale = 1f;
         MapLoader.Instance.LoadMap("Menu");
         MusicManager.Instance.PlayMusic("Menu");
     }
-   
+
     private IEnumerator SlideInMenu()
     {
-        Vector3 targetPosition = Vector3.zero; 
-        Vector3 startPosition = new Vector3(Screen.width, 0, 0); 
+        Vector3 targetPosition = new Vector3(800, 0, 0);
+        Vector3 startPosition = new Vector3(1900, 0, 0);
         pauseMenuRect.anchoredPosition = startPosition;
 
         float elapsedTime = 0f;
@@ -150,12 +152,12 @@ public class PauseMenu : MonoBehaviour
             yield return null;
         }
         pauseMenuRect.anchoredPosition = targetPosition;
-        
+
     }
 
     private IEnumerator SlideOutMenu()
     {
-        Vector3 targetPosition = new Vector3(Screen.width, 0, 0); 
+        Vector3 targetPosition = new Vector3(1900, 0, 0);
         Vector3 startPosition = pauseMenuRect.anchoredPosition;
 
         float elapsedTime = 0f;
@@ -165,7 +167,7 @@ public class PauseMenu : MonoBehaviour
             pauseMenuRect.anchoredPosition = Vector3.Lerp(startPosition, targetPosition, elapsedTime);
             yield return null;
         }
-        pauseMenuRect.anchoredPosition = targetPosition; 
-        gameObject.SetActive(false); 
+        pauseMenuRect.anchoredPosition = targetPosition;
+        pauseMenu.SetActive(false);
     }
 }
