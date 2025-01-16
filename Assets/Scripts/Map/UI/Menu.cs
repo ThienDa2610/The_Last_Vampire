@@ -76,6 +76,7 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+
     /*public void No_ReStart()
     {
         MapLoader.Instance.LoadMap("Menu");
