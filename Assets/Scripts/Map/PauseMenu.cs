@@ -9,7 +9,6 @@ using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenu;
     public Canvas gameplayCanvas;
     private bool isPaused = false;
 
@@ -20,8 +19,8 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         gameplayCanvas.gameObject.SetActive(true);
-        pauseMenu.SetActive(false);
-        pauseMenuRect = pauseMenu.GetComponent<RectTransform>();
+        gameObject.SetActive(false);
+        pauseMenuRect = gameObject.GetComponent<RectTransform>();
     }
     private void Update()
     {
@@ -41,7 +40,7 @@ public class PauseMenu : MonoBehaviour
     {
         gameplayCanvas.gameObject.SetActive(false);
         isPaused = true;
-        pauseMenu.SetActive(true);
+        gameObject.SetActive(true);
 
         StartCoroutine(SlideInMenu());
 
@@ -167,6 +166,6 @@ public class PauseMenu : MonoBehaviour
             yield return null;
         }
         pauseMenuRect.anchoredPosition = targetPosition; 
-        pauseMenu.SetActive(false); 
+        gameObject.SetActive(false); 
     }
 }
