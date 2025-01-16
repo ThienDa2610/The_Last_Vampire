@@ -7,6 +7,8 @@ public class StatusManager : MonoBehaviour
     public static StatusManager Instance;
     public bool isStun = false;
     public float stunTimer;
+    public GameObject eff_Frozen;
+    public float frozenYOffset = -0.4f;
 
     public bool isBurned = false;
     public float burnDamage = 5f;
@@ -45,6 +47,8 @@ public class StatusManager : MonoBehaviour
     {
         isStun = true;
         stunTimer = stunDuration;
+        GameObject effFrozen = Instantiate(eff_Frozen, new Vector3(transform.position.x, transform.position.y + frozenYOffset, transform.position.z), Quaternion.identity);
+        effFrozen.GetComponent<ExplosionEffect>().effectDuration = stunDuration;
     }
     public void InflictBurn(float burnDuration)
     {
