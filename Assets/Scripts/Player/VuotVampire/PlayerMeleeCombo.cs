@@ -19,7 +19,7 @@ public class PlayerMeleeCombo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J) && meleeStateMachine.CurrentState.GetType() == typeof(IdleComboState))
+        if (Input.GetKeyDown(KeyCode.J) && !StatusManager.Instance.isStun && meleeStateMachine.CurrentState.GetType() == typeof(IdleComboState))
         {
             meleeStateMachine.SetNextState(new MeleeEntryState());
         }

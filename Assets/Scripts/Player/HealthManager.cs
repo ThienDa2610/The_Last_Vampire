@@ -5,6 +5,7 @@ using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 public class HealthManager : MonoBehaviour
 {
     static public HealthManager Instance { get; private set; }
@@ -12,7 +13,7 @@ public class HealthManager : MonoBehaviour
     public float maxHealth = 100f;
     public float currentHealth;
     public bool isInvincible = false;
-    public Image healthbarOverlay;
+    public UnityEngine.UI.Image healthbarOverlay;
     public float fallLimit = -6f;
     public Counter counter;
 
@@ -64,14 +65,14 @@ public class HealthManager : MonoBehaviour
        
     }
     
-    public void takeDamage(float damage, GameObject damageDealer)
+    public int takeDamage(float damage, GameObject damageDealer)
     {
         if (counter.isCountering && damageDealer != null)
         {
             counter.Countering(damageDealer);
-            return;
+            return 2; //countered
         }
-        if (isInvincible) return;
+        if (isInvincible) return 1; //dodged
         currentHealth = (currentHealth - damage) < 0 ? 0 : (currentHealth - damage);
         UpdateHealthbar();
         if (currentHealth == 0)
@@ -91,6 +92,7 @@ public class HealthManager : MonoBehaviour
             else
                 Dead();
         }
+        return 0; //hit
     }
     public void Heal(float healAmount)
     {

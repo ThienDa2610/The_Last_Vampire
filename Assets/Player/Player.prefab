@@ -9,12 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 129356625795906861}
+  - component: {fileID: 1331539958752835670}
   - component: {fileID: 6378644565871544034}
   - component: {fileID: 7996568525935555195}
   - component: {fileID: 5633537255432460638}
   - component: {fileID: 1787592824612973247}
   - component: {fileID: 526336373535332329}
   - component: {fileID: 3090211975662506233}
+  - component: {fileID: 3262095114583695966}
   - component: {fileID: 6157991549691410573}
   - component: {fileID: 5877672905978513763}
   - component: {fileID: 932090922091942697}
@@ -43,8 +45,40 @@ Transform:
   - {fileID: 535421724919279055}
   - {fileID: 3694619061247883188}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1331539958752835670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363250673037657446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb228df8de3432747a302deabccdf864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStun: 0
+  stunTimer: 0
+  eff_Frozen: {fileID: 7071784102718443845, guid: 4bce05d3442891c408aee396aa66a6b8, type: 3}
+  frozenYOffset: -0.4
+  isBurned: 0
+  burnDamage: 5
+  burnRate: 0.5
+  nextBurnTime: 0
+  burnedTimer: 0
+  isTrap: 0
+  nextTrapTime: 0
+  trapTimer: 0
+  trapRate: 1
+  trapDamage: 15
+  trapSlowPercent: 0.6
+  trapSpeedDif: 0
+  isInSlough: 0
+  sloughSlowPercent: 0.5
+  sloughSpeedDif: 0
+  sloughjumpDif: 0
 --- !u!212 &6378644565871544034
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -137,7 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCountering: 0
-  counterDuration: 0.3
+  counterDuration: 0.5
+  animator: {fileID: 0}
   teleOffset: 1.5
   healAmount: 30
   counterDamage: 30
@@ -156,7 +191,7 @@ MonoBehaviour:
   gameOver: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
-  isInvincible: 0
+  isInvincible: 1
   healthbarOverlay: {fileID: 0}
   fallLimit: -6
   counter: {fileID: 0}
@@ -185,6 +220,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitbox: {fileID: 6143581755029795031}
+--- !u!114 &3262095114583695966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363250673037657446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f203b06a3593b884aa29e25670883db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodWavePenalty: 15
+  pf_bloodWave: {fileID: 5761253905798335362, guid: 5a5af7f4606416a4fbc9adebd5ef04a4, type: 3}
+  animator: {fileID: 0}
 --- !u!114 &6157991549691410573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,10 +295,13 @@ MonoBehaviour:
   cdOverlay:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   skillCD:
   - 2
   - 5
+  - 7
   skillCurrentCD:
+  - 0
   - 0
   - 0
 --- !u!70 &732199530245296741

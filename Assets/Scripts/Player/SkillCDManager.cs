@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public enum SkillType
 {
     Dash,
-    Counter
+    Counter,
+    BloodWave
 }
 public class SkillCDManager : MonoBehaviour
 {

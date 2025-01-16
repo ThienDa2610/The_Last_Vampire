@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -40,5 +41,16 @@ public class Options : MonoBehaviour
         audioMixer.SetFloat("Music", Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat(MusicVolumeKey, volume);
         PlayerPrefs.Save();
+    }
+
+    public void SetQuality(int value)
+    {
+        QualitySettings.SetQualityLevel(value);
+    }
+
+    public void SetFullscreen(bool isFullscreen)
+    {
+
+       Screen.fullScreen = isFullscreen;
     }
 }

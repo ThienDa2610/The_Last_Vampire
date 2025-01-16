@@ -18,11 +18,9 @@ public class FireMissile : BossSkill
     }
     private IEnumerator FiringMissile()
     {
-        Debug.Log("Firing");
         animator.SetTrigger("isFiring");
         for (int i = 0; i < numberOfMissile; i++)
         {
-            Debug.Log(i);
             yield return new WaitForSeconds(prepTime);
             StartFireMissile();
         }

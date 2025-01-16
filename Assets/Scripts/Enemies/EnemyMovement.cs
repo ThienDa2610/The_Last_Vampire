@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     public float speed;
-    protected float speedMultiplier;
+    public float speedMultiplier;
     public Animator animator;
 
     protected Rigidbody2D rb;
@@ -30,6 +30,7 @@ public class EnemyMovement : MonoBehaviour
             else
             {
                 animator.SetTrigger("Walk");
+                Debug.Log("Into patrol");
                 Patrol();
             }
         }
@@ -50,7 +51,7 @@ public class EnemyMovement : MonoBehaviour
     {
         float direction = movingRight ? 1 : -1;
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
-
+        Debug.Log(rb.velocity.x);
         if (isBlocked())
         {
             movingRight = !movingRight;

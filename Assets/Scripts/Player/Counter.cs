@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Counter : MonoBehaviour
 {
+    public static Counter Instance;
     public static bool counterLearned = false;
     public bool isCountering = false;
-    public float counterDuration = 0.3f;
+    public float counterDuration = 0.5f;
+    public Animator animator;
     [SerializeField] float teleOffset = 1.5f;
     [SerializeField] float healAmount = 30f;
     [SerializeField] float counterDamage = 30f;
@@ -17,13 +19,14 @@ public class Counter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //counterLearned = false;
+        Instance = this;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (counterLearned && Input.GetKeyDown(KeyCode.Q) && SkillCDManager.isOffCooldown(SkillType.Counter))
+        if (counterLearned && Input.GetKeyDown(KeyCode.Q) && SkillCDManager.isOffCooldown(SkillType.Counter) && !StatusManager.Instance.isStun)
         {
             StartCoroutine(startBlocking());
         }
@@ -33,11 +36,11 @@ public class Counter : MonoBehaviour
         SkillCDManager.IntoCooldown(SkillType.Counter);
 
         isCountering = true;
-        //animation
+        animator.SetBool("isCountering", true);
         yield return new WaitForSeconds(counterDuration);
         if (isEnhanced)
             yield return new WaitForSeconds(enhancedDuration);
-
+        animator.SetBool("isCountering", false);
         isCountering = false;
     }
     public void Countering(GameObject target)

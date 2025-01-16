@@ -60,6 +60,7 @@ public class Movement : MonoBehaviour
             }
         }
         if (isDashing) return;
+        if (StatusManager.Instance.isStun) return;
         float move = Input.GetAxis("Horizontal");
 
         //horizontal flip
@@ -86,19 +87,13 @@ public class Movement : MonoBehaviour
         rb.velocity = new Vector2 (move * moveSpeed, rb.velocity.y);
 
         //jump
-        if (Input.GetKeyDown(KeyCode.Space) && (groundCheck.isOnTheGround() || CanJumpInWater))
+        if (Input.GetKeyDown(KeyCode.Space) && groundCheck.isOnTheGround())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        //double jump in water
-        if (CanJumpInWater)
-        {
-            airJumpLeft = true;
-        }
-
         //dash
-        if (Input.GetKeyDown(KeyCode.LeftShift) && SkillCDManager.isOffCooldown(SkillType.Dash))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !StatusManager.Instance.isTrap && SkillCDManager.isOffCooldown(SkillType.Dash))
         {
             StartCoroutine(Dash());
         }
@@ -106,7 +101,6 @@ public class Movement : MonoBehaviour
         //air jump
         if (Input.GetKeyDown(KeyCode.Space) && !groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
         {
-            Debug.Log("1");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             airJumpLeft = false;
         }
@@ -121,7 +115,8 @@ public class Movement : MonoBehaviour
                 }
             }
         }*/
-        if (!isInSlough)
+
+        /*if (!isInSlough)
         {
             moveSpeed = 5f;
             jumpForce = 7f;
@@ -130,7 +125,7 @@ public class Movement : MonoBehaviour
         {
             moveSpeed = 2.5f;
             jumpForce = 0f;
-        }
+        }*/
     }
 
     private IEnumerator Dash()

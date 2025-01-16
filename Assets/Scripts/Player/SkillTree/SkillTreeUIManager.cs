@@ -37,6 +37,7 @@ public class SkillTreeUIManager : MonoBehaviour
                 bloodCount = 12;
             }
         }
+        SkillButton[0].PessSkillButton();
         UpdatebloodCountText();
     }
 
