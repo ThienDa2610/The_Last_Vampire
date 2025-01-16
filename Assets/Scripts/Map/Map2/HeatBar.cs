@@ -20,7 +20,6 @@ public class HeatBar : MonoBehaviour
     public HealthManager health;
 
     public PlayerWaterCheck playerWaterCheck;
-    public PlaySloughCheck playSloughCheck;
 
     void Start()
     {
@@ -65,7 +64,7 @@ public class HeatBar : MonoBehaviour
         {
             StartCoroutine(DecreaseHealth());
         }
-        if (playSloughCheck.isInSlough)
+        if (StatusManager.Instance.isInSlough)
         {
             if (heatSlider.value < heatSlider.maxValue)
             {
