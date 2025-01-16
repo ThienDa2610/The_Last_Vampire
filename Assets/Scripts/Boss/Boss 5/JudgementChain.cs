@@ -25,6 +25,7 @@ public class JudgementChain : BossSkill
     private IEnumerator ChainOfJudgement(Transform target)
     {
         animator.SetTrigger("Attack");
+        sfxManager.Instance.PlaySound2D("Boss_5_3");
         yield return new WaitForSeconds(clawDuration);
 
         IntoCooldown();

@@ -37,6 +37,7 @@ public class SandTornado : BossSkill
     private IEnumerator TornadoSpin()
     {
         animator.SetBool("isSpinning", true);
+        sfxManager.Instance.PlaySound2D("Boss_2_1");
         isSpinning = true;
         healthManager.isInvincible = true;
 

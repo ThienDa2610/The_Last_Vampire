@@ -38,6 +38,7 @@ public class BoomController : MonoBehaviour
         animator.SetTrigger("startCountDown");
         yield return new WaitForSeconds(1.5f);
         animator.SetTrigger("explode");
+        sfxManager.Instance.PlaySound2D("Boom");
         if (isNear.isNear)
         {
             Debug.Log("Take damage");

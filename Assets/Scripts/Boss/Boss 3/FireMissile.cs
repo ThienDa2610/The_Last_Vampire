@@ -19,6 +19,7 @@ public class FireMissile : BossSkill
     private IEnumerator FiringMissile()
     {
         animator.SetTrigger("isFiring");
+        sfxManager.Instance.PlaySound2D("Boss_3_3");
         for (int i = 0; i < numberOfMissile; i++)
         {
             yield return new WaitForSeconds(prepTime);

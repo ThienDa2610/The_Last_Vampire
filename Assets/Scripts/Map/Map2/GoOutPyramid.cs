@@ -95,11 +95,13 @@ public class GoOutPyramid : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.5f);  
         doorAnimator.SetTrigger(closeDoorTrigger);  
+        sfxManager.Instance.PlaySound2D("pyramid_close");
     }
     private IEnumerator PlayOpenDoorWithDelay()
     {
         yield return new WaitForSecondsRealtime(1f);
         doorAnimator.SetTrigger(openDoorTrigger);
+        sfxManager.Instance.PlaySound2D("pyramid_open");
     }
     void OnTriggerEnter2D(Collider2D other)
     {

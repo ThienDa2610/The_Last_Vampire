@@ -143,7 +143,7 @@ public class Puzzle : MonoBehaviour
 
             if (!isPuzzleDone) break;
         }
-       
+        sfxManager.Instance.PlaySound2D("correct_puzzle");
     }
     public void SetPuzzleState (bool state)
     {

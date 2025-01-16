@@ -18,6 +18,7 @@ public class AscendedShoot : BossSkill
     private IEnumerator ShootingAscendedWave()
     {
         animator.SetTrigger("Casting");
+        sfxManager.Instance.PlaySound2D("Boss_5_1");
         yield return new WaitForSeconds(prepTime);
 
         Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + yOffset, transform.position.z);

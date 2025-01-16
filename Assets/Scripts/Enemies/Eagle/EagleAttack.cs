@@ -32,6 +32,7 @@ public class EagleAttack : EnemyAttack
                     target = player.position;
                     isTargeting = true;
                     animator.SetTrigger("Attack");
+                    sfxManager.Instance.PlaySound2D("Enemy_2");
                     rb.velocity = new Vector2((target.x - parent.position.x) * movement.speed * attackSpeedMulti, (target.y - parent.position.y) * movement.speed * attackSpeedMulti);
                 }
                 else
