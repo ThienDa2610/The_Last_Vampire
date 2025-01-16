@@ -29,7 +29,11 @@ public class EnemyHealthManager : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        health = maxHealth;
+        if (!PlayerPrefs.HasKey("Enemy_0_Health"))
+        {
+            health = maxHealth;
+        }
+        
         bloodLostTimer = new List<float>();
         bloodLostDamageTimer = new List<float>();
     }
@@ -96,7 +100,7 @@ public class EnemyHealthManager : MonoBehaviour
             Die();
         }
     }
-    void UpdateHealthbar()
+    public void UpdateHealthbar()
     {
         healthbarOverlay.fillAmount = health / maxHealth;
     }

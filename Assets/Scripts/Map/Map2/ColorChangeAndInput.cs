@@ -65,4 +65,21 @@ public class ColorChangeAndInput : MonoBehaviour
         inputValues[currentIndex] = inputValues[currentIndex].Substring(1) + input;
         texts[currentIndex].text = inputValues[currentIndex];
     }
+    public void SetPuzzleState(bool state)
+    {
+        if (isPuzzleDone != state)
+        {
+            isPuzzleDone = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
+        }
+    }
 }

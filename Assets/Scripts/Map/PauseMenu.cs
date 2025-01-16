@@ -62,10 +62,30 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
 
-        CheckPoint.ClearGameData();
-        CheckPointJSON.DeleteSaveFile();
+        if (savedSceneName == "Map1_Forest")
+        {
+            CheckPoint.ClearGameData();
+            CheckPointJSON.DeleteSaveFile();
+        }
+        else if (savedSceneName == "Map2_Desert")
+        {
+            Lv2CheckPoint.ClearGameData();
+        }
+        else if (savedSceneName == "Map3_City")
+        {
+            Lv4CheckPoint.ClearGameData();
+        }
+        else if (savedSceneName == "Map4_Cave")
+        {
+            Lv4CheckPoint.ClearGameData();
+        }
+        else if (savedSceneName == "Map5_Ruin")
+        {
+            Lv5CheckPoint.ClearGameData();
+        }
 
         SceneManager.LoadScene(savedSceneName);
+
         if (savedSceneName == "Map1_Forest")
         {
             MusicManager.Instance.PlayMusic("Level_1");
@@ -89,8 +109,28 @@ public class PauseMenu : MonoBehaviour
     }
     public void Quit()
     {
-        CheckPoint.Instance.SaveGame();
-        CheckPointJSON.Instance.SaveGame();
+        string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
+        if (savedSceneName == "Map1_Forest")
+        {
+            CheckPoint.Instance.SaveGame();
+            CheckPointJSON.Instance.SaveGame();
+        }
+        else if (savedSceneName == "Map2_Desert")
+        {
+            Lv2CheckPoint.Instance.SaveGame();
+        }
+        else if (savedSceneName == "Map3_City")
+        {
+            Lv2CheckPoint.Instance.SaveGame();
+        }
+        else if (savedSceneName == "Map4_Cave")
+        {
+            Lv4CheckPoint.Instance.SaveGame();
+        }
+        else if (savedSceneName == "Map5_Ruin")
+        {
+            Lv5CheckPoint.Instance.SaveGame();
+        }
         
         Time.timeScale = 1f;
         MapLoader.Instance.LoadMap("Menu");

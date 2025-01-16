@@ -15,9 +15,9 @@ public class GoInSandStorm : MonoBehaviour
     public GameObject obj2;
 
     public Vector3 targetPosition1;
-    public Vector3 triggerPosition1;
+    private Vector3 triggerPosition1;
     public Vector3 targetPosition2;
-    public Vector3 triggerPosition2;
+    private Vector3 triggerPosition2;
 
     private bool hasTriggered1 = false;
     private bool hasTriggered2 = false;
@@ -51,6 +51,9 @@ public class GoInSandStorm : MonoBehaviour
     public int AllCorrect = 0;
     void Start()
     {
+        triggerPosition1 = new Vector3(77f, Mathf.Clamp(triggerPosition1.y, -4f, 6f), 0f);
+        triggerPosition2 = new Vector3(244f, Mathf.Clamp(triggerPosition2.y, -4f, 6f), 0f);
+
         obj1.SetActive(false);
         obj2.SetActive(false);
 
@@ -78,7 +81,7 @@ public class GoInSandStorm : MonoBehaviour
             obj1.SetActive(true);
             StartCoroutine(TeleportPlayer1());
         }
-        if (!hasTriggered2 && !SS2 && Vector3.Distance(player.transform.position, triggerPosition2) < 1f)
+        if(!hasTriggered2 && !SS2 && Vector3.Distance(player.transform.position, triggerPosition2) < 1f)
         {
             hasTriggered2 = true;
             SS2 = true;
@@ -125,7 +128,10 @@ public class GoInSandStorm : MonoBehaviour
             mainCamera.gameObject.SetActive(false);
             forthCamera.gameObject.SetActive(true);
             //nho them dieu kien
-            StartCoroutine(DisplayMessages(forthCamera));
+            if (puzzleScript.isPuzzleDone)
+            {
+                StartCoroutine(DisplayMessages(forthCamera));
+            }
 
         }
     }
@@ -241,8 +247,41 @@ public class GoInSandStorm : MonoBehaviour
         }
 
         // If player presses the correct key and time is within the correct range
-        result = (isInputCorrect && timeSpent >= duration - 1f && timeSpent <= duration + 1f);
+        result = (isInputCorrect && timeSpent >= duration - 0.5f && timeSpent <= duration + 0.5f);
     }
-   
+    public void SetSS1State(bool state)
+    {
+        if (SS1 != state)
+        {
+            SS1 = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
+        }
+    }
+    public void SetSS2State(bool state)
+    {
+        if (SS2 != state)
+        {
+            SS2 = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
+        }
+    }
 }
 

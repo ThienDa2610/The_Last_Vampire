@@ -7,7 +7,7 @@ using TMPro;
 public class BloodPotionManager : MonoBehaviour
 {
     public TMP_Text bottleCountText;  
-    public int bottleCount = 0; 
+    public int bottleCount = 3; 
     public float valueBlood = 30;
 
     void Start()

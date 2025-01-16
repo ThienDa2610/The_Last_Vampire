@@ -145,4 +145,21 @@ public class Puzzle : MonoBehaviour
         }
        
     }
+    public void SetPuzzleState (bool state)
+    {
+        if (isPuzzleDone != state)
+        {
+            isPuzzleDone = state;
+            /*if (isPuzzleDone)
+            {
+                torchAnimator.SetTrigger("TurnOn");
+                tilemap.SetActive(false);
+            }
+            else
+            {
+                torchAnimator.SetTrigger("TurnOff");
+                tilemap.SetActive(true);
+            }*/
+        }
+    }
 }
