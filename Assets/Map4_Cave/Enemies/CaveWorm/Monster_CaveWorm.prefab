@@ -524,10 +524,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f44f364e31f33541b58f66b09288a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropItemPrefab: []
+  dropItemPrefab:
+  - {fileID: 4451261994187638914, guid: 491c762327ec44d4190176ffdf0db467, type: 3}
+  - {fileID: 4451261994187638914, guid: 0d36bc9fedc74f94f95f33c63bd4e39f, type: 3}
+  - {fileID: 6732803804999060683, guid: 27ce08ae0cbf3774ba85fb990db9b093, type: 3}
   dropPoint: {fileID: 0}
   isTakingDamage: 0
-  dropChance: []
+  dropChance:
+  - 10
+  - 100
+  - 100
   maxHealth: 60
   health: 60
   animator: {fileID: 0}

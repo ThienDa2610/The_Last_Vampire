@@ -10,9 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217954133394698757}
   - component: {fileID: 5907318806504966220}
-  - component: {fileID: 4880033378427978753}
   - component: {fileID: 2005152060988971884}
-  - component: {fileID: 2367189360463454972}
   - component: {fileID: -3167231660243625612}
   m_Layer: 0
   m_Name: NPC
@@ -88,27 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4880033378427978753
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6335111477047600366}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3875ea30829904a4389a0e960acfc03a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &2005152060988971884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,7 +122,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.31, y: 3.65}
+    oldSize: {x: 4.62, y: 7.3}
     newSize: {x: 6.03125, y: 2.84375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -154,19 +131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.4637346, y: 3.21875}
   m_EdgeRadius: 0
---- !u!114 &2367189360463454972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6335111477047600366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 858e2939d297cb649bc954752e0eb52a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 4880033378427978753}
 --- !u!114 &-3167231660243625612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,5 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cccee9d599317946ab73fc891e0be7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorLabel: 0
   dialogue:
     lines: []
+  interactGuide: {fileID: 0}
+  interactMessage: 

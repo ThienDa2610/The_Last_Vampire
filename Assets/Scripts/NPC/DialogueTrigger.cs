@@ -67,7 +67,7 @@ public class DialogueTrigger : MonoBehaviour
                     case 2:
                     CastBloodWave.bloodWaveLearned = true;
                     break;
-                    case default:
+                    default:
                     break;
                 }
             }
