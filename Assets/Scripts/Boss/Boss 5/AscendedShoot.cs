@@ -11,7 +11,7 @@ public class AscendedShoot : BossSkill
     {
         base.Start();
         skillDamage = 0f;
-        maxCooldown = 15f;
+        maxCooldown = 10f;
         skillRange = 20f;
         isFacingRight = true;
     }

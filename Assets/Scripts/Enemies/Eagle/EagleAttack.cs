@@ -14,7 +14,7 @@ public class EagleAttack : EnemyAttack
     {
         base.Start();
         attackDamage = 12f;
-        attackRate = 4f;
+        attackRate = 3f;
         isTargeting = false;
     }
     protected override void Update()

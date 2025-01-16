@@ -39,6 +39,7 @@ public class SummoningHowl : BossSkill
                 wolf.transform.localScale = new Vector3(-1f, 1f, 1f);
                 wolf.GetComponent<EnemyMovement>().movingRight = false;
             }
+            wolf.GetComponent<EnemyHealthManager>().dropable = false;
         }
         skillManager.isCastingSkill = false;
     }
