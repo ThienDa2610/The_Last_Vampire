@@ -30,7 +30,6 @@ public class EnemyMovement : MonoBehaviour
             else
             {
                 animator.SetTrigger("Walk");
-                Debug.Log("Into patrol");
                 Patrol();
             }
         }
