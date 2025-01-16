@@ -10,7 +10,6 @@ public class Shopkeeper : MonoBehaviour
 
     public Canvas shopCanvas;
 
-    public Image dialogImage;
     public TMP_Text dialogText;
     public string idleMessage;
 
@@ -22,7 +21,6 @@ public class Shopkeeper : MonoBehaviour
     void Start()
     {
         dialogText.enabled = false;
-        dialogImage.enabled = false;
         shopCanvas.gameObject.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
     }
@@ -37,7 +35,6 @@ public class Shopkeeper : MonoBehaviour
             shopCanvas.gameObject.SetActive(true);
             Time.timeScale = 0f;
             dialogText.enabled = false;
-            dialogImage.enabled = false;
         }
     }
     public void CloseShop()
@@ -50,7 +47,6 @@ public class Shopkeeper : MonoBehaviour
             thisScript = false;
             isIt.isIt = true;
             dialogText.enabled = true;
-            dialogImage.enabled = true;
             dialogText.text = idleMessage;
         }
     }
@@ -62,9 +58,11 @@ public class Shopkeeper : MonoBehaviour
             isPlayerNear = true;
             if (!shopCanvas.gameObject.activeSelf)
             {
-                dialogText.enabled = true;
-                dialogImage.enabled = true;
-                dialogText.text = idleMessage;
+                if (dialogText != null)
+                {
+                    dialogText.enabled = true;
+                    dialogText.text = idleMessage;
+                }
             }
         }
     }
@@ -73,10 +71,10 @@ public class Shopkeeper : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerNear = false;
-
-            dialogText.enabled = false;
-            dialogImage.enabled = false;
-
+            if (dialogText != null)
+            {
+                dialogText.enabled = false;
+            }
         }
     }
 }
