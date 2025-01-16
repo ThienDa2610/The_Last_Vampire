@@ -20,6 +20,7 @@ public class SummoningHowl : BossSkill
     private IEnumerator Howling()
     {
         animator.SetTrigger("Prepare");
+        sfxManager.Instance.PlaySound2D("Boss_1_3");
         yield return new WaitForSeconds(howlDuration);
         RaycastHit2D rightHit = Physics2D.Raycast(transform.position, Vector2.right, maxSummonRadius, groundLayer);
         RaycastHit2D leftHit = Physics2D.Raycast(transform.position, Vector2.left, maxSummonRadius, groundLayer);

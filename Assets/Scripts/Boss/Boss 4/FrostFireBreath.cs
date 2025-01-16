@@ -19,6 +19,7 @@ public class FrostFireBreath : BossSkill
     {
         int breathIndex = Random.Range(0, breaths.Length);
         animator.SetTrigger("isSpitting");
+        sfxManager.Instance.PlaySound2D("Boss_4_1");
         yield return new WaitForSeconds(prepTime);
         Vector3 spawnPosition = new Vector3(transform.position.x + xOffset * transform.localScale.x, transform.position.y + yOffset, transform.position.z);
         GameObject breath = Instantiate(breaths[breathIndex], spawnPosition, Quaternion.identity);

@@ -18,6 +18,7 @@ public class ShootEnergyBlast : BossSkill
     private IEnumerator ShootingEnergyBlast()
     {
         animator.SetTrigger("isShooting");
+        sfxManager.Instance.PlaySound2D("Boss_2_2");
         yield return new WaitForSeconds(prepTime);
 
         Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y - yOffset, transform.position.z);
