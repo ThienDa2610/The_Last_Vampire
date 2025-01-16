@@ -37,11 +37,10 @@ public class Menu : MonoBehaviour
     {
         //Xoa du lieu cu
         CheckPoint.ClearGameData();
+        CheckPointJSON.DeleteSaveFile();
         Lv2CheckPoint.ClearGameData();
-
         Lv4CheckPoint.ClearGameData();
         Lv5CheckPoint.ClearGameData();
-        CheckPointJSON.DeleteSaveFile();
 
         MapLoader.Instance.LoadMap("Map1_Forest");
         MusicManager.Instance.PlayMusic("Level_1");
@@ -60,19 +59,19 @@ public class Menu : MonoBehaviour
         }
         else if (savedSceneName == "Map2_Desert")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_2");
         }
         else if (savedSceneName == "Map3_City")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_3");
         }
         else if (savedSceneName == "Map4_Cave")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_4");
         }
         else if (savedSceneName == "Map5_Ruin")
         {
-            MusicManager.Instance.PlayMusic("Level_1");
+            MusicManager.Instance.PlayMusic("Level_5");
         }
 
     }
@@ -80,6 +79,7 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+
     /*public void No_ReStart()
     {
         MapLoader.Instance.LoadMap("Menu");
