@@ -42,10 +42,8 @@ public class Menu : MonoBehaviour
         Lv3CheckPoint.ClearGameData();
         Lv4CheckPoint.ClearGameData();
         Lv5CheckPoint.ClearGameData();
-
         MapLoader.Instance.LoadMap("Map1_Forest");
         MusicManager.Instance.PlayMusic("Level_1");
-
     }
 
     public void Resume()
