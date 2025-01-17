@@ -54,7 +54,7 @@ public class HeatBar : MonoBehaviour
         {
             if (heatSlider.value < heatSlider.maxValue)
             {
-                heatSlider.value += Time.deltaTime * 0.005f;
+                heatSlider.value += Time.deltaTime * 0.025f;
             }
         }
         if (heatSlider.value >= 0.7f * heatSlider.maxValue && heatSlider.value < heatSlider.maxValue)

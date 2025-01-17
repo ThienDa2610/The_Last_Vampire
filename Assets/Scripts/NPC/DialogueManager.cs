@@ -22,9 +22,6 @@ public class DialogueManager : MonoBehaviour
 
     public bool isOpen = false;
 
-    public delegate void DialogueEnded();
-    public event DialogueEnded OnDialogueEnded;
-
     private void Start()
     {
         if (Instance == null)
@@ -90,6 +87,5 @@ public class DialogueManager : MonoBehaviour
         mainUI.gameObject.SetActive(true);
         Time.timeScale = 1f;
         isOpen = false;
-        OnDialogueEnded?.Invoke();
     }
 }

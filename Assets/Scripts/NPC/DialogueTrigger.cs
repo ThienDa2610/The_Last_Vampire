@@ -35,21 +35,21 @@ public class DialogueTrigger : MonoBehaviour
 
     public TMP_Text interactGuide;
     public string interactMessage;
-
+/*
     public Image donedialogImage;
     public TMP_Text donedialogText;
-    public string doneidleMessage;
+    public string doneidleMessage;*/
 
     private void Start()
     {
         if (interactGuide != null)
             interactGuide.enabled = false;
-        if (donedialogText != null)
+        /*if (donedialogText != null)
         {
             donedialogText.enabled = false;
             donedialogImage.enabled = false;
-        }
-        DialogueManager.Instance.OnDialogueEnded += OnDialogueEnded;
+        }*/
+       
     }
     private void Update()
     {
@@ -101,18 +101,5 @@ public class DialogueTrigger : MonoBehaviour
                 interactGuide.enabled = false;
         }
     }
-    private IEnumerator ShowDialogForTime(float timeToShow)
-    {
-        donedialogText.enabled = true;
-        donedialogImage.enabled = true;
-        donedialogText.text = doneidleMessage;
-        yield return new WaitForSecondsRealtime(timeToShow);  // Wait for the specified time
-
-        donedialogText.enabled = false;
-        donedialogImage.enabled = false;
-    }
-    private void OnDialogueEnded()
-    {
-        StartCoroutine(ShowDialogForTime(2f));  
-    }
+   
 }
