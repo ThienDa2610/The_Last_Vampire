@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class GoInSandStorm : MonoBehaviour
 {
@@ -15,9 +16,9 @@ public class GoInSandStorm : MonoBehaviour
     public GameObject obj2;
 
     public Vector3 targetPosition1;
-    private Vector3 triggerPosition1;
+    Vector2 triggerPosition1;
     public Vector3 targetPosition2;
-    private Vector3 triggerPosition2;
+    Vector2 triggerPosition2;
 
     private bool hasTriggered1 = false;
     private bool hasTriggered2 = false;
@@ -51,8 +52,8 @@ public class GoInSandStorm : MonoBehaviour
     public int AllCorrect = 0;
     void Start()
     {
-        triggerPosition1 = new Vector3(77f, Mathf.Clamp(triggerPosition1.y, -4f, 6f), 0f);
-        triggerPosition2 = new Vector3(244f, Mathf.Clamp(triggerPosition2.y, -4f, 6f), 0f);
+        triggerPosition1 = new Vector2(77f, 1f);
+        triggerPosition2 = new Vector2(244f, 1f);
 
         obj1.SetActive(false);
         obj2.SetActive(false);
@@ -74,14 +75,14 @@ public class GoInSandStorm : MonoBehaviour
 
     void Update()
     {
-        if (!hasTriggered1 && !SS1 && Vector3.Distance(player.transform.position, triggerPosition1) < 1f)
+        if (!hasTriggered1 && !SS1 && Math.Abs(player.transform.position.x - triggerPosition1.x) < 1f && Math.Abs(player.transform.position.y - triggerPosition1.y) < 5f)
         {
             hasTriggered1 = true;
             SS1 = true;
             obj1.SetActive(true);
             StartCoroutine(TeleportPlayer1());
         }
-        if(!hasTriggered2 && !SS2 && Vector3.Distance(player.transform.position, triggerPosition2) < 1f)
+        if(!hasTriggered2 && !SS2 && Math.Abs(player.transform.position.x - triggerPosition2.x) < 1f && Math.Abs(player.transform.position.y - triggerPosition2.y) < 5f)
         {
             hasTriggered2 = true;
             SS2 = true;
@@ -168,14 +169,14 @@ public class GoInSandStorm : MonoBehaviour
     {
         AllCorrect = 0;
         int times = 6;
-        bool showRight = Random.value > 0.5f;
+        bool showRight = UnityEngine.Random.value > 0.5f;
 
         for (int i = 0; i < times; i++)
         {
             string message = showRight ? rightLeftMessages[0] : rightLeftMessages[1];
             dialogText.text = message;
 
-            float duration = Random.Range(1f, 4f);  // Random time for right/left
+            float duration = UnityEngine.Random.Range(1f, 4f);  // Random time for right/left
 
             yield return StartCoroutine(CheckPlayerInput(showRight, duration));
 

@@ -51,7 +51,7 @@ public class Lv3CheckPoint : MonoBehaviour
 
     //Diffent things of maps
     public List<EnemyHealthManager> enemies;
-
+    public Camera[] cameras;
 
     // Initialize the instance and check for saved data
     void Awake()
@@ -69,6 +69,12 @@ public class Lv3CheckPoint : MonoBehaviour
     // Start method where the checkpoint data is loaded
     void Start()
     {
+        foreach (Camera cam in cameras)
+        {
+            cam.gameObject.SetActive(false);
+        }
+        int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex3", 0); // Default to first camera
+        cameras[savedActiveCameraIndex].gameObject.SetActive(true);
 
         if (PlayerPrefs.HasKey("SavedPosition3X") && PlayerPrefs.HasKey("SavedPosition3Y") && PlayerPrefs.HasKey("SavedPosition3Z"))
         {
@@ -130,6 +136,7 @@ public class Lv3CheckPoint : MonoBehaviour
                 {
                     initial = true;
                     isSaved = true;
+                    sfxManager.Instance.PlaySound2D("check_point");
                     SaveGame(); // Save game when F is pressed
                 }
             }
@@ -273,7 +280,17 @@ public class Lv3CheckPoint : MonoBehaviour
             PlayerPrefs.SetInt("Enemy3_" + i + "_Dead", enemies[i].isDead ? 1 : 0);
             PlayerPrefs.SetFloat("Enemy3_" + i + "_Health", enemies[i].health);
         }
-
+        // Save the index of the active camera
+        int activeCameraIndex = -1;
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            if (cameras[i].gameObject.activeInHierarchy)
+            {
+                activeCameraIndex = i;
+                break;
+            }
+        }
+        PlayerPrefs.SetInt("ActiveCameraIndex3", activeCameraIndex);
         PlayerPrefs.Save();
     }
 
@@ -346,7 +363,13 @@ public class Lv3CheckPoint : MonoBehaviour
                 enemies[i].UpdateHealthbar();
             }
         }
+        // Load the index of the active camera
+        int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex3", 0); // Default to the first camera if not found
 
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            cameras[i].gameObject.SetActive(i == savedActiveCameraIndex); // Activate the camera at the saved index
+        }
     }
 
     //Clear data when player choose new game
@@ -371,5 +394,6 @@ public class Lv3CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedItemRunOut3");
         PlayerPrefs.DeleteKey("SavedMaxValueItem3");
         PlayerPrefs.DeleteKey("Enemy3_");
+        PlayerPrefs.DeleteKey("ActiveCameraIndex3");
     }
 }

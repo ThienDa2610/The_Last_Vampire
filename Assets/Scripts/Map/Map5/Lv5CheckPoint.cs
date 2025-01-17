@@ -77,7 +77,7 @@ public class Lv5CheckPoint : MonoBehaviour
         else
         {
             // Set default position if no saved data is found
-            player.transform.position = new Vector3(-2f, -2.5f, 0f);
+            player.transform.position = new Vector3(-3.69f, -2.35f, 0f);
             //x = 180 at quiz, x = 210 at boss
 
             if (playerHealthScript != null)

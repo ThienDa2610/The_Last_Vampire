@@ -50,7 +50,6 @@ public class EnemyMovement : MonoBehaviour
     {
         float direction = movingRight ? 1 : -1;
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
-        Debug.Log(rb.velocity.x);
         if (isBlocked())
         {
             movingRight = !movingRight;

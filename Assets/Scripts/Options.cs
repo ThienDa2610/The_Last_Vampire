@@ -20,9 +20,6 @@ public class Options : MonoBehaviour
         float savedSFXVolume = PlayerPrefs.GetFloat(SFXVolumeKey, 1.0f); 
         float savedMusicVolume = PlayerPrefs.GetFloat(MusicVolumeKey, 1.0f); 
 
-        SetSFX(savedSFXVolume);
-        SetMusic(savedMusicVolume);
-
         sfxSlider.value = savedSFXVolume;
         musicSlider.value = savedMusicVolume;
 

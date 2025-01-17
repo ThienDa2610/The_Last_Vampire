@@ -97,6 +97,7 @@ MonoBehaviour:
   previousSkill: {fileID: 969581112225060063}
   skillDes: Increases gliding speed in bat form
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &5394051619452736838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +363,7 @@ MonoBehaviour:
     is on cooldown, immediately revive with 30% of maximum health. Can be used once
     per level.'
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &5937260674029121094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,6 +622,7 @@ MonoBehaviour:
   previousSkill: {fileID: 7555051786914550464}
   skillDes: +5% Vampire claw damage
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &6541944262551144837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,6 +940,7 @@ MonoBehaviour:
   previousSkill: {fileID: 8221238458655947778}
   skillDes: Vampire claw restore health equal to 10% of damage
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &4143956639762293792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,6 +1369,7 @@ MonoBehaviour:
   skillDes: Enemies take 5% additional damage for each stack of "Bleeding" they are
     suffering from
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &3398274614435329219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,6 +1687,7 @@ MonoBehaviour:
   previousSkill: {fileID: 3224996424079078709}
   skillDes: Increases the attack range of Vampire claws
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &1791389864682324119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1865,6 +1871,7 @@ MonoBehaviour:
   skillDes: 'Unlocks "Rebirth_1" skill: Upon taking lethal damage, immediately revive
     with 50% of maximum health. Cooldown: 240 seconds.'
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &1605715436911425514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,6 +2189,7 @@ MonoBehaviour:
   previousSkill: {fileID: 8820821904853932833}
   skillDes: After dashing, increases movement speed by 20% for 1 second
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &4495641477248063287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2364,6 +2372,7 @@ MonoBehaviour:
   previousSkill: {fileID: 5265170939143259836}
   skillDes: Extends the "Counter" state by 0.2 seconds
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &1301516049507324772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2546,6 +2555,7 @@ MonoBehaviour:
   previousSkill: {fileID: 122056404374602165}
   skillDes: '+10 maximum health '
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &1948292796029203177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3076,6 +3086,7 @@ MonoBehaviour:
   skillDes: Blood Wave consumes double health cost and immediately applies 3 stacks
     of "Bleeding" to enemies hit
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &7259004070270915520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3258,6 +3269,7 @@ MonoBehaviour:
   previousSkill: {fileID: 2397448321658688686}
   skillDes: Unlocks the ability to double jump
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &1331023818638610904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3440,6 +3452,7 @@ MonoBehaviour:
   previousSkill: {fileID: 0}
   skillDes: '+10 maximum health '
   isUnlocked: 1
+  currentNode: 0
 --- !u!114 &5824418783891659218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3622,6 +3635,7 @@ MonoBehaviour:
   previousSkill: {fileID: 0}
   skillDes: +10% Vampire claw damage
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &2553239353172990151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3880,6 +3894,7 @@ MonoBehaviour:
   previousSkill: {fileID: 5992614576580906768}
   skillDes: '+10 maximum health '
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &8565340658326177562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4006,8 +4021,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00052166, y: -12.37}
-  m_SizeDelta: {x: 852, y: 376.74}
+  m_AnchoredPosition: {x: -0.000015259, y: -0.0000038147}
+  m_SizeDelta: {x: 804.4334, y: 402.2167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1140111652397088301
 CanvasRenderer:
@@ -4037,7 +4052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c241e847af767d148b898393a975bb22, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7f681cd213d9a7488500ce745f2d4f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4144,6 +4159,7 @@ MonoBehaviour:
   previousSkill: {fileID: 0}
   skillDes: +10% movement speed
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &3182361400462791601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4535,6 +4551,7 @@ MonoBehaviour:
   previousSkill: {fileID: 3371890336326324305}
   skillDes: +10% Vampire claw damage
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &8173485917518397980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4854,6 +4871,7 @@ MonoBehaviour:
     in the "Bleeding" state take 2 damage every 0.5 seconds for 2 seconds, stacking
     up to 3 layers
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &2841825708727722287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5036,6 +5054,7 @@ MonoBehaviour:
   previousSkill: {fileID: 5846622478891331086}
   skillDes: Reduces the cooldown of the "Dash" skill by 1 second
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &1060930866419940423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5219,6 +5238,7 @@ MonoBehaviour:
   skillDes: Defeating an enemy increases movement speed by 5% for 5 seconds, stacking
     up to 3 times
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &3487127539507081558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5536,6 +5556,7 @@ MonoBehaviour:
   previousSkill: {fileID: 8373611468687314667}
   skillDes: Grants the ability to glide in mid-air
   isUnlocked: 0
+  currentNode: 0
 --- !u!114 &3932574266423775604
 MonoBehaviour:
   m_ObjectHideFlags: 0

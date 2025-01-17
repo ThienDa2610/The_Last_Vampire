@@ -4,7 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 [System.Serializable]
 public class  DialogueCharacter
@@ -26,7 +26,7 @@ public class Dialogue
 }
 public class DialogueTrigger : MonoBehaviour
 {
-    public int tutorLabel = 0;
+    public bool tutorLabel = false;
     public GameObject counterIcon;
     public GameObject bloodWaveIcon;
     public Dialogue dialogue;
@@ -35,11 +35,21 @@ public class DialogueTrigger : MonoBehaviour
 
     public TMP_Text interactGuide;
     public string interactMessage;
+/*
+    public Image donedialogImage;
+    public TMP_Text donedialogText;
+    public string doneidleMessage;*/
 
     private void Start()
     {
         if (interactGuide != null)
             interactGuide.enabled = false;
+        /*if (donedialogText != null)
+        {
+            donedialogText.enabled = false;
+            donedialogImage.enabled = false;
+        }*/
+       
     }
     private void Update()
     {
@@ -63,16 +73,12 @@ public class DialogueTrigger : MonoBehaviour
                 TriggerDialogue();
                 switch(tutorLabel)
                 {
-                    case 1:
-                    Counter.counterLearned = true;
-                    counterIcon.SetActive(true);
-                    break;
-                    case 2:
-                    CastBloodWave.bloodWaveLearned = true;
-                    bloodWaveIcon.SetActive(true);
-                    break;
+                    case true:
+                        Counter.counterLearned = true;
+                        counterIcon.SetActive(true);
+                        break;
                     default:
-                    break;
+                        break;
                 }
             }
             else
@@ -95,5 +101,5 @@ public class DialogueTrigger : MonoBehaviour
                 interactGuide.enabled = false;
         }
     }
-
+   
 }
