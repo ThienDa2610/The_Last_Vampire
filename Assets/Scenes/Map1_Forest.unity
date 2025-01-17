@@ -27558,7 +27558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_TagString
@@ -30009,5 +30009,150 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3996220545923737844}
+    - targetCorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3996220545923737843}
   m_SourcePrefab: {fileID: 100100000, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+--- !u!198 &3996220545923737840 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 906377235956721263, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 3996220545923737839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3996220545923737841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 3996220545923737839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3996220545923737842 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6979962501386720832, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 3996220545923737839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3996220545923737843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3996220545923737841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2009a7b105458c24793677dbb97105a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3996220545923737842}
+  dialogText: {fileID: 2037584030}
+  idleMessage: '[F] Saved'
+  SaveddialogImage: {fileID: 727697212}
+  SaveddialogText: {fileID: 64236645}
+  SavedidleMessage: Game Saved
+  detectionRadius: 3
+  checkpointParticleSystem: {fileID: 3996220545923737840}
+  player: {fileID: 6156951}
+  playerHealthScript: {fileID: 6156952}
+  isSaved: 0
+  bloodPotionManager: {fileID: 1360322274}
+  typeCoinManager: {fileID: 1360322273}
+  enemies:
+  - {fileID: 1311759425}
+  - {fileID: 1612879153}
+  - {fileID: 1196201869}
+  - {fileID: 1634462722}
+  - {fileID: 1821907548}
+  - {fileID: 171674803}
+  torches:
+  - {fileID: 1008776204}
+  torches2:
+  - {fileID: 2013732358}
+  - {fileID: 1854411398}
+  - {fileID: 865823417}
+  - {fileID: 1886399196}
+  - {fileID: 287017916}
+  - {fileID: 159180954}
+  - {fileID: 76448530}
+  - {fileID: 1021339783}
+  plants:
+  - {fileID: 1340666600}
+  - {fileID: 1575549739}
+  - {fileID: 352776776}
+  - {fileID: 1095961830}
+  plantsNo:
+  - {fileID: 760971837}
+  - {fileID: 168917407}
+  - {fileID: 582350197}
+  - {fileID: 1848186789}
+--- !u!114 &3996220545923737844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3996220545923737841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7f4c2603b67c044982970576b7685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6156951}
+  playerHealthScript: {fileID: 6156952}
+  savedPosition: {x: 0, y: 0, z: 0}
+  bloodPotionManager: {fileID: 1360322274}
+  typeCoinManager: {fileID: 1360322273}
+  enemies_map_1:
+  - {fileID: 171674803}
+  - {fileID: 1311759425}
+  - {fileID: 1612879153}
+  - {fileID: 1196201869}
+  - {fileID: 1634462722}
+  - {fileID: 1821907548}
+  torches:
+  - {fileID: 1008776204}
+  torches2:
+  - {fileID: 2013732358}
+  - {fileID: 1854411398}
+  - {fileID: 865823417}
+  - {fileID: 1886399196}
+  - {fileID: 287017916}
+  - {fileID: 159180954}
+  - {fileID: 76448530}
+  - {fileID: 1021339783}
+  plants:
+  - {fileID: 1340666600}
+  - {fileID: 1575549739}
+  - {fileID: 352776776}
+  - {fileID: 1095961830}
+  plantsNo:
+  - {fileID: 168917407}
+  - {fileID: 582350197}
+  - {fileID: 1848186789}
+  - {fileID: 760971837}
+  enemies_map_2: []
+  puzzle1: {fileID: 0}
+  puzzle1Done: {fileID: 0}
+  puzzle2: {fileID: 0}
+  puzzle2Done: {fileID: 0}
+  puzzle3: {fileID: 0}
+  puzzle3Done: {fileID: 0}
+  inSS: {fileID: 0}
+  heat: {fileID: 0}
+  cameras2: []
+  shop2: {fileID: 0}
+  enemies_map_3: []
+  cameras3: []
+  shop3: {fileID: 0}
+  enemies_map_4: []
+  worms_map_4: []
+  shop4: {fileID: 0}
+  enemies_map_5: []
+  shop5: {fileID: 0}
+  generalData:
+    SavedSceneNameJSON: 
+    savedHealth: 0
+    inventory:
+      savedBloodPotionCount: 0
+      savedGhostCount: 0
+      savedBloodCount: 0
