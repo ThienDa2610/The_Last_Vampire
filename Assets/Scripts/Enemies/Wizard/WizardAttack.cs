@@ -33,7 +33,10 @@ public class WizardAttack : EnemyAttack
         yield return new WaitForSeconds(attackDuration);
 
         GameObject energyBlast = Instantiate(pf_energyBlast,transform.position, Quaternion.identity);
+        Vector3 target = HealthManager.Instance.gameObject.transform.position;
+        Vector3 direction = new Vector3(target.x - parent.transform.position.x, target.y - parent.transform.position.y, 0f).normalized;
         energyBlast.transform.localScale = parent.transform.localScale;
+        energyBlast.GetComponent<EnergyBlast>().direction = direction;
         energyBlast.GetComponent<EnergyBlast>().shooter = parent;
 
         isAttacking = false;

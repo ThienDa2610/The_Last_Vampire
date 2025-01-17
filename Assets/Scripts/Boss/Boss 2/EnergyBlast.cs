@@ -8,6 +8,7 @@ public class EnergyBlast : MonoBehaviour
     public float maxDuration = 10f;
     public float moveSpeed = 15f;
     public bool isFalling = false;
+    public Vector3 direction;
     public GameObject pf_effExplosion;
     public GameObject shooter;
     Rigidbody2D rb;
@@ -22,7 +23,13 @@ public class EnergyBlast : MonoBehaviour
     void Update()
     {
         if (!isFalling)
-            rb.velocity = new Vector3(transform.localScale.x * moveSpeed, 0f, 0f);
+        {
+            if (direction == null)
+                rb.velocity = new Vector3(transform.localScale.x * moveSpeed, 0f, 0f);
+            else
+                rb.velocity = new Vector3(direction.x * moveSpeed, direction.y * moveSpeed, 0f);
+        }
+            
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
