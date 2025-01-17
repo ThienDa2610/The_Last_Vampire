@@ -23194,6 +23194,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1102265562528318112, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+      propertyPath: gameplayCanvas
+      value: 
+      objectReference: {fileID: 1360322272}
     - target: {fileID: 4576768417051557598, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -23289,7 +23293,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
 --- !u!224 &1553035636 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4576768417051557598, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5942880822582786772, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
   m_PrefabInstance: {fileID: 1553035635}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1561732586
@@ -29879,5 +29883,132 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3996220545923737843}
+    - targetCorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3996220545923737842}
   m_SourcePrefab: {fileID: 100100000, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+--- !u!1 &3996220545923737840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 3996220545923737839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3996220545923737841 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6979962501386720832, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 3996220545923737839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3996220545923737842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3996220545923737840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2009a7b105458c24793677dbb97105a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3996220545923737841}
+  dialogText: {fileID: 2037584030}
+  idleMessage: '[F] Saved'
+  SaveddialogImage: {fileID: 727697212}
+  SaveddialogText: {fileID: 64236645}
+  SavedidleMessage: Game Saved
+  detectionRadius: 3
+  checkpointParticleSystem: {fileID: 3996220545923737844}
+  player: {fileID: 6156951}
+  playerHealthScript: {fileID: 6156952}
+  isSaved: 0
+  bloodPotionManager: {fileID: 1360322274}
+  typeCoinManager: {fileID: 1360322273}
+  enemies:
+  - {fileID: 171674803}
+  - {fileID: 1311759425}
+  - {fileID: 1612879153}
+  - {fileID: 1634462722}
+  - {fileID: 1196201869}
+  - {fileID: 1821907548}
+  torches:
+  - {fileID: 1008776204}
+  torches2:
+  - {fileID: 2013732358}
+  - {fileID: 1854411398}
+  - {fileID: 865823417}
+  - {fileID: 1886399196}
+  - {fileID: 287017916}
+  - {fileID: 159180954}
+  - {fileID: 76448530}
+  - {fileID: 1021339783}
+  plants:
+  - {fileID: 1340666600}
+  - {fileID: 1575549739}
+  - {fileID: 352776776}
+  - {fileID: 1095961830}
+  plantsNo:
+  - {fileID: 168917407}
+  - {fileID: 582350197}
+  - {fileID: 1848186789}
+  - {fileID: 760971837}
+--- !u!114 &3996220545923737843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3996220545923737840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7f4c2603b67c044982970576b7685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6156951}
+  playerHealthScript: {fileID: 6156952}
+  savedPosition: {x: 0, y: 0, z: 0}
+  bloodPotionManager: {fileID: 1360322274}
+  typeCoinManager: {fileID: 1360322273}
+  shop: {fileID: 0}
+  enemies_map_1:
+  - {fileID: 171674803}
+  - {fileID: 1311759425}
+  - {fileID: 1612879153}
+  - {fileID: 1196201869}
+  - {fileID: 1634462722}
+  - {fileID: 1821907548}
+  torches:
+  - {fileID: 1008776204}
+  torches2:
+  - {fileID: 2013732358}
+  - {fileID: 1854411398}
+  - {fileID: 865823417}
+  - {fileID: 1886399196}
+  - {fileID: 287017916}
+  - {fileID: 159180954}
+  - {fileID: 76448530}
+  - {fileID: 1021339783}
+  plants:
+  - {fileID: 1340666600}
+  - {fileID: 1575549739}
+  - {fileID: 352776776}
+  - {fileID: 1095961830}
+  plantsNo:
+  - {fileID: 168917407}
+  - {fileID: 582350197}
+  - {fileID: 1848186789}
+  - {fileID: 760971837}
+  generalData:
+    SavedSceneNameJSON: 
+    savedHealth: 0
+    inventory:
+      savedBloodPotionCount: 0
+      savedGhostCount: 0
+      savedBloodCount: 0
+--- !u!198 &3996220545923737844 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 906377235956721263, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+  m_PrefabInstance: {fileID: 3996220545923737839}
+  m_PrefabAsset: {fileID: 0}

@@ -37018,6 +37018,7 @@ GameObject:
   - component: {fileID: 941293187}
   - component: {fileID: 941293185}
   - component: {fileID: 941293189}
+  - component: {fileID: 941293190}
   m_Layer: 0
   m_Name: BallCheckPoint 1
   m_TagString: Untagged
@@ -37198,6 +37199,54 @@ MonoBehaviour:
   - {fileID: 271526754}
   - {fileID: 1409343443}
   - {fileID: 733538844}
+--- !u!114 &941293190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941293182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7f4c2603b67c044982970576b7685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 983274680}
+  playerHealthScript: {fileID: 983274679}
+  savedPosition: {x: 0, y: 0, z: 0}
+  bloodPotionManager: {fileID: 1057368101}
+  typeCoinManager: {fileID: 1057368100}
+  shop: {fileID: 390841142}
+  enemies_map_1: []
+  torches: []
+  torches2: []
+  plants: []
+  plantsNo: []
+  enemies_map_2:
+  - {fileID: 253028700}
+  - {fileID: 1883974476}
+  - {fileID: 1869126760}
+  - {fileID: 129312977}
+  - {fileID: 1931286170}
+  - {fileID: 1572911974}
+  - {fileID: 1954077423}
+  puzzle1: {fileID: 1081203505}
+  puzzle1Done: {fileID: 1315086445}
+  puzzle2: {fileID: 1661487229}
+  puzzle2Done: {fileID: 1152963647}
+  puzzle3: {fileID: 391516505}
+  puzzle3Done: {fileID: 1913851949}
+  inSS: {fileID: 1299034515}
+  heat: {fileID: 1800542072}
+  cameras2: []
+  shop2: {fileID: 390841142}
+  generalData:
+    SavedSceneNameJSON: 
+    savedHealth: 0
+    inventory:
+      savedBloodPotionCount: 0
+      savedGhostCount: 0
+      savedBloodCount: 0
 --- !u!1 &946243319
 GameObject:
   m_ObjectHideFlags: 0
@@ -38422,13 +38471,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1954077422}
-  - {fileID: 1572911973}
-  - {fileID: 1931286169}
-  - {fileID: 1488796230}
   - {fileID: 1883974475}
-  - {fileID: 129312976}
   - {fileID: 1869126759}
+  - {fileID: 129312976}
+  - {fileID: 1488796230}
+  - {fileID: 1931286169}
+  - {fileID: 1572911973}
+  - {fileID: 1954077422}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

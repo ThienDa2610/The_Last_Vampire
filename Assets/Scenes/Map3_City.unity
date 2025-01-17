@@ -61985,6 +61985,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1975070238}
+    - targetCorrespondingSourceObject: {fileID: 8839986604078865902, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1975070239}
   m_SourcePrefab: {fileID: 100100000, guid: 59e8fa45763080d4db44e4820fd4520b, type: 3}
 --- !u!198 &1975070235 stripped
 ParticleSystem:
@@ -62038,6 +62041,63 @@ MonoBehaviour:
   cameras:
   - {fileID: 1872946083}
   - {fileID: 759824317}
+--- !u!114 &1975070239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975070236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7f4c2603b67c044982970576b7685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1944258695}
+  playerHealthScript: {fileID: 1944258693}
+  savedPosition: {x: 0, y: 0, z: 0}
+  bloodPotionManager: {fileID: 849541308}
+  typeCoinManager: {fileID: 849541307}
+  enemies_map_1: []
+  torches: []
+  torches2: []
+  plants: []
+  plantsNo: []
+  enemies_map_2: []
+  puzzle1: {fileID: 0}
+  puzzle1Done: {fileID: 0}
+  puzzle2: {fileID: 0}
+  puzzle2Done: {fileID: 0}
+  puzzle3: {fileID: 0}
+  puzzle3Done: {fileID: 0}
+  inSS: {fileID: 0}
+  heat: {fileID: 0}
+  cameras2: []
+  shop2: {fileID: 0}
+  enemies_map_3:
+  - {fileID: 731873940}
+  - {fileID: 1580830712}
+  - {fileID: 618398102}
+  - {fileID: 713638111}
+  - {fileID: 385644008}
+  - {fileID: 2108745214}
+  - {fileID: 333690649}
+  cameras3:
+  - {fileID: 1872946083}
+  - {fileID: 759824317}
+  shop3: {fileID: 830587112}
+  enemies_map_4: []
+  worms_map_4: []
+  shop4: {fileID: 0}
+  enemies_map_5: []
+  shop5: {fileID: 0}
+  generalData:
+    SavedSceneNameJSON: 
+    savedHealth: 0
+    inventory:
+      savedBloodPotionCount: 0
+      savedGhostCount: 0
+      savedBloodCount: 0
 --- !u!1 &1986100979
 GameObject:
   m_ObjectHideFlags: 0

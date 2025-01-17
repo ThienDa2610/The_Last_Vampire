@@ -62,11 +62,10 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
-
+        CheckPointJSON.DeleteSaveFile();
         if (savedSceneName == "Map1_Forest")
         {
             CheckPoint.ClearGameData();
-            CheckPointJSON.DeleteSaveFile();
         }
         else if (savedSceneName == "Map2_Desert")
         {
@@ -111,10 +110,11 @@ public class PauseMenu : MonoBehaviour
     public void Quit()
     {
         string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
+        CheckPointJSON.Instance.SaveGame();
+        
         if (savedSceneName == "Map1_Forest")
         {
             CheckPoint.Instance.SaveGame();
-            CheckPointJSON.Instance.SaveGame();
         }
         else if (savedSceneName == "Map2_Desert")
         {
