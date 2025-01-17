@@ -20,6 +20,7 @@ public class SummonQuickSand : BossSkill
     private IEnumerator Summoning()
     {
         animator.SetTrigger("isCasting");
+        sfxManager.Instance.PlaySound2D("Boss_2_3");
         yield return new WaitForSeconds(prepTime);
 
         float maxRange = transform.position.x + summonRadius * transform.localScale.x;

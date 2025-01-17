@@ -22,11 +22,13 @@ public class Torch_OnOff : MonoBehaviour
         if (isOn)
         {
             torchAnimator.SetTrigger("TurnOff");
+            sfxManager.Instance.PlaySound2D("turn_off_torch");
             isOn = false;
         }
         else
         {
             torchAnimator.SetTrigger("TurnOn");
+            sfxManager.Instance.PlaySound2D("waving-torch1");
             isOn = true;
         }
         dialogText.enabled = false;
@@ -40,10 +42,12 @@ public class Torch_OnOff : MonoBehaviour
             if (isOn)
             {
                 torchAnimator.SetTrigger("TurnOn");
+                sfxManager.Instance.PlaySound2D("waving-torch1");
             }
             else
             {
                 torchAnimator.SetTrigger("TurnOff");
+                sfxManager.Instance.PlaySound2D("turn_off_torch");
             }
         }
     }

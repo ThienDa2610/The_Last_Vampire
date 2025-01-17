@@ -135,6 +135,7 @@ public class CheckPoint : MonoBehaviour
                 {
                     initial = true;
                     isSaved = true;
+                    sfxManager.Instance.PlaySound2D("check_point");
                     SaveGame(); // Save game when F is pressed
                 }
             }

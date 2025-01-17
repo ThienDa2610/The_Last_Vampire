@@ -12,6 +12,7 @@ public class Collectible : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             TakeEffect(collision.collider);
+            sfxManager.Instance.PlaySound2D("pick_up");
             Destroy(gameObject);
         }
     }

@@ -25,6 +25,7 @@ public class Touch_Plant : MonoBehaviour
         if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !hasBloomed)
         {
             flowerAnimator.SetTrigger(animationTrigger);
+            sfxManager.Instance.PlaySound2D("hoa_khong_no");
             hasBloomed = true;
             if (dialogText != null)
             {
@@ -40,6 +41,7 @@ public class Touch_Plant : MonoBehaviour
             if (hasBloomed)
             {
                 flowerAnimator.SetTrigger(animationTrigger);
+                sfxManager.Instance.PlaySound2D("hoa_no");
                 dialogText.enabled = false;
             }
             

@@ -32,6 +32,7 @@ public class Pounce : BossSkill
         Applier.castingDamage = true;
 
         animator.SetTrigger("Pounce");
+        sfxManager.Instance.PlaySound2D("Boss1_1");
         rb.velocity = new Vector2(transform.localScale.x * pounceForce, 0f);
         yield return new WaitForSeconds(pounceDuration);
 

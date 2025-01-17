@@ -17,6 +17,7 @@ public class SpawnCursedLand : BossSkill
     private IEnumerator CurseLand(Transform target)
     {
         animator.SetTrigger("Casting");
+        sfxManager.Instance.PlaySound2D("Boss_5_2");
         yield return new WaitForSeconds(prepTime);
         Vector3 spawnPosition = new Vector3(target.position.x, transform.position.y + yOffset, transform.position.z);
         GameObject cursedLand = Instantiate(pf_cursedLand,spawnPosition,Quaternion.identity);

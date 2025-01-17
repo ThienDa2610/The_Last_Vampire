@@ -33,12 +33,14 @@ public class TurnOffTouch : MonoBehaviour
         if (isTorchOn)
         {
             torchAnimator.SetTrigger("TurnOff");
+            sfxManager.Instance.PlaySound2D("turn_off_torch");
             isTorchOn = false;
             tilemap.SetActive(true);
         }
         else
         {
             torchAnimator.SetTrigger("TurnOn");
+            sfxManager.Instance.PlaySound2D("waving-torch1");
             isTorchOn = true;
             tilemap.SetActive(false);
         }
