@@ -74,7 +74,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map3_City")
         {
-            //Lv3CheckPoint.ClearGameData();
+            Lv3CheckPoint.ClearGameData();
         }
         else if (savedSceneName == "Map4_Cave")
         {
@@ -122,7 +122,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map3_City")
         {
-            //Lv3CheckPoint.Instance.SaveGame();
+            Lv3CheckPoint.Instance.SaveGame();
         }
         else if (savedSceneName == "Map4_Cave")
         {

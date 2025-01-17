@@ -16,9 +16,10 @@ public class Menu : MonoBehaviour
     public string resumeButtonTextDefault;
 
     private EventTrigger resumeButtonEventTrigger;
-
+    public Options options;
     private void Start()
     {
+        SetMenuAudioSettings();
         MusicManager.Instance.PlayMusic("Menu");
         resumeButtonEventTrigger = resumeButton.GetComponent<EventTrigger>();
         if (PlayerPrefs.HasKey("SavedPositionX") && PlayerPrefs.HasKey("SavedPositionY") && PlayerPrefs.HasKey("SavedPositionZ"))
@@ -33,6 +34,15 @@ public class Menu : MonoBehaviour
             resumeButtonEventTrigger.enabled = false;
         }
     }
+    private void SetMenuAudioSettings()
+    {
+        float savedSFXVolume = PlayerPrefs.GetFloat("SFXVolume", 1.0f);
+        float savedMusicVolume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
+
+        options.SetSFX(savedSFXVolume);
+        options.SetMusic(savedMusicVolume);
+    }
+
     public void NewGame()
     {
         //Xoa du lieu cu

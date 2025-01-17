@@ -31,7 +31,7 @@ Transform:
   - {fileID: 2969972508736713293}
   - {fileID: 4463515872391975229}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2538745178669388757
 GameObject:
@@ -4829,7 +4829,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -803260375
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 3
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -4932,7 +4932,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -803260375
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9662d84b445a4a143bf4195f495dca4d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4956,9 +4956,7 @@ GameObject:
   - component: {fileID: 4463515872391975229}
   - component: {fileID: 6429391410617252893}
   - component: {fileID: 6979962501386720832}
-  - component: {fileID: 7275837091065864707}
   - component: {fileID: 2545336135353606579}
-  - component: {fileID: 8904029457746115327}
   m_Layer: 0
   m_Name: BallCheckPoint 1
   m_TagString: Untagged
@@ -5021,7 +5019,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -803260375
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 716599c2ca661514f9672ca7ba8695d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5055,60 +5053,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7275837091065864707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8839986604078865902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2009a7b105458c24793677dbb97105a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 6979962501386720832}
-  dialogImage: {fileID: 0}
-  dialogText: {fileID: 0}
-  idleMessage: '[F] Save'
-  SaveddialogImage: {fileID: 0}
-  SaveddialogText: {fileID: 0}
-  SavedidleMessage: Game Saved
-  detectionRadius: 3
-  checkpointParticleSystem: {fileID: 906377235956721263}
-  player: {fileID: 0}
-  playerHealthScript: {fileID: 0}
-  isSaved: 0
-  bloodPotionManager: {fileID: 0}
-  typeCoinManager: {fileID: 0}
-  shop: {fileID: 0}
-  enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  torches:
-  - {fileID: 0}
-  torches2:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  plants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  plantsNo:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!58 &2545336135353606579
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5144,49 +5088,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.86
---- !u!114 &8904029457746115327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8839986604078865902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb7f4c2603b67c044982970576b7685b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerHealthScript: {fileID: 0}
-  savedPosition: {x: 0, y: 0, z: 0}
-  isSaved: 0
-  bloodPotionManager: {fileID: 0}
-  typeCoinManager: {fileID: 0}
-  shop: {fileID: 0}
-  enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  torches:
-  - {fileID: 0}
-  torches2:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  plants:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  plantsNo:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
