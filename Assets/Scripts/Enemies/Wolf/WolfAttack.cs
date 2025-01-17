@@ -29,11 +29,12 @@ public class WolfAttack : EnemyAttack
     IEnumerator Attack()
     {
         isAttacking = true;
+        attackTimer = attackRate;
         animator.SetTrigger("Attack");
         yield return new WaitForSeconds(attackDuration);
-        HealthManager.Instance.takeDamage(attackDamage, transform.parent.gameObject);
+        if (isPlayerInRange)
+            HealthManager.Instance.takeDamage(attackDamage, transform.parent.gameObject);
 
         isAttacking = false;
-        attackTimer = attackRate;
     }
 }

@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using System.Transactions;
 public class HealthManager : MonoBehaviour
 {
     static public HealthManager Instance { get; private set; }
@@ -97,6 +98,8 @@ public class HealthManager : MonoBehaviour
     public void Heal(float healAmount)
     {
         currentHealth += healAmount;
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
         UpdateHealthbar();
     }
     private void Dead()

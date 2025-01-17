@@ -25,8 +25,8 @@ public class EnemyAttack : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            //attackTimer = attackRate;
             rb.velocity = Vector2.zero;
-            Debug.Log(rb.velocity.x);
         }
     }
 
@@ -34,7 +34,6 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Exit trigger collider");
             isPlayerInRange = false;
             isAttacking = false;
         }

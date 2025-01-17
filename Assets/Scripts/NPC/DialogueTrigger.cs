@@ -26,7 +26,7 @@ public class Dialogue
 }
 public class DialogueTrigger : MonoBehaviour
 {
-    public int tutorLabel = 0;
+    public bool tutorLabel = false;
     public GameObject counterIcon;
     public GameObject bloodWaveIcon;
     public Dialogue dialogue;
@@ -63,16 +63,12 @@ public class DialogueTrigger : MonoBehaviour
                 TriggerDialogue();
                 switch(tutorLabel)
                 {
-                    case 1:
-                    Counter.counterLearned = true;
-                    counterIcon.SetActive(true);
-                    break;
-                    case 2:
-                    CastBloodWave.bloodWaveLearned = true;
-                    bloodWaveIcon.SetActive(true);
-                    break;
+                    case true:
+                        Counter.counterLearned = true;
+                        counterIcon.SetActive(true);
+                        break;
                     default:
-                    break;
+                        break;
                 }
             }
             else

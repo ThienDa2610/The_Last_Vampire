@@ -9,9 +9,7 @@ public class EagleAttackPoint : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player") && attacker.isAttacking)
         {
-            Debug.Log("Attack hit");
             HealthManager.Instance.takeDamage(attacker.attackDamage, gameObject);
-            Debug.Log("Attacking off");
             attacker.attackTimer = attacker.attackRate;
             attacker.isAttacking = false;
         }

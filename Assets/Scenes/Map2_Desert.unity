@@ -9651,6 +9651,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6169437410454458027, guid: 37315952b39077f499e7e2d222f371da, type: 3}
+      propertyPath: bloodWaveIcon
+      value: 
+      objectReference: {fileID: 2067042331}
     - target: {fileID: 703379864019632140, guid: 37315952b39077f499e7e2d222f371da, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -27632,11 +27636,6 @@ Transform:
   m_Father: {fileID: 1299034514}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &756366773 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4576768417051557598, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
-  m_PrefabInstance: {fileID: 1954482727}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &760941605
 GameObject:
   m_ObjectHideFlags: 0
@@ -38474,7 +38473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: isInvincible
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: healthbarOverlay
@@ -41309,6 +41308,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8053bfb57b1c7ad4885cd893e912e5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1120548247 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6451446600862587987, guid: 5a32c5ea6be3c734aa26b46d1f76a126, type: 3}
+  m_PrefabInstance: {fileID: 1720191881}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9f9d45c96217f4f87abb2bae039f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1123908059
@@ -47226,7 +47236,7 @@ MonoBehaviour:
   puzzleCanvas: {fileID: 1661487228}
   puzzleScript_number: {fileID: 1661487229}
   puzzleScript_vase: {fileID: 0}
-  isIt: {fileID: 1194800642}
+  isIt: {fileID: 1187319223}
   Puzzle1Or2: 1
   done: 0
 --- !u!1 &1157717547
@@ -47915,6 +47925,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!224 &1187319221 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5942880822582786772, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+  m_PrefabInstance: {fileID: 1954482727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1187319223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1102265562528318112, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+  m_PrefabInstance: {fileID: 1954482727}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339800257f1363408e35580296ebff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1188365168
 GameObject:
   m_ObjectHideFlags: 0
@@ -48100,17 +48126,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1194800642 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7113049197916915370, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
-  m_PrefabInstance: {fileID: 1954482727}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3339800257f1363408e35580296ebff2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1195031658
 GameObject:
   m_ObjectHideFlags: 0
@@ -51008,7 +51023,7 @@ MonoBehaviour:
   puzzleCanvas: {fileID: 1081203504}
   puzzleScript: {fileID: 1081203505}
   done: 0
-  isIt: {fileID: 1194800642}
+  isIt: {fileID: 1187319223}
 --- !u!1 &1317294414
 GameObject:
   m_ObjectHideFlags: 0
@@ -61746,6 +61761,8 @@ MonoBehaviour:
   fifthCamera: {fileID: 733538844}
   heatSlider: {fileID: 740385458}
   screenOverlay: {fileID: 1209836524}
+  isOverHeat: 0
+  overheatDamage: 3
   normalColor: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 983274680}
   health: {fileID: 983274679}
@@ -64626,7 +64643,7 @@ MonoBehaviour:
   puzzleCanvas: {fileID: 391516504}
   puzzleScript_number: {fileID: 0}
   puzzleScript_vase: {fileID: 391516505}
-  isIt: {fileID: 1194800642}
+  isIt: {fileID: 1187319223}
   Puzzle1Or2: 2
   done: 0
 --- !u!61 &1913851950
@@ -64859,7 +64876,7 @@ Transform:
   m_Children:
   - {fileID: 1057368098}
   - {fileID: 390841141}
-  - {fileID: 756366773}
+  - {fileID: 1187319221}
   - {fileID: 1843819598}
   - {fileID: 275789293}
   m_Father: {fileID: 0}
@@ -65952,6 +65969,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1102265562528318112, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+      propertyPath: gameplayCanvas
+      value: 
+      objectReference: {fileID: 1057368099}
     - target: {fileID: 4576768417051557598, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -66040,6 +66061,14 @@ PrefabInstance:
       propertyPath: gameplayCanvas
       value: 
       objectReference: {fileID: 1057368099}
+    - target: {fileID: 8030496855897971103, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1120548247}
+    - target: {fileID: 8030496855897971103, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenSkillTree
+      objectReference: {fileID: 0}
     - target: {fileID: 1102265562528318112, guid: e8422866cbc61a44ea76b4936989079e, type: 3}
       propertyPath: pauseMenu
       value: 

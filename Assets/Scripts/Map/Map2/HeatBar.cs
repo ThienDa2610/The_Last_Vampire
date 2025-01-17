@@ -10,7 +10,9 @@ public class HeatBar : MonoBehaviour
     public Camera forthCamera;
     public Camera fifthCamera;
     public Slider heatSlider;  
-    public Image screenOverlay;  
+    public Image screenOverlay;
+    public bool isOverHeat = false;
+    public float overheatDamage = 3f;
     public Color normalColor = new Color(0, 0, 0, 0); 
     private Color warningColor = new Color(1, 0.4f, 0, 0.1f);
 
@@ -36,6 +38,10 @@ public class HeatBar : MonoBehaviour
 
     void Update()
     {
+        if (isOverHeat)
+        {
+            HealthManager.Instance.takeDamage(overheatDamage * Time.deltaTime, null);
+        }
         if (playerWaterCheck.isInWater || secondaryCamera.gameObject.activeSelf || thirdCamera.gameObject.activeSelf)
         {
             StopOverheating();
@@ -60,9 +66,9 @@ public class HeatBar : MonoBehaviour
         {
             screenOverlay.color = normalColor;
         }
-        if (heatSlider.value >= heatSlider.maxValue)
+        if (!isOverHeat && heatSlider.value >= heatSlider.maxValue)
         {
-            StartCoroutine(DecreaseHealth());
+            isOverHeat = true;
         }
         if (StatusManager.Instance.isInSlough)
         {
@@ -72,18 +78,9 @@ public class HeatBar : MonoBehaviour
             }
         }
     }
-    IEnumerator DecreaseHealth()
-    {
-        while (heatSlider.value >= heatSlider.maxValue)
-        {
-            health.currentHealth -= 0.007f;
-            health.UpdateHealthbar();
-            yield return new WaitForSeconds(1f);
-        }
-    }
     public void StopOverheating()
     {
-        StopCoroutine(DecreaseHealth()); 
+        isOverHeat = false;
         heatSlider.value -= Time.deltaTime * 0.5f;  
     }
 

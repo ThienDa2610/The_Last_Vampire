@@ -7684,7 +7684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_TagString
@@ -9602,7 +9602,7 @@ Transform:
   m_Children:
   - {fileID: 834639860}
   - {fileID: 231595658}
-  - {fileID: 1456885531}
+  - {fileID: 1236081583}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11208,7 +11208,7 @@ PrefabInstance:
     - target: {fileID: 9158774071309383479, guid: 5cf2ae3e114d9b14da7a350aa38f1347, type: 3}
       propertyPath: isIt
       value: 
-      objectReference: {fileID: 1456885533}
+      objectReference: {fileID: 1236081585}
     - target: {fileID: 9158774071309383479, guid: 5cf2ae3e114d9b14da7a350aa38f1347, type: 3}
       propertyPath: dialogText
       value: 
@@ -11963,6 +11963,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224679618}
   m_CullTransparentMesh: 1
+--- !u!224 &1236081583 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5942880822582786772, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+  m_PrefabInstance: {fileID: 1912554640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1236081585 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1102265562528318112, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+  m_PrefabInstance: {fileID: 1912554640}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339800257f1363408e35580296ebff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1252487817
 GameObject:
   m_ObjectHideFlags: 0
@@ -14029,22 +14045,6 @@ Transform:
   m_Father: {fileID: 1539078900}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &1456885531 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4576768417051557598, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
-  m_PrefabInstance: {fileID: 1912554640}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1456885533 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7113049197916915370, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
-  m_PrefabInstance: {fileID: 1912554640}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3339800257f1363408e35580296ebff2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1488505761
 GameObject:
   m_ObjectHideFlags: 0
@@ -14562,7 +14562,7 @@ GameObject:
   - component: {fileID: 1620337722}
   - component: {fileID: 1620337721}
   - component: {fileID: 1620337720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23755,6 +23755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3202600794691520390, guid: f8f3afcfbebd73d4ea066914792f9ce0, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2137166959}
     - target: {fileID: 6937064677835918138, guid: f8f3afcfbebd73d4ea066914792f9ce0, type: 3}
       propertyPath: m_Name
       value: Boss_BloodshadeLord
@@ -23999,6 +24003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Pause
       objectReference: {fileID: 0}
+    - target: {fileID: 1102265562528318112, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+      propertyPath: gameplayCanvas
+      value: 
+      objectReference: {fileID: 834639853}
     - target: {fileID: 4576768417051557598, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -24986,7 +24994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: isInvincible
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: healthbarOverlay
