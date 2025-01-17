@@ -9,6 +9,7 @@ using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
+    public Button firstButton;
     public GameObject pauseMenu;
     public Canvas gameplayCanvas;
     private bool isPaused = false;
@@ -42,10 +43,10 @@ public class PauseMenu : MonoBehaviour
         gameplayCanvas.gameObject.SetActive(false);
         isPaused = true;
         pauseMenu.SetActive(true);
-
+        firstButton.Select();
         StartCoroutine(SlideInMenu());
 
-        Time.timeScale = 0f;  
+        Time.timeScale = 0f;
     }
     public void Continue()
     {
@@ -73,7 +74,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map3_City")
         {
-            Lv3CheckPoint.ClearGameData();
+            //Lv3CheckPoint.ClearGameData();
         }
         else if (savedSceneName == "Map4_Cave")
         {
@@ -121,7 +122,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (savedSceneName == "Map3_City")
         {
-            Lv3CheckPoint.Instance.SaveGame();
+            //Lv3CheckPoint.Instance.SaveGame();
         }
         else if (savedSceneName == "Map4_Cave")
         {
@@ -131,16 +132,16 @@ public class PauseMenu : MonoBehaviour
         {
             Lv5CheckPoint.Instance.SaveGame();
         }
-        
+
         Time.timeScale = 1f;
         MapLoader.Instance.LoadMap("Menu");
         MusicManager.Instance.PlayMusic("Menu");
     }
-   
+
     private IEnumerator SlideInMenu()
     {
-        Vector3 targetPosition = Vector3.zero; 
-        Vector3 startPosition = new Vector3(Screen.width, 0, 0); 
+        Vector3 targetPosition = new Vector3(800, 0, 0);
+        Vector3 startPosition = new Vector3(1900, 0, 0);
         pauseMenuRect.anchoredPosition = startPosition;
 
         float elapsedTime = 0f;
@@ -151,12 +152,12 @@ public class PauseMenu : MonoBehaviour
             yield return null;
         }
         pauseMenuRect.anchoredPosition = targetPosition;
-        
+
     }
 
     private IEnumerator SlideOutMenu()
     {
-        Vector3 targetPosition = new Vector3(Screen.width, 0, 0); 
+        Vector3 targetPosition = new Vector3(1900, 0, 0);
         Vector3 startPosition = pauseMenuRect.anchoredPosition;
 
         float elapsedTime = 0f;
@@ -166,7 +167,7 @@ public class PauseMenu : MonoBehaviour
             pauseMenuRect.anchoredPosition = Vector3.Lerp(startPosition, targetPosition, elapsedTime);
             yield return null;
         }
-        pauseMenuRect.anchoredPosition = targetPosition; 
-        pauseMenu.SetActive(false); 
+        pauseMenuRect.anchoredPosition = targetPosition;
+        pauseMenu.SetActive(false);
     }
 }

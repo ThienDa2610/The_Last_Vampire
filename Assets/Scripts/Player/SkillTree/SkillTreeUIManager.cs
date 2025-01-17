@@ -60,17 +60,6 @@ public class SkillTreeUIManager : MonoBehaviour
 
     private void Update()
     {
-        if (!isOpen && Input.GetKeyDown(KeyCode.C))
-        {
-            skillTree.SetActive(true);
-            gameplayCanvas.gameObject.SetActive(false);
-            isOpen = true;
-            Time.timeScale = 0f;
-            if (activeSkill == null)
-            {
-                activeSkill = skills[0];
-            }
-        }
         if (isOpen)
         {
             checkUnLock();
@@ -85,9 +74,19 @@ public class SkillTreeUIManager : MonoBehaviour
     public void SetActiveSkill(Skill skill)
     {
         activeSkill = skill;
-        
     }
 
+    public void OpenSkillTree()
+    {
+        skillTree.SetActive(true);
+        gameplayCanvas.gameObject.SetActive(false);
+        isOpen = true;
+        Time.timeScale = 0f;
+        if (activeSkill == null)
+        {
+            activeSkill = skills[0];
+        }
+    }
 
     public void CloseSkillTree()
     {
