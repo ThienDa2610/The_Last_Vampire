@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Counter : MonoBehaviour
 {
@@ -16,7 +17,25 @@ public class Counter : MonoBehaviour
     //skill tree
     public static bool isEnhanced = false;
     private float enhancedDuration = 0.2f;
-    // Start is called before the first frame update
+
+    //new input system
+    public PlayerInputAction playerInput;
+    private InputAction counterInput;
+    private void OnEnable()
+    {
+        counterInput = playerInput.Player.Counter;
+        counterInput.Enable();
+        counterInput.performed += CounterInput;
+    }
+    private void OnDisable()
+    {
+        counterInput.Disable();
+    }
+    private void Awake()
+    {
+        playerInput = new PlayerInputAction();
+    }
+
     void Start()
     {
         Instance = this;
@@ -26,10 +45,10 @@ public class Counter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (counterLearned && Input.GetKeyDown(KeyCode.Q) && SkillCDManager.isOffCooldown(SkillType.Counter) && !StatusManager.Instance.isStun)
+        /*if (counterLearned && Input.GetKeyDown(KeyCode.Q) && SkillCDManager.isOffCooldown(SkillType.Counter) && !StatusManager.Instance.isStun)
         {
             StartCoroutine(startBlocking());
-        }
+        }*/
     }
     private IEnumerator startBlocking()
     {
@@ -51,5 +70,12 @@ public class Counter : MonoBehaviour
 
         HealthManager.Instance.Heal(healAmount);
         target.GetComponent<EnemyHealthManager>().TakeDamage(counterDamage);
+    }
+    private void CounterInput(InputAction.CallbackContext context)
+    {
+        if (counterLearned && SkillCDManager.isOffCooldown(SkillType.Counter) && !StatusManager.Instance.isStun)
+        {
+            StartCoroutine(startBlocking());
+        }
     }
 }
