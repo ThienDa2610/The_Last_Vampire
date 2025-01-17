@@ -2,10 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.InputSystem;
+//using UnityEngine.Windows;
 
 public class Movement : MonoBehaviour
 {
     public static Movement Instance;
+
+    //new input system
+    public PlayerInputAction playerInput;
+    private InputAction moveInput;
+    private InputAction jumpInput;
+    private InputAction dashInput;
 
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
@@ -35,6 +43,30 @@ public class Movement : MonoBehaviour
     public bool isRight = true;
     public bool isLeft = false;
     public bool isJump = false;
+    private void OnEnable()
+    {
+        moveInput = playerInput.Player.Move;
+        moveInput.Enable();
+
+        jumpInput = playerInput.Player.Jump;
+        jumpInput.Enable();
+        jumpInput.performed += JumpInput;
+
+        dashInput = playerInput.Player.Dash;
+        dashInput.Enable();
+        dashInput.performed += DashInput;
+    }
+    private void OnDisable()
+    {
+        moveInput.Disable();
+        jumpInput.Disable();
+        dashInput.Disable();
+    }
+    private void Awake()
+    {
+        playerInput = new PlayerInputAction();
+
+    }
 
     void Start()
     {
@@ -67,7 +99,8 @@ public class Movement : MonoBehaviour
         }
         if (isDashing) return;
         if (StatusManager.Instance.isStun) return;
-        float move = Input.GetAxis("Horizontal");
+        Vector2 move2d = moveInput.ReadValue<Vector2>();
+        float move = move2d.x;
 
         //horizontal flip
         if (move > 0)
@@ -105,12 +138,12 @@ public class Movement : MonoBehaviour
         rb.velocity = new Vector2 (move * moveSpeed, rb.velocity.y);
 
         //jump
-        if (Input.GetKeyDown(KeyCode.Space) && (groundCheck.isOnTheGround() || CanJumpInWater))
+        /*if (Input.GetKeyDown(KeyCode.Space) && (groundCheck.isOnTheGround() || CanJumpInWater))
         {
             if (groundCheck.isOnTheGround()) { dust.Play(); }
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isJump = true;
-        }
+        }*/
         if (groundCheck.isOnTheGround() && rb.velocity.y <= 0 && isJump)
         {
             isJump = false;
@@ -122,39 +155,39 @@ public class Movement : MonoBehaviour
             airJumpLeft = true;
         }
         //dash
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !StatusManager.Instance.isTrap && SkillCDManager.isOffCooldown(SkillType.Dash))
+        /*if (Input.GetKeyDown(KeyCode.LeftShift) && !StatusManager.Instance.isTrap && SkillCDManager.isOffCooldown(SkillType.Dash))
         {
             StartCoroutine(Dash());
-        }
+        }*/
 
         //air jump
-        if (Input.GetKeyDown(KeyCode.Space) && !groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
+        /*if (Input.GetKeyDown(KeyCode.Space) && !groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            airJumpLeft = false;
+        }*/
+    }
+
+    private void JumpInput(InputAction.CallbackContext context)
+    {
+        if (groundCheck.isOnTheGround() || CanJumpInWater)
+        {
+            if (groundCheck.isOnTheGround()) { dust.Play(); }
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            isJump = true;
+        }
+        else if (!groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             airJumpLeft = false;
         }
-        /*if (Input.GetKeyDown(KeyCode.Space))
+    }
+    private void DashInput(InputAction.CallbackContext context)
+    {
+        if (!StatusManager.Instance.isTrap && SkillCDManager.isOffCooldown(SkillType.Dash))
         {
-            if (groundCheck.isOnTheGround() || CanJumpInWater) 
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                if (!groundCheck.isOnTheGround() || !CanJumpInWater) 
-                {
-                    airJumpLeft = false;
-                }
-            }
-        }*/
-
-        /*if (!isInSlough)
-        {
-            moveSpeed = 5f;
-            jumpForce = 7f;
+            StartCoroutine(Dash());
         }
-        else
-        {
-            moveSpeed = 2.5f;
-            jumpForce = 0f;
-        }*/
     }
 
     private IEnumerator Dash()
