@@ -31263,6 +31263,7 @@ GameObject:
   - component: {fileID: 447129764}
   - component: {fileID: 447129763}
   - component: {fileID: 447129766}
+  - component: {fileID: 447129767}
   m_Layer: 0
   m_Name: BallCheckPoint 1
   m_TagString: Untagged
@@ -31439,6 +31440,71 @@ MonoBehaviour:
   - {fileID: 1449999777}
   - {fileID: 2001030128}
   - {fileID: 1418835122}
+--- !u!114 &447129767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447129760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7f4c2603b67c044982970576b7685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1426125457}
+  playerHealthScript: {fileID: 1426125455}
+  savedPosition: {x: 0, y: 0, z: 0}
+  bloodPotionManager: {fileID: 1624162639}
+  typeCoinManager: {fileID: 1624162638}
+  enemies_map_1: []
+  torches: []
+  torches2: []
+  plants: []
+  plantsNo: []
+  enemies_map_2: []
+  puzzle1: {fileID: 0}
+  puzzle1Done: {fileID: 0}
+  puzzle2: {fileID: 0}
+  puzzle2Done: {fileID: 0}
+  puzzle3: {fileID: 0}
+  puzzle3Done: {fileID: 0}
+  inSS: {fileID: 0}
+  heat: {fileID: 0}
+  cameras2: []
+  shop2: {fileID: 0}
+  enemies_map_3: []
+  cameras3: []
+  shop3: {fileID: 0}
+  enemies_map_4:
+  - {fileID: 2080839392}
+  worms_map_4:
+  - {fileID: 1408270126}
+  - {fileID: 1208888791}
+  - {fileID: 1956702311}
+  - {fileID: 1324528876}
+  - {fileID: 1418835122}
+  - {fileID: 2001030128}
+  - {fileID: 1449999777}
+  - {fileID: 1813717836}
+  - {fileID: 1638763523}
+  - {fileID: 1124179519}
+  - {fileID: 2137096591}
+  - {fileID: 1581105448}
+  - {fileID: 1228417722}
+  - {fileID: 1419731649}
+  - {fileID: 1972969842}
+  - {fileID: 1184322311}
+  shop4: {fileID: 78171733}
+  enemies_map_5: []
+  shop5: {fileID: 0}
+  generalData:
+    SavedSceneNameJSON: 
+    savedHealth: 0
+    inventory:
+      savedBloodPotionCount: 0
+      savedGhostCount: 0
+      savedBloodCount: 0
 --- !u!1 &454944430
 GameObject:
   m_ObjectHideFlags: 0
