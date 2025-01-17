@@ -30,6 +30,12 @@ public class Movement : MonoBehaviour
     public List<float> speedDif;
     public List<float> bloodBoiledTimer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public ParticleSystem dust;
+    public bool isRight = true;
+    public bool isLeft = false;
+    public bool isJump = false;
+
     void Start()
     {
         Instance = this;
@@ -67,10 +73,22 @@ public class Movement : MonoBehaviour
         if (move > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
+            if (!isRight && groundCheck.isOnTheGround())
+            {
+                dust.Play();
+                isRight = true;
+                isLeft = false;
+            }
         }
         else if (move < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            if (!isLeft && groundCheck.isOnTheGround())
+            {
+                dust.Play();
+                isRight = false;
+                isLeft = true;
+            }
         }
 
         //animation
@@ -87,11 +105,22 @@ public class Movement : MonoBehaviour
         rb.velocity = new Vector2 (move * moveSpeed, rb.velocity.y);
 
         //jump
-        if (Input.GetKeyDown(KeyCode.Space) && groundCheck.isOnTheGround())
+        if (Input.GetKeyDown(KeyCode.Space) && (groundCheck.isOnTheGround() || CanJumpInWater))
         {
+            if (groundCheck.isOnTheGround()) { dust.Play(); }
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            isJump = true;
         }
-
+        if (groundCheck.isOnTheGround() && rb.velocity.y <= 0 && isJump)
+        {
+            isJump = false;
+            dust.Play();
+        }
+        //double jump in water
+        if (CanJumpInWater)
+        {
+            airJumpLeft = true;
+        }
         //dash
         if (Input.GetKeyDown(KeyCode.LeftShift) && !StatusManager.Instance.isTrap && SkillCDManager.isOffCooldown(SkillType.Dash))
         {
