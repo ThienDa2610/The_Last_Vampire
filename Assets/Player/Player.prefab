@@ -190,9 +190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 0}
-  maxHealth: 100
+  maxHealth: 150
   currentHealth: 0
-  isInvincible: 1
+  isInvincible: 0
   healthbarOverlay: {fileID: 0}
   fallLimit: -6
   counter: {fileID: 0}
@@ -261,6 +261,9 @@ MonoBehaviour:
   speedDif: []
   bloodBoiledTimer: []
   dust: {fileID: 1916344830956002346}
+  isRight: 1
+  isLeft: 0
+  isJump: 0
 --- !u!95 &5877672905978513763
 Animator:
   serializedVersion: 5

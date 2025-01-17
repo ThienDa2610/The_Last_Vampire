@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3232775563643090114
 SpriteRenderer:
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1017492929
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_Sprite: {fileID: 1430996650, guid: 1b40afba159a59b47bc0f605e3e25348, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1.2631838}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -152,7 +152,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.34375, y: 3.21875}
+  m_Size: {x: 4.34375, y: 0.69238245}
   m_EdgeRadius: 0
 --- !u!114 &1556866402751606028
 MonoBehaviour:
@@ -179,5 +179,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cccee9d599317946ab73fc891e0be7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorLabel: 0
+  counterIcon: {fileID: 0}
+  bloodWaveIcon: {fileID: 0}
   dialogue:
-    lines: []
+    lines:
+    - character:
+        name: The Spirits
+        avatar: {fileID: 1430996650, guid: 1b40afba159a59b47bc0f605e3e25348, type: 3}
+      line: Oh! A Vampire! How long has it been since we've seen a vampire?
+    - character:
+        name: You
+        avatar: {fileID: -991062016, guid: 880665a2a21ecc44fb65660b2eb32d49, type: 3}
+      line: I just woke up from a long sleep...
+    - character:
+        name: You
+        avatar: {fileID: -991062016, guid: 880665a2a21ecc44fb65660b2eb32d49, type: 3}
+      line: Dear spirits, can you tell me what's going on?
+  interactGuide: {fileID: 0}
+  interactMessage: '[F] to talk again'
