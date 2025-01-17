@@ -11,6 +11,8 @@ public class BossDefeatedAndSceneChanger : MonoBehaviour
     public float xTrigger = 241f;
     public string NextScene = "Map2_Desert";
 
+    public bool PassLv = false;
+
     void Start()
     {
         triggerPosition1 = new Vector3(xTrigger, triggerPosition1.y, triggerPosition1.z);
@@ -24,6 +26,10 @@ public class BossDefeatedAndSceneChanger : MonoBehaviour
             {
                 SceneManager.LoadScene(NextScene);
             }
+        }
+        else if (PassLv)
+        {
+            SceneManager.LoadScene(NextScene);
         }
     }
 }

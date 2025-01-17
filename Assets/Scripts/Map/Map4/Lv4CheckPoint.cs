@@ -51,7 +51,7 @@ public class Lv4CheckPoint : MonoBehaviour
 
     //Diffent things of maps
     public List<EnemyHealthManager> enemies;
- 
+    public List<CaveWorm_Cocoon> worms;
 
     // Initialize the instance and check for saved data
     void Awake()
@@ -274,7 +274,14 @@ public class Lv4CheckPoint : MonoBehaviour
             PlayerPrefs.SetInt("Enemy4_" + i + "_Dead", enemies[i].isDead ? 1 : 0);
             PlayerPrefs.SetFloat("Enemy4_" + i + "_Health", enemies[i].health);
         }
-
+        for (int i = 0; i < worms.Count; i++)
+        {
+            PlayerPrefs.SetInt("Cocoon4_" + i + "_Fallen", worms[i].hasFallen ? 1 : 0);
+            if (worms[i].hasFallen)
+            {
+                PlayerPrefs.SetFloat("Cocoon4_" + i + "_Health", worms[i].GetHealth());
+            }
+        }
         PlayerPrefs.Save();
     }
 
@@ -347,7 +354,24 @@ public class Lv4CheckPoint : MonoBehaviour
                 enemies[i].UpdateHealthbar();
             }
         }
+        for (int i = 0; i < worms.Count; i++)
+        {
+            // Get the saved "Fallen" state
+            int fallenState = PlayerPrefs.GetInt("Cocoon4_" + i + "_Fallen", 0);  // Default to 0 if not found
+            float healthhWorm = PlayerPrefs.GetFloat("Cocoon4_" + i + "_Health", 0);
 
+            // If the cocoon has fallen, destroy the worm object
+            if (fallenState == 1)
+            {
+                if (worms[i] != null)
+                {
+                    worms[i].SpawnCaveWorm();
+                    worms[i].SetHealth(healthhWorm);
+                    Destroy(worms[i].gameObject); // Destroy the worm (cocoon)
+                }
+            }
+
+        }
     }
 
     //Clear data when player choose new game
@@ -372,5 +396,6 @@ public class Lv4CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedItemRunOut4");
         PlayerPrefs.DeleteKey("SavedMaxValueItem4");
         PlayerPrefs.DeleteKey("Enemy4_");
+        PlayerPrefs.DeleteKey("Cocoon4_");
     }
 }
