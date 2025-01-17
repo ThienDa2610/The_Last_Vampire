@@ -21,6 +21,7 @@ public class ShootLaserBeam : BossSkill
     private IEnumerator ShootingLaserBeam()
     {
         animator.SetTrigger("isShooting");
+        sfxManager.Instance.PlaySound2D("Boss_3_1");
         yield return new WaitForSeconds(prepTime);
         StartShootLaserBeam();
         skillManager.isCastingSkill = false;

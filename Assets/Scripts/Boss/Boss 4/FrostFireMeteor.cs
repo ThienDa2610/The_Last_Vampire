@@ -20,6 +20,7 @@ public class FrostFireMeteor : BossSkill
     private IEnumerator DragonMeteor(Transform target)
     {
         animator.SetTrigger("isAscending");
+        sfxManager.Instance.PlaySound2D("Boss_4_3");
         rb.velocity = new Vector2(0f, 20f);
         yield return new WaitForSeconds(ascendDelay);
 

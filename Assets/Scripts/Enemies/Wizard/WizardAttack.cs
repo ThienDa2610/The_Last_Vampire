@@ -29,6 +29,7 @@ public class WizardAttack : EnemyAttack
     {
         isAttacking = true;
         animator.SetTrigger("Attack");
+        sfxManager.Instance.PlaySound2D("Enemy5");
         yield return new WaitForSeconds(attackDuration);
 
         GameObject energyBlast = Instantiate(pf_energyBlast,transform.position, Quaternion.identity);
