@@ -44,17 +44,18 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         pauseMenu.SetActive(true);
         firstButton.Select();
-        StartCoroutine(SlideInMenu());
+        //StartCoroutine(SlideInMenu());
 
         Time.timeScale = 0f;
     }
+
     public void Continue()
     {
         gameplayCanvas.gameObject.SetActive(true);
         isPaused = false;
-        //pauseMenu.SetActive(false);
+        pauseMenu.SetActive(false);
 
-        StartCoroutine(SlideOutMenu());
+        //StartCoroutine(SlideOutMenu());
 
         Time.timeScale = 1f;
     }
@@ -138,9 +139,10 @@ public class PauseMenu : MonoBehaviour
         MusicManager.Instance.PlayMusic("Menu");
     }
 
+
     private IEnumerator SlideInMenu()
     {
-        Vector3 targetPosition = new Vector3(800, 0, 0);
+        Vector3 targetPosition = new Vector3(Screen.width - 150, 0, 0);
         Vector3 startPosition = new Vector3(1900, 0, 0);
         pauseMenuRect.anchoredPosition = startPosition;
 

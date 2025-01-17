@@ -41,7 +41,6 @@ public class TypeCoinManager : MonoBehaviour
 
     public void CollectDragonHeart()
     {
-        Debug.Log("true");
         dragonHeart = true;
     }
 

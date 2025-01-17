@@ -28,7 +28,7 @@ public class BloodPotionManager : MonoBehaviour
 
     public void UpdateBottleCountText()
     {
-        bottleCountText.text = "x" + bottleCount.ToString();
+        bottleCountText.text = bottleCount.ToString();
     }
     void Update()
     {

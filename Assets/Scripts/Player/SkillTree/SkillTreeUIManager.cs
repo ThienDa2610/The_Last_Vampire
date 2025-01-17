@@ -31,11 +31,6 @@ public class SkillTreeUIManager : MonoBehaviour
         if (PlayerPrefs.HasKey("SavedBloodCount"))
         {
             bloodCount = PlayerPrefs.GetInt("SavedBloodCount");
-            // test
-            if(bloodCount == 0)
-            {
-                bloodCount = 12;
-            }
         }
         SkillButton[0].PessSkillButton();
         UpdatebloodCountText();
@@ -60,6 +55,10 @@ public class SkillTreeUIManager : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            OpenSkillTree();
+        }
         if (isOpen)
         {
             checkUnLock();
