@@ -79,6 +79,7 @@ public class DialogueTrigger : MonoBehaviour
                     case true:
                         Counter.counterLearned = true;
                         counterIcon.SetActive(true);
+                        PlayerPrefs.SetInt("CounterState", Counter.counterLearned ? 1 : 0);
                         break;
                     default:
                         break;

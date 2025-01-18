@@ -302,10 +302,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Shop
       objectReference: {fileID: 0}
-    - target: {fileID: 175160251964207625, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2494950743444258061, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -949,7 +945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4066124166808345487, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4201569486727260992, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_Name
@@ -961,7 +957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5103489627587680637, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7544427773568050049, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -28358,7 +28354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &759824313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42190,10 +42186,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3167231660243625612, guid: c8519f05a0e936245a9eb4e02a48819d, type: 3}
-      propertyPath: isNPCPaster
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -3167231660243625612, guid: c8519f05a0e936245a9eb4e02a48819d, type: 3}
       propertyPath: interactGuide
       value: 
       objectReference: {fileID: 637950569}
@@ -42368,26 +42360,6 @@ PrefabInstance:
     - target: {fileID: 5260819778374906193, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
       propertyPath: m_Name
       value: AudioManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6497934594183550176, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
-      propertyPath: tracks.Array.data[1].name
-      value: Map1_Forest
-      objectReference: {fileID: 0}
-    - target: {fileID: 6497934594183550176, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
-      propertyPath: tracks.Array.data[2].name
-      value: Map2_Desert
-      objectReference: {fileID: 0}
-    - target: {fileID: 6497934594183550176, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
-      propertyPath: tracks.Array.data[3].name
-      value: Map3_City
-      objectReference: {fileID: 0}
-    - target: {fileID: 6497934594183550176, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
-      propertyPath: tracks.Array.data[4].name
-      value: Map4_Cave
-      objectReference: {fileID: 0}
-    - target: {fileID: 6497934594183550176, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
-      propertyPath: tracks.Array.data[5].name
-      value: Map5_Ruin
       objectReference: {fileID: 0}
     - target: {fileID: 7869513150864931075, guid: 5e861fa27e7b5864d8d81ac554b3095d, type: 3}
       propertyPath: m_RootOrder
@@ -43755,6 +43727,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1436326867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5103489627587680637, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+  m_PrefabInstance: {fileID: 221238222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1436326868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4066124166808345487, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+  m_PrefabInstance: {fileID: 221238222}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441062187
 GameObject:
   m_ObjectHideFlags: 0
@@ -61875,11 +61857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 250
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -61980,9 +61962,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Boss: {fileID: 731873939}
   player: {fileID: 1944258695}
-  xTrigger: 246
+  xTrigger: 250
   NextScene: Map4_Cave
-  isScene3: 1
   PassLv: 0
 --- !u!114 &1944258706 stripped
 MonoBehaviour:
@@ -62174,6 +62155,8 @@ MonoBehaviour:
   cameras:
   - {fileID: 1872946083}
   - {fileID: 759824317}
+  counterIcon: {fileID: 1436326868}
+  bloodWaveIcon: {fileID: 1436326867}
 --- !u!114 &1975070239
 MonoBehaviour:
   m_ObjectHideFlags: 0

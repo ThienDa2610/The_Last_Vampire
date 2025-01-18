@@ -64,6 +64,9 @@ public class Lv2CheckPoint : MonoBehaviour
     public HeatBar heat;
     public Camera[] cameras;
 
+    public GameObject counterIcon;
+    public GameObject bloodWaveIcon;
+
     // Initialize the instance and check for saved data
     void Awake()
     {
@@ -86,6 +89,22 @@ public class Lv2CheckPoint : MonoBehaviour
         }
         int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex", 0); // Default to first camera
         cameras[savedActiveCameraIndex].gameObject.SetActive(true);
+
+
+        //Load Learn Skill
+        int counterSkillCheck = PlayerPrefs.GetInt("CounterState", 0);
+        Counter.counterLearned = counterSkillCheck == 1;
+        if (counterSkillCheck == 1)
+        {
+            counterIcon.SetActive(true);
+        }
+        int bloodWaveCheck = PlayerPrefs.GetInt("BloodWaveState", 0);
+        CastBloodWave.bloodWaveLearned = bloodWaveCheck == 1;
+        if (bloodWaveCheck == 1)
+        {
+            bloodWaveIcon.SetActive(true);
+        }
+
         if (PlayerPrefs.HasKey("SavedPosition2X") && PlayerPrefs.HasKey("SavedPosition2Y") && PlayerPrefs.HasKey("SavedPosition2Z"))
         {
             LoadGame(); // Load game data if available
@@ -149,6 +168,7 @@ public class Lv2CheckPoint : MonoBehaviour
                     isSaved = true;
                     sfxManager.Instance.PlaySound2D("check_point");
                     SaveGame(); // Save game when F is pressed
+                    CheckPointJSON.Instance.SaveGame();
                 }
             }
         }
@@ -455,6 +475,7 @@ public class Lv2CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SandStorm2");
         PlayerPrefs.DeleteKey("HeatValue");
         PlayerPrefs.DeleteKey("ActiveCameraIndex");
-
+        PlayerPrefs.DeleteKey("CounterState");
+        PlayerPrefs.DeleteKey("BloodWaveState");
     }
 }

@@ -32,6 +32,7 @@ public class CastBloodWave : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        PlayerPrefs.SetInt("BloodWaveState", bloodWaveLearned ? 1 : 0);
     }
     private void Update()
     {

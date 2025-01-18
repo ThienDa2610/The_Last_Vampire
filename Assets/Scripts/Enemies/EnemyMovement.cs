@@ -29,7 +29,13 @@ public class EnemyMovement : MonoBehaviour
             }
             else
             {
-                animator.SetTrigger("Walk");
+                foreach (var param in animator.parameters)
+                {
+                    if (param.type == AnimatorControllerParameterType.Trigger && param.name == "Walk")
+                    {
+                        animator.SetTrigger("Walk");
+                    }
+                }
                 Patrol();
             }
         }
@@ -42,7 +48,13 @@ public class EnemyMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
             return;
         }
-        animator.SetTrigger("Follow");
+        foreach (var param in animator.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Trigger && param.name == "Follow")
+            {
+                animator.SetTrigger("Follow");
+            }
+        }
         rb.velocity = new Vector2(transform.localScale.x * speed * speedMultiplier, rb.velocity.y);
     }
 

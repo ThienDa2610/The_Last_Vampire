@@ -8685,6 +8685,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4066124166808345487, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4201569486727260992, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -8705,6 +8709,10 @@ PrefabInstance:
       propertyPath: GhostCountText
       value: 
       objectReference: {fileID: 2065275688}
+    - target: {fileID: 5103489627587680637, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5196472260388544044, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8748,6 +8756,16 @@ PrefabInstance:
 --- !u!223 &834639853 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 5748148018779497431, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+  m_PrefabInstance: {fileID: 834639852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &834639854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5103489627587680637, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+  m_PrefabInstance: {fileID: 834639852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &834639855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4066124166808345487, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
   m_PrefabInstance: {fileID: 834639852}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &834639858 stripped
@@ -9400,6 +9418,8 @@ MonoBehaviour:
   - {fileID: 445703207}
   - {fileID: 763975629}
   - {fileID: 1911757712}
+  counterIcon: {fileID: 834639855}
+  bloodWaveIcon: {fileID: 834639854}
 --- !u!114 &1009132437
 MonoBehaviour:
   m_ObjectHideFlags: 0

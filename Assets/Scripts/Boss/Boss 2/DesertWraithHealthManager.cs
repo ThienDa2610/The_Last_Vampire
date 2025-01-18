@@ -13,7 +13,7 @@ public class DesertWraithHealthManager : EnemyHealthManager
     {
         CastBloodWave.bloodWaveLearned = true;
         bloodWaveIcon.SetActive(true);
-        
+        PlayerPrefs.SetInt("BloodWaveState", CastBloodWave.bloodWaveLearned ? 1 : 0);
         base.Die();
     }
 
