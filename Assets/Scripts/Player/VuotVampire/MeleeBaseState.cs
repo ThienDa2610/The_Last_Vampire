@@ -68,7 +68,7 @@ public class MeleeBaseState : State
                         HealthManager.Instance.Heal(damage * lifeStealPercent);
                     }
                     //tear
-                    if (Tear || true)
+                    if (Tear)
                     {
                         collidersToDamage[i].gameObject.GetComponent<EnemyHealthManager>().InflictBloodLost();
                     }
