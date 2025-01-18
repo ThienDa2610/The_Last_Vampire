@@ -8887,6 +8887,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6884773540774861404, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8019235491381572913, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -9561,8 +9565,8 @@ MonoBehaviour:
   animator: {fileID: 1009132434}
   dialogText: {fileID: 331257260}
   idleMessage: '[F] Save'
-  SaveddialogImage: {fileID: 0}
-  SaveddialogText: {fileID: 0}
+  SaveddialogImage: {fileID: 1032060444}
+  SaveddialogText: {fileID: 1032060443}
   SavedidleMessage: Game Saved
   detectionRadius: 3
   checkpointParticleSystem: {fileID: 115580681}
@@ -9660,6 +9664,28 @@ MonoBehaviour:
       savedBloodPotionCount: 0
       savedGhostCount: 0
       savedBloodCount: 0
+--- !u!114 &1032060443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5889572961398285325, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+  m_PrefabInstance: {fileID: 834639852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1032060444 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8009939963341424218, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+  m_PrefabInstance: {fileID: 834639852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1088951633
 GameObject:
   m_ObjectHideFlags: 0
