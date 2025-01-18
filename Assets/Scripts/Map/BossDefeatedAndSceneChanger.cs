@@ -13,6 +13,8 @@ public class BossDefeatedAndSceneChanger : MonoBehaviour
     public bool isScene3 = false;
     public bool PassLv = false;
 
+    private bool hasSaved = false;
+
     void Start()
     {
         triggerPosition1 = new Vector3(xTrigger, triggerPosition1.y, triggerPosition1.z);
@@ -33,11 +35,19 @@ public class BossDefeatedAndSceneChanger : MonoBehaviour
                             case 0:
                                 break;
                             case 1:
-                                SaveBeforeNext();
+                                if (!hasSaved)  
+                                {
+                                    SaveBeforeNext();
+                                    hasSaved = true;  
+                                }
                                 MapLoader.Instance.LoadMap("Map4_Cave");
                                 break;
                             case 2:
-                                SaveBeforeNext();
+                                if (!hasSaved)
+                                {
+                                    SaveBeforeNext();
+                                    hasSaved = true;
+                                }
                                 MapLoader.Instance.LoadMap("Map5_Ruin");
                                 break;
                         }
@@ -47,7 +57,11 @@ public class BossDefeatedAndSceneChanger : MonoBehaviour
         }
         else if (PassLv)
         {
-            SaveBeforeNext();
+            if (!hasSaved)
+            {
+                SaveBeforeNext();
+                hasSaved = true;
+            }
             MapLoader.Instance.LoadMap(NextScene);
         }
         else
@@ -56,7 +70,11 @@ public class BossDefeatedAndSceneChanger : MonoBehaviour
             {
                 if (Vector3.Distance(new Vector3(player.transform.position.x, 0f, 0f), new Vector3(triggerPosition1.x, 0f, 0f)) < 1f)
                 {
-                    SaveBeforeNext();
+                    if (!hasSaved)
+                    {
+                        SaveBeforeNext();
+                        hasSaved = true;
+                    }
                     MapLoader.Instance.LoadMap(NextScene);
                 }
             }
