@@ -36198,6 +36198,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 740380419816498287, guid: 06daa6316a67dc645946fcfae19b475d, type: 3}
+      propertyPath: m_text
+      value: "Ah, a Vampire! It\u2019s been ages since I\u2019ve seen one of your
+        kind. Tell me, do you still trust so easily, or have you learned the cost
+        of letting your guard down?"
+      objectReference: {fileID: 0}
     - target: {fileID: 1929032397610680192, guid: 06daa6316a67dc645946fcfae19b475d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -38139,6 +38145,7 @@ MonoBehaviour:
   player: {fileID: 983274680}
   xTrigger: 391
   NextScene: Map3_City
+  isScene3: 0
   PassLv: 0
 --- !u!1 &987557839
 GameObject:
@@ -59779,13 +59786,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 175160251964207625, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2494950743444258061, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1116459658}
     - target: {fileID: 3857666174504167306, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5833186324243667298, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
       propertyPath: m_SortingOrder
@@ -59793,7 +59804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6359486678243335831, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8188755259023480436, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
       propertyPath: m_Pivot.x

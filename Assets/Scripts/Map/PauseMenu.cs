@@ -84,28 +84,7 @@ public class PauseMenu : MonoBehaviour
             Lv5CheckPoint.ClearGameData();
         }
 
-        SceneManager.LoadScene(savedSceneName);
-
-        if (savedSceneName == "Map1_Forest")
-        {
-            MusicManager.Instance.PlayMusic("Level_1");
-        }
-        else if (savedSceneName == "Map2_Desert")
-        {
-            MusicManager.Instance.PlayMusic("Level_2");
-        }
-        else if (savedSceneName == "Map3_City")
-        {
-            MusicManager.Instance.PlayMusic("Level_3");
-        }
-        else if (savedSceneName == "Map4_Cave")
-        {
-            MusicManager.Instance.PlayMusic("Level_4");
-        }
-        else if (savedSceneName == "Map5_Ruin")
-        {
-            MusicManager.Instance.PlayMusic("Level_5");
-        }
+        MapLoader.Instance.LoadMap(savedSceneName);
     }
     public void Quit()
     {
@@ -135,7 +114,6 @@ public class PauseMenu : MonoBehaviour
 
         Time.timeScale = 1f;
         MapLoader.Instance.LoadMap("Menu");
-        MusicManager.Instance.PlayMusic("Menu");
     }
 
     private IEnumerator SlideInMenu()

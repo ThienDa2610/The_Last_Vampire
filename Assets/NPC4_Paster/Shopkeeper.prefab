@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5907318806504966220}
   - component: {fileID: 2005152060988971884}
   - component: {fileID: 9158774071309383479}
+  - component: {fileID: 7744286934100725580}
   m_Layer: 0
   m_Name: Shopkeeper
   m_TagString: Shopkeeper
@@ -148,3 +149,28 @@ MonoBehaviour:
   dialogText: {fileID: 0}
   idleMessage: '[F] To Purchase'
   isIt: {fileID: 0}
+--- !u!114 &7744286934100725580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335111477047600366}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cccee9d599317946ab73fc891e0be7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorLabel: 0
+  counterIcon: {fileID: 0}
+  bloodWaveIcon: {fileID: 0}
+  dialogue:
+    lines:
+    - character:
+        name: Priest's Spirit
+        avatar: {fileID: 21300000, guid: d1a40164ec812db43900c29b6ca52f3f, type: 3}
+      line: You fight with fury, but fury alone will not sustain you. Take these
+        vials of blood, traded for the souls you reap. They will sustain your strength.
+  interactGuide: {fileID: 0}
+  interactMessage: '[F] To Talk Again'
+  isNPCPaster: 0

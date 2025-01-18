@@ -9,7 +9,8 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance;
 
     public Canvas mainUI;
-
+    public GameObject chooseMenu;
+    private Animator chooseAnimator;
     public Image characterAvatar;
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueText;
@@ -22,23 +23,31 @@ public class DialogueManager : MonoBehaviour
 
     public bool isOpen = false;
 
+    public bool isNPCPaster = false;
+    private bool isChoosing = false;
+    public int chooseIndex = 0;
+
+
     private void Start()
     {
         if (Instance == null)
             Instance = this;
         animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+        chooseAnimator = chooseMenu.GetComponent<Animator>();
+        chooseAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
     }
 
     private void Update()
     {
-        if (isOpen && Input.GetKeyDown(KeyCode.F))
+        if (isOpen && !isChoosing && Input.GetKeyDown(KeyCode.F))
             DisplayNextLine();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, bool NPCPaster)
     {
-        mainUI.gameObject.SetActive(false);
         isOpen = true;
+        isNPCPaster = NPCPaster;
+        mainUI.gameObject.SetActive(false);
         animator.SetBool("isOpen", true);
 
         if (lines == null)
@@ -61,13 +70,21 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        DialogueLine currentLine = lines.Dequeue();
+        if (!isChoosing)
+        {
+            DialogueLine currentLine = lines.Dequeue();
 
-        characterAvatar.sprite = currentLine.character.avatar;
-        characterName.text = currentLine.character.name;
+            characterAvatar.sprite = currentLine.character.avatar;
+            characterName.text = currentLine.character.name;
 
-        StopAllCoroutines();
-        StartCoroutine(TypeLine(currentLine));
+            StopAllCoroutines();
+            StartCoroutine(TypeLine(currentLine));
+        }
+
+        if (isNPCPaster && lines.Count == 1)
+        {
+            StartCoroutine(OpenChooseMenu());
+        }
     }
     
     IEnumerator TypeLine(DialogueLine line)
@@ -87,5 +104,20 @@ public class DialogueManager : MonoBehaviour
         mainUI.gameObject.SetActive(true);
         Time.timeScale = 1f;
         isOpen = false;
+    }
+
+    IEnumerator OpenChooseMenu()
+    {
+        isChoosing = true;
+        chooseAnimator.SetBool("isOpen", true);
+        yield return new WaitForSecondsRealtime(1f);
+    }
+
+    public void CloseChooseMenu(int nextLv)
+    {
+        chooseIndex = nextLv;
+        chooseAnimator.SetBool("isOpen", false);
+        isChoosing = false;
+        DisplayNextLine();
     }
 }

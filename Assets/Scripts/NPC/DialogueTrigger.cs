@@ -35,10 +35,13 @@ public class DialogueTrigger : MonoBehaviour
 
     public TMP_Text interactGuide;
     public string interactMessage;
-/*
-    public Image donedialogImage;
-    public TMP_Text donedialogText;
-    public string doneidleMessage;*/
+
+    public bool isNPCPaster = false;
+
+    /*
+        public Image donedialogImage;
+        public TMP_Text donedialogText;
+        public string doneidleMessage;*/
 
     private void Start()
     {
@@ -60,7 +63,7 @@ public class DialogueTrigger : MonoBehaviour
     }
     public void TriggerDialogue()
     {
-        DialogueManager.Instance.StartDialogue(dialogue);
+        DialogueManager.Instance.StartDialogue(dialogue, isNPCPaster);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
