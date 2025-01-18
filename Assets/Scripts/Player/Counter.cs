@@ -40,6 +40,7 @@ public class Counter : MonoBehaviour
     {
         Instance = this;
         animator = GetComponent<Animator>();
+        PlayerPrefs.SetInt("CounterState", counterLearned ? 1 : 0);
     }
 
     // Update is called once per frame

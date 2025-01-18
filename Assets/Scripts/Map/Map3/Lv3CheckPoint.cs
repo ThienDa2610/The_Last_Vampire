@@ -53,6 +53,9 @@ public class Lv3CheckPoint : MonoBehaviour
     public List<EnemyHealthManager> enemies;
     public Camera[] cameras;
 
+    public GameObject counterIcon;
+    public GameObject bloodWaveIcon;
+
     // Initialize the instance and check for saved data
     void Awake()
     {
@@ -75,7 +78,18 @@ public class Lv3CheckPoint : MonoBehaviour
         }
         int savedActiveCameraIndex = PlayerPrefs.GetInt("ActiveCameraIndex3", 0); // Default to first camera
         cameras[savedActiveCameraIndex].gameObject.SetActive(true);
-
+        int counterSkillCheck = PlayerPrefs.GetInt("CounterState", 0);
+        Counter.counterLearned = counterSkillCheck == 1;
+        if (counterSkillCheck == 1 && !counterIcon.activeSelf)
+        {
+            counterIcon.SetActive(true);
+        }
+        int bloodWaveCheck = PlayerPrefs.GetInt("BloodWaveState", 0);
+        CastBloodWave.bloodWaveLearned = bloodWaveCheck == 1;
+        if (bloodWaveCheck == 1 && !bloodWaveIcon.activeSelf)
+        {
+            bloodWaveIcon.SetActive(true);
+        }
         if (PlayerPrefs.HasKey("SavedPosition3X") && PlayerPrefs.HasKey("SavedPosition3Y") && PlayerPrefs.HasKey("SavedPosition3Z"))
         {
             LoadGame(); // Load game data if available
@@ -83,7 +97,7 @@ public class Lv3CheckPoint : MonoBehaviour
         else
         {
             // Set default position if no saved data is found
-            player.transform.position = new Vector3(-2f, -2.5f, 0f);
+            player.transform.position = new Vector3(-5f, -2f, 0f);
             //x = 180 at quiz, x = 210 at boss
 
             if (playerHealthScript != null)
@@ -92,7 +106,7 @@ public class Lv3CheckPoint : MonoBehaviour
             }
             initialPosition = transform.position;  // Set initial checkpoint position
         }
-
+        
         // If player health script isn't set, get it
         if (playerHealthScript == null)
         {
@@ -138,6 +152,7 @@ public class Lv3CheckPoint : MonoBehaviour
                     isSaved = true;
                     sfxManager.Instance.PlaySound2D("check_point");
                     SaveGame(); // Save game when F is pressed
+                    CheckPointJSON.Instance.SaveGame();
                 }
             }
         }
@@ -345,7 +360,20 @@ public class Lv3CheckPoint : MonoBehaviour
 
         isSaved = PlayerPrefs.GetInt("isSaved3", 0) == 1;
         positionChanged = PlayerPrefs.GetInt("positionChanged3", 0) == 1;
-
+/*
+        //Load Learn Skill
+        int counterSkillCheck = PlayerPrefs.GetInt("CounterState", 0);
+        Counter.counterLearned = counterSkillCheck == 1;
+        if (counterSkillCheck == 1 && !counterIcon.activeSelf)
+        {
+            counterIcon.SetActive(true);
+        }
+        int bloodWaveCheck = PlayerPrefs.GetInt("BloodWaveState", 0);
+        CastBloodWave.bloodWaveLearned = bloodWaveCheck == 1;
+        if (bloodWaveCheck == 1 && !bloodWaveIcon.activeSelf)
+        {
+            bloodWaveIcon.SetActive(true);
+        }*/
         //------------change--------------
         // Load enemies state
         for (int i = 0; i < enemies.Count; i++)
@@ -395,5 +423,7 @@ public class Lv3CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedMaxValueItem3");
         PlayerPrefs.DeleteKey("Enemy3_");
         PlayerPrefs.DeleteKey("ActiveCameraIndex3");
+        PlayerPrefs.DeleteKey("CounterState");
+        PlayerPrefs.DeleteKey("BloodWaveState");
     }
 }

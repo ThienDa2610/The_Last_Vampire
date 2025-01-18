@@ -945,7 +945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4066124166808345487, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4201569486727260992, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_Name
@@ -957,7 +957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5103489627587680637, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7544427773568050049, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -43727,6 +43727,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1436326867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5103489627587680637, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+  m_PrefabInstance: {fileID: 221238222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1436326868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4066124166808345487, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+  m_PrefabInstance: {fileID: 221238222}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441062187
 GameObject:
   m_ObjectHideFlags: 0
@@ -61847,11 +61857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 180
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 129356625795906861, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62145,6 +62155,8 @@ MonoBehaviour:
   cameras:
   - {fileID: 1872946083}
   - {fileID: 759824317}
+  counterIcon: {fileID: 1436326868}
+  bloodWaveIcon: {fileID: 1436326867}
 --- !u!114 &1975070239
 MonoBehaviour:
   m_ObjectHideFlags: 0

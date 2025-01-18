@@ -52,6 +52,8 @@ public class Lv5CheckPoint : MonoBehaviour
     //Diffent things of maps
     public List<EnemyHealthManager> enemies;
 
+    public GameObject counterIcon;
+    public GameObject bloodWaveIcon;
 
     // Initialize the instance and check for saved data
     void Awake()
@@ -70,6 +72,19 @@ public class Lv5CheckPoint : MonoBehaviour
     void Start()
     {
 
+        //Load Learn Skill
+        int counterSkillCheck = PlayerPrefs.GetInt("CounterState", 0);
+        Counter.counterLearned = counterSkillCheck == 1;
+        if (counterSkillCheck == 1)
+        {
+            counterIcon.SetActive(true);
+        }
+        int bloodWaveCheck = PlayerPrefs.GetInt("BloodWaveState", 0);
+        CastBloodWave.bloodWaveLearned = bloodWaveCheck == 1;
+        if (bloodWaveCheck == 1)
+        {
+            bloodWaveIcon.SetActive(true);
+        }
         if (PlayerPrefs.HasKey("SavedPosition5X") && PlayerPrefs.HasKey("SavedPosition5Y") && PlayerPrefs.HasKey("SavedPosition5Z"))
         {
             LoadGame(); // Load game data if available
@@ -132,6 +147,7 @@ public class Lv5CheckPoint : MonoBehaviour
                     isSaved = true;
                     sfxManager.Instance.PlaySound2D("check_point");
                     SaveGame(); // Save game when F is pressed
+                    CheckPointJSON.Instance.SaveGame();
                 }
             }
         }
@@ -329,7 +345,7 @@ public class Lv5CheckPoint : MonoBehaviour
 
         isSaved = PlayerPrefs.GetInt("isSaved5", 0) == 1;
         positionChanged = PlayerPrefs.GetInt("positionChanged5", 0) == 1;
-
+        
         //------------change--------------
         // Load enemies state
         for (int i = 0; i < enemies.Count; i++)
@@ -372,5 +388,7 @@ public class Lv5CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedItemRunOut5");
         PlayerPrefs.DeleteKey("SavedMaxValueItem5");
         PlayerPrefs.DeleteKey("Enemy5_");
+        PlayerPrefs.DeleteKey("CounterState");
+        PlayerPrefs.DeleteKey("BloodWaveState");
     }
 }

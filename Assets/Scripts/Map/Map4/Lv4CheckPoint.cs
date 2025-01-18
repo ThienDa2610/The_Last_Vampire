@@ -53,6 +53,8 @@ public class Lv4CheckPoint : MonoBehaviour
     public List<EnemyHealthManager> enemies;
     public List<CaveWorm_Cocoon> worms;
 
+    public GameObject counterIcon;
+    public GameObject bloodWaveIcon;
     // Initialize the instance and check for saved data
     void Awake()
     {
@@ -69,7 +71,21 @@ public class Lv4CheckPoint : MonoBehaviour
     // Start method where the checkpoint data is loaded
     void Start()
     {
-        
+
+        //Load Learn Skill
+        int counterSkillCheck = PlayerPrefs.GetInt("CounterState", 0);
+        Counter.counterLearned = counterSkillCheck == 1;
+        if (counterSkillCheck == 1)
+        {
+            counterIcon.SetActive(true);
+        }
+        int bloodWaveCheck = PlayerPrefs.GetInt("BloodWaveState", 0);
+        CastBloodWave.bloodWaveLearned = bloodWaveCheck == 1;
+        if (bloodWaveCheck == 1)
+        {
+            bloodWaveIcon.SetActive(true);
+        }
+
         if (PlayerPrefs.HasKey("SavedPosition4X") && PlayerPrefs.HasKey("SavedPosition4Y") && PlayerPrefs.HasKey("SavedPosition4Z"))
         {
             LoadGame(); // Load game data if available
@@ -132,6 +148,7 @@ public class Lv4CheckPoint : MonoBehaviour
                     isSaved = true;
                     sfxManager.Instance.PlaySound2D("check_point");
                     SaveGame(); // Save game when F is pressed
+                    CheckPointJSON.Instance.SaveGame();
                 }
             }
         }
@@ -336,7 +353,7 @@ public class Lv4CheckPoint : MonoBehaviour
 
         isSaved = PlayerPrefs.GetInt("isSaved4", 0) == 1;
         positionChanged = PlayerPrefs.GetInt("positionChanged4", 0) == 1;
-
+       
         //------------change--------------
         // Load enemies state
         for (int i = 0; i < enemies.Count; i++)
@@ -397,5 +414,7 @@ public class Lv4CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedMaxValueItem4");
         PlayerPrefs.DeleteKey("Enemy4_");
         PlayerPrefs.DeleteKey("Cocoon4_");
+        PlayerPrefs.DeleteKey("CounterState");
+        PlayerPrefs.DeleteKey("BloodWaveState");
     }
 }
