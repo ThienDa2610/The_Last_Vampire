@@ -39,7 +39,7 @@ Transform:
   - {fileID: 7613418986336326403}
   - {fileID: 6576929142539741334}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1250156482819743168
 SpriteRenderer:
@@ -204,6 +204,7 @@ MonoBehaviour:
   healthbarOverlay: {fileID: 4790480153634083501}
   isInvincible: 0
   isDead: 0
+  dropable: 1
 --- !u!114 &3610365535457186541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,7 +486,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009173155, y: -0.075432934}
+  m_Offset: {x: 0.1877799, y: -0.07543293}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -496,7 +497,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2262731, y: 0.6167454}
+  m_Size: {x: 0.86905956, y: 0.6167454}
   m_EdgeRadius: 0
 --- !u!114 &2751856190544974481
 MonoBehaviour:

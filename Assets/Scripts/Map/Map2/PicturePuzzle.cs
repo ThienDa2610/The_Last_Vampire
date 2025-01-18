@@ -98,6 +98,7 @@ public class PicturePuzzle : MonoBehaviour
     }
     public void CloseShop()
     {
+        Debug.Log("Picture");
         puzzleCanvas.gameObject.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
         isIt.isIt = true;

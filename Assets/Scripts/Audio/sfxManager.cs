@@ -46,6 +46,7 @@ public class sfxManager : MonoBehaviour
     }
     public void PlaySound2D(string name)
     {
+        //Debug.Log(name);
         sfx2DSource.PlayOneShot(sfxLibrary.GetClipFromName(name));
     }
 }

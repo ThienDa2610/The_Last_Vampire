@@ -106,6 +106,7 @@ public class PuzzleInPyramid2 : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(isIt.isIt);
         if (Puzzle1Or2 == 1)
         {
             if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript_number.isPuzzleDone)
@@ -138,9 +139,12 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 StartCoroutine(HandlePuzzleCompletion());
             }
         }
-        if (!isIt.isIt && Input.GetKeyDown(KeyCode.Escape) && thisScript)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            ClosePuzzle();
+            Debug.Log("IsIT: " + isIt.isIt);
+            Debug.Log(thisScript);
+            if (!isIt.isIt && thisScript)
+                ClosePuzzle();
             
         }
     }
@@ -213,6 +217,7 @@ public class PuzzleInPyramid2 : MonoBehaviour
 
     public void ClosePuzzle()
     {
+        Debug.Log("Pyramid2");
         puzzleCanvas.gameObject.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
         isIt.isIt = true;

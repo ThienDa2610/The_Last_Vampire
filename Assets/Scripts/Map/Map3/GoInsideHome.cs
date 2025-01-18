@@ -20,7 +20,7 @@ public class GoInsideHome : PlayerInteractGuide
     public Canvas password;
 
     private bool isIt = false;
-    private string answer = "163693";
+    public string answer = "223693";
     protected override void SetupMore()
     {
         base.SetupMore();
