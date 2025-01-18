@@ -44,7 +44,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         pauseMenu.SetActive(true);
         firstButton.Select();
-        StartCoroutine(SlideInMenu());
+        //StartCoroutine(SlideInMenu());
 
         Time.timeScale = 0f;
     }
@@ -52,9 +52,9 @@ public class PauseMenu : MonoBehaviour
     {
         gameplayCanvas.gameObject.SetActive(true);
         isPaused = false;
-        //pauseMenu.SetActive(false);
+        pauseMenu.SetActive(false);
 
-        StartCoroutine(SlideOutMenu());
+        //StartCoroutine(SlideOutMenu());
 
         Time.timeScale = 1f;
     }

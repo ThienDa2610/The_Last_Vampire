@@ -4,14 +4,18 @@ using TMPro;
 
 public class NPCAnimation : MonoBehaviour
 {
-    public Animator animator; 
+    private Animator animator;
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
     { 
         if (collision.CompareTag("Player"))
         {
-            animator.SetTrigger("Talk");
-            animator.ResetTrigger("Idle");
+            animator.SetBool("isTalking", true);
         }
     }
 
@@ -19,8 +23,8 @@ public class NPCAnimation : MonoBehaviour
     {            
         if (collision.CompareTag("Player"))
         {
-            animator.SetTrigger("Idle"); 
-            animator.ResetTrigger("Talk");
+            animator.SetBool("isTalking", false);
+
         }
     }
 }
