@@ -18,6 +18,11 @@ public class Skill : MonoBehaviour
     
     private Image skillImage;
 
+    void Start()
+    {
+        isUnlocked = SkillTreeManager.Instance.IsSkillUnlocked(currentNode);
+    }
+
     void Update()
     {
         skillImage = GetComponent<Image>();

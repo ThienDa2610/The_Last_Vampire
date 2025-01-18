@@ -14,7 +14,14 @@ public class Gliding : MonoBehaviour
     {
         glidable = SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.GlidingBat);
         rb = GetComponent<Rigidbody2D>();
-        xPercentReduce = 0.7f;
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.GlideMaster))
+        {
+            xPercentReduce = 0.9f;
+        }
+        else
+        {
+            xPercentReduce = 0.7f;
+        }
     }
 
     // Update is called once per frame

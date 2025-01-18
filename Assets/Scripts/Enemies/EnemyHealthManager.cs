@@ -37,6 +37,10 @@ public class EnemyHealthManager : MonoBehaviour
         
         bloodLostTimer = new List<float>();
         bloodLostDamageTimer = new List<float>();
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.Infection))
+        {
+            infectable = true;
+        }
     }
     void Update()
     {

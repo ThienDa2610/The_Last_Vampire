@@ -91,6 +91,23 @@ public class Lv5CheckPoint : MonoBehaviour
         }
         else
         {
+            if (PlayerPrefs.HasKey("SavedMaxHealth"))
+            {
+                float maxHealth = PlayerPrefs.GetFloat("SavedMaxHealth");
+                if (playerHealthScript != null)
+                {
+                    playerHealthScript.maxHealth = maxHealth;
+                }
+            }
+            if (PlayerPrefs.HasKey("SavedBloodPotionCount"))
+            {
+                int savedBlood = PlayerPrefs.GetInt("SavedBloodPotionCount", 0);
+                bloodPotionManager.GetComponent<BloodPotionManager>().bottleCount = savedBlood;
+                int savedGhost = PlayerPrefs.GetInt("SavedGhostCount", 0);
+                typeCoinManager.GetComponent<TypeCoinManager>().ghostCount = savedGhost;
+                int savedBloodSkill = PlayerPrefs.GetInt("SavedBloodCount", 0);
+                typeCoinManager.GetComponent<TypeCoinManager>().bloodCount = savedBloodSkill;
+            }
             // Set default position if no saved data is found
             player.transform.position = new Vector3(-3.69f, -2.35f, 0f);
             //x = 180 at quiz, x = 210 at boss
@@ -254,7 +271,8 @@ public class Lv5CheckPoint : MonoBehaviour
         // Save player health
         float currentHealth = playerHealthScript.currentHealth;
         PlayerPrefs.SetFloat("SavedHealth", currentHealth);
-
+        float maxHealth = playerHealthScript.maxHealth;
+        PlayerPrefs.SetFloat("SavedMaxHealth", maxHealth);
         //------------change--------------
         // Save initial checkpoint position
         if (initial) { initialPosition.y += 0.2f; }
@@ -315,9 +333,11 @@ public class Lv5CheckPoint : MonoBehaviour
 
         // Load saved health
         savedHealth = PlayerPrefs.GetFloat("SavedHealth");
+        float maxHealth = PlayerPrefs.GetFloat("SavedMaxHealth");
         if (playerHealthScript != null)
         {
             playerHealthScript.currentHealth = savedHealth;
+            playerHealthScript.maxHealth = maxHealth;
             playerHealthScript.UpdateHealthbar();
         }
 
@@ -390,5 +410,7 @@ public class Lv5CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("Enemy5_");
         PlayerPrefs.DeleteKey("CounterState");
         PlayerPrefs.DeleteKey("BloodWaveState");
+
+        PlayerPrefs.DeleteKey("SavedMaxHealth");
     }
 }

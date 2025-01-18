@@ -11,6 +11,7 @@ public class GeneralData
 {
     public string SavedSceneNameJSON;
     public float savedHealth;
+    public float maxHealth;
     public bool LearnCounter;
     public bool LearnBloodWave;
     public Inventory inventory;
@@ -249,6 +250,7 @@ public class CheckPointJSON : MonoBehaviour
         {
             SavedSceneNameJSON = SceneManager.GetActiveScene().name, // Access SavedSceneNameJSON through generalData
             savedHealth = playerHealthScript.currentHealth,
+            maxHealth = playerHealthScript.maxHealth,
             LearnCounter = Counter.counterLearned,
             LearnBloodWave = CastBloodWave.bloodWaveLearned,
             inventory = new Inventory

@@ -25,6 +25,14 @@ public class MeleeBaseState : State
     {
         base.OnEnter(_stateMachine);
         collidersDamaged = new List<Collider2D>();
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.VapiricClaws))
+        {
+            lifeSteal = true;
+        }
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.Tear))
+        {
+            Tear = true;
+        }
     }
 
     public override void OnUpdate()

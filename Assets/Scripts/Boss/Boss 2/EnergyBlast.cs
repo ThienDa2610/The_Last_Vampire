@@ -13,7 +13,7 @@ public class EnergyBlast : MonoBehaviour
     public GameObject shooter;
     Rigidbody2D rb;
     // Start is called before the first frame update
-    protected void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, maxDuration);

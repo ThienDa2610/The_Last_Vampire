@@ -39,7 +39,7 @@ public class CheckPoint : MonoBehaviour
 
     private Vector3 savedPosition; // Player's saved position
     private float savedHealth; // Player's saved health
-
+    private float maxHealth;
     private Vector3 initialPosition; // Initial position of the checkpoint
     private bool initial = false; // Track if saving at the checkpoint
     private bool positionChanged = false; // Track if the checkpoint has moved
@@ -78,6 +78,14 @@ public class CheckPoint : MonoBehaviour
         }
         else
         {
+            if (PlayerPrefs.HasKey("SavedMaxHealth"))
+            {
+                float maxHealth = PlayerPrefs.GetFloat("SavedMaxHealth");
+                if (playerHealthScript != null)
+                {
+                    playerHealthScript.maxHealth = maxHealth;
+                }
+            }
             // Set default position if no saved data is found
             player.transform.position = new Vector3(-6f, -1f, 5f);
             //x = 180 at quiz, x = 210 at boss
@@ -137,6 +145,7 @@ public class CheckPoint : MonoBehaviour
                     isSaved = true;
                     sfxManager.Instance.PlaySound2D("check_point");
                     SaveGame(); // Save game when F is pressed
+                    CheckPointJSON.Instance.SaveGame();
                 }
             }
         }
@@ -242,6 +251,8 @@ public class CheckPoint : MonoBehaviour
         // Save player health
         float currentHealth = playerHealthScript.currentHealth;
         PlayerPrefs.SetFloat("SavedHealth", currentHealth);
+        float maxHealth = playerHealthScript.maxHealth;
+        PlayerPrefs.SetFloat("SavedMaxHealth", maxHealth);
 
         // Save initial checkpoint position
         if (initial) { initialPosition.y += 0.2f; }
@@ -311,9 +322,11 @@ public class CheckPoint : MonoBehaviour
 
         // Load saved health
         savedHealth = PlayerPrefs.GetFloat("SavedHealth");
+        maxHealth = PlayerPrefs.GetFloat("SavedMaxHealth");
         if (playerHealthScript != null)
         {
             playerHealthScript.currentHealth = savedHealth;
+            playerHealthScript.maxHealth = maxHealth;
             playerHealthScript.UpdateHealthbar();
         }
 
@@ -395,5 +408,7 @@ public class CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("Plant_");
         PlayerPrefs.DeleteKey("PlantNo_");
         PlayerPrefs.DeleteKey("Enemy_");
+        PlayerPrefs.DeleteKey("UnlockedSkills");
+        PlayerPrefs.DeleteKey("SavedMaxHealth");
     }
 }

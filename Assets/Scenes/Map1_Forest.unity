@@ -4274,6 +4274,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6451446600862587987, guid: 5a32c5ea6be3c734aa26b46d1f76a126, type: 3}
+      propertyPath: bloodCountText
+      value: 
+      objectReference: {fileID: 543698806}
+    - target: {fileID: 6451446600862587987, guid: 5a32c5ea6be3c734aa26b46d1f76a126, type: 3}
       propertyPath: gameplayCanvas
       value: 
       objectReference: {fileID: 1360322272}
@@ -4310,6 +4314,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a32c5ea6be3c734aa26b46d1f76a126, type: 3}
+--- !u!114 &543698806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4655705595523129786, guid: 5a32c5ea6be3c734aa26b46d1f76a126, type: 3}
+  m_PrefabInstance: {fileID: 543698805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &551980527
 GameObject:
   m_ObjectHideFlags: 0
@@ -29139,6 +29154,7 @@ MonoBehaviour:
   player: {fileID: 6156951}
   xTrigger: 242
   NextScene: Map2_Desert
+  isScene3: 0
   PassLv: 0
 --- !u!1 &2055141361
 GameObject:
@@ -30232,6 +30248,9 @@ MonoBehaviour:
   generalData:
     SavedSceneNameJSON: 
     savedHealth: 0
+    maxHealth: 0
+    LearnCounter: 0
+    LearnBloodWave: 0
     inventory:
       savedBloodPotionCount: 0
       savedGhostCount: 0

@@ -18,6 +18,10 @@ public class SkillCDManager : MonoBehaviour
     private void Start()
     {
         instance = this;
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.MistyStep))
+        {
+            skillCD[(int)SkillType.Dash] -= 1f;
+        }
     }
     // Update is called once per frame
     void Update()

@@ -81,6 +81,10 @@ public class Movement : MonoBehaviour
 
         speedDif = new List<float>();
         bloodBoiledTimer = new List<float>();
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.Swifty_1))
+        {
+            moveSpeed *= 1.1f;
+        }
     }
 
     // Update is called once per frame
@@ -178,6 +182,7 @@ public class Movement : MonoBehaviour
         }
         else if (!groundCheck.isOnTheGround() && airJumpable && airJumpLeft)
         {
+            dust.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             airJumpLeft = false;
         }

@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Pounce : BossSkill
 {
-    [SerializeField] float maxDistance = 10f;
     [SerializeField] float preparationTime = 1f;
     [SerializeField] float pounceForce = 5f;
     [SerializeField] float pounceDuration = 0.4f;

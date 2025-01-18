@@ -12,10 +12,12 @@ public class TypeCoinManager : MonoBehaviour
     public int ghostCount = 0;
     public int bloodCount = 0;
     public bool dragonHeart = false;
-    
+
+    private SkillTreeUIManager manager;
 
     void Start()
     {
+        manager = GameObject.Find("/Canvas-SkillTree").GetComponent<SkillTreeUIManager>();
         if (PlayerPrefs.HasKey("SavedBloodCount"))
         {
             bloodCount = PlayerPrefs.GetInt("SavedBloodCount");
@@ -36,9 +38,17 @@ public class TypeCoinManager : MonoBehaviour
     public void CollectBlood()
     {
         bloodCount++;
+        
+        manager.bloodCount = bloodCount;
+        manager.UpdatebloodCountText();
         UpdateBloodCountText();
     }
 
+    public void CosumeBlood(int value)
+    {
+        bloodCount -= value;
+        UpdateBloodCountText();
+    }
     public void CollectDragonHeart()
     {
         dragonHeart = true;

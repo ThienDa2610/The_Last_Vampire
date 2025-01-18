@@ -9,14 +9,18 @@ public class SkillTreeManager : MonoBehaviour
 {
     public static SkillTreeManager Instance;
     private static List<SkillNode> unlockedSkillNodeList;
-
+    private const string SKILL_TREE_PREFS_KEY = "UnlockedSkills";
     private void Awake()
     {
         Instance = this;
         unlockedSkillNodeList = new List<SkillNode>();
+        LoadUnlockedSkills();
         OnSkillUnlocked += SkillTreeManager_OnSkillUnlocked1;
     }
-
+    private void OnDestroy()
+    {
+        SaveUnlockedSkills();
+    }
     private void SkillTreeManager_OnSkillUnlocked1(object sender, OnSkillUnlockedEventArgs e)
     {
         switch (e.skillNode)
@@ -26,6 +30,8 @@ public class SkillTreeManager : MonoBehaviour
             case SkillNode.Lifeforce_2:
             case SkillNode.Lifeforce_3:
                 HealthManager.Instance.maxHealth += 10f;
+                HealthManager.Instance.Heal(10f);
+                PlayerPrefs.SetFloat("SavedMaxHealth", HealthManager.Instance.maxHealth);
                 break;
             case SkillNode.VapiricClaws:
                 MeleeBaseState.lifeSteal = true;
@@ -68,7 +74,6 @@ public class SkillTreeManager : MonoBehaviour
             //movement tree
             case SkillNode.Swifty_1:
                 Movement.Instance.moveSpeed *= 1.1f;
-                Debug.Log(Movement.Instance.moveSpeed);
                 break;
             case SkillNode.GlidingBat:
                 Gliding.glidable = true;
@@ -132,6 +137,30 @@ public class SkillTreeManager : MonoBehaviour
         {
             unlockedSkillNodeList.Add(skillNode);
             OnSkillUnlocked?.Invoke(this, new OnSkillUnlockedEventArgs { skillNode = skillNode });
+        }
+    }
+    private void SaveUnlockedSkills()
+    {
+        string skillsString = string.Join(",", unlockedSkillNodeList);
+        PlayerPrefs.SetString(SKILL_TREE_PREFS_KEY, skillsString);
+        PlayerPrefs.Save();
+    }
+
+    // Load unlocked skills from PlayerPrefs
+    private void LoadUnlockedSkills()
+    {
+        if (PlayerPrefs.HasKey(SKILL_TREE_PREFS_KEY))
+        {
+            string skillsString = PlayerPrefs.GetString(SKILL_TREE_PREFS_KEY);
+            string[] skillArray = skillsString.Split(',');
+
+            foreach (var skill in skillArray)
+            {
+                if (Enum.TryParse(skill, out SkillNode skillNode))
+                {
+                    unlockedSkillNodeList.Add(skillNode);
+                }
+            }
         }
     }
 }

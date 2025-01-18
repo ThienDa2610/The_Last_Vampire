@@ -10,7 +10,6 @@ public class SkillTreeUIManager : MonoBehaviour
 
     public GameObject skillTree;
     public Canvas gameplayCanvas;
-    public TMP_Text bloodText;  
     public static SkillTreeUIManager instance;   
     public Skill[] skills;
     public SkillButton[] SkillButton;
@@ -28,10 +27,6 @@ public class SkillTreeUIManager : MonoBehaviour
     {
         skillTree.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
-        if (PlayerPrefs.HasKey("SavedBloodCount"))
-        {
-            bloodCount = PlayerPrefs.GetInt("SavedBloodCount");
-        }
         SkillButton[0].PessSkillButton();
         UpdatebloodCountText();
     }
@@ -54,7 +49,8 @@ public class SkillTreeUIManager : MonoBehaviour
     }
 
     private void Update()
-    { if (gameplayCanvas == null)
+    {
+        if (gameplayCanvas == null)
             gameplayCanvas = GameObject.Find("/UI/Canvas").GetComponent<Canvas>();
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -130,6 +126,8 @@ public class SkillTreeUIManager : MonoBehaviour
     public void UnlockSkill()
     {
         bloodCount -= activeSkill.cost;
+        gameplayCanvas.GetComponent<TypeCoinManager>().CosumeBlood(activeSkill.cost);
+
         UpdatebloodCountText();
         activeSkill.isUnlocked = true;
         SkillTreeManager.Instance.UnlockSkill(activeSkill.currentNode);

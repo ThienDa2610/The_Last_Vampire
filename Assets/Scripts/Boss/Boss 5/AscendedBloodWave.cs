@@ -5,7 +5,7 @@ using UnityEngine;
 public class AscendedBloodWave : EnergyBlast
 {
     public SinisterGaze sinisterGaze;
-    private void Start()
+    protected override void Start()
     {
         base.Start();
         sinisterGaze = GetComponent<SinisterGaze>();

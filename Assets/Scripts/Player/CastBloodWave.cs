@@ -33,6 +33,10 @@ public class CastBloodWave : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         PlayerPrefs.SetInt("BloodWaveState", bloodWaveLearned ? 1 : 0);
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.PiercingWave))
+        {
+            isEnhanced = true;
+        }
     }
     private void Update()
     {

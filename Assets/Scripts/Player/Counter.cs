@@ -41,6 +41,10 @@ public class Counter : MonoBehaviour
         Instance = this;
         animator = GetComponent<Animator>();
         PlayerPrefs.SetInt("CounterState", counterLearned ? 1 : 0);
+        if (SkillTreeManager.Instance.IsSkillUnlocked(SkillTreeManager.SkillNode.EnhancedSense))
+        {
+            isEnhanced = true;
+        }
     }
 
     // Update is called once per frame
