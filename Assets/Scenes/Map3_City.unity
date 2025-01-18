@@ -170,7 +170,6 @@ GameObject:
   m_Component:
   - component: {fileID: 46501428}
   - component: {fileID: 46501430}
-  - component: {fileID: 46501429}
   m_Layer: 0
   m_Name: well
   m_TagString: Untagged
@@ -193,41 +192,6 @@ Transform:
   m_Father: {fileID: 650708955}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &46501429
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46501427}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.015625
 --- !u!212 &46501430
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28093,7 +28057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8581542305945750894, guid: 5a32c5ea6be3c734aa26b46d1f76a126, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42190,6 +42154,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3167231660243625612, guid: c8519f05a0e936245a9eb4e02a48819d, type: 3}
+      propertyPath: isNPCPaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3167231660243625612, guid: c8519f05a0e936245a9eb4e02a48819d, type: 3}
       propertyPath: interactGuide
       value: 
       objectReference: {fileID: 637950569}
@@ -43546,7 +43514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_TagString
@@ -62061,6 +62029,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1944258706}
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
+      propertyPath: currentHealth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: healthbarOverlay
       value: 
       objectReference: {fileID: 221238223}
@@ -62109,7 +62081,7 @@ MonoBehaviour:
   player: {fileID: 1944258695}
   xTrigger: 250
   NextScene: Map4_Cave
-  isScene3: 0
+  isScene3: 1
   PassLv: 0
 --- !u!114 &1944258706 stripped
 MonoBehaviour:
@@ -67601,8 +67573,8 @@ RectTransform:
   m_GameObject: {fileID: 3649908983387619656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8707669847120973764}
   - {fileID: 3567174476012549596}
