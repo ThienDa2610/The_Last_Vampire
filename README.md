@@ -5,4 +5,6 @@
 - 21120238 - Nguyễn Thu Hà
 - 21120242 - Huỳnh Thị Kiều Hoa
 
+**Unity Version:** 2022.3.3f1
+
 **Báo cáo:** [Proposal](https://docs.google.com/document/d/1oCIAfQAk4RhtYeLKAIv01EKswiNmqLSq/edit?usp=sharing&ouid=116962594108674706711&rtpof=true&sd=true)
