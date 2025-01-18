@@ -7,7 +7,7 @@ using TMPro;
 public class Shopkeeper : MonoBehaviour
 {
     //public Canvas gameplayCanvas;
-    public GameObject parent;
+    public Canvas mainUI;
     public Canvas shopCanvas;
 
     public TMP_Text dialogText;
@@ -22,14 +22,14 @@ public class Shopkeeper : MonoBehaviour
     {
         dialogText.enabled = false;
         shopCanvas.gameObject.SetActive(false);
-        parent.gameObject.SetActive(true);
+        mainUI.enabled = true;
     }
 
     void Update()
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
         {
-            parent.gameObject.SetActive(false);
+            mainUI.enabled = false;
             thisScript = true;
             isIt.isIt = false;
             shopCanvas.gameObject.SetActive(true);
@@ -42,7 +42,7 @@ public class Shopkeeper : MonoBehaviour
         if (thisScript)
         {
             Time.timeScale = 1f;
-            parent.gameObject.SetActive(true);
+            mainUI.enabled = true;
             shopCanvas.gameObject.SetActive(false);
             thisScript = false;
             isIt.isIt = true;

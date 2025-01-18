@@ -266,6 +266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 175160251964207625, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2494950743444258061, guid: 3495b1e47d076cc4db15b0f8b8e3c4c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -783,9 +787,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 809138607}
     - target: {fileID: 9158774071309383479, guid: 5cf2ae3e114d9b14da7a350aa38f1347, type: 3}
+      propertyPath: mainUI
+      value: 
+      objectReference: {fileID: 221238225}
+    - target: {fileID: 9158774071309383479, guid: 5cf2ae3e114d9b14da7a350aa38f1347, type: 3}
       propertyPath: parent
       value: 
-      objectReference: {fileID: 1825916633}
+      objectReference: {fileID: 0}
     - target: {fileID: 9158774071309383479, guid: 5cf2ae3e114d9b14da7a350aa38f1347, type: 3}
       propertyPath: dialogText
       value: 
@@ -28057,7 +28065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8581542305945750894, guid: 5a32c5ea6be3c734aa26b46d1f76a126, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43941,7 +43949,7 @@ GameObject:
   - component: {fileID: 1466277764}
   - component: {fileID: 1466277763}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Text (TMP) Hint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43964,8 +43972,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -273, y: 62}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 420, y: 9}
+  m_SizeDelta: {x: 332.3426, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466277763
 MonoBehaviour:
@@ -43987,10 +43995,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Password is hidden on building walls and number of windows
+  m_text: '*Hint: Password is hidden on building walls and number of windows'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9c52d919dafb5c745b7da6eb36eed68a, type: 2}
+  m_sharedMaterial: {fileID: -5135414499167944815, guid: 9c52d919dafb5c745b7da6eb36eed68a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -61165,11 +61173,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7638126677673905599, guid: 3f34a6ff77d811b4397e4607bc48979a, type: 3}
   m_PrefabInstance: {fileID: 1780364598}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1825916633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8225435389678097216, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
-  m_PrefabInstance: {fileID: 221238222}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1828796937
 PrefabInstance:

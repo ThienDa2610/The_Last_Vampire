@@ -6289,17 +6289,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263911221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.24999994}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 459343540}
-  m_Father: {fileID: 834639856}
+  m_Father: {fileID: 834639860}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4500427, y: 104.706116}
+  m_AnchoredPosition: {x: 2.9999695, y: 104.000015}
   m_SizeDelta: {x: 915, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263911223
@@ -6880,7 +6880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5462280895121087714, guid: 33d31e7a7a070a640bc72f9987894e47, type: 3}
       propertyPath: m_TagString
@@ -8906,7 +8906,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4961642064027298351, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 1017825508277034757, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       insertIndex: -1
       addedObject: {fileID: 263911222}
     m_AddedComponents: []
@@ -8924,16 +8924,6 @@ GameObject:
 --- !u!1 &834639855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4066124166808345487, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
-  m_PrefabInstance: {fileID: 834639852}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &834639856 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4961642064027298351, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
-  m_PrefabInstance: {fileID: 834639852}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &834639857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8225435389678097216, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
   m_PrefabInstance: {fileID: 834639852}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &834639858 stripped
@@ -10006,9 +9996,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1236081585}
     - target: {fileID: 9158774071309383479, guid: 5cf2ae3e114d9b14da7a350aa38f1347, type: 3}
+      propertyPath: mainUI
+      value: 
+      objectReference: {fileID: 834639853}
+    - target: {fileID: 9158774071309383479, guid: 5cf2ae3e114d9b14da7a350aa38f1347, type: 3}
       propertyPath: parent
       value: 
-      objectReference: {fileID: 834639857}
+      objectReference: {fileID: 0}
     - target: {fileID: 9158774071309383479, guid: 5cf2ae3e114d9b14da7a350aa38f1347, type: 3}
       propertyPath: dialogText
       value: 
