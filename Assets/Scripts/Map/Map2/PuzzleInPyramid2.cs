@@ -106,46 +106,44 @@ public class PuzzleInPyramid2 : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(isIt.isIt);
-        if (Puzzle1Or2 == 1)
+        if (!done)
         {
-            if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript_number.isPuzzleDone)
+            if (Puzzle1Or2 == 1)
             {
-                puzzleCanvas.gameObject.SetActive(true);
-                thisScript = true;
-                gameplayCanvas.gameObject.SetActive(false);
-                isIt.isIt = false;
-                Time.timeScale = 0f;
-                dialogText.enabled = false;
+                if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript_number.isPuzzleDone)
+                {
+                    puzzleCanvas.gameObject.SetActive(true);
+                    thisScript = true;
+                    gameplayCanvas.gameObject.SetActive(false);
+                    isIt.isIt = false;
+                    Time.timeScale = 0f;
+                    dialogText.enabled = false;
+                }
+                if (puzzleScript_number.isPuzzleDone)
+                {
+                    StartCoroutine(HandlePuzzleCompletion());
+                }
             }
-            if (puzzleScript_number.isPuzzleDone)
+            else
             {
-                StartCoroutine(HandlePuzzleCompletion());
+                if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript_vase.isPuzzleDone)
+                {
+                    puzzleCanvas.gameObject.SetActive(true);
+                    thisScript = true;
+                    gameplayCanvas.gameObject.SetActive(false);
+                    isIt.isIt = false;
+                    Time.timeScale = 0f;
+                    dialogText.enabled = false;
+                }
+                if (puzzleScript_vase.isPuzzleDone)
+                {
+                    StartCoroutine(HandlePuzzleCompletion());
+                }
             }
-        }
-        else
-        {
-            if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript_vase.isPuzzleDone)
+            if (Input.GetKeyDown(KeyCode.Escape) && !isIt.isIt && thisScript)
             {
-                puzzleCanvas.gameObject.SetActive(true);
-                thisScript = true;
-                gameplayCanvas.gameObject.SetActive(false);
-                isIt.isIt = false;
-                Time.timeScale = 0f;
-                dialogText.enabled = false;
-            }
-            if (puzzleScript_vase.isPuzzleDone)
-            {
-                StartCoroutine(HandlePuzzleCompletion());
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("IsIT: " + isIt.isIt);
-            Debug.Log(thisScript);
-            if (!isIt.isIt && thisScript)
                 ClosePuzzle();
-            
+            }
         }
     }
 
@@ -217,7 +215,6 @@ public class PuzzleInPyramid2 : MonoBehaviour
 
     public void ClosePuzzle()
     {
-        Debug.Log("Pyramid2");
         puzzleCanvas.gameObject.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
         isIt.isIt = true;

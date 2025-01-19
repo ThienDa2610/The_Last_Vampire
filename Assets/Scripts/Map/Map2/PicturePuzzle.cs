@@ -47,22 +47,26 @@ public class PicturePuzzle : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript.isPuzzleDone)
+        if (!done)
         {
-            puzzleCanvas.gameObject.SetActive(true);
-            thisScript = true;
-            gameplayCanvas.gameObject.SetActive(false);
-            isIt.isIt = false;
-            Time.timeScale = 0f;
-            dialogText.enabled = false;
-        }
-        if (puzzleScript.isPuzzleDone)
-        {
-            StartCoroutine(HandlePuzzleCompletion());
-        }
-        if (!isIt.isIt && Input.GetKeyDown(KeyCode.Escape) && thisScript)
-        {
-            CloseShop();
+            if (isPlayerNear && Input.GetKeyDown(KeyCode.F) && !puzzleScript.isPuzzleDone)
+            {
+                puzzleCanvas.gameObject.SetActive(true);
+                thisScript = true;
+                gameplayCanvas.gameObject.SetActive(false);
+                isIt.isIt = false;
+                Time.timeScale = 0f;
+                dialogText.enabled = false;
+            }
+            if (puzzleScript.isPuzzleDone)
+            {
+                StartCoroutine(HandlePuzzleCompletion());
+            }
+            if (!isIt.isIt && Input.GetKeyDown(KeyCode.Escape) && thisScript)
+            {
+                CloseShop();
+                isIt.isIt = true;
+            }
         }
     }
     private IEnumerator ShowDialogForTime(float timeToShow)
@@ -101,7 +105,6 @@ public class PicturePuzzle : MonoBehaviour
         Debug.Log("Picture");
         puzzleCanvas.gameObject.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
-        isIt.isIt = true;
         thisScript = false;
         Time.timeScale = 1f;
         dialogText.enabled = true;
