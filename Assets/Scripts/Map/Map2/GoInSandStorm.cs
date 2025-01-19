@@ -77,6 +77,7 @@ public class GoInSandStorm : MonoBehaviour
     {
         if (!hasTriggered1 && !SS1 && Math.Abs(player.transform.position.x - triggerPosition1.x) < 1f && Math.Abs(player.transform.position.y - triggerPosition1.y) < 5f)
         {
+            AllCorrect = 0;
             hasTriggered1 = true;
             SS1 = true;
             obj1.SetActive(true);
@@ -84,6 +85,7 @@ public class GoInSandStorm : MonoBehaviour
         }
         if(!hasTriggered2 && !SS2 && Math.Abs(player.transform.position.x - triggerPosition2.x) < 1f && Math.Abs(player.transform.position.y - triggerPosition2.y) < 5f)
         {
+            AllCorrect = 0;
             hasTriggered2 = true;
             SS2 = true;
             obj2.SetActive(true);

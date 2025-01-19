@@ -59,7 +59,7 @@ public class Menu : MonoBehaviour
     public void Resume()
     {
         string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
-        SceneManager.LoadScene(savedSceneName);
+        MapLoader.Instance.LoadMap(savedSceneName);
 
         //CheckPoint.GetComponent<CheckPoint>().LoadGame();
         if (savedSceneName == "Map1_Forest")

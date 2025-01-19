@@ -27,7 +27,17 @@ public class AfterCredit : MonoBehaviour
     private Ending curEnd;
     public Image BG;
     public float fadeDuration = 1f;
-
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this; // Set the singleton instance
+        }
+        else
+        {
+            Destroy(gameObject);  // Destroy duplicate instance
+        }
+    }
     private void Start()
     {
         StartCoroutine(FadeIn());
