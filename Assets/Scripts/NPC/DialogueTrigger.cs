@@ -38,21 +38,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public bool isNPCPaster = false;
 
-    /*
-        public Image donedialogImage;
-        public TMP_Text donedialogText;
-        public string doneidleMessage;*/
-
     private void Start()
     {
         if (interactGuide != null)
-            interactGuide.enabled = false;
-        /*if (donedialogText != null)
-        {
-            donedialogText.enabled = false;
-            donedialogImage.enabled = false;
-        }*/
-       
+            interactGuide.enabled = false;       
     }
     private void Update()
     {
