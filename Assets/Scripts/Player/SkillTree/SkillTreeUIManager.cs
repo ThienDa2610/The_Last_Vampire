@@ -51,7 +51,18 @@ public class SkillTreeUIManager : MonoBehaviour
     private void Update()
     {
         if (gameplayCanvas == null)
-            gameplayCanvas = GameObject.Find("/UI/Canvas").GetComponent<Canvas>();
+        {
+            GameObject canvasObject = GameObject.Find("/UI/Canvas");
+            if (canvasObject == null)
+            {
+                return;
+            }
+            else
+            {
+                gameplayCanvas = canvasObject.GetComponent<Canvas>();
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.C))
         {
             OpenSkillTree();
@@ -60,6 +71,7 @@ public class SkillTreeUIManager : MonoBehaviour
         {
             checkUnLock();
         }
+
     }
 
     public void UpdatebloodCountText()
