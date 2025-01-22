@@ -6053,11 +6053,6 @@ Transform:
   m_Father: {fileID: 1539078900}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &205631058 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8478824876713239127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-  m_PrefabInstance: {fileID: 1882109395174932464}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &229684020
 GameObject:
   m_ObjectHideFlags: 0
@@ -7433,7 +7428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -84.17, y: 0.44}
+  m_AnchoredPosition: {x: -84.001, y: 0.44}
   m_SizeDelta: {x: 3.8905, y: 1.6563}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &570131265
@@ -7464,7 +7459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 205631058}
+  - {fileID: 2141764976}
   - {fileID: 764774523}
   - {fileID: 1539078900}
   m_Father: {fileID: 1276264373}
@@ -8606,6 +8601,14 @@ PrefabInstance:
     - target: {fileID: 4201569486727260992, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8019235491381572913, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8019235491381572913, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8092335066567348123, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -11458,6 +11461,14 @@ PrefabInstance:
     - target: {fileID: 1929032397610680192, guid: 06daa6316a67dc645946fcfae19b475d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352756445606718505, guid: 06daa6316a67dc645946fcfae19b475d, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352756445606718505, guid: 06daa6316a67dc645946fcfae19b475d, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8953467322862935571, guid: 06daa6316a67dc645946fcfae19b475d, type: 3}
       propertyPath: mainUI
@@ -21784,7 +21795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: isInvincible
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
+      propertyPath: currentHealth
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1787592824612973247, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
       propertyPath: healthbarOverlay
@@ -21851,7 +21866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInWater: 0
---- !u!1001 &1882109395174932464
+--- !u!1001 &2141764975
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -21859,70 +21874,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 570131266}
     m_Modifications:
-    - target: {fileID: 340040611383354581, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2231546948145098659, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3302591480347703735, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
       propertyPath: m_Name
       value: Book
       objectReference: {fileID: 0}
-    - target: {fileID: 3976048004987267127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: interactGuide
-      value: 
-      objectReference: {fileID: 544798894}
-    - target: {fileID: 3976048004987267127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: dialogue.lines.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976048004987267127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: dialogue.lines.Array.data[1].line
-      value: "The Blood Fountain was not stolen by humanity. This was a lie\u2014a
-        tale spun by the Bloodshade Lord, one of our own.\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976048004987267127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: dialogue.lines.Array.data[2].line
-      value: "The Bloodshade Lord coveted ultimate power and sought to seize the
-        Fountain for himself. To conceal his treachery, he framed humanity, igniting
-        the war that led to our downfall.\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976048004987267127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: dialogue.lines.Array.data[3].line
-      value: "The skill Counter will not work against the Bloodshade Lord. His power
-        eclipses that of ordinary foes. Seek another way to prevail.\r\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976048004987267127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: dialogue.lines.Array.data[4].line
-      value: "The truth... all this time, we were deceived. I must face him, but
-        how?\r\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976048004987267127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: dialogue.lines.Array.data[4].character.name
-      value: You
-      objectReference: {fileID: 0}
-    - target: {fileID: 3976048004987267127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
-      propertyPath: dialogue.lines.Array.data[4].character.avatar
-      value: 
-      objectReference: {fileID: 21300000, guid: f8c912be096ab9546a462c091c68b4e0, type: 3}
     - target: {fileID: 8478824876713239127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8478824876713239127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -92.70635
+      value: -92.557365
       objectReference: {fileID: 0}
     - target: {fileID: 8478824876713239127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.36
+      value: -6.674531
       objectReference: {fileID: 0}
     - target: {fileID: 8478824876713239127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.037485417
+      value: 0.074970834
       objectReference: {fileID: 0}
     - target: {fileID: 8478824876713239127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21957,6 +21927,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
+--- !u!4 &2141764976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8478824876713239127, guid: 7546cef8c32d77a42a8f7cd9a890fc31, type: 3}
+  m_PrefabInstance: {fileID: 2141764975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5125680921968296810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22176,6 +22151,10 @@ PrefabInstance:
     - target: {fileID: 7329697463955344834, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
       propertyPath: m_Name
       value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329697463955344834, guid: b90ce0c44e55afa4893708f82b4721d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

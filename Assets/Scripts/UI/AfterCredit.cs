@@ -32,7 +32,6 @@ public class AfterCredit : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(isOpened);
         if (isOpened && Input.GetKeyDown(KeyCode.F))
         {
             Quit();

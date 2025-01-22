@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5907318806504966220}
   - component: {fileID: 2005152060988971884}
   - component: {fileID: -3167231660243625612}
+  - component: {fileID: 4084949358750588365}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Shopkeeper
@@ -118,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.035332203, y: 0}
+  m_Offset: {x: 0.08609271, y: -2.5234299}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.4637346, y: 3.21875}
+  m_Size: {x: 4.2405543, y: 0.553154}
   m_EdgeRadius: 0
 --- !u!114 &-3167231660243625612
 MonoBehaviour:
@@ -165,3 +166,24 @@ MonoBehaviour:
   interactGuide: {fileID: 0}
   interactMessage: '[F] To Talk Again'
   isNPCPaster: 0
+--- !u!95 &4084949358750588365
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335111477047600366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4cf10fad002913448d38877d522b8b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

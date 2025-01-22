@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6000936480053389784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.650204, y: -7.134179, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,15 +77,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -935182440, guid: 1fa3e51f6fa076c4093a6b8563e0ddfd, type: 3}
+  m_Sprite: {fileID: 1334356145, guid: 04656c2e40c0919459243313b4d378d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.03125, y: 2.84375}
+  m_Size: {x: 0.58, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &8648207094023474666
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 6000936480053389784}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2cc8ed413c3e96d4890dc0e0ef8be755, type: 2}
+  m_Controller: {fileID: 9100000, guid: 217d4c9eef3b3434ba3851f47ba78978, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -141,18 +141,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03139448, y: 0.31817728}
+  m_Offset: {x: -0.035786152, y: 0.04945529}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.59, y: 0.5}
-    newSize: {x: 6.03125, y: 2.84375}
+    oldSize: {x: 0.58, y: 0.54}
+    newSize: {x: 0.58, y: 0.54}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.95317316, y: 0.8412579}
+  m_Size: {x: 1.0875344, y: 0.11310736}
   m_EdgeRadius: 0
 --- !u!114 &1556866402751606028
 MonoBehaviour:
@@ -166,7 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858e2939d297cb649bc954752e0eb52a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 8648207094023474666}
 --- !u!114 &2382579900863895133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,12 +196,22 @@ MonoBehaviour:
     - character:
         name: Mushroom
         avatar: {fileID: 21300000, guid: 82ecdee0731fbf54ab728a21a6a86898, type: 3}
-      line: "Listen closely. In the ruins of your people, there lies a book\u2014a
-        relic of your past. Seek it out, for it holds knowledge that will aid you
+      line: "Listen closely. In the ruins of your people, there lies a book \u2014
+        a relic of your past. Seek it out, for it holds knowledge that will aid you
         greatly on your journey."
     - character:
         name: You
         avatar: {fileID: 21300000, guid: f8c912be096ab9546a462c091c68b4e0, type: 3}
       line: "Thank you. I\u2019ll look for it.\r"
+    - character:
+        name: Mushroom
+        avatar: {fileID: 21300000, guid: 82ecdee0731fbf54ab728a21a6a86898, type: 3}
+      line: Ah ah, almost forgot. Make sure you look closely when you see any flowers.
+        In this dark place, no ordinary flowers can grow.
+    - character:
+        name: You
+        avatar: {fileID: 21300000, guid: f8c912be096ab9546a462c091c68b4e0, type: 3}
+      line: I will keep this in mind!
   interactGuide: {fileID: 0}
-  interactMessage: 
+  interactMessage: '[F] To Talk Again'
+  isNPCPaster: 0

@@ -24,7 +24,6 @@ public class NPCAnimation : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             animator.SetBool("isTalking", false);
-
         }
     }
 }

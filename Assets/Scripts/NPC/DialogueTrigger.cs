@@ -50,8 +50,9 @@ public class DialogueTrigger : MonoBehaviour
             TriggerDialogue();
         }
     }
-    public void TriggerDialogue()
+    public IEnumerator TriggerDialogue()
     {
+        yield return new WaitForSecondsRealtime(0.5f);
         DialogueManager.Instance.StartDialogue(dialogue, isNPCPaster);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,7 +63,7 @@ public class DialogueTrigger : MonoBehaviour
             if (!dialogued)
             {
                 dialogued = true;
-                TriggerDialogue();
+                StartCoroutine(TriggerDialogue());
                 switch(tutorLabel)
                 {
                     case true:
