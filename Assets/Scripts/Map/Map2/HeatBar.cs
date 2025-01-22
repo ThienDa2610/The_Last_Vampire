@@ -19,7 +19,7 @@ public class HeatBar : MonoBehaviour
     //public bool isOverheating = false;
 
     public GameObject player;
-    public HealthManager health;
+    private HealthManager health;
 
     public PlayerWaterCheck playerWaterCheck;
 

@@ -6,7 +6,7 @@ using TMPro;
 
 public class EnableBloodFall : MonoBehaviour
 {
-    public Canvas afterCredit;
+    public AfterCredit afterCredit;
     public Animator animator;           
     private bool isPlayerInRange = false;
     public TMP_Text dialogText;
@@ -62,10 +62,13 @@ public class EnableBloodFall : MonoBehaviour
             if (typeCoinManager.dragonHeart)
             {
                 StartCoroutine(DragonHeart(2f));
+                afterCredit.StartEnding(0);
+
             }
             else
             {
                 StartCoroutine(ShowDialogForTime(2f));
+                afterCredit.StartEnding(1);
             }
         }
     }
@@ -80,19 +83,12 @@ public class EnableBloodFall : MonoBehaviour
 
         yield return new WaitForSeconds(timeToShow);  // Wait for the specified time
 
-        CallAfterCredit(1);
     }
     private IEnumerator DragonHeart(float timeToShow)
     {
+        Debug.Log("DragonHeart");
         animator.SetTrigger("HaveDragonHeart");
         inActivate = true;
         yield return new WaitForSeconds(timeToShow);
-
-        CallAfterCredit(0);
-    }
-    private void CallAfterCredit(int ending)
-    {
-        afterCredit.gameObject.SetActive(true);
-        AfterCredit.Instance.endIdx = ending;
     }
 }

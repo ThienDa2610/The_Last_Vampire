@@ -10,8 +10,9 @@ using UnityEngine.EventSystems;
 public class PauseMenu : MonoBehaviour
 {
     public Button firstButton;
-    public GameObject pauseMenu;
+    private Canvas pauseMenu;
     public Canvas gameplayCanvas;
+    private Animator animator;
     private bool isPaused = false;
 
     private RectTransform pauseMenuRect;
@@ -20,9 +21,11 @@ public class PauseMenu : MonoBehaviour
     public bool isIt = true;
     private void Start()
     {
-        gameplayCanvas.gameObject.SetActive(true);
-        pauseMenu.SetActive(false);
-        pauseMenuRect = pauseMenu.GetComponent<RectTransform>();
+        pauseMenu = GetComponent<Canvas>();
+        pauseMenu.enabled = false;
+
+        animator = GetComponent<Animator>();
+        animator.updateMode = AnimatorUpdateMode.UnscaledTime;
     }
     private void Update()
     {
@@ -40,24 +43,36 @@ public class PauseMenu : MonoBehaviour
     }
     public void PauseGame()
     {
-        gameplayCanvas.gameObject.SetActive(false);
+        gameplayCanvas.enabled = false;
         isPaused = true;
-        pauseMenu.SetActive(true);
-        firstButton.Select();
-        //StartCoroutine(SlideInMenu());
+        pauseMenu.enabled = true;
 
+        StartCoroutine(SlideIn());
+
+        firstButton.Select();
         Time.timeScale = 0f;
+    }
+
+    private IEnumerator SlideIn()
+    {
+        animator.SetBool("isOpen", true);
+        yield return new WaitForSecondsRealtime(1f);
     }
     public void Continue()
     {
-        gameplayCanvas.gameObject.SetActive(true);
+        StartCoroutine(SlideOut());
+        gameplayCanvas.enabled = true;
         isPaused = false;
-        pauseMenu.SetActive(false);
-
-        //StartCoroutine(SlideOutMenu());
-
         Time.timeScale = 1f;
     }
+
+    private IEnumerator SlideOut()
+    {
+        animator.SetBool("isOpen", false);
+        yield return new WaitForSecondsRealtime(1f);
+        pauseMenu.enabled = false;        
+    }
+
     public void Replay()
     {
         Time.timeScale = 1f;
@@ -114,38 +129,5 @@ public class PauseMenu : MonoBehaviour
 
         Time.timeScale = 1f;
         MapLoader.Instance.LoadMap("Menu");
-    }
-
-    private IEnumerator SlideInMenu()
-    {
-        Vector3 targetPosition = new Vector3(800, 0, 0);
-        Vector3 startPosition = new Vector3(1900, 0, 0);
-        pauseMenuRect.anchoredPosition = startPosition;
-
-        float elapsedTime = 0f;
-        while (elapsedTime < 1f)
-        {
-            elapsedTime += Time.unscaledDeltaTime * slideSpeed;
-            pauseMenuRect.anchoredPosition = Vector3.Lerp(startPosition, targetPosition, elapsedTime);
-            yield return null;
-        }
-        pauseMenuRect.anchoredPosition = targetPosition;
-
-    }
-
-    private IEnumerator SlideOutMenu()
-    {
-        Vector3 targetPosition = new Vector3(1900, 0, 0);
-        Vector3 startPosition = pauseMenuRect.anchoredPosition;
-
-        float elapsedTime = 0f;
-        while (elapsedTime < 1f)
-        {
-            elapsedTime += Time.unscaledDeltaTime * slideSpeed;
-            pauseMenuRect.anchoredPosition = Vector3.Lerp(startPosition, targetPosition, elapsedTime);
-            yield return null;
-        }
-        pauseMenuRect.anchoredPosition = targetPosition;
-        pauseMenu.SetActive(false);
     }
 }

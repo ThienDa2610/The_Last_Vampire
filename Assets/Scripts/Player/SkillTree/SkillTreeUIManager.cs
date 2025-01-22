@@ -7,8 +7,7 @@ using TMPro;
 public class SkillTreeUIManager : MonoBehaviour
 {
     public TMP_Text bloodCountText;
-
-    public GameObject skillTree;
+    private Canvas skillTree;
     public Canvas gameplayCanvas;
     public static SkillTreeUIManager instance;   
     public Skill[] skills;
@@ -25,8 +24,8 @@ public class SkillTreeUIManager : MonoBehaviour
 
     void Start()
     {
-        skillTree.SetActive(false);
-        gameplayCanvas.gameObject.SetActive(true);
+        skillTree = GetComponent<Canvas>();
+        skillTree.enabled = false;
         SkillButton[0].PessSkillButton();
         UpdatebloodCountText();
     }
@@ -50,19 +49,6 @@ public class SkillTreeUIManager : MonoBehaviour
 
     private void Update()
     {
-        if (gameplayCanvas == null)
-        {
-            GameObject canvasObject = GameObject.Find("/UI/Canvas");
-            if (canvasObject == null)
-            {
-                return;
-            }
-            else
-            {
-                gameplayCanvas = canvasObject.GetComponent<Canvas>();
-            }
-        }
-
         if (Input.GetKeyDown(KeyCode.C))
         {
             OpenSkillTree();
@@ -86,8 +72,8 @@ public class SkillTreeUIManager : MonoBehaviour
 
     public void OpenSkillTree()
     {
-        skillTree.SetActive(true);
-        gameplayCanvas.gameObject.SetActive(false);
+        skillTree.enabled = true;
+        gameplayCanvas.enabled = false;
         isOpen = true;
         Time.timeScale = 0f;
         if (activeSkill == null)
@@ -98,8 +84,8 @@ public class SkillTreeUIManager : MonoBehaviour
 
     public void CloseSkillTree()
     {
-        skillTree.SetActive(false);
-        gameplayCanvas.gameObject.SetActive(true);
+        skillTree.enabled = false;
+        gameplayCanvas.enabled = true;
         isOpen = false;
         Time.timeScale = 1f;
     }

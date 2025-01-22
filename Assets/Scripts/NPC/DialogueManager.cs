@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
     {
         isOpen = true;
         isNPCPaster = NPCPaster;
-        mainUI.gameObject.SetActive(false);
+        mainUI.enabled = false;
         animator.SetBool("isOpen", true);
 
         if (lines == null)
@@ -101,7 +101,7 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("isOpen", false);
         yield return new WaitForSecondsRealtime(0.5f);
-        mainUI.gameObject.SetActive(true);
+        mainUI.enabled = true;
         Time.timeScale = 1f;
         isOpen = false;
     }
