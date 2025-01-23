@@ -15,6 +15,10 @@ public class TypeCoinManager : MonoBehaviour
 
     private SkillTreeUIManager manager;
 
+    public Image getHeartdialogImage;
+    public TMP_Text getHeartdialogText;
+    public string getHeartidleMessage;
+
     void Start()
     {
         manager = GameObject.Find("/Canvas-SkillTree").GetComponent<SkillTreeUIManager>();
@@ -25,6 +29,11 @@ public class TypeCoinManager : MonoBehaviour
         if (PlayerPrefs.HasKey("SavedGhostCount"))
         {
             ghostCount = PlayerPrefs.GetInt("SavedGhostCount");
+        }
+        if (getHeartdialogText != null)
+        {
+            getHeartdialogText.enabled = false;
+            getHeartdialogImage.enabled = false;
         }
         UpdateGhostCountText();
         UpdateBloodCountText();
@@ -52,6 +61,7 @@ public class TypeCoinManager : MonoBehaviour
     public void CollectDragonHeart()
     {
         dragonHeart = true;
+        StartCoroutine(ShowDialogForTime(2f, getHeartidleMessage));
     }
 
     public void UpdateGhostCountText()
@@ -85,4 +95,15 @@ public class TypeCoinManager : MonoBehaviour
         HealthManager.Instance.Heal(valueBlood);
         UpdateBottleCountText();
     }*/
+    private IEnumerator ShowDialogForTime(float timeToShow, string idleMessages)
+    {
+        getHeartdialogText.enabled = true;
+        getHeartdialogImage.enabled = true;
+        getHeartdialogText.text = idleMessages;
+        yield return new WaitForSecondsRealtime(timeToShow);  // Wait for the specified time
+
+        getHeartdialogText.enabled = false;
+        getHeartdialogImage.enabled = false;
+
+    }
 }

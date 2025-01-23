@@ -18914,7 +18914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000038146973, y: -32.553406}
+  m_AnchoredPosition: {x: -0.000038146973, y: -32.554688}
   m_SizeDelta: {x: 186.58704, y: 37.146}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &478788057
@@ -36159,6 +36159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 416916317580794146, guid: 06daa6316a67dc645946fcfae19b475d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80.39844
+      objectReference: {fileID: 0}
     - target: {fileID: 1929032397610680192, guid: 06daa6316a67dc645946fcfae19b475d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -38030,6 +38034,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6157991549691410573, guid: 1baca16a5616e534ca75688c8b3f9dc9, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1187319223}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39557,6 +39565,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6884773540774861404, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8092335066567348123, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -39593,6 +39605,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4201569486727260992, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2124972186}
+    - targetCorrespondingSourceObject: {fileID: 4201569486727260992, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2124972189}
   m_SourcePrefab: {fileID: 100100000, guid: 4e3d1b4a9d8e5d24bb908fc9270845da, type: 3}
 --- !u!224 &1057368098 stripped
 RectTransform:
@@ -47626,8 +47641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1111.5, y: 537.51}
+  m_AnchoredPosition: {x: -0.000012397766, y: 0.00002193451}
+  m_SizeDelta: {x: 2454.9, y: 1452.315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209836524
 MonoBehaviour:
@@ -61304,10 +61319,10 @@ RectTransform:
   m_Father: {fileID: 1057368098}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 400.00003, y: 225.02544}
-  m_SizeDelta: {x: 983, y: 553}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000028371811, y: 0.000025987625}
+  m_SizeDelta: {x: 2433.044, y: 1396.173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839353751
 MonoBehaviour:
@@ -69596,6 +69611,24 @@ MonoBehaviour:
   normalColor: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 983274680}
   playerWaterCheck: {fileID: 983274706}
+--- !u!114 &2124972189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124972183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f4d139831aba943b4f2db54e8473de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object1: {fileID: 838686122}
+  object2: {fileID: 2067042331}
+  donedialogImage: {fileID: 916115248}
+  donedialogText: {fileID: 1170868204}
+  doneidleMessage1: You have learned the Counter skill.
+  doneidleMessage2: You have learned the Blood wave skill.
 --- !u!1 &2127236356
 GameObject:
   m_ObjectHideFlags: 0

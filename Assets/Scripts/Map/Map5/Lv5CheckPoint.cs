@@ -402,15 +402,15 @@ public class Lv5CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedAnimatorState5");
         PlayerPrefs.DeleteKey("isSaved5");
         PlayerPrefs.DeleteKey("positionChanged5");
-        PlayerPrefs.DeleteKey("SavedBloodPotionCount");
+/*        PlayerPrefs.DeleteKey("SavedBloodPotionCount");
         PlayerPrefs.DeleteKey("SavedGhostCount");
-        PlayerPrefs.DeleteKey("SavedBloodCount");
+        PlayerPrefs.DeleteKey("SavedBloodCount");*/
         PlayerPrefs.DeleteKey("SavedItemRunOut5");
         PlayerPrefs.DeleteKey("SavedMaxValueItem5");
         PlayerPrefs.DeleteKey("Enemy5_");
         PlayerPrefs.DeleteKey("CounterState");
         PlayerPrefs.DeleteKey("BloodWaveState");
 
-        PlayerPrefs.DeleteKey("SavedMaxHealth");
+        //PlayerPrefs.DeleteKey("SavedMaxHealth");
     }
 }

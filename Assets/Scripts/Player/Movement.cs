@@ -43,18 +43,23 @@ public class Movement : MonoBehaviour
     public bool isRight = true;
     public bool isLeft = false;
     public bool isJump = false;
+
+
     private void OnEnable()
     {
-        moveInput = playerInput.Player.Move;
-        moveInput.Enable();
+        if (Time.timeScale == 1)
+        {
+            moveInput = playerInput.Player.Move;
+            moveInput.Enable();
 
-        jumpInput = playerInput.Player.Jump;
-        jumpInput.Enable();
-        jumpInput.performed += JumpInput;
+            jumpInput = playerInput.Player.Jump;
+            jumpInput.Enable();
+            jumpInput.performed += JumpInput;
 
-        dashInput = playerInput.Player.Dash;
-        dashInput.Enable();
-        dashInput.performed += DashInput;
+            dashInput = playerInput.Player.Dash;
+            dashInput.Enable();
+            dashInput.performed += DashInput;
+        }
     }
     private void OnDisable()
     {
@@ -90,6 +95,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //bloodboiled stack reduce
         for (int i = 0; i < bloodBoiledTimer.Count; i++)
         {
@@ -139,7 +145,7 @@ public class Movement : MonoBehaviour
         }
 
         //horizontal moving
-        rb.velocity = new Vector2 (move * moveSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(move * moveSpeed, rb.velocity.y);
 
         //jump
         /*if (Input.GetKeyDown(KeyCode.Space) && (groundCheck.isOnTheGround() || CanJumpInWater))
@@ -170,10 +176,12 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             airJumpLeft = false;
         }*/
+
     }
 
     private void JumpInput(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0) return;
         if (groundCheck.isOnTheGround() || CanJumpInWater)
         {
             if (groundCheck.isOnTheGround()) { dust.Play(); }
@@ -189,6 +197,7 @@ public class Movement : MonoBehaviour
     }
     private void DashInput(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0) return;
         if (!StatusManager.Instance.isTrap && SkillCDManager.isOffCooldown(SkillType.Dash))
         {
             StartCoroutine(Dash());

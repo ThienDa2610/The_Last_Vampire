@@ -436,9 +436,9 @@ public class Lv3CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedAnimatorState3");
         PlayerPrefs.DeleteKey("isSaved3");
         PlayerPrefs.DeleteKey("positionChanged3");
-        PlayerPrefs.DeleteKey("SavedBloodPotionCount");
+/*        PlayerPrefs.DeleteKey("SavedBloodPotionCount");
         PlayerPrefs.DeleteKey("SavedGhostCount");
-        PlayerPrefs.DeleteKey("SavedBloodCount");
+        PlayerPrefs.DeleteKey("SavedBloodCount");*/
         PlayerPrefs.DeleteKey("SavedItemRunOut3");
         PlayerPrefs.DeleteKey("SavedMaxValueItem3");
         PlayerPrefs.DeleteKey("Enemy3_");
@@ -446,6 +446,6 @@ public class Lv3CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("CounterState");
         PlayerPrefs.DeleteKey("BloodWaveState");
 
-        PlayerPrefs.DeleteKey("SavedMaxHealth");
+        //PlayerPrefs.DeleteKey("SavedMaxHealth");
     }
 }

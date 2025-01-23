@@ -37,7 +37,7 @@ public class LearnNewSkillNotice : MonoBehaviour
             Skill2 = true;
         }
     }
-        private IEnumerator ShowDialogForTime(float timeToShow, string idleMessages)
+    private IEnumerator ShowDialogForTime(float timeToShow, string idleMessages)
     {
         donedialogText.enabled = true;
         donedialogImage.enabled = true;

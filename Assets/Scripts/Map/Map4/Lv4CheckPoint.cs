@@ -427,9 +427,9 @@ public class Lv4CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedAnimatorState4");
         PlayerPrefs.DeleteKey("isSaved4");
         PlayerPrefs.DeleteKey("positionChanged4");
-        PlayerPrefs.DeleteKey("SavedBloodPotionCount");
+/*        PlayerPrefs.DeleteKey("SavedBloodPotionCount");
         PlayerPrefs.DeleteKey("SavedGhostCount");
-        PlayerPrefs.DeleteKey("SavedBloodCount");
+        PlayerPrefs.DeleteKey("SavedBloodCount");*/
         PlayerPrefs.DeleteKey("SavedItemRunOut4");
         PlayerPrefs.DeleteKey("SavedMaxValueItem4");
         PlayerPrefs.DeleteKey("Enemy4_");
@@ -437,6 +437,6 @@ public class Lv4CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("CounterState");
         PlayerPrefs.DeleteKey("BloodWaveState");
 
-        PlayerPrefs.DeleteKey("SavedMaxHealth");
+        //PlayerPrefs.DeleteKey("SavedMaxHealth");
     }
 }
