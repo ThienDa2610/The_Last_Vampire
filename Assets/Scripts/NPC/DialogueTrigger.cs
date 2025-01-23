@@ -47,7 +47,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (isNear && !DialogueManager.Instance.isOpen && dialogued && Input.GetKeyDown(KeyCode.F))
         {
-            TriggerDialogue();
+            StartCoroutine(TriggerDialogue());
         }
     }
     public IEnumerator TriggerDialogue()
