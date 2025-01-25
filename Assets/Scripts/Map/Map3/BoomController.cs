@@ -9,6 +9,7 @@ public class BoomController : MonoBehaviour
     public CheckRange isNear;
     public bool explode = false;
 
+    public bool isBoomed = false;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -46,5 +47,6 @@ public class BoomController : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
         Destroy(gameObject);
+        isBoomed = true;
     }
 }

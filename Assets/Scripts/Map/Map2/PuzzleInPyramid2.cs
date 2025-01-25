@@ -36,7 +36,7 @@ public class PuzzleInPyramid2 : MonoBehaviour
     public int Puzzle1Or2 = 1;
     public bool done = false;
 
-    private bool thisScript = false;
+    public bool thisScript = false;
     private bool updated = false;
     void Start()
     {
@@ -123,6 +123,10 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 {
                     StartCoroutine(HandlePuzzleCompletion());
                 }
+                if (Input.GetKeyDown(KeyCode.Escape) && !isIt.isIt && thisScript)
+                {
+                    ClosePuzzle();
+                }
             }
             else
             {
@@ -139,11 +143,12 @@ public class PuzzleInPyramid2 : MonoBehaviour
                 {
                     StartCoroutine(HandlePuzzleCompletion());
                 }
+                if (Input.GetKeyDown(KeyCode.Escape) && !isIt.isIt && thisScript)
+                {
+                    ClosePuzzle();
+                }
             }
-            if (Input.GetKeyDown(KeyCode.Escape) && !isIt.isIt && thisScript)
-            {
-                ClosePuzzle();
-            }
+            
         }
     }
 
@@ -217,9 +222,9 @@ public class PuzzleInPyramid2 : MonoBehaviour
     {
         puzzleCanvas.gameObject.SetActive(false);
         gameplayCanvas.gameObject.SetActive(true);
+        Time.timeScale = 1f;
         isIt.isIt = true;
         thisScript = false;
-        Time.timeScale = 1f;
         dialogText.enabled = true;
         dialogText.text = idleMessage;
     }

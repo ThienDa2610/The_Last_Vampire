@@ -21,6 +21,8 @@ public class GoInsideHome : PlayerInteractGuide
 
     private bool isIt = false;
     public string answer = "223693";
+    public bool success = false;
+    public PauseMenu isItp;
     protected override void SetupMore()
     {
         base.SetupMore();
@@ -38,15 +40,18 @@ public class GoInsideHome : PlayerInteractGuide
         if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
         {
             isIt = true;
+            isItp.isIt = false;
             gamePlay.gameObject.SetActive(false);
             password.gameObject.SetActive(true);
             firstButton.Select();
             Time.timeScale = 0f;
         }
-        if (isIt)
+        if (isIt && !isItp.isIt)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
+            {
                 Close();
+            }
         }
     }
 
@@ -55,6 +60,7 @@ public class GoInsideHome : PlayerInteractGuide
         gamePlay.gameObject.SetActive(true);
         password.gameObject.SetActive(false);
         ans.text = "";
+        isItp.isIt = true;
         Time.timeScale = 1f;
     }
 
@@ -67,20 +73,23 @@ public class GoInsideHome : PlayerInteractGuide
 
     public void Execute()
     {
-        if (ans.text == answer)
+        if (!success)
         {
-            Close();
-            player.transform.position = targetPos;
-            if (mainCamera != null && secondaryCamera != null)
+            if (ans.text == answer)
             {
-                mainCamera.gameObject.SetActive(false);
-                secondaryCamera.gameObject.SetActive(true);
+                Close();
+                success = true;
+                player.transform.position = targetPos;
+                if (mainCamera != null && secondaryCamera != null)
+                {
+                    mainCamera.gameObject.SetActive(false);
+                    secondaryCamera.gameObject.SetActive(true);
+                }
             }
-            Time.timeScale = 1f;
-        }
-        else
-        {
-            StartCoroutine(Incorrect());
+            else
+            {
+                StartCoroutine(Incorrect());
+            }
         }
     }
 

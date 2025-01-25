@@ -53,6 +53,9 @@ public class Lv3CheckPoint : MonoBehaviour
     public List<EnemyHealthManager> enemies;
     public Camera[] cameras;
 
+    public List<BoomController> booms;
+    public List<GarlicDestroy> garlics;
+
     public GameObject counterIcon;
     public GameObject bloodWaveIcon;
 
@@ -306,7 +309,14 @@ public class Lv3CheckPoint : MonoBehaviour
         PlayerPrefs.SetInt("SavedMaxValueItem3", maxValueItem);
 
         // Save states of torches, plants, and enemies
-
+        for (int i = 0; i < booms.Count; i++)
+        {
+            PlayerPrefs.SetInt("Booms_" + i + "_State", booms[i].isBoomed ? 1 : 0);
+        }
+        for (int i = 0; i < garlics.Count; i++)
+        {
+            PlayerPrefs.SetInt("Garlics_" + i + "_State", garlics[i].isDestroy ? 1 : 0);
+        }
         //------------change--------------
         for (int i = 0; i < enemies.Count; i++)
         {
@@ -380,21 +390,26 @@ public class Lv3CheckPoint : MonoBehaviour
 
         isSaved = PlayerPrefs.GetInt("isSaved3", 0) == 1;
         positionChanged = PlayerPrefs.GetInt("positionChanged3", 0) == 1;
-/*
-        //Load Learn Skill
-        int counterSkillCheck = PlayerPrefs.GetInt("CounterState", 0);
-        Counter.counterLearned = counterSkillCheck == 1;
-        if (counterSkillCheck == 1 && !counterIcon.activeSelf)
+
+        for (int i = 0; i < booms.Count; i++)
         {
-            counterIcon.SetActive(true);
+            int boomState = PlayerPrefs.GetInt("Booms_" + i + "_State", 0); // Default to on (1)
+            booms[i].isBoomed = boomState == 1;
+            if (booms[i].isBoomed)
+            {
+                Destroy(booms[i].gameObject);
+            }
         }
-        int bloodWaveCheck = PlayerPrefs.GetInt("BloodWaveState", 0);
-        CastBloodWave.bloodWaveLearned = bloodWaveCheck == 1;
-        if (bloodWaveCheck == 1 && !bloodWaveIcon.activeSelf)
+        for (int i = 0; i < garlics.Count; i++)
         {
-            bloodWaveIcon.SetActive(true);
-        }*/
-        //------------change--------------
+            int garlicState = PlayerPrefs.GetInt("Garlics_" + i + "_State", 0); // Default to on (1)
+            garlics[i].isDestroy = garlicState == 1;
+            if (garlics[i].isDestroy)
+            {
+                Destroy(garlics[i].gameObject);
+            }
+        }
+
         // Load enemies state
         for (int i = 0; i < enemies.Count; i++)
         {
@@ -436,9 +451,11 @@ public class Lv3CheckPoint : MonoBehaviour
         PlayerPrefs.DeleteKey("SavedAnimatorState3");
         PlayerPrefs.DeleteKey("isSaved3");
         PlayerPrefs.DeleteKey("positionChanged3");
-/*        PlayerPrefs.DeleteKey("SavedBloodPotionCount");
-        PlayerPrefs.DeleteKey("SavedGhostCount");
-        PlayerPrefs.DeleteKey("SavedBloodCount");*/
+        PlayerPrefs.DeleteKey("Booms_");
+        PlayerPrefs.DeleteKey("Garlics_");
+        /*        PlayerPrefs.DeleteKey("SavedBloodPotionCount");
+                PlayerPrefs.DeleteKey("SavedGhostCount");
+                PlayerPrefs.DeleteKey("SavedBloodCount");*/
         PlayerPrefs.DeleteKey("SavedItemRunOut3");
         PlayerPrefs.DeleteKey("SavedMaxValueItem3");
         PlayerPrefs.DeleteKey("Enemy3_");

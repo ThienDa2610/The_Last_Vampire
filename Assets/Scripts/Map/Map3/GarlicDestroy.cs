@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GarlicDestroy : PlayerInteractGuide
 {
+    public bool isDestroy = false;
     protected override void Interact()
     {
         base.Interact();
@@ -12,6 +13,7 @@ public class GarlicDestroy : PlayerInteractGuide
             animator.SetTrigger("isDestroy");
             TurnOffGuide();
             Destroy(gameObject, 1f);
+            isDestroy = true;
         }
     }
 }
