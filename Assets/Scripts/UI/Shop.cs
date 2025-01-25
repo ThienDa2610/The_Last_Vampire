@@ -38,37 +38,46 @@ public class Shop : MonoBehaviour
         string savedSceneName = PlayerPrefs.GetString("SavedSceneName", "Map1_Forest");
         if (savedSceneName == "Map1_Forest")
         {
-            if (PlayerPrefs.HasKey("SavedMaxValueItem"))
-            {
-                quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem");
-            }
-        }
-        else if (savedSceneName == "Map2_Desert")
-        {
             if (PlayerPrefs.HasKey("SavedMaxValueItem2"))
             {
                 quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem2");
             }
+            else
+            {
+                quantitySlider.maxValue = 5;
+            }
         }
-        else if (savedSceneName == "Map3_City")
+        else if (savedSceneName == "Map2_Desert")
         {
             if (PlayerPrefs.HasKey("SavedMaxValueItem3"))
             {
                 quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem3");
             }
+            else
+            {
+                quantitySlider.maxValue = 5;
+            }
         }
-        else if (savedSceneName == "Map4_Cave")
+        else if (savedSceneName == "Map3_City")
         {
             if (PlayerPrefs.HasKey("SavedMaxValueItem4"))
             {
                 quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem4");
             }
+            else
+            {
+                quantitySlider.maxValue = 5;
+            }
         }
-        else if (savedSceneName == "Map5_Ruin")
+        else if (savedSceneName == "Map4_Cave")
         {
             if (PlayerPrefs.HasKey("SavedMaxValueItem5"))
             {
                 quantitySlider.maxValue = PlayerPrefs.GetInt("SavedMaxValueItem5");
+            }
+            else
+            {
+                quantitySlider.maxValue = 5;
             }
         }
         quantitySlider.value = 1;

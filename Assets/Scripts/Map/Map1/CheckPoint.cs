@@ -55,7 +55,6 @@ public class CheckPoint : MonoBehaviour
     public Torch_OnOff[] torches2; 
     public Touch_Plant[] plants;
     public Touch_Plant_No[] plantsNo;
-
     // Initialize the instance and check for saved data
     void Awake()
     {

@@ -71,7 +71,7 @@ public class Counter : MonoBehaviour
     {
         isCountering = false;
         float newX = (transform.position.x < target.transform.position.x) ? target.transform.position.x + teleOffset : target.transform.position.x - teleOffset;
-        transform.position = new Vector3 (newX, target.transform.position.y, transform.position.z);
+        transform.position = new Vector3 (newX, target.transform.position.y + 0.2f, transform.position.z);
 
         HealthManager.Instance.Heal(healAmount);
         target.GetComponent<EnemyHealthManager>().TakeDamage(counterDamage);

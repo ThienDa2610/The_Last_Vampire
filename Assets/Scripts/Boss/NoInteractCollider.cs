@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class NoInteractCollider : MonoBehaviour
 {
-    Collider2D collider;
+    Collider2D bossCollider;
     private void Awake()
     {
-        collider = GetComponent<Collider2D>();
+        bossCollider = GetComponent<Collider2D>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player"))
-            Physics2D.IgnoreCollision(collision.collider, collider);
+            Physics2D.IgnoreCollision(collision.collider, bossCollider);
     }
 }

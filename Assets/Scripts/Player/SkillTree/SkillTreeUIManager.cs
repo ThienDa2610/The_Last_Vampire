@@ -49,6 +49,18 @@ public class SkillTreeUIManager : MonoBehaviour
 
     private void Update()
     {
+        if (gameplayCanvas == null)
+        {
+            GameObject canvasObject = GameObject.Find("/UI/Canvas");
+            if (canvasObject == null)
+            {
+                return;
+            }
+            else
+            {
+                gameplayCanvas = canvasObject.GetComponent<Canvas>();
+            }
+        }
         if (Input.GetKeyDown(KeyCode.C))
         {
             OpenSkillTree();
