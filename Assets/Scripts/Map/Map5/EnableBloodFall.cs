@@ -6,6 +6,8 @@ using TMPro;
 
 public class EnableBloodFall : MonoBehaviour
 {
+    public GameObject boss;
+    public GameObject player;
     public AfterCredit afterCredit;
     public Animator animator;           
     private bool isPlayerInRange = false;
@@ -59,16 +61,19 @@ public class EnableBloodFall : MonoBehaviour
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.F) && !inActivate)
         {
-            if (typeCoinManager.dragonHeart)
+            if (player != null && boss == null)
             {
-                StartCoroutine(DragonHeart(2f));
-                afterCredit.StartEnding(0);
+                if (typeCoinManager.dragonHeart)
+                {
+                    StartCoroutine(DragonHeart(2f));
+                    afterCredit.StartEnding(0);
 
-            }
-            else
-            {
-                StartCoroutine(ShowDialogForTime(2f));
-                afterCredit.StartEnding(1);
+                }
+                else
+                {
+                    StartCoroutine(ShowDialogForTime(2f));
+                    afterCredit.StartEnding(1);
+                }
             }
         }
     }
