@@ -35,8 +35,8 @@ public class TypeCoinManager : MonoBehaviour
             getHeartdialogText.enabled = false;
             getHeartdialogImage.enabled = false;
         }
-        UpdateGhostCountText();
         UpdateBloodCountText();
+        UpdateGhostCountText();
     }
 
     public void CollectGhost()

@@ -55,6 +55,7 @@ public class Lv4CheckPoint : MonoBehaviour
 
     public GameObject counterIcon;
     public GameObject bloodWaveIcon;
+    public SkillTreeUIManager skillTreeUIManager;
     // Initialize the instance and check for saved data
     void Awake()
     {
@@ -295,7 +296,7 @@ public class Lv4CheckPoint : MonoBehaviour
         PlayerPrefs.SetInt("SavedGhostCount", countGhost);
         int countBloodSkill = typeCoinManager.GetComponent<TypeCoinManager>().bloodCount;
         PlayerPrefs.SetInt("SavedBloodCount", countBloodSkill);
-
+        
         //------------change--------------
         PlayerPrefs.SetInt("SavedItemRunOut4", shop.GetComponent<Shop>().itemRunOut ? 1 : 0);
         int maxValueItem = Mathf.FloorToInt(shop.quantitySlider.maxValue);
@@ -356,7 +357,11 @@ public class Lv4CheckPoint : MonoBehaviour
         typeCoinManager.GetComponent<TypeCoinManager>().ghostCount = savedGhost;
         int savedBloodSkill = PlayerPrefs.GetInt("SavedBloodCount", 0);
         typeCoinManager.GetComponent<TypeCoinManager>().bloodCount = savedBloodSkill;
+        typeCoinManager.UpdateGhostCountText();
+        typeCoinManager.UpdateBloodCountText();
 
+        skillTreeUIManager.GetComponent<SkillTreeUIManager>().bloodCount = savedBloodSkill;
+        skillTreeUIManager.UpdatebloodCountText();
         //------------change--------------
         int savedItemRunOut = PlayerPrefs.GetInt("SavedItemRunOut4", 0);
         shop.itemRunOut = savedItemRunOut == 1;

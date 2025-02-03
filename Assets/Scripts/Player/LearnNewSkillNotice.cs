@@ -28,6 +28,7 @@ public class LearnNewSkillNotice : MonoBehaviour
     {
         if (object1.activeSelf && !Skill1)
         {
+            Debug.Log("a");
             StartCoroutine(ShowDialogForTime(2f, doneidleMessage1));
             Skill1 = true;
         }
@@ -46,6 +47,5 @@ public class LearnNewSkillNotice : MonoBehaviour
 
         donedialogText.enabled = false;
         donedialogImage.enabled = false;
-
     }
 }

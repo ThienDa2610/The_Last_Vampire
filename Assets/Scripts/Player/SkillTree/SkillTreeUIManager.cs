@@ -30,7 +30,6 @@ public class SkillTreeUIManager : MonoBehaviour
         UpdatebloodCountText();
     }
 
-
     private void Awake()
     {
         if(instance == null)
@@ -59,6 +58,7 @@ public class SkillTreeUIManager : MonoBehaviour
             else
             {
                 gameplayCanvas = canvasObject.GetComponent<Canvas>();
+                UpdatebloodCountText();
             }
         }
         if (Input.GetKeyDown(KeyCode.C))
@@ -69,7 +69,6 @@ public class SkillTreeUIManager : MonoBehaviour
         {
             checkUnLock();
         }
-
     }
 
     public void UpdatebloodCountText()

@@ -58,7 +58,7 @@ public class Lv3CheckPoint : MonoBehaviour
 
     public GameObject counterIcon;
     public GameObject bloodWaveIcon;
-
+    public SkillTreeUIManager skillTreeUIManager;
     // Initialize the instance and check for saved data
     void Awake()
     {
@@ -373,7 +373,11 @@ public class Lv3CheckPoint : MonoBehaviour
         typeCoinManager.GetComponent<TypeCoinManager>().ghostCount = savedGhost;
         int savedBloodSkill = PlayerPrefs.GetInt("SavedBloodCount", 0);
         typeCoinManager.GetComponent<TypeCoinManager>().bloodCount = savedBloodSkill;
+        typeCoinManager.UpdateGhostCountText();
+        typeCoinManager.UpdateBloodCountText();
 
+        skillTreeUIManager.GetComponent<SkillTreeUIManager>().bloodCount = savedBloodSkill;
+        skillTreeUIManager.UpdatebloodCountText();
         //------------change--------------
         int savedItemRunOut = PlayerPrefs.GetInt("SavedItemRunOut3", 0);
         shop.itemRunOut = savedItemRunOut == 1;

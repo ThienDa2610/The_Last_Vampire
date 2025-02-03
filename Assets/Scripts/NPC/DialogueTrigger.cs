@@ -55,6 +55,7 @@ public class DialogueTrigger : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         DialogueManager.Instance.StartDialogue(dialogue, isNPCPaster);
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

@@ -55,6 +55,7 @@ public class CheckPoint : MonoBehaviour
     public Torch_OnOff[] torches2; 
     public Touch_Plant[] plants;
     public Touch_Plant_No[] plantsNo;
+    public SkillTreeUIManager skillTreeUIManager;
     // Initialize the instance and check for saved data
     void Awake()
     {
@@ -332,10 +333,17 @@ public class CheckPoint : MonoBehaviour
         // Load potion and coin counts
         int savedBlood = PlayerPrefs.GetInt("SavedBloodPotionCount", 0);
         bloodPotionManager.GetComponent<BloodPotionManager>().bottleCount = savedBlood;
+        
         int savedGhost = PlayerPrefs.GetInt("SavedGhostCount", 0);
         typeCoinManager.GetComponent<TypeCoinManager>().ghostCount = savedGhost;
         int savedBloodSkill = PlayerPrefs.GetInt("SavedBloodCount", 0);
         typeCoinManager.GetComponent<TypeCoinManager>().bloodCount = savedBloodSkill;
+
+        typeCoinManager.UpdateGhostCountText();
+        typeCoinManager.UpdateBloodCountText();
+
+        skillTreeUIManager.GetComponent<SkillTreeUIManager>().bloodCount = savedBloodSkill;
+        skillTreeUIManager.UpdatebloodCountText();
 
         // Load animator state
         int savedAnimatorState = PlayerPrefs.GetInt("SavedAnimatorState", 0); 
